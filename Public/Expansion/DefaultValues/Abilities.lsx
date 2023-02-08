@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="7" build="405"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue"> Barbarian
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="86221f59-476f-4069-a62d-28ec91709a22"/>
+                </node>
+                <node id="DefaultValue"> Barbarian
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="ac9e0a9c-ee99-4193-959c-f95fdb45c20b"/>
+                </node>
+                <node id="DefaultValue"> Barbarian
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="689ac8cc-7583-4e12-940b-490b18196ba4"/>
+                </node>
+                <node id="DefaultValue"> Barbarian
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="9c418996-e200-41b9-9cdf-f2eaf525901b"/>
+                </node>
+                <node id="DefaultValue"> Bard
+                    <attribute id="Add" type="LSString" value="Dexterity;Charisma"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="94b62783-22e5-45e1-a9b2-88f6a2225819"/>
+                </node>
+                <node id="DefaultValue"> Cleric
+                    <attribute id="Add" type="LSString" value="Strength;Wisdom"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
+                    <attribute id="UUID" type="guid" value="d23f1488-6f13-4886-9e79-0e5282f9d4a7"/>
+                </node>
+                <node id="DefaultValue"> Druid
+                    <attribute id="Add" type="LSString" value="Wisdom;Constitution"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="babdf411-5565-4a17-aae4-82aa9a581070"/>
+                </node>
+                <node id="DefaultValue"> Druid
+                    <attribute id="Add" type="LSString" value="Wisdom;Constitution"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="887e8081-a823-4169-a281-b5b1d1af0842"/>
+                </node>
+                <node id="DefaultValue"> Druid
+                    <attribute id="Add" type="LSString" value="Wisdom;Constitution"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="d3652261-74c0-4a02-9e54-3642aba299bb"/>
+                </node>
+                <node id="DefaultValue"> Druid
+                    <attribute id="Add" type="LSString" value="Wisdom;Constitution"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="6e7b7bad-e122-4679-8b3c-8f8987a9d466"/>
+                    <attribute id="UUID" type="guid" value="2ed26626-f2ec-4dbd-9a89-76209baa766b"/>
+                </node>
+                <node id="DefaultValue"> Fighter
+                    <attribute id="Add" type="LSString" value="Strength;Constitution"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="40811350-3f0d-4d1f-bc99-28e2bfd4268b"/>
+                </node>
+                <node id="DefaultValue"> Fighter
+                    <attribute id="Add" type="LSString" value="Strength;Constitution"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
+                    <attribute id="UUID" type="guid" value="fd7f3541-6710-4368-aed0-ad5cc0ea8d11"/>
+                </node>
+                <node id="DefaultValue"> Monk
+                    <attribute id="Add" type="LSString" value="Dexterity;Constitution"/>
+                    <attribute id="Level" type="int32" value="4"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="df4edd15-4d6e-4102-b48b-f723a0f71391"/>
+                </node>
+				<node id="DefaultValue"> Monk
+                    <attribute id="Add" type="LSString" value="Dexterity;Constitution"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="01aba659-2f14-48c8-b27b-43d197b26e4a"/>
+                </node>
+                <node id="DefaultValue"> Monk
+                    <attribute id="Add" type="LSString" value="Dexterity;Constitution"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="e24b5af6-607e-407d-9275-7e18b5c77f8c"/>
+                </node>
+                <node id="DefaultValue"> Monk
+                    <attribute id="Add" type="LSString" value="Dexterity;Constitution"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="b3cb5813-b2a7-4a53-91cd-9ad4deb155b6"/>
+                </node>
+                <node id="DefaultValue"> Monk
+                    <attribute id="Add" type="LSString" value="Wisdom;Constitution"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="1c8485c2-b066-4be1-a655-873eedf9fc84"/>
+                </node>
+                <node id="DefaultValue"> Paladin
+                    <attribute id="Add" type="LSString" value="Strength;Charisma"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
+                    <attribute id="UUID" type="guid" value="e695abe7-6d98-4a3b-a6ca-895ac17ca440"/>
+                </node>
+				<node id="DefaultValue"> Ranger
+                    <attribute id="Add" type="LSString" value="Dexterity;Wisdom"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="a2f3df2b-73ae-4797-aa6b-94ef6284a5cb"/>
+                </node>
+                <node id="DefaultValue"> Ranger
+                    <attribute id="Add" type="LSString" value="Dexterity;Wisdom"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="64bc6ddf-759e-474e-a96e-07344b4d7315"/>
+                </node>
+                <node id="DefaultValue"> Ranger
+                    <attribute id="Add" type="LSString" value="Dexterity;Wisdom"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="af1d7306-5be6-42a1-b9d9-11ec8f657f1c"/>
+                </node>
+                <node id="DefaultValue"> Ranger
+                    <attribute id="Add" type="LSString" value="Dexterity;Wisdom"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="190a8105-d8e8-4e73-85d9-330ca2374bd0"/>
+                </node>
+                <node id="DefaultValue"> Rogue
+                    <attribute id="Add" type="LSString" value="Dexterity;Intelligence"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+                    <attribute id="UUID" type="guid" value="52f0a8c6-c6df-45cc-8ced-4194cdf3eabe"/>
+                </node>
+                <node id="DefaultValue"> Rogue
+                    <attribute id="Add" type="LSString" value="Dexterity;Intelligence"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+                    <attribute id="UUID" type="guid" value="16f2d492-580e-4220-986a-a44786477b82"/>
+                </node>
+				<node id="DefaultValue"> Sorcerer
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="86221f59-476f-4069-a62d-28ec91709a22"/>
+                </node>
+                <node id="DefaultValue"> Sorcerer
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="ac9e0a9c-ee99-4193-959c-f95fdb45c20b"/>
+                </node>
+                <node id="DefaultValue"> Sorcerer
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="689ac8cc-7583-4e12-940b-490b18196ba4"/>
+                </node>
+                <node id="DefaultValue"> Sorcerer
+                    <attribute id="Add" type="LSString" value="Charisma;Constitution"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="2c286327-06dd-4a5a-a321-d0e9d641c903"/>
+                </node>
+                <node id="DefaultValue"> Warlock
+                    <attribute id="Add" type="LSString" value="Constitution;Charisma"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="e5c85793-3389-499e-b51e-9093598ebbc1"/>
+                </node>
+                <node id="DefaultValue"> Wizard
+                    <attribute id="Add" type="LSString" value="Constitution;Intelligence"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="SelectorId" type="LSString" value="FeatASI"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="fb183578-4bf8-42fb-9a23-3bbda0a7e073"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

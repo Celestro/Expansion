@@ -1,0 +1,12 @@
+new entry "ONE_WITH_SHADOWS"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "Icon" "Skill_Warlock_OneWithShadows"
+data "StackPriority" "2"
+
+new entry "CLOAK_OF_SHADOWS"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "StackPriority" "2"

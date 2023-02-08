@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="0" build="51" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="2 2 2" />
+					<attribute id="BoundsMin" type="fvec3" value="-2 -2 -2" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Cast_Intent_Debuff_Dome_Impact_Sphere_Silence_Dummy_01" />
+					<attribute id="ID" type="FixedString" value="c11324ba-445b-d7cf-d518-1c5102b55e8d" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Cast_Intent_Debuff_Dome_Impact_Sphere_Silence_Dummy_01" />
+					<attribute id="Radius" type="float" value="1.196152" />
+					<attribute id="SourceFile" type="LSWString" value="Public/Shared/Assets/Effects/Effects_Banks/Spells/Cast/Intent/Debuff/VFX_Spells_Cast_Intent_Debuff_Dome_Impact_Sphere_Silence_Dummy_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int32" value="1073741850" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="348802b5-4d62-81ea-3434-eac27306f6f1" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

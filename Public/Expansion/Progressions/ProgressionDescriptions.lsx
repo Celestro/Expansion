@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="49"/>
+    <region id="ProgressionDescriptions">
+        <node id="root">
+            <children>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value=""/>
+                    <attribute id="DisplayName" type="FixedString" value=""/>
+                    <attribute id="ExactMatch" type="FixedString" value=""/>
+                    <attribute id="Hidden" type="bool" value="true"/>
+                    <attribute id="ParamMatch" type="FixedString" value=""/>
+                    <attribute id="PassivePrototype" type="FixedString" value="WardingFlare_ActionResource"/>
+                    <attribute id="ProgressionId" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ProgressionTableId" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="SelectorId" type="FixedString" value=""/>
+                    <attribute id="Type" type="FixedString" value="Passive"/>
+                    <attribute id="UUID" type="guid" value="6bf0dd69-bc60-442c-bcf2-f516c7803561"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="PrimalKnowledge_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="PrimalKnowledge_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value=""/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ParamMatch" type="FixedString" value=""/>
+                    <attribute id="PassivePrototype" type="FixedString" value=""/>
+                    <attribute id="ProgressionId" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ProgressionTableId" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="SelectorId" type="FixedString" value="PrimalKnowledge"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="5366bf8c-17a2-462c-a973-b690d795274a"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="MartialVersatility_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="MartialVersatility_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="MartialVersatility"/>
+                    <attribute id="UUID" type="guid" value="f53cac77-0d9f-4c39-9663-24e59e875917"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="DefensiveTactics_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="DefensiveTactics_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="SelectorId" type="FixedString" value="DefensiveTactics"/>
+                    <attribute id="UUID" type="guid" value="22ededae-8a48-405f-ab71-c3b623418603"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="Multiattack_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Multiattack_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="SelectorId" type="FixedString" value="Multiattack"/>
+                    <attribute id="UUID" type="guid" value="da6806f7-506a-4cec-ace4-761f8d5c4252"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="SuperiorHuntersDefense_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="SuperiorHuntersDefense_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="SelectorId" type="FixedString" value="SuperiorHuntersDefense"/>
+                    <attribute id="UUID" type="guid" value="0cc0c626-e3f5-4573-ab88-b6d26c0dd9e0"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="Monk_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Monk_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="Type" type="FixedString" value="Monk"/>
+                    <attribute id="UUID" type="guid" value="01720a8f-265c-4dc1-bb4f-e136c774359b"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="WarlockInvocationsReplace_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="WarlockInvocationsReplace_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="WarlockInvocationsReplace"/>
+                    <attribute id="UUID" type="guid" value="c481f99b-fbed-4623-be5d-03b5213f1469"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="EldritchVersatility_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="EldritchVersatility_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="EldritchVersatility"/>
+                    <attribute id="UUID" type="guid" value="b9576fb3-fb85-4128-b8c5-3acb80324838"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="ElementalDisciplines_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="ElementalDisciplines_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="ElementalDisciplines"/>
+                    <attribute id="UUID" type="guid" value="22469c1f-3ba4-455c-b096-7552141606d7"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="ElementalDisciplinesReplace_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="ElementalDisciplinesReplace_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="ElementalDisciplinesReplace"/>
+                    <attribute id="UUID" type="guid" value="f2a5bd28-9b59-4770-af47-a7117fb648f5"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="UnarmoredMovement_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="UnarmoredMovement_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value="ActionResource(Movement,3,0)"/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ProgressionId" type="guid" value="aafbbc41-16e8-4296-a283-a2c5fdd0625c"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="48241b9a-01a2-4887-bbe2-f7046e7684ec"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="UnarmoredMovement_6th_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="UnarmoredMovement_6th_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value="ActionResource(Movement,4.5,0)"/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ProgressionId" type="guid" value="aafbbc41-16e8-4296-a283-a2c5fdd0625c"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="d55c872c-229a-48fd-b8c3-9ad0dac98362"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="UnarmoredMovement_10th_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="UnarmoredMovement_10th_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value="ActionResource(Movement,6,0)"/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ProgressionId" type="guid" value="aafbbc41-16e8-4296-a283-a2c5fdd0625c"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="820c128f-a2aa-4070-8000-c9935368b37e"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="UnarmoredMovement_14th_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="UnarmoredMovement_14th_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value="ActionResource(Movement,7.5,0)"/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ProgressionId" type="guid" value="aafbbc41-16e8-4296-a283-a2c5fdd0625c"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="53e037c5-99df-41b1-bd01-8f9c284ce0e6"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="UnarmoredMovement_18th_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="UnarmoredMovement_18th_DisplayName"/>
+                    <attribute id="ExactMatch" type="FixedString" value="ActionResource(Movement,9,0)"/>
+                    <attribute id="Hidden" type="bool" value="false"/>
+                    <attribute id="ProgressionId" type="guid" value="aafbbc41-16e8-4296-a283-a2c5fdd0625c"/>
+                    <attribute id="Type" type="FixedString" value=""/>
+                    <attribute id="UUID" type="guid" value="00c49544-63cd-44ce-bbef-f32646f33054"/>
+                </node>
+				<node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="ReplaceManeuvers_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="ReplaceManeuvers_DisplayName"/>
+                    <attribute id="ProgressionId" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
+                    <attribute id="SelectorId" type="FixedString" value="ReplaceManeuvers"/>
+                    <attribute id="UUID" type="guid" value="2313675e-b59c-4fe6-90d3-34748a16bdb5"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="AdditionalMagicalSecrets_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="AdditionalMagicalSecrets_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="SelectorId" type="FixedString" value="MagicalSecrets"/>
+                    <attribute id="UUID" type="guid" value="8b0bc62f-a7ab-478f-bb00-432d81bc290e"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="Metamagic_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Metamagic_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="SelectorId" type="FixedString" value="Metamagic"/>
+                    <attribute id="UUID" type="guid" value="0e72efce-a75d-425f-85d8-d7e9c3411f02"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="SorcerousVersatility_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="SorcerousVersatility_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="SelectorId" type="FixedString" value="SorcerousVersatility"/>
+                    <attribute id="UUID" type="guid" value="233e826e-90cf-42a8-86d4-7c471fbe7d9e"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

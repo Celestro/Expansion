@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="6" build="405"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue"> Totem Warrior Passive
+                    <attribute id="Add" type="LSString" value="AspectOfTheBeast_Bear"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+                    <attribute id="UUID" type="guid" value="8f850b70-c8a2-4c4f-95c2-050d0d67dff5"/>
+                </node>
+                <node id="DefaultValue"> Totem Warrior Passive
+                    <attribute id="Add" type="LSString" value="TotemicAttunement_Bear"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+                    <attribute id="UUID" type="guid" value="b0ca9f3b-ad2f-45ad-9fe7-1632629a6d79"/>
+                </node>
+                <node id="DefaultValue"> Ranger's 6th Level Favored Enemy
+                    <attribute id="Add" type="LSString" value="FavoredEnemy_BountyHunter;FavoredEnemy_CloudChaser;FavoredEnemy_DragonSlayer;FavoredEnemy_FavoredFoe;FavoredEnemy_KeeperOfTheVeil;FavoredEnemy_MageBreaker;FavoredEnemy_RangerKnight;FavoredEnemy_SanctifiedStalker"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="SelectorId" type="LSString" value="FavoredEnemy"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="77cf0ae8-e887-4724-9a53-bca1e0fe7581"/>
+                </node>
+                <node id="DefaultValue"> Ranger's 14th Level Favored Enemy
+                    <attribute id="Add" type="LSString" value="FavoredEnemy_BountyHunter;FavoredEnemy_CloudChaser;FavoredEnemy_DragonSlayer;FavoredEnemy_FavoredFoe;FavoredEnemy_KeeperOfTheVeil;FavoredEnemy_MageBreaker;FavoredEnemy_RangerKnight;FavoredEnemy_SanctifiedStalker"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="SelectorId" type="LSString" value="FavoredEnemy"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="eb90dfd2-0d2c-4a2c-9135-d9f3f02b3218"/>
+                </node>
+                <node id="DefaultValue"> Ranger's 6th Level Natural Explorer
+                    <attribute id="Add" type="LSString" value="NaturalExplorer_WastelandWander_Fire"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="SelectorId" type="LSString" value="NaturalExplorer"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="860bcd9d-6972-499f-b53d-c1be87c90c5b"/>
+                </node>
+                <node id="DefaultValue"> Ranger's 10th Level Natural Explorer
+                    <attribute id="Add" type="LSString" value="NaturalExplorer_WastelandWander_Poison"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="SelectorId" type="LSString" value="NaturalExplorer"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="3527f324-6c13-4795-87a8-af2c5052c110"/>
+                </node>
+               <node id="DefaultValue"> Ranger's 10th Level Passive
+                    <attribute id="Add" type="LSString" value="HideInPlainSight"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
+                    <attribute id="UUID" type="guid" value="152f6036-c519-47a5-8004-f77e2b51920e"/>
+                </node>
+                <node id="DefaultValue"> Hunter's 7th Level Passives
+                    <attribute id="Add" type="LSString" value="EscapeTheHorde"/>
+                    <attribute id="Level" type="int32" value="7"/>
+                    <attribute id="SelectorId" type="LSString" value="DefensiveTactics"/>
+                    <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="UUID" type="guid" value="f4c05f1b-2d48-47cf-b6f4-44fdf7cdde44"/>
+                </node>
+                <node id="DefaultValue"> Hunter's 11th Level Passives
+                    <attribute id="Add" type="LSString" value="Volley"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="SelectorId" type="LSString" value="Multiattack"/>
+                    <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="UUID" type="guid" value="aa09a342-7f43-4c0b-a2bf-f08547fd68c0"/>
+                </node>
+                <node id="DefaultValue"> Hunter's 15th Level Passives
+                    <attribute id="Add" type="LSString" value="StandAgainstTheTide"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="SelectorId" type="LSString" value="SuperiorHuntersDefense"/>
+                    <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="UUID" type="guid" value="e33185eb-6bc0-4516-9589-15c9b1effa6b"/>
+                </node>
+				<node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="AspectOfTheBeast_Bear"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+                    <attribute id="UUID" type="guid" value="8f850b70-c8a2-4c4f-95c2-050d0d67dff5"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Good"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="32b1e159-8ff2-4404-9ba7-782b9aca1514"/>
+                    <attribute id="UUID" type="guid" value="1e80b589-208a-4f9e-a3a0-57beef84d7ee"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Metamagic_Heightened"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="f38639e1-6f97-4888-95b2-695ad267e92d"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Metamagic_Extended"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="e2416b02-953a-4ce8-aa8f-eb98d549d86d"/>
+                    <attribute id="UUID" type="guid" value="92ab15b9-1ee0-414d-ac8b-b3c685069fe5"/>
+                </node>
+                <node id="DefaultValue"> Way of Four Elements 3rd Level
+                    <attribute id="Add" type="LSString" value="FangsOfTheFireSnake"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="TableUUID" type="guid" value="5be8ccd2-4e31-4456-8116-b884d21910f5"/>
+                    <attribute id="UUID" type="guid" value="138478c6-25b9-4cb2-97f4-110e3b3fea1b"/>
+                </node>
+                <node id="DefaultValue"> Way of Four Elements 6th Level
+                    <attribute id="Add" type="LSString" value="GongOfTheSummit"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="5be8ccd2-4e31-4456-8116-b884d21910f5"/>
+                    <attribute id="UUID" type="guid" value="3fc4801e-a133-4906-8400-48c06300203f"/>
+                </node>
+                <node id="DefaultValue"> Way of Four Elements 11th Level
+                    <attribute id="Add" type="LSString" value="RideTheWind"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="5be8ccd2-4e31-4456-8116-b884d21910f5"/>
+                    <attribute id="UUID" type="guid" value="1134124a-1413-45c9-aca3-d4844273a2a1"/>
+                </node>
+                <node id="DefaultValue"> Way of Four Elements 17th Level
+                    <attribute id="Add" type="LSString" value="EternalMountainDefense"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="5be8ccd2-4e31-4456-8116-b884d21910f5"/>
+                    <attribute id="UUID" type="guid" value="be88882f-5b84-4198-8c7c-2db565337a55"/>
+                </node>
+                <node id="DefaultValue"> Battle Master Maneuvers 7th Level
+                    <attribute id="Add" type="LSString" value="DistractingStrike;MenacingAttack;PushingAttack;Rally;Riposte;TripAttack;DisarmingAttack"/>
+                    <attribute id="Level" type="int32" value="7"/>
+                    <attribute id="TableUUID" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
+                    <attribute id="UUID" type="guid" value="34ed27dc-0e56-4d25-a247-9c03cf2f2fcb"/>
+                </node>
+                <node id="DefaultValue"> Battle Master Maneuvers 10th Level
+                    <attribute id="Add" type="LSString" value="BaitAndSwitch;DisarmingAttack;DistractingStrike;FeintAttack;GoadingAttack;MenacingAttack;Parry;PrecisionAttack;PushingAttack;QuickToss;Rally;Riposte;TripAttack"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
+                    <attribute id="UUID" type="guid" value="3128e36c-f1f0-46c1-99b1-4fe690f14273"/>
+                </node>
+                <node id="DefaultValue"> Battle Master Maneuvers 15th Level
+                    <attribute id="Add" type="LSString" value="BaitAndSwitch;DisarmingAttack;DistractingStrike;FeintAttack;GoadingAttack;MenacingAttack;Parry;PrecisionAttack;PushingAttack;QuickToss;Rally;Riposte;TripAttack"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="69eb2e41-0317-46d7-a6b6-3593de1a5220"/>
+                    <attribute id="UUID" type="guid" value="5c4716a5-bb56-464b-84fb-74f51d998088"/>
+                </node>
+                <node id="DefaultValue"> Warlock Invocation 7th Level
+                    <attribute id="Add" type="LSString" value="DreadfulWord;RelentlessHex;SculptorOfFlesh;TrickstersEscape"/>
+                    <attribute id="Level" type="int32" value="7"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="0c7c6bef-de01-4aa7-869f-1f62b62ac3ed"/>
+                </node>
+                <node id="DefaultValue"> Warlock Invocation 9th Level
+                    <attribute id="Add" type="LSString" value="AscendentStep;GiftOfTheProtectors;OtherworldlyLeap;WhispersOfTheGrave"/>
+                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="393f1397-a2d5-4c42-bd2f-05558379deb1"/>
+                </node>
+			</children>
+        </node>
+    </region>
+</save>

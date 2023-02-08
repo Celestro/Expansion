@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="47"/>
+    <region id="ClassDescriptions">
+        <node id="root">
+            <children>
+                <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="8"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value="EQP_CC_Monk"/>
+                    <attribute id="Description" type="FixedString" value="Monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does."/>
+                    <attribute id="DisplayName" type="FixedString" value="Monk"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="5"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Monk"/>
+                    <attribute id="ParentGuid" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232b"/>
+                    <children>
+                        <node id="Tags">
+                            <attribute id="Object" type="guid" value="e1e460bb-d0ae-4452-8529-c9e176558731"/>
+                        </node>
+                    </children>
+                </node>
+				<node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="0"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value=""/>
+                    <attribute id="Description" type="FixedString" value="Monks of the Way of Shadow follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins."/>
+                    <attribute id="DisplayName" type="FixedString" value="Shadow"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="0"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="WayOfTheShadow"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232b"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="91d7c558-5e3a-4e0f-8447-112b5d1689f5"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="08e7b646-3bf1-4ae4-8c8a-4cd24666227b"/>
+                </node>
+				<node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="0"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value=""/>
+                    <attribute id="Description" type="FixedString" value="You follow a monastic tradition that teaches you to harness the elements. When you focus your ki, you can align yourself with the forces of creation and bend the four elements to your will, using them as an extension of your body."/>
+                    <attribute id="DisplayName" type="FixedString" value="Four Elements"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="0"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="WayOfTheFourElements"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232b"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="5be8ccd2-4e31-4456-8116-b884d21910f5"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="7edf660c-6d48-46f0-bbd1-19cdf9da2e0f"/>
+                </node>
+				<node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="0"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value=""/>
+                    <attribute id="Description" type="FixedString" value="Monks of the Way of the Long Death are obsessed with the meaning and mechanics of dying by capturing creatures and performing experiments on them. They then use the knowledge gained to guide their understanding of martial arts, yielding a deadly fighting style."/>
+                    <attribute id="DisplayName" type="FixedString" value="Long Death"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="0"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="WayOfTheLongDeath"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232b"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="dd913306-280c-4b27-a1de-b24d323a49e8"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="e2b004ed-5eb4-4db1-8b26-053a0d4143fd"/>
+                </node>
+				<node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="0"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value=""/>
+                    <attribute id="Description" type="FixedString" value="Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."/>
+                    <attribute id="DisplayName" type="FixedString" value="Open Hand"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="0"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="WayOfTheOpenHand"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232b"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="2"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="44074867-c350-46a0-9dc6-5bfb2325dda7"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="ceac6185-dc49-4f70-8cdc-d18fca04c2ea"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

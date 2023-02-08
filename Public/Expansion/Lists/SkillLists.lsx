@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="0" build="21"/>
+    <region id="SkillLists">
+        <node id="root">
+            <children>
+                <node id="SkillList"> Monk
+                    <attribute id="Skills" type="LSString" value="Acrobatics, Athletics, History, Insight, Religion, Stealth"/>
+                    <attribute id="UUID" type="guid" value="62053902-433e-45c3-8c80-a171970630a3"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

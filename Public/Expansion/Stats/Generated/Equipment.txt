@@ -1,0 +1,16 @@
+new equipment "EQP_CC_Monk"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "ARM_Monk_Clothing"
+add equipmentgroup
+add equipment entry "ARM_Shoes_Monk"
+add equipmentgroup
+add equipment entry "WPN_Shortsword_Katana"
+add equipmentgroup
+add equipment entry "WPN_Dart"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Potion_Healing"
+add equipmentgroup
+add equipment entry "OBJ_Scroll_Revivify"

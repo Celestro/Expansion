@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="7" build="404"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+				<node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Perception;Athletics;Intimidation;AnimalHandling;Survival;Nature"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="40c10a97-d4ad-4dd1-ae9c-b557fdf83a61"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Perception;Athletics;Intimidation;AnimalHandling;Survival;Nature"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
+                    <attribute id="UUID" type="guid" value="4a9a4e45-797e-4a25-9f36-0945f0e50f76"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Acrobatics;Insight;Stealth;Athletics;Religion;History"/>
+                    <attribute id="ClassUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="OriginUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="RaceUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="SelectorId" type="LSString" value=""/>
+                    <attribute id="SubclassUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f97b"/>
+                    <attribute id="UUID" type="guid" value="4a21f353-d4db-4dbe-aa82-aa105e536f4f"/>
+                </node>
+                <node id="DefaultValue"> Lore College Bard 3rd Level
+                    <attribute id="Add" type="LSString" value="Performance;Arcana;History;Investigation;Insight;Medicine;Persuasion;Deception;Nature;Intimidation"/>
+                    <attribute id="ClassUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="OriginUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="RaceUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="SelectorId" type="LSString" value=""/>
+                    <attribute id="SubclassUUID" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="TableUUID" type="guid" value="36e6ea13-317e-4e6e-ac63-fe6d50e9f014"/>
+                    <attribute id="UUID" type="guid" value="9b7f5efd-3c16-4f52-ac57-cc95c8bd3792"/>
+                </node>
+                <node id="DefaultValue"> Rogue 6th Level
+                    <attribute id="Add" type="LSString" value="SleightOfHand;Stealth;Acrobatics;Deception;Persuasion;Performance;Insight;Investigation;Intimidation"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
+                    <attribute id="UUID" type="guid" value="3d37d67a-847c-44b4-8a01-f2b0707c43f02"/>
+                </node>
+                <node id="DefaultValue"> Bard 10th Level
+                    <attribute id="Add" type="LSString" value="Performance;Deception;Persuasion;Intimidation;Stealth;SleightOfHand;Acrobatics;Insight;Investigation"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="4a522113-1c46-4054-a22b-3cda2a2b0706"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

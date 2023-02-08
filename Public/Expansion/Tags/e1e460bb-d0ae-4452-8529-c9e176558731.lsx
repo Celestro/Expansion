@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<save>
+  <version major="4" minor="0" revision="0" build="58"/>
+  <region id="Tags">
+    <node id="root">
+            <attribute id="Description" type="LSString" value="Monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does." handle="hfc55e774gd4f7g4252g81b6gbe81520a6b5f"/>
+            <attribute id="DisplayName" type="TranslatedString" value="MONK"/>
+            <attribute id="Icon" type="FixedString" value=""/>
+            <attribute id="Name" type="FixedString" value="MONK"/>
+            <attribute id="UUID" type="guid" value="e1e460bb-d0ae-4452-8529-c9e176558731"/>
+            <children>
+                <node id="Categories">
+                    <children>
+                        <node id="Category">
+                            <attribute id="Name" type="LSString" value="Code"/>
+                        </node>
+                        <node id="Category">
+                            <attribute id="Name" type="LSString" value="Dialog"/>
+                        </node>
+                        <node id="Category">
+                            <attribute id="Name" type="LSString" value="Class"/>
+                        </node>
+						<node id="Category">
+							<attribute id="Name" type="LSString" value="CharacterSheet"/>
+						</node>
+					</children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
