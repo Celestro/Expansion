@@ -7657,7 +7657,7 @@ new entry "EXTRA_ATTACK_BLADESINGING"
 type "StatusData"
 data "StatusType" "BOOST"
 using "EXTRA_ATTACK"
-data "Description" "Make an additional weapon attack or cast a cantrip this turn."
+data "Description" "5d65f927-a55e-44a9-a03e-bf1b7e1a0ae6;1"
 data "Boosts" "UnlockSpellVariant(ExtraAttackCheck() | (IsCantrip() & ~HasUseCosts('SpellSlot')),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())"
 data "RemoveConditions" "(IsWeaponAttack() or IsUnarmedAttack() or SpellId('Target_CommandersStrike') or IsCantrip()) and HasUseCosts('ActionPoint') and not IsOffHandAttack()"
 
