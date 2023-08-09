@@ -361,9 +361,9 @@
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="FixedString" value="Your resource for using the Blade Song feature."/>
+                    <attribute id="Description" type="TranslatedString" value="84e070ec-9320-4423-88bb-e9b08b425d3c;1"/>
                     <attribute id="DiceType" type="uint32" value="0"/>
-                    <attribute id="DisplayName" type="FixedString" value="Blade Song"/>
+                    <attribute id="DisplayName" type="TranslatedString" value="a0c4c7aa-99de-455e-953e-c527019d4540;1"/>
                     <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
                     <attribute id="IsSpellResource" type="bool" value="false"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>
