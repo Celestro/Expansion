@@ -163,6 +163,72 @@
                     <attribute id="SelectorId" type="FixedString" value="SorcerousVersatility"/>
                     <attribute id="UUID" type="guid" value="233e826e-90cf-42a8-86d4-7c471fbe7d9e"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="AdditionalFightingStyles_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="AdditionalFightingStyles_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="519d5550-a25d-49c0-adac-bcde31531bc4"/>
+                    <attribute id="SelectorId" type="FixedString" value="AdditionalFightingStyle"/>
+                    <attribute id="UUID" type="guid" value="fdd56209-a794-4aa8-b96b-b011494cae6e"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="MysticArcanum_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="MysticArcanum_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="MysticArcanum"/>
+                    <attribute id="UUID" type="guid" value="6fcb4869-7b9c-4af6-906a-4ea0a469db26"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="SignatureSpells_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="SignatureSpells_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="SelectorId" type="FixedString" value="SignatureSpells"/>
+                    <attribute id="UUID" type="guid" value="8803e62f-3aea-4753-8557-4cb908f454cc"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="BeastialAspect_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="BeastialAspect_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="BeastialAspect"/>
+                    <attribute id="UUID" type="guid" value="1e707a7b-a9c6-42c4-ab32-a92507cab404"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="BeastialAttunement_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="BeastialAttunement_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="BeastialAttunement"/>
+                    <attribute id="UUID" type="guid" value="70cc3fa2-15f6-4774-a705-f20217714fd3"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="BeastialAspectReplace_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="BeastialAspectReplace_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="BeastialAspectReplace"/>
+                    <attribute id="UUID" type="guid" value="9efa825f-932e-4209-ba60-998401473a1f"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="BeastialAttunementReplace_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="BeastialAttunementReplace_DisplayName"/>
+                    <attribute id="SelectorId" type="FixedString" value="BeastialAttunementReplace"/>
+                    <attribute id="UUID" type="guid" value="07f49a34-0a4a-4930-84c6-96349b177e4d"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="Hexblade_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Hexblade_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="Type" type="FixedString" value="Hexblade"/>
+                    <attribute id="UUID" type="guid" value="b2e49d4e-e44c-41f3-8b68-7cdc6644e8ab"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="Bladesinging_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Bladesinging_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="Type" type="FixedString" value="Bladesinging"/>
+                    <attribute id="UUID" type="guid" value="172c7af1-c171-411a-81ce-68bf6e6701f7"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="FixedString" value="TrainingInSongAndWar_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="TrainingInSongAndWar_DisplayName"/>
+                    <attribute id="ProgressionTableId" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="SelectorId" type="FixedString" value="TrainingInSongAndWar"/>
+                    <attribute id="UUID" type="guid" value="41d635d5-2856-4e30-a249-3edd3cacf278"/>
+                </node>
             </children>
         </node>
     </region>

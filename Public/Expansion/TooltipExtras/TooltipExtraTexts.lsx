@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="612"/>
+    <region id="TooltipExtraTexts">
+        <node id="root">
+            <children>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Text" type="FixedString" value="BalmOfPeace_AlreadyHealed"/>
+                    <attribute id="UUID" type="guid" value="3b1dfb08-b30f-441b-a345-59fb39fe7cd8"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

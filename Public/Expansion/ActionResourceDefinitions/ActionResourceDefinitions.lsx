@@ -5,21 +5,6 @@
         <node id="root">
             <children>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_14_Description"/>
-                    <attribute id="DiceType" type="uint32" value="6"/>
-                    <attribute id="DisplayName" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_14_DisplayName"/>
-                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_14_Error"/>
-                    <attribute id="IsSpellResource" type="bool" value="false"/>
-                    <attribute id="MaxLevel" type="uint32" value="0"/>
-                    <attribute id="MaxValue" type="uint32" value="0"/>
-                    <attribute id="Name" type="FixedString" value="HitDice"/>
-                    <attribute id="PartyActionResource" type="bool" value="false"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
-                    <attribute id="UUID" type="guid" value="d59999b2-3e77-42f6-96e8-b021a17a9e1c"/>
-                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
-                </node>
-                <node id="ActionResourceDefinition">
                     <attribute id="Description" type="FixedString" value="Whether or not you can use your Warding Flare."/>
                     <attribute id="DiceType" type="uint32" value="6"/>
                     <attribute id="DisplayName" type="FixedString" value="Warding Flare Charge"/>
@@ -238,6 +223,186 @@
                     <attribute id="ReplenishType" type="FixedString" value="Never"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="86be7cfa-bb5b-4e0b-88d9-342247344351"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using Action Surge."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Action Surge"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="ActionSurgePoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="fe9088d9-b800-4f48-9000-153040490c8a"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for allowing your duplicates to move around."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Improved Duplicity"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="ImprovedDuplicity"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="33033d09-b53c-4969-b1c8-c5c3fa164ea4"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Undying Sentinel feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Undying Sentinel"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="UndyingSentinel"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="f5ab5f0b-8f74-4320-9e90-e871faf88ac0"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Cleansing Touch feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Cleansing Touch"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="CleansingTouchPoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="6bffac3a-1d3b-4124-a71c-9e4d83640ba1"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Spell Thief feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Spell Thief"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="SpellThiefPoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="be9b33bf-bf6c-4673-a97c-727c2acee274"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Stroke of Luck feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Stroke of Luck"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="StrokeOfLuck"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="ffed85ce-30bf-4e62-87df-4d4af9632400"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for applying spells to the Spell Mastery feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Spell Mastery"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="SpellMastery"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="44cba5e9-623b-4578-9abf-43b12d944f60"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Hurl Through Hell feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Hurl Through Hell"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="HurlThroughHell"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="9d5fe8fd-31c2-439d-a77f-98671273ae64"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for choosing two additional proficiencies."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Tiger Aspect"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="TigerAspectPoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Never"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="ed22758b-2be0-4ffa-9923-0aaa69c00043"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Blade Song feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Blade Song"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="BladesongPoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="be6adc9d-4797-4804-a575-ed0256a068ce"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for benefitting from the Emboldening Bond feature."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Emboldening Bond Die"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="EmboldeningBond"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="00f9ce4f-295c-48b9-84f0-f5c9a09d3270"/>
+                    <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="FixedString" value="Your resource for using the Emboldening Bond feature on yourself or your allies."/>
+                    <attribute id="DiceType" type="uint32" value="0"/>
+                    <attribute id="DisplayName" type="FixedString" value="Emboldening Bond"/>
+                    <attribute id="Error" type="FixedString" value="Shared_ActionResourceDefinitions_New_Stat_9_Error"/>
+                    <attribute id="IsSpellResource" type="bool" value="false"/>
+                    <attribute id="MaxLevel" type="uint32" value="0"/>
+                    <attribute id="MaxValue" type="uint32" value="0"/>
+                    <attribute id="Name" type="FixedString" value="EmboldeningBondPoint"/>
+                    <attribute id="PartyActionResource" type="bool" value="false"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="438fdf87-a6eb-4391-ae8e-cb16bbbad23b"/>
                     <attribute id="UpdatesSpellPowerLevel" type="bool" value="false"/>
                 </node>
             </children>

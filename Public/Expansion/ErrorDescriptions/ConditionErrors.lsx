@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="8" build="613"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="FixedString" value="AlreadyHasHexWarriorEffect_DisplayName"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="AlreadyHasHexWarriorEffect"/>
+                    <attribute id="UUID" type="guid" value="eed81d66-63fd-454b-b535-1d4c9ee9617b"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="FixedString" value="TwoHandedWeapon_DisplayName"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="TwoHandedWeapon"/>
+                    <attribute id="UUID" type="guid" value="eae08c91-abf9-4851-b5c6-273841947b11"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

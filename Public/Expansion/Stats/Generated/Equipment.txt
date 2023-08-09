@@ -5,7 +5,7 @@ add equipment entry "ARM_Monk_Clothing"
 add equipmentgroup
 add equipment entry "ARM_Shoes_Monk"
 add equipmentgroup
-add equipment entry "WPN_Shortsword_Katana"
+add equipment entry "WPN_Shortsword"
 add equipmentgroup
 add equipment entry "WPN_Dart"
 add equipmentgroup

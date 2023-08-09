@@ -50,6 +50,12 @@
                     <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
                     <attribute id="UUID" type="guid" value="4a522113-1c46-4054-a22b-3cda2a2b0706"/>
                 </node>
+                <node id="DefaultValue"> Peace Domain Cleric 1st Level
+                    <attribute id="Add" type="LSString" value="Persuasion;Insight;Performance"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2501ed05-3628-4dda-9d3f-fd66c29c475b"/>
+                    <attribute id="UUID" type="guid" value="d2a46442-f99d-4138-a435-ae75645a8810"/>
+                </node>
             </children>
         </node>
     </region>

@@ -8,6 +8,10 @@
                     <attribute id="Skills" type="LSString" value="Acrobatics, Athletics, History, Insight, Religion, Stealth"/>
                     <attribute id="UUID" type="guid" value="62053902-433e-45c3-8c80-a171970630a3"/>
                 </node>
+                <node id="SkillList"> Peace Domain
+                    <attribute id="Skills" type="LSString" value="Performance"/>
+                    <attribute id="UUID" type="guid" value="16783d98-211a-49ad-9b85-d802a8d71173"/>
+                </node>
             </children>
         </node>
     </region>

@@ -82,6 +82,14 @@
                     <attribute id="Name" type="FixedString" value="SuperiorityDie"/>
                     <attribute id="UUID" type="guid" value="5b9f2fc7-867d-4d8d-a37e-4d65da699017"/>
                 </node>
+                <node id="LevelMapSeries">
+                    <attribute id="Level2" type="LSString" value="1d6"/>
+                    <attribute id="Level9" type="LSString" value="1d8"/>
+                    <attribute id="Level13" type="LSString" value="1d10"/>
+                    <attribute id="Level17" type="LSString" value="1d12"/>
+                    <attribute id="Name" type="FixedString" value="SongOfRest"/>
+                    <attribute id="UUID" type="guid" value="1be021a7-b249-4e86-b9fc-aa8d74b802c3"/>
+                </node>
             </children>
         </node>
     </region>

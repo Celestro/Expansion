@@ -149,6 +149,66 @@
                     <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
                     <attribute id="UUID" type="guid" value="393f1397-a2d5-4c42-bd2f-05558379deb1"/>
                 </node>
+                <node id="DefaultValue"> Warlock Invocation 12th Level
+                    <attribute id="Add" type="LSString" value="Lifedrinker"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="e42b3b78-c8e9-4850-8e9d-c2d5788111cc"/>
+                </node>
+                <node id="DefaultValue"> Warlock Invocation 15th Level
+                    <attribute id="Add" type="LSString" value="MasterOfMyriadForms;ShroudOfShadow"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="1d2c9a26-0d30-4b9a-8f44-50a26ee62a81"/>
+                </node>
+                <node id="DefaultValue"> Warlock Invocation 18th Level
+                    <attribute id="Add" type="LSString" value="MasterOfMyriadForms;ShroudOfShadow"/>
+                    <attribute id="Level" type="int32" value="18"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="d3768bf5-3716-411b-839f-5e01d2fe9dca"/>
+                </node>
+                <node id="DefaultValue"> Champion Additional Fighting Style
+                    <attribute id="Add" type="LSString" value="FightingStyle_Defense;FightingStyle_Interception"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="519d5550-a25d-49c0-adac-bcde31531bc4"/>
+                    <attribute id="UUID" type="guid" value="de8174bd-96c6-4b81-ae07-2b85b61080b1"/>
+                </node>
+                <node id="DefaultValue"> Mystic Arcanum 6th Level
+                    <attribute id="Add" type="LSString" value="MysticArcanum_CircleOfDeath;MysticArcanum_Eyebite;MysticArcanum_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="a04ba7d7-2b04-4b8e-adae-986bff181ac6"/>
+                </node>
+                <node id="DefaultValue"> Mystic Arcanum 7th Level
+                    <attribute id="Add" type="LSString" value="MysticArcanum_CrownOfStars;MysticArcanum_FingerOfDeath"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="ec9c54b6-4827-4d03-8f80-ae09afb21262"/>
+                </node>
+                <node id="DefaultValue"> Mystic Arcanum 8th Level
+                    <attribute id="Add" type="LSString" value="MysticArcanum_DominateMonster;MysticArcanum_Feeblemind;MysticArcanum_MaddeningDarkness"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="6a68204a-22f6-4144-b74f-941fc9c79851"/>
+                </node>
+                <node id="DefaultValue"> Mystic Arcanum 9th Level
+                    <attribute id="Add" type="LSString" value="MysticArcanum_Foresight;MysticArcanum_PowerWordKill"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="UUID" type="guid" value="291aba5f-e4a3-4115-bc80-566082da71fd"/>
+                </node>
+                <node id="DefaultValue"> Signature Spells
+                    <attribute id="Add" type="LSString" value="SignatureSpells_Fireball;SignatureSpells_Counterspell"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="01194fe0-5124-4dd9-a720-8033bb6048c1"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging Training in War and Song
+                    <attribute id="Add" type="LSString" value="Proficiency_Rapiers"/>
+                    <attribute id="Level" type="int32" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2651af6d-c5b9-4051-a5fb-c39b3ae0f1f8"/>
+                </node>
 			</children>
         </node>
     </region>

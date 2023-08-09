@@ -3,6 +3,8 @@ INIT
     CHARACTER:%char
     CHARACTER:%owner
     FLOAT:%ThoughtShieldHP = 1.0
+    FLOAT:%LifeDrainHP = 1.0
+    FLOAT:%ProtectiveBondHP = 1.0
 
 EVENTS
 
@@ -2651,7 +2653,6 @@ ACTIONS
     IF "c1"
 		GetPosition(_Character,_pos)
 	THEN
-		DisplayText(_Character,"Works")
 	    CharacterRemoveStatus(%owner, MAGE_HAND_TECHNICAL_INVISIBLE)
 	    Set(%owner, _Character)
 	    CharacterEvent(%char, "ForceStopDialog")
@@ -5402,66 +5403,6 @@ THEN
 	CharacterApplyStatus(_Character,BARDIC_INSPIRATION_BLOCK,-1)
 ENDIF
 
-EVENT ImprovedCritical
-VARS
-CHARACTER:_Character
-INT:_Result
-
-ON
-	OnCharacterStatusApplied(_Character,IMPROVED_CRITICAL_PROC)
-ACTIONS
-IF	"c1"
-	CharacterHasStatus(_Character,IMPROVED_CRITICAL)
-THEN
-	CharacterRemoveStatus(_Character,IMPROVED_CRITICAL)
-	GetRandomBetween(_Result,1,20)
-	IF "c1"
-		IsEqual(_Result,1)
-	THEN
-		CharacterApplyStatus(_Character,IMPROVED_CRITICAL,-1)
-	ENDIF
-ELIF	"!c1"
-	CharacterHasStatus(_Character,IMPROVED_CRITICAL)
-THEN
-	GetRandomBetween(_Result,1,20)
-	IF "c1"
-		IsEqual(_Result,1)
-	THEN
-		CharacterApplyStatus(_Character,IMPROVED_CRITICAL,-1)
-	ENDIF
-ENDIF
-
-EVENT SuperiorCritical
-VARS
-CHARACTER:_Character
-INT:_Result
-
-ON
-	OnCharacterStatusApplied(_Character,SUPERIOR_CRITICAL_PROC)
-ACTIONS
-IF	"c1"
-	CharacterHasStatus(_Character,SUPERIOR_CRITICAL)
-THEN
-	CharacterRemoveStatus(_Character,SUPERIOR_CRITICAL)
-	GetRandomBetween(_Result,1,20)
-	IF "(c1|c2)"
-		IsEqual(_Result,1)
-		IsEqual(_Result,2)
-	THEN
-		CharacterApplyStatus(_Character,SUPERIOR_CRITICAL,-1)
-	ENDIF
-ELIF	"!c1"
-	CharacterHasStatus(_Character,SUPERIOR_CRITICAL)
-THEN
-	GetRandomBetween(_Result,1,20)
-	IF "(c1|c2)"
-		IsEqual(_Result,1)
-		IsEqual(_Result,2)
-	THEN
-		CharacterApplyStatus(_Character,SUPERIOR_CRITICAL,-1)
-	ENDIF
-ENDIF
-
 EVENT MonkWeapon_Removal
 VARS
 	CHARACTER:_Character
@@ -6180,9 +6121,35 @@ ON
 ACTIONS
 IF	"c1&!c2"
 	IsTagged(_Character,"WARLOCK")
+	CharacterHasStatus(_Character,BOOK_OF_ANCIENT_SECRETS_CHECK)
+THEN
+	CharacterApplyStatus(_Character,BOOK_OF_ANCIENT_SECRETS_CHECK,-1)
+ENDIF
+
+EVENT UnseenServant_Learned
+VARS
+	CHARACTER:_Character
+ON
+	OnTurn(_Character)
+	OnCharacterVitalityChanged(_Character, _)
+	OnSight(_Character)
+	OnItemEquipped(_Character,_)
+	OnItemUnequipped(_Character,_)
+	OnCharacterStatusApplied(_Character,_)
+ACTIONS
+IF	"c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_UnseenServant")
+	CharacterHasStatus(_Character,"UNSEEN_SERVANT_KNOWN")
 	CharacterHasStatus(_Character,BOOK_OF_ANCIENT_SECRETS)
 THEN
-	CharacterApplyStatus(_Character,BOOK_OF_ANCIENT_SECRETS,-1)
+	CharacterApplyStatus(_Character,UNSEEN_SERVANT_KNOWN,-1)
+	CharacterApplyStatus(_Character,UNSEEN_SERVANT_RITUAL,-1)
+ELIF	"!c1&c2&c3"
+	CharacterHasSpell(_Character,"Target_UnseenServant")
+	CharacterHasStatus(_Character,"UNSEEN_SERVANT_KNOWN")
+	CharacterHasStatus(_Character,BOOK_OF_ANCIENT_SECRETS)
+THEN
+	CharacterRemoveStatus(_Character,UNSEEN_SERVANT_KNOWN)
 ENDIF
 
 EVENT BookOfAncientSecrets_Silence
@@ -6193,11 +6160,9 @@ VARS
 ON
 	OnPickupItem(_Character, _Item)
 ACTIONS
-IF	"c1&c2&c3&!c4"
-	CharacterHasStatus(_Character,BOOK_OF_ANCIENT_SECRETS)
+IF	"c1&c2"
 	ItemGetTemplate(_Item,_Template)
 	IsEqual(_Template,50dea81e-23cc-49f3-92f8-ed3267e553b0)
-	CharacterHasStatus(_Character,SILENCE_RITUAL)
 THEN
 	CharacterApplyStatus(_Character,SILENCE_RITUAL_PROC,-1)
 	ItemApplyStatus(_Item,BOOK_OF_ANCIENT_SECRETS_RITUAL,-1,1,_Character)
@@ -6211,29 +6176,33 @@ VARS
 ON
 	OnPickupItem(_Character, _Item)
 ACTIONS
-IF	"c1&c2&c3&!c4"
-	CharacterHasStatus(_Character,BOOK_OF_ANCIENT_SECRETS)
+IF	"c1&c2"
 	ItemGetTemplate(_Item,_Template)
 	IsEqual(_Template,6e13fbf8-3db5-4420-8691-653d5ecb753e)
-	CharacterHasStatus(_Character,FEIGN_DEATH_RITUAL)
 THEN
 	CharacterApplyStatus(_Character,FEIGN_DEATH_RITUAL_PROC,-1)
 	ItemApplyStatus(_Item,BOOK_OF_ANCIENT_SECRETS_RITUAL,-1,1,_Character)
 ENDIF
 
-EVENT BookOfAncientSecrets_ReapplyStatus
+EVENT BookOfAncientSecrets_Alternative
 VARS
 	CHARACTER:_Character
 	ITEM:_Item
-	ITEMTEMPLATE:_Template
 ON
-	OnCharacterStatusApplied(_Character,SILENCE_RITUAL)
-	OnCharacterStatusApplied(_Character,FEIGN_DEATH_RITUAL)
+	OnCharacterStatusApplied(_Character, BOOK_OF_ANCIENT_SECRETS_SCROLL)
 ACTIONS
-IF	"c1"
-	IsTagged(_Character,"WARLOCK")
+IF	"c1&c2"
+	ItemGetFromInventory(_Item, _Character , "OBJ_Scroll_Silence")
+	ItemIsInCharacterInventory(_Item, _Character)
 THEN
-	CharacterApplyStatus(_Character,BOOK_OF_ANCIENT_SECRETS_CHECK,0)
+	CharacterApplyStatus(_Character,SILENCE_RITUAL_PROC,-1)
+	ItemApplyStatus(_Item,BOOK_OF_ANCIENT_SECRETS_RITUAL,-1,1,_Character)
+ELIF	"c1&c2"
+	ItemGetFromInventory(_Item, _Character , "OBJ_Scroll_FeignDeath")
+	ItemIsInCharacterInventory(_Item, _Character)
+THEN
+	CharacterApplyStatus(_Character,SILENCE_RITUAL_PROC,-1)
+	ItemApplyStatus(_Item,BOOK_OF_ANCIENT_SECRETS_RITUAL,-1,1,_Character)
 ENDIF
 
 EVENT BookOfAncientSecrets_RitualProcRemoval
@@ -6366,3 +6335,733 @@ ELIF	"c1&c2&(c3|c4)"
 THEN
 	CharacterRemoveStatus(_Character,UND_NERE_COERCION)
 ENDIF
+
+EVENT InvokeDuplicity_Character
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Summon
+	CHARACTERTEMPLATE:_Template
+	FLOAT3:_Pos
+ON
+	OnCharacterStatusApplied(_Character, INVOKE_DUPLICITY_TECHNICAL)
+ACTIONS
+IF	"c1&c2"
+	CharacterGetTemplate(_Character, _Template)
+	GetPosition(_Character, _Pos)
+THEN
+	SpawnCharacter(_Summon, _Template, _Pos, INT:0, INT:1, _Character)
+	CharacterApplyStatus(_Summon,INVOKE_DUPLICITY_AURA,10,0,_Character)
+	SetVar(_Character,"InvokeDuplicity",_Summon)
+ENDIF
+
+EVENT InvokeDuplicity_Removal
+VARS
+	CHARACTER:_Character
+ON
+	OnCharacterStatusRemoved(_Character, INVOKE_DUPLICITY_AURA)
+ACTIONS
+	CharacterDestroy(_Character)
+	
+EVENT InvokeDuplicity_Removal_2
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+ON
+	OnCharacterStatusRemoved(_Source, INVOKE_DUPLICITY_TECHNICAL)
+ACTIONS
+IF	"c1"
+	GetVar(_Character,_Source,"InvokeDuplicity")
+THEN
+	CharacterDestroy(_Character)
+ENDIF
+
+EVENT ImprovedDuplicity_Character
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Summon
+	CHARACTER:_Summon2
+	CHARACTER:_Summon3
+	CHARACTER:_Summon4
+	CHARACTERTEMPLATE:_Template
+	FLOAT3:_Pos
+ON
+	OnCharacterStatusApplied(_Character, IMPROVED_DUPLICITY_TECHNICAL)
+ACTIONS
+IF	"c1&c2"
+	CharacterGetTemplate(_Character, _Template)
+	GetPosition(_Character, _Pos)
+THEN
+	SpawnCharacter(_Summon, _Template, _Pos, INT:0, INT:1, _Character)
+	SpawnCharacter(_Summon2, _Template, _Pos, INT:0, INT:1, _Character)
+	SpawnCharacter(_Summon3, _Template, _Pos, INT:0, INT:1, _Character)
+	SpawnCharacter(_Summon4, _Template, _Pos, INT:0, INT:1, _Character)
+	CharacterApplyStatus(_Summon,IMPROVED_DUPLICITY_AURA,10,0,_Character)
+	CharacterApplyStatus(_Summon2,IMPROVED_DUPLICITY_AURA,10,0,_Character)
+	CharacterApplyStatus(_Summon3,IMPROVED_DUPLICITY_AURA,10,0,_Character)
+	CharacterApplyStatus(_Summon4,IMPROVED_DUPLICITY_AURA,10,0,_Character)
+	SetVar(_Character,"ImprovedDuplicity",_Summon)
+	SetVar(_Character,"ImprovedDuplicity2",_Summon2)
+	SetVar(_Character,"ImprovedDuplicity3",_Summon3)
+	SetVar(_Character,"ImprovedDuplicity4",_Summon4)
+ENDIF
+
+EVENT ImprovedDuplicity_Removal
+VARS
+	CHARACTER:_Character
+ON
+	OnCharacterStatusRemoved(_Character, IMPROVED_DUPLICITY_AURA)
+ACTIONS
+	CharacterDestroy(_Character)
+	
+EVENT ImprovedDuplicity_Removal_2
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Character2
+	CHARACTER:_Character3
+	CHARACTER:_Character4
+	CHARACTER:_Source
+ON
+	OnCharacterStatusRemoved(_Source, IMPROVED_DUPLICITY_TECHNICAL)
+ACTIONS
+IF	"c1&c2&c3&c4"
+	GetVar(_Character,_Source,"ImprovedDuplicity")
+	GetVar(_Character2,_Source,"ImprovedDuplicity2")
+	GetVar(_Character3,_Source,"ImprovedDuplicity3")
+	GetVar(_Character4,_Source,"ImprovedDuplicity4")
+THEN
+	CharacterDestroy(_Character)
+	CharacterDestroy(_Character2)
+	CharacterDestroy(_Character3)
+	CharacterDestroy(_Character4)
+ENDIF
+
+EVENT UseMagicDevice
+VARS
+	CHARACTER:_Character
+	ITEM:_Item
+	ITEMTEMPLATE:_Template
+ON
+	OnItemEquipped(_Character,_Item)
+ACTIONS
+IF	"c1&(c2|c3)"
+	ItemGetTemplate(_Item, _Template)
+	IsEqual(_Template,"3d57c1a7-2dee-4a0f-aa7a-e7b6574b75e3")
+	IsEqual(_Template,"c7a58f48-f24f-4139-b0f0-8b12e1bf074e")
+THEN
+	CharacterApplyStatus(_Character,USE_MAGIC_DEVICE_BRANDED_PROC,0)
+ENDIF
+
+EVENT UseMagicDevice_Removal
+VARS
+	CHARACTER:_Character
+	ITEM:_Item
+	ITEMTEMPLATE:_Template
+ON
+	OnItemUnequipped(_Character,_Item)
+ACTIONS
+IF	"c1&(c2|c3)"
+	ItemGetTemplate(_Item, _Template)
+	IsEqual(_Template,"3d57c1a7-2dee-4a0f-aa7a-e7b6574b75e3")
+	IsEqual(_Template,"c7a58f48-f24f-4139-b0f0-8b12e1bf074e")
+THEN
+	CharacterRemoveStatus(_Character,USE_MAGIC_DEVICE_BRANDED)
+ENDIF
+
+EVENT SignatureSpells
+VARS
+	CHARACTER:_Character
+ON
+	OnCharacterVitalityChanged(_Character,_)
+	OnItemEquipped(_Character,_)
+	OnItemUnequipped(_Character,_)
+ACTIONS
+IF	"c1&(c2|c3)"
+	ItemGetTemplate(_Item, _Template)
+	IsEqual(_Template,"3d57c1a7-2dee-4a0f-aa7a-e7b6574b75e3")
+	IsEqual(_Template,"c7a58f48-f24f-4139-b0f0-8b12e1bf074e")
+THEN
+	CharacterRemoveStatus(_Character,USE_MAGIC_DEVICE_BRANDED)
+ENDIF
+
+EVENT SignatureSpells_AnimateDead
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_AnimateDead")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_ANIMATE_DEAD)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_ANIMATE_DEAD,-1)
+ENDIF
+
+EVENT SignatureSpells_AshardalonsStride
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Shout_AshardalonsStride")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_ASHARDALONS_STRIDE)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_ASHARDALONS_STRIDE,-1)
+ENDIF
+
+EVENT SignatureSpells_BestowCurse
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_BestowCurse")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_BESTOW_CURSE)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_BESTOW_CURSE,-1)
+ENDIF
+
+EVENT SignatureSpells_Blink
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Shout_Blink")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_BLINK)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_BLINK,-1)
+ENDIF
+
+EVENT SignatureSpells_Catnap
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Catnap")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_CATNAP)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_CATNAP,-1)
+ENDIF
+
+EVENT SignatureSpells_Counterspell
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Counterspell")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_COUNTERSPELL)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_COUNTERSPELL,-1)
+ENDIF
+
+EVENT SignatureSpells_EnemiesAbound
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_EnemiesAbound")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_ENEMIESABOUND)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_ENEMIESABOUND,-1)
+ENDIF
+
+EVENT SignatureSpells_EruptingEarth
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_EruptingEarth")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_ERUPTING_EARTH)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_ERUPTING_EARTH,-1)
+ENDIF
+
+EVENT SignatureSpells_Fear
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Zone_Fear")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_FEAR)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_FEAR,-1)
+ENDIF
+
+EVENT SignatureSpells_FeignDeath
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_FeignDeath")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_FEIGN_DEATH)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_FEIGN_DEATH,-1)
+ENDIF
+
+EVENT SignatureSpells_Fireball
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Projectile_Fireball")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_FIREBALL)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_FIREBALL,-1)
+ENDIF
+
+EVENT SignatureSpells_FlameArrows
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_FlameArrows")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_FLAME_ARROWS)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_FLAME_ARROWS,-1)
+ENDIF
+
+EVENT SignatureSpells_Fly
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Fly")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_FLY)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_FLY,-1)
+ENDIF
+
+EVENT SignatureSpells_GaseousForm
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_GaseousForm")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_GASEOUS_FORM)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_GASEOUS_FORM,-1)
+ENDIF
+
+EVENT SignatureSpells_GlyphOfWarding
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_GlyphOfWarding")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_GLYPH_OF_WARDING)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_GLYPH_OF_WARDING,-1)
+ENDIF
+
+EVENT SignatureSpells_Haste
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Haste")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_HASTE)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_HASTE,-1)
+ENDIF
+
+EVENT SignatureSpells_HypnoticPattern
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_HypnoticPattern")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_HYPNOTIC_PATTERN)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_HYPNOTIC_PATTERN,-1)
+ENDIF
+
+EVENT SignatureSpells_IntellectFortress
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_IntellectFortress")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_INTELLECT_FORTRESS)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_INTELLECT_FORTRESS,-1)
+ENDIF
+
+EVENT SignatureSpells_LifeTransference
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_LifeTransference")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_LIFE_TRANSFERENCE)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_LIFE_TRANSFERENCE,-1)
+ENDIF
+
+EVENT SignatureSpells_LightningBolt
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Zone_LightningBolt")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_LIGHTNING_BOLT)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_LIGHTNING_BOLT,-1)
+ENDIF
+
+EVENT SignatureSpells_MinuteMeteors
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Shout_MinuteMeteors")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_MINUTE_METEORS)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_MINUTE_METEORS,-1)
+ENDIF
+
+EVENT SignatureSpells_Nondetection
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Nondetection")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_NONDETECTION)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_NONDETECTION,-1)
+ENDIF
+
+EVENT SignatureSpells_ProtectionFromEnergy
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_ProtectionFromEnergy")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_PROTECTION_FROM_ENERGY)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_PROTECTION_FROM_ENERGY,-1)
+ENDIF
+
+EVENT SignatureSpells_RemoveCurse
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_RemoveCurse")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_REMOVE_CURSE)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_REMOVE_CURSE,-1)
+ENDIF
+
+EVENT SignatureSpells_SleetStorm
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_SleetStorm")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SLEET_STORM)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SLEET_STORM,-1)
+ENDIF
+
+EVENT SignatureSpells_Slow
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Slow")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SLOW)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SLOW,-1)
+ENDIF
+
+EVENT SignatureSpells_SpeakWithDead
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_SpeakWithDead")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SPEAK_WITH_DEAD)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SPEAK_WITH_DEAD,-1)
+ENDIF
+
+EVENT SignatureSpells_SpiritShroud
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_Slow")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SPIRIT_SHROUD)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SPIRIT_SHROUD,-1)
+ENDIF
+
+EVENT SignatureSpells_StinkingCloud
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_StinkingCloud")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SPIRIT_SHROUD)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SPIRIT_SHROUD,-1)
+ENDIF
+
+EVENT SignatureSpells_SummonShadowspawn
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_SummonShadowspawn")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_SUMMON_SHADOWSPAWN)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_SUMMON_SHADOWSPAWN,-1)
+ENDIF
+
+EVENT SignatureSpells_ThunderStep
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Teleportation_ThunderStep")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_THUNDER_STEP)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_THUNDER_STEP,-1)
+ENDIF
+
+EVENT SignatureSpells_LifeDrain
+VARS
+CHARACTER:_Character
+
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+IF "c1&!c2&c3"
+	CharacterHasSpell(_Character,"Target_StinkingCloud")
+	CharacterHasStatus(_Character,SIGNATURE_SPELLS_LIFE_DRAIN)
+	IsTagged(_Character,"WIZARD")
+THEN
+	CharacterApplyStatus(_Character,SIGNATURE_SPELLS_LIFE_DRAIN,-1)
+ENDIF
+
+EVENT ArmorOfHexes
+VARS
+CHARACTER:_Character
+INT:_Result
+
+ON
+	OnCharacterStatusApplied(_Character,ARMOR_OF_HEXES)
+ACTIONS
+	GetRandomBetween(_Result,1,6)
+	IF "c1"
+		IsEqual(_Result,1)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_1,1)
+	ELIF "c1"
+		IsEqual(_Result,2)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_2,1)
+	ELIF "c1"
+		IsEqual(_Result,3)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_3,1)
+	ELIF "c1"
+		IsEqual(_Result,4)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_4,1)
+	ELIF "c1"
+		IsEqual(_Result,5)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_5,1)
+	ELIF "c1"
+		IsEqual(_Result,6)
+	THEN
+		CharacterApplyStatus(_Character,ARMOR_OF_HEXES_6,1)
+	ENDIF
+	
+EVENT ProtectiveBondSetHP
+VARS
+	CHARACTER:_Character
+	FLOAT:_HP
+	STRING: _Text
+	FIXEDSTRING: _Disp
+ON
+	OnCharacterStatusApplied(_Character, "PROTECTIVE_BOND_DAMAGE")
+ACTIONS
+	IF	"c1"
+		CharacterGetStat(_HP, _Character, VitalityPoints)
+	THEN
+		Set(%ProtectiveBondHP, _HP)
+	ENDIF
+
+EVENT ProtectiveBondChangeinHP
+VARS
+	CHARACTER:_Character
+	CHARACTER:_Source
+	FLOAT:_HP
+	FLOAT:_MaxHP
+	FLOAT:_CalculatedHP
+	FLOAT:_SourceNewHP
+	FLOAT:_SourceHP
+	FLOAT:_SourceMaxHP
+	FLOAT:_CalculatedSourceHP
+	FLOAT3:_Pos
+	STRING: _Text
+	FIXEDSTRING: _Disp
+ON
+	OnCharacterVitalityChanged(_Character,_)
+ACTIONS
+	IF	"c1&c2"
+		CharacterHasStatus(_Character,PROTECTIVE_BOND_DAMAGE)
+		CharacterGetStatusSourceCharacter(_Character,PROTECTIVE_BOND_DAMAGE,_Source)
+	THEN
+		IF "c1&(c2|c3)"
+			CharacterGetStat(_HP, _Character, VitalityPoints)
+			IsGreaterThen(_HP, %ProtectiveBondHP)
+			IsEqual(_HP, %ProtectiveBondHP)
+		THEN
+			Set(%ProtectiveBondHP, _HP)
+			CharacterRemoveStatus(_Character,PROTECTIVE_BOND_DAMAGE)
+		ELIF "c1&c2&c3&c4&c5"
+			IsLessThen(_HP, %ProtectiveBondHP)
+			CharacterGetStat(_HP, _Character, VitalityPoints)
+			CharacterGetStat(_MaxHP, _Character, VitalityMax)
+			CharacterGetStat(_SourceHP, _Source, VitalityPoints)
+			CharacterGetStat(_SourceMaxHP, _Source, VitalityMax)
+		THEN
+			Set(_CalculatedHP, %ProtectiveBondHP)
+			Subtract(_CalculatedHP, _HP)
+			Add(_CalculatedHP,_HP)
+			//Cast(_Text, _CalculatedHP)
+			//Cast(_Disp, _Text)
+			//StatusText(_Character, _Disp)
+			Divide(_CalculatedHP,_MaxHP)
+			SetHealth(_Character,_CalculatedHP)
+			Multiply(_CalculatedHP,_MaxHP)
+			Subtract(_CalculatedHP,_HP)
+			Subtract(_SourceHP,_CalculatedHP)
+			Divide(_SourceHP,_SourceMaxHP)
+			SetHealth(_Source,_SourceHP)
+			CharacterRemoveStatus(_Character,PROTECTIVE_BOND_DAMAGE)
+		ENDIF
+	ENDIF
+

@@ -130,12 +130,6 @@
                     <attribute id="TableUUID" type="guid" value="dbf5281b-5a6e-486d-92db-ff67a0a3842b"/>
                     <attribute id="UUID" type="guid" value="04330f3c-6b7c-4aa5-bdfb-9b096a8f7e06"/>
                 </node>
-                <node id="DefaultValue"> Bard 6th Level
-                    <attribute id="Add" type="LSString" value="Target_BestowCurse;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Target_HypnoticPattern;Target_IntellectFortress;Shout_HealingWord_Mass;Target_MotivationalSpeech;Target_Nondetection;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud"/>
-                    <attribute id="Level" type="int32" value="6"/>
-                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
-                    <attribute id="UUID" type="guid" value="e5353e66-d800-409e-8b29-e8254540a0e1"/>
-                </node>
                 <node id="DefaultValue"> Bard 7th Level
                     <attribute id="Add" type="LSString" value="Target_CharmMonster;Target_Confusion;Target_FreedomOfMovement;Target_GreaterInvisibility;Target_Polymorph;Projectile_RaulothimsPsychicLance"/>
                     <attribute id="Level" type="int32" value="7"/>
@@ -160,12 +154,54 @@
                     <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
                     <attribute id="UUID" type="guid" value="cc4f1ce4-544e-46ef-bed9-f6c7aa4e07d8"/>
                 </node>
+                <node id="DefaultValue"> Bard 11th Level
+                    <attribute id="Add" type="LSString" value="Shout_Eyebite;Target_DominatePerson;Target_GreaterRestoration;Target_HoldMonster;Target_MassCureWounds;Target_RaiseDead;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="90212143-c4a5-4b8e-b8b4-3760a860afca"/>
+                </node>
+                <node id="DefaultValue"> Bard 13th Level
+                    <attribute id="Add" type="LSString" value="Target_Regenerate;Target_Resurrection;Shout_Teleport;Shout_Eyebite;Target_DominatePerson;Target_GreaterRestoration;Target_HoldMonster;Target_MassCureWounds;Target_RaiseDead;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="8d6858b1-4b9d-4e9d-ab7d-bb6859b76fc3"/>
+                </node>
+                <node id="DefaultValue"> Bard 14th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Target_Regenerate;Target_Resurrection;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="2f44aba8-0fc6-428f-90c8-5c9aa4f08012"/>
+                </node>
+                <node id="DefaultValue"> Bard 15th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MindBlank;Target_PowerWordStun;Target_Regenerate;Target_Resurrection;Shout_Teleport;Shout_Eyebite;Target_DominatePerson;Target_GreaterRestoration;Target_HoldMonster;Target_MassCureWounds;Target_RaiseDead;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="e09419b1-505f-45f4-95f4-919c3bcc7000"/>
+                </node>
+                <node id="DefaultValue"> Bard 17th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Target_PowerWordHeal;Target_PowerWordKill;Target_DominateMonster;Target_Feeblemind;Target_MindBlank;Target_PowerWordStun;Target_Regenerate;Target_Resurrection;Shout_Teleport"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="58826544-f1dc-4f92-a2db-968f7e229dea"/>
+                </node>
+                <node id="DefaultValue"> Bard 18th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_MassHeal;Target_PowerWordHeal;Target_PowerWordKill;Shout_TimeStop;Target_TrueResurrection;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Target_Regenerate;Target_Resurrection;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="18"/>
+                    <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
+                    <attribute id="UUID" type="guid" value="64608ff0-cbea-4259-a520-c153881914cb"/>
+                </node>
                 <node id="DefaultValue"> Lore Bard 6th Level Magical Secrets
                     <attribute id="Add" type="LSString" value="Target_Revivify;Target_Haste;Shout_AuraOfVitality;Shout_CrusadersMantle;Target_AnimateDead;Shout_AshardalonsStride;Shout_BeaconOfHope;Target_BestowCurse;Shout_Blink;Target_CallLightning;Target_Catnap;Zone_ConjureBarrage;Target_CreateFoodAndWater;Target_Daylight;Target_ElementalWeapon;Target_EnemiesAbound;Target_EruptingEarth;Zone_Fear;Projectile_Fireball;Target_Fly;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Zone_LightningBolt;Target_MassHealingWord;Shout_MinuteMeteors;Target_MotivationalSpeech;Target_PlantGrowth;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Shout_SpiritGuardians;Target_StinkingCloud;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_WaterWalk;Projectile_AcidArrow;Zone_AganazzarsScorcher;Shout_Aid;Shout_AlterSelf;Target_Barkskin;Target_Blindness;Shout_Blur;Shout_BorrowedKnowledge;Target_CalmEmotions;Target_CloudOfDaggers;Target_CrownOfMadness;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Target_DragonsBreath;Target_DustDevil;Target_EnhanceAbility;Target_EnlargeReduce;Shout_Enthrall;Shout_FlameBlade;Target_FlamingSphere;Target_FlockOfFamiliars;Zone_GustOfWind;Target_HealingSpirit;Target_HeatMetal;Target_HoldPerson;Target_Invisibility;Shout_KineticJaunt;Target_Knock;Target_LesserRestoration;Target_Levitate;Target_MagicWeapon;Target_MaximiliansEarthenGrasp;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Target_Moonbeam;Shout_PassWithoutTrace;Target_PhantasmalForce;Shout_PrayerOfHealing;Target_ProtectionFromPoison;Projectile_RayOfEnfeeblement;Zone_RimesBindingIce;Projectile_ScorchingRay;Shout_ShadowBlade;Target_Shatter;Target_Silence;Target_SnillocsSnowballStorm;Target_SpikeGrowth;Target_SpiritualWeapon;Target_Suggestion;Target_TashasMindWhip;Teleportation_VortexWarp;Target_WardingBond;Shout_WardingWind;Target_Web;Shout_AbsorbElements;Target_AnimalFriendship;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_Bane;Target_Bless;Zone_BurningHands;Target_Catapult;Target_CauseFear;Target_Ceremony;Target_ChaosBolt;Target_CharmPerson;Projectile_ChromaticOrb;Zone_ColorSpray;Target_Command;Target_CreateDestroyWater;Target_CureWounds;Shout_DetectEvilAndGood;Shout_DetectMagic;Shout_DisguiseSelf;Target_DissonantWhispers;Shout_EarthTremor;Projectile_EnsnaringStrike_Container;Target_Entangle;Shout_ExpeditiousRetreat;Target_FaerieFire;Shout_FalseLife;Shout_FeatherFall;Target_FindFamiliar;Target_FogCloud;Zone_FrostFingers;Target_Goodberry;Projectile_GuidingBolt;Shout_HailOfThorns;Target_HealingWord;Shout_HellishRebuke;Target_Heroism;Target_Hex;Target_HideousLaughter;Target_HuntersMark;Projectile_IceKnife;Target_InflictWounds;Target_Jump;Target_Longstrider;Target_MageArmor;Projectile_MagicMissile;Target_ProtectionFromEvilAndGood;Projectile_RayOfSickness;Target_Sanctuary;Shout_Shield;Target_ShieldOfFaith;Target_Sleep;Shout_SpeakWithAnimals;Zone_TashasCausticBrew;Zone_Thunderwave;Projectile_WitchBolt;Shout_ZephyrStrike;Projectile_AcidSplash;Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_ControlFlames;Target_CreateBonfire;Target_DancingLights;Projectile_EldritchBlast;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Guidance;Target_Gust;Target_Light;Target_LightningLure;Target_MageHand;Target_MagicStone;Target_MindSliver;Target_MinorIllusion;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Target_PrimalSavagery;Shout_ProduceFlame;Projectile_RayOfFrost;Target_Resistance;Target_SacredFlame;Target_ShapeWater;Shout_Shillelagh;Target_ShockingGrasp;Target_SpareTheDying;Shout_SwordBurst;Shout_Thaumaturgy;Target_ThornWhip;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike;Target_ViciousMockery;Shout_WordOfRadiance"/>
                     <attribute id="Level" type="int32" value="6"/>
                     <attribute id="SelectorId" type="LSString" value="LoreCollegeMagicalSecrets"/>
                     <attribute id="TableUUID" type="guid" value="36e6ea13-317e-4e6e-ac63-fe6d50e9f014"/>
                     <attribute id="UUID" type="guid" value="120aaef6-b8c6-49f9-bc47-c769a480f42c"/>
+                </node>
+                <node id="DefaultValue"> Valor Bard 6th Level
+                    <attribute id="Add" type="LSString" value="Target_BestowCurse;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_FeignDeath;Target_GlyphOfWarding;Target_HypnoticPattern;Target_IntellectFortress;Shout_HealingWord_Mass;Target_MotivationalSpeech;Target_Nondetection;Target_PlantGrowth;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="d58a305f-3ccf-440c-b069-2abd9235ac03"/>
+                    <attribute id="UUID" type="guid" value="47018042-c057-4584-b41e-dfd8b223f934"/>
                 </node>
                 <node id="DefaultValue"> Druid 10th Level
                     <attribute id="Add" type="LSString" value="Target_ControlFlames;Target_CreateBonfire;Shout_Druidcraft;Target_Frostbite;Target_Guidance;Target_Gust;Target_MagicStone;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Target_PrimalSavagery;Shout_ProduceFlame;Target_Resistance;Target_ShapeWater;Shout_Shillelagh;Target_ThornWhip;Shout_Thunderclap"/>
@@ -377,6 +413,42 @@
                     <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
                     <attribute id="UUID" type="guid" value="e335a0d4-bd97-4755-9f5c-b8ac20fd8fa1"/>
                 </node>
+                <node id="DefaultValue"> Eldritch Knight 11th Level
+                    <attribute id="Add" type="LSString" value="Projectile_AcidArrow;Zone_AganazzarsScorcher;Target_ColdSnap;Projectile_Crackle;Target_Darkness;Zone_GustOfWind;Zone_RimesBindingIce;Projectile_ScorchingRay;Target_Shatter;Target_SnillocsSnowballStorm;Shout_WardingWind;Shout_AbsorbElements;Zone_ArcticBreath;Zone_BurningHands;Projectile_ChromaticOrb;Shout_EarthTremor;Zone_FrostFingers;Shout_LightningTendril;Projectile_MagicMissile;Target_MageArmor;Target_ProtectionFromEvilAndGood;Shout_Shield;Zone_TashasCausticBrew;Target_ThunderPunch;Zone_Thunderwave;Projectile_WitchBolt"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="c524c6ea-2a37-451e-88ca-6bc45eb8e9d2"/>
+                </node>
+                <node id="DefaultValue"> Eldritch Knight 13th Level
+                    <attribute id="Add" type="LSString" value="Zone_AetherLance;Projectile_Electrocute;Projectile_Fireball;Target_FireCyclone;Zone_FlashFreeze;Target_IntellectFortress;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Zone_VortexBlast;Projectile_AcidArrow;Zone_AganazzarsScorcher;Target_ColdSnap;Projectile_Crackle;Target_Darkness;Zone_GustOfWind;Zone_RimesBindingIce;Projectile_ScorchingRay;Target_Shatter;Target_SnillocsSnowballStorm;Shout_WardingWind;Shout_AbsorbElements;Zone_ArcticBreath;Zone_BurningHands;Projectile_ChromaticOrb;Shout_EarthTremor;Zone_FrostFingers;Shout_LightningTendril;Projectile_MagicMissile;Target_MageArmor;Target_ProtectionFromEvilAndGood;Shout_Shield;Zone_TashasCausticBrew;Target_ThunderPunch;Zone_Thunderwave;Projectile_WitchBolt"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="813b8f8a-9e80-4938-95ea-6c68f64ba338"/>
+                </node>
+                <node id="DefaultValue"> Eldritch Knight 14th Level
+                    <attribute id="Add" type="LSString" value="Zone_AetherLance;Target_AnimateDead;Shout_AshardalonsStride;Target_BestowCurse;Shout_Blink;Target_Catnap;Target_Counterspell;Projectile_Electrocute;Target_EnemiesAbound;Target_EruptingEarth;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_FireCyclone;Target_FlameArrows;Zone_FlashFreeze;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Zone_VortexBlast;Shout_WaterWalk"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="a9db4404-7917-41a7-a2f4-9e11c6946ddb"/>
+                </node>
+                <node id="DefaultValue"> Eldritch Knight 16th Level
+                    <attribute id="Add" type="LSString" value="Zone_AetherLance;Projectile_Electrocute;Projectile_Fireball;Target_FireCyclone;Zone_FlashFreeze;Target_IntellectFortress;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Zone_VortexBlast;Projectile_AcidArrow;Zone_AganazzarsScorcher;Target_ColdSnap;Projectile_Crackle;Target_Darkness;Zone_GustOfWind;Zone_RimesBindingIce;Projectile_ScorchingRay;Target_Shatter;Target_SnillocsSnowballStorm;Shout_WardingWind;Shout_AbsorbElements;Zone_ArcticBreath;Zone_BurningHands;Projectile_ChromaticOrb;Shout_EarthTremor;Zone_FrostFingers;Shout_LightningTendril;Projectile_MagicMissile;Target_MageArmor;Target_ProtectionFromEvilAndGood;Shout_Shield;Zone_TashasCausticBrew;Target_ThunderPunch;Zone_Thunderwave;Projectile_WitchBolt"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="ad0cd6c1-bbf7-4379-bb8e-002da0618e88"/>
+                </node>
+                <node id="DefaultValue"> Eldritch Knight 19th Level
+                    <attribute id="Add" type="LSString" value="Target_Banishment;Shout_FireShield;Projectile_IceSpike;Target_IceStorm;Projectile_JumpingJolt;Target_Stoneskin;Zone_AetherLance;Projectile_Electrocute;Projectile_Fireball;Target_FireCyclone;Zone_FlashFreeze;Target_IntellectFortress;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Zone_VortexBlast;Projectile_AcidArrow;Zone_AganazzarsScorcher;Target_ColdSnap;Projectile_Crackle;Target_Darkness;Zone_GustOfWind;Zone_RimesBindingIce;Projectile_ScorchingRay;Target_Shatter;Target_SnillocsSnowballStorm;Shout_WardingWind;Shout_AbsorbElements;Zone_ArcticBreath;Zone_BurningHands;Projectile_ChromaticOrb;Shout_EarthTremor;Zone_FrostFingers;Shout_LightningTendril;Projectile_MagicMissile;Target_MageArmor;Target_ProtectionFromEvilAndGood;Shout_Shield;Zone_TashasCausticBrew;Target_ThunderPunch;Zone_Thunderwave;Projectile_WitchBolt"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="97d7ec10-ef1c-440f-94e2-a63739e76ddc"/>
+                </node>
+                <node id="DefaultValue"> Eldritch Knight 20th Level
+                    <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Target_EvardsBlackTentacles;Shout_FireShield;Target_GreaterInvisibility;Projectile_IceSpike;Target_IceStorm;Projectile_JumpingJolt;Shout_OrbitalStones;Target_Polymorph;Projectile_RaulothimsPsychicLance;Target_Stoneskin;Target_SummonElemental"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="2db3f02e-dfa9-4235-b9bd-28a89bf41435"/>
+                    <attribute id="UUID" type="guid" value="0c4f208b-2ff8-4bf5-9445-1defe3bd520d"/>
+                </node>
                 <node id="DefaultValue"> Eldritch Knight 10th Level Cantrips
                     <attribute id="Add" type="LSString" value="Projectile_AcidSplash;Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_ControlFlames;Target_CreateBonfire;Target_DancingLights;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Gust;Target_Light;Target_LightningLure;Target_MageHand;Target_MindSliver;Target_MinorIllusion;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Projectile_RayOfFrost;Target_ShapeWater;Target_ShockingGrasp;Shout_SwordBurst;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike"/>
                     <attribute id="Level" type="int32" value="10"/>
@@ -400,6 +472,42 @@
                     <attribute id="Level" type="int32" value="10"/>
                     <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
                     <attribute id="UUID" type="guid" value="44fee1e5-3ce0-494c-871b-aab44beb23c3"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 11th Level
+                    <attribute id="Add" type="LSString" value="Shout_Blur;Target_CrownOfMadness;Target_HoldPerson;Target_Invisibility;Shout_MirrorImage;Target_PhantasmalForce;Shout_ShadowBlade;Target_Suggestion;Target_TashasMindWhip;Target_CharmPerson;Zone_ColorSpray;Shout_DisguiseSelf;Target_HideousLaughter;Target_Sleep"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="383b7e72-d38f-4cba-9f7b-d5eb975bab60"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 13th Level
+                    <attribute id="Add" type="LSString" value="Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_HypnoticPattern;Shout_Blur;Target_CrownOfMadness;Target_HoldPerson;Target_Invisibility;Shout_MirrorImage;Target_NathairsMischief;Target_PhantasmalForce;Shout_ShadowBlade;Target_Suggestion;Target_TashasMindWhip;Target_CharmPerson;Zone_ColorSpray;Shout_DisguiseSelf;Target_HideousLaughter;Target_Sleep"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="910113e3-997e-439c-b152-0920cbbc70db"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 14th Level
+                    <attribute id="Add" type="LSString" value="Zone_AetherLance;Target_AnimateDead;Shout_AshardalonsStride;Target_BestowCurse;Shout_Blink;Target_Catnap;Target_Counterspell;Projectile_Electrocute;Target_EnemiesAbound;Target_EruptingEarth;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_FireCyclone;Target_FlameArrows;Zone_FlashFreeze;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Zone_VortexBlast;Shout_WaterWalk"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="ebcf24ef-c7de-47c7-91f7-d318167cbace"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 16th Level
+                    <attribute id="Add" type="LSString" value="Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_HypnoticPattern;Shout_Blur;Target_CrownOfMadness;Target_HoldPerson;Target_Invisibility;Shout_MirrorImage;Target_NathairsMischief;Target_PhantasmalForce;Shout_ShadowBlade;Target_Suggestion;Target_TashasMindWhip;Target_CharmPerson;Zone_ColorSpray;Shout_DisguiseSelf;Target_HideousLaughter;Target_Sleep"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="6e52751d-72be-4733-9460-0403d2531618"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 19th Level
+                    <attribute id="Add" type="LSString" value="Target_DominatePerson;Target_HoldMonster;Projectile_SynapticStatic;Target_CharmMonster;Target_Confusion;Projectile_RaulothimsPsychicLance;Target_GreaterInvisibility;Target_Catnap;Target_EnemiesAbound;Zone_Fear;Target_HypnoticPattern;Shout_Blur;Target_CrownOfMadness;Target_HoldPerson;Target_Invisibility;Shout_MirrorImage;Target_NathairsMischief;Target_PhantasmalForce;Shout_ShadowBlade;Target_Suggestion;Target_TashasMindWhip;Target_CharmPerson;Zone_ColorSpray;Shout_DisguiseSelf;Target_HideousLaughter;Target_Sleep"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="4c0fc980-3290-4989-88b9-bd4dd5cb3db7"/>
+                </node>
+                <node id="DefaultValue"> Arcane Trickster 20th Level
+                    <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Target_EvardsBlackTentacles;Shout_FireShield;Target_GreaterInvisibility;Projectile_IceSpike;Target_IceStorm;Projectile_JumpingJolt;Shout_OrbitalStones;Target_Polymorph;Projectile_RaulothimsPsychicLance;Target_Stoneskin;Target_SummonElemental"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="7205dbe2-5eef-4cd6-ad7f-45b3dc254f78"/>
+                    <attribute id="UUID" type="guid" value="b06cffa6-8db3-4621-9373-fccc783fbac2"/>
                 </node>
                 <node id="DefaultValue"> Fiend 7th Level
                     <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Projectile_RaulothimsPsychicLance"/>
@@ -425,6 +533,36 @@
                     <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
                     <attribute id="UUID" type="guid" value="d37120db-6ce2-4759-9b39-7e11463972a2"/>
                 </node>
+                <node id="DefaultValue"> Fiend 11th Level
+                    <attribute id="Add" type="LSString" value="Target_Cloudkill;Shout_DevouringDarkness;Target_FarStep;ProjectileStrike_FlameStrike;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+                    <attribute id="UUID" type="guid" value="245a08a2-756b-4831-a69f-4e4aa99eae89"/>
+                </node>
+                <node id="DefaultValue"> Fiend 13th Level
+                    <attribute id="Add" type="LSString" value="Target_Cloudkill;Shout_DevouringDarkness;Target_FarStep;ProjectileStrike_FlameStrike;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+                    <attribute id="UUID" type="guid" value="d96b368f-1077-43cb-a80c-711cfc491be6"/>
+                </node>
+                <node id="DefaultValue"> Fiend 15th Level
+                    <attribute id="Add" type="LSString" value="Target_Cloudkill;Shout_DevouringDarkness;Target_FarStep;ProjectileStrike_FlameStrike;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+                    <attribute id="UUID" type="guid" value="9ed6629a-e181-4449-8c99-bb60d4f81ac5"/>
+                </node>
+                <node id="DefaultValue"> Fiend 17th Level
+                    <attribute id="Add" type="LSString" value="Target_Cloudkill;Shout_DevouringDarkness;Target_FarStep;ProjectileStrike_FlameStrike;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+                    <attribute id="UUID" type="guid" value="5ca34b7e-62f5-4ba7-9959-b6c2c82b2ead"/>
+                </node>
+                <node id="DefaultValue"> Fiend 19th Level
+                    <attribute id="Add" type="LSString" value="Target_Cloudkill;Shout_DevouringDarkness;Target_FarStep;ProjectileStrike_FlameStrike;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="2700b42c-3b2f-4fc7-b881-4acc4f0a3a1f"/>
+                    <attribute id="UUID" type="guid" value="6e64c748-8493-4537-8a9a-ac75124ee8a0"/>
+                </node>
                 <node id="DefaultValue"> Great Old One 7th Level
                     <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Projectile_RaulothimsPsychicLance"/>
                     <attribute id="Level" type="int32" value="7"/>
@@ -448,6 +586,36 @@
                     <attribute id="Level" type="int32" value="10"/>
                     <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
                     <attribute id="UUID" type="guid" value="7f6ccb55-4a84-4b5f-9ebb-23ac9015ee0a"/>
+                </node>
+                <node id="DefaultValue"> Great Old One 11th Level
+                    <attribute id="Add" type="LSString" value="Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Telekinesis"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+                    <attribute id="UUID" type="guid" value="dc703562-5c06-4d05-bb62-b60e12cea345"/>
+                </node>
+                <node id="DefaultValue"> Great Old One 13th Level
+                    <attribute id="Add" type="LSString" value="Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Telekinesis"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+                    <attribute id="UUID" type="guid" value="04be538e-b3b0-42da-9efd-c6ae40c70cc5"/>
+                </node>
+                <node id="DefaultValue"> Great Old One 15th Level
+                    <attribute id="Add" type="LSString" value="Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Telekinesis"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+                    <attribute id="UUID" type="guid" value="a8ad3e76-75bd-49fb-b8c5-fe57c5b23c8e"/>
+                </node>
+                <node id="DefaultValue"> Great Old One 17th Level
+                    <attribute id="Add" type="LSString" value="Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Telekinesis"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+                    <attribute id="UUID" type="guid" value="c21b9462-e91a-42d6-ab27-b7e6971f6833"/>
+                </node>
+                <node id="DefaultValue"> Great Old One 19th Level
+                    <attribute id="Add" type="LSString" value="Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Telekinesis"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="216e779e-3452-466c-933d-fb5723b90802"/>
+                    <attribute id="UUID" type="guid" value="ce0355e5-639a-4b4f-9207-ba7de42d6ca0"/>
                 </node>
                 <node id="DefaultValue"> Abjuration 6th Level
                     <attribute id="Add" type="LSString" value="Zone_AetherLance;Target_AnimateDead;Shout_AshardalonsStride;Target_BestowCurse;Shout_Blink;Target_Catnap;Target_Counterspell;Projectile_Electrocute;Target_EnemiesAbound;Target_EruptingEarth;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_FireCyclone;Zone_FlashFreeze;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Zone_VortexBlast;Shout_WaterWalk"/>
@@ -498,22 +666,358 @@
                     <attribute id="UUID" type="guid" value="a45001dd-7b06-4265-abe4-1ff64518c418"/>
                 </node>
                 <node id="DefaultValue"> Abjuration 10th Level
-                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone;Projectile_AcidSplash;Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_ControlFlames;Target_CreateBonfire;Target_DancingLights;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Gust;Target_Light;Target_LightningLure;Target_MageHand;Target_MindSliver;Target_MinorIllusion;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Projectile_RayOfFrost;Target_ShapeWater;Target_ShockingGrasp;Shout_SwordBurst;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike"/>
-                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="10"/>
                     <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
                     <attribute id="UUID" type="guid" value="69289fe8-8019-48b2-8d05-6d7fffc7ba85"/>
                 </node>
                 <node id="DefaultValue"> Evocation 10th Level
-                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone;Projectile_AcidSplash;Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_ControlFlames;Target_CreateBonfire;Target_DancingLights;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Gust;Target_Light;Target_LightningLure;Target_MageHand;Target_MindSliver;Target_MinorIllusion;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Projectile_RayOfFrost;Target_ShapeWater;Target_ShockingGrasp;Shout_SwordBurst;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike"/>
-                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="10"/>
                     <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
                     <attribute id="UUID" type="guid" value="6be9914c-2752-4af6-abef-47dc92673ad8"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 10th Level
+                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="69289fe8-8019-48b2-8d05-6d7fffc7ba85"/>
+                </node>
+                <node id="DefaultValue"> Evocation 11th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="ea7b138c-b00f-4267-8ee7-c114fcad2f12"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 11th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="567ecaed-fc33-4ae9-a2c9-6b4503061954"/>
+                </node>
+                <node id="DefaultValue"> Evocation 12th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone;Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="4c698fc4-d72f-4d15-ae7b-70462026ad41"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 12th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone;Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="98ffb94b-746b-4834-b0e4-69b68bf6818c"/>
+                </node>
+                <node id="DefaultValue"> Evocation 13th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="3be5fa9f-034b-43d3-8798-1a9b41ca0baf"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 13th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="648596e7-e23b-4280-9d63-da638f0c0572"/>
+                </node>
+                <node id="DefaultValue"> Evocation 14th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="91e786ba-7ae5-43ef-b783-9a13ecaf7a48"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 14th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="155fd071-d9b0-4e94-90d2-96e97c9e829d"/>
+                </node>
+                <node id="DefaultValue"> Evocation 15th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="220c749f-e920-4f7a-95aa-47b81f960d83"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 15th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="9cc41b0d-4e0d-4afd-b10f-8474ec5dbc99"/>
+                </node>
+                <node id="DefaultValue"> Evocation 16th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="dcee541f-ecb3-41e2-8971-4eafef8a9207"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 16th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="c778b6f8-e85d-4cbc-872f-e013cc09fb1d"/>
+                </node>
+                <node id="DefaultValue"> Evocation 17th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="2c573823-47da-4b9a-afc3-974a84882546"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 17th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="c654e114-7f5f-4024-b66f-cdb912743542"/>
+                </node>
+                <node id="DefaultValue"> Evocation 18th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="18"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="3d4544e2-c2af-4ec3-8dab-3b4462f51d82"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 18th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="18"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="0998565e-dd19-430a-ab48-f86276211663"/>
+                </node>
+                <node id="DefaultValue"> Evocation 19th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="44711329-6306-4fd3-8d96-b1a9316b1594"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 19th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="af625af8-b929-4094-95c9-3929f683991b"/>
+                </node>
+                <node id="DefaultValue"> Evocation 20th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="953e6528-acd2-48b5-95e7-9d54ad555d39"/>
+                    <attribute id="UUID" type="guid" value="95ab30bd-10ed-4225-add9-c1476fc537be"/>
+                </node>
+                <node id="DefaultValue"> Abjuration 20th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="9f0fd3ac-7520-45fa-9f7d-08b1ca6eacf3"/>
+                    <attribute id="UUID" type="guid" value="cd6fdd3c-64c4-49e9-9bcf-b1a8a97eaab1"/>
+                </node>
+               <node id="DefaultValue"> Wizard 10th Level Cantrip
+                    <attribute id="Add" type="LSString" value="Projectile_AcidSplash;Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_ControlFlames;Target_CreateBonfire;Target_DancingLights;Projectile_FireBolt;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Gust;Target_Light;Target_LightningLure;Target_MageHand;Target_MindSliver;Target_MinorIllusion;Target_MoldEarth;Projectile_PoisonSpray;Target_Prestidigitation;Projectile_RayOfFrost;Target_ShapeWater;Target_ShockingGrasp;Shout_SwordBurst;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="UUID" type="guid" value="64f6f919-f498-4040-927e-c37d115b5e11"/>
                 </node>
                 <node id="DefaultValue"> Cleric 10th Level Cantrips
                     <attribute id="Add" type="LSString" value="Target_Guidance;Target_Light;Target_Resistance;Target_SacredFlame;Target_SpareTheDying;Shout_Thaumaturgy;Shout_WordOfRadiance;Target_TollTheDead"/>
                     <attribute id="Level" type="int32" value="10"/>
                     <attribute id="TableUUID" type="guid" value="64474b62-b4f5-46b3-b94a-c676c6da3116"/>
                     <attribute id="UUID" type="guid" value="8ac1beff-97f5-411b-aa48-9bfe16d7878a"/>
+                </node>
+               <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Shout_ArmorOfAgathys;Shout_ArmsOfHadar"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="abb8172a-2eef-4828-ad86-599cf5333fc3"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_Hex;Shout_ArmorOfAgathys;Shout_ArmsOfHadar"/>
+                    <attribute id="Level" type="int32" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="febc9028-1aed-444c-b8b0-b06df1eb1242"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Target_MistyStep"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="941b5ae6-1f10-4307-aae7-62070f2407dc"/>
+                </node>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Projectile_EldritchBlast;Shout_BladeWard;Target_ChillTouch;Target_Darkness;Target_MistyStep;Target_MinorIllusion"/>
+                    <attribute id="Level" type="int32" value="4"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="5edb186b-298a-4f1c-9e75-8582b228774b"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 5th
+                    <attribute id="Add" type="LSString" value="Target_HungerOfHadar;Target_VampiricTouch;Projectile_Fireball;Target_CloudOfDaggers;Projectile_ScorchingRay;Target_Shatter;Shout_ArmsOfHadar;Zone_BurningHands;Shout_HellishRebuke;Projectile_WitchBolt;Target_RemoveCurse;Target_Fly;Shout_MirrorImage;Shout_ArmorOfAgathys;Target_ProtectionFromEvilAndGood;Zone_Fear;Target_HypnoticPattern;Target_StinkingCloud;Target_CrownOfMadness;Target_HoldPerson;Target_CharmPerson;Target_Command_Halt;Target_GaseousForm;Target_Darkness;Target_Invisibility;Target_MistyStep;Shout_ExpeditiousRetreat;Target_Blindness;Projectile_RayOfEnfeeblement;Target_Hex"/>
+                    <attribute id="Level" type="int32" value="5"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="e1d567a8-1d5f-40cf-bf13-1f2d50a545d2"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 6th
+                    <attribute id="Add" type="LSString" value="Target_HungerOfHadar;Target_VampiricTouch;Projectile_Fireball;Target_CloudOfDaggers;Projectile_ScorchingRay;Target_Shatter;Shout_ArmsOfHadar;Zone_BurningHands;Shout_HellishRebuke;Projectile_WitchBolt;Target_RemoveCurse;Target_Fly;Shout_MirrorImage;Shout_ArmorOfAgathys;Target_ProtectionFromEvilAndGood;Zone_Fear;Target_HypnoticPattern;Target_StinkingCloud;Target_CrownOfMadness;Target_HoldPerson;Target_CharmPerson;Target_Command_Halt;Target_GaseousForm;Target_Darkness;Target_Invisibility;Target_MistyStep;Shout_ExpeditiousRetreat;Target_Blindness;Projectile_RayOfEnfeeblement;Target_Hex"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="78129ffa-d8c6-4815-b722-a0eb7a89122b"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 7th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="7"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="2961c0df-d53c-4f7b-a5bc-4e4fa3b71474"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 8th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="7f6d917f-950a-4107-aa41-7a26beeca549"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 9th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="96077646-6396-4b7e-aafe-dd6a8fe34756"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 10th
+                    <attribute id="Add" type="LSString" value="Shout_BladeWard;Target_BoomingBlade;Target_ChillTouch;Target_CreateBonfire;Projectile_EldritchBlast;Target_Friends;Target_Frostbite;Target_GreenFlameBlade;Target_Gust;Target_MageHand;Target_MagicStone;Target_MindSliver;Target_MinorIllusion;Projectile_PoisonSpray;Target_Prestidigitation;Shout_SwordBurst;Shout_Thunderclap;Target_TollTheDead;Target_TrueStrike"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="ab6e1b0e-0bd4-403c-8bed-487b89610c36"/>
+                </node>
+                 <node id="DefaultValue"> Hexblade 11th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="5c0ff7da-9e2a-4791-ab81-c65d958ec690"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 13th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="38b1fb94-fe04-400c-bc6b-c77a6172f324"/>
+                </node>
+                 <node id="DefaultValue"> Hexblade 15th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="f0b51558-3115-4d14-9a58-be1a095c472e"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 17th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="92335825-99c1-4645-bc43-b357f4736b91"/>
+                </node>
+                <node id="DefaultValue"> Hexblade 19th
+                    <attribute id="Add" type="LSString" value="Target_Smite_Banishing;Zone_ConeOfCold;Shout_DevouringDarkness;Target_FarStep;Target_HoldMonster;Projectile_NegativeEnergyFlood;Projectile_SynapticStatic;Target_Banishment;Target_Blight;Target_CharmMonster;Projectile_RaulothimsPsychicLance;Target_Smite_Staggering;Shout_Blink;Target_Counterspell;Target_ElementalWeapon;Target_EnemiesAbound;Zone_Fear;Target_Fly;Target_GaseousForm;Target_HungerOfHadar;Target_HypnoticPattern;Target_IntellectFortress;Target_RemoveCurse;Shout_SpiritShroud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Shout_BorrowedKnowledge;Target_Smite_Branding;Shout_Blur;Target_CloudOfDaggers;Projectile_Crackle;Target_CrownOfMadness;Target_Darkness;Shout_Enthrall;Target_FlockOfFamiliars;Target_HoldPerson;Target_Invisibility;Target_MindSpike;Shout_MirrorImage;Target_MistyStep;Projectile_RayOfEnfeeblement;Shout_ShadowBlade;Target_Shatter;Target_Suggestion;Shout_ArmorOfAgathys;Shout_ArmsOfHadar;Target_CauseFear;Target_CharmPerson;Shout_ExpeditiousRetreat;Shout_HellishRebuke;Target_Hex;Shout_LightningTendril;Target_ProtectionFromEvilAndGood;Shout_Shield;Target_UnseenServant;Projectile_WitchBolt;Target_Smite_Wrathful"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="UUID" type="guid" value="ea075d6d-cb36-4218-9846-23f2fe64a475"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 2nd Level
+                    <attribute id="Add" type="LSString" value="Shout_FeatherFall;Projectile_RayOfSickness;Target_MageArmor;Target_FogCloud;Target_Grease;Zone_Thunderwave;Target_Sleep;Projectile_WitchBolt"/>
+                    <attribute id="Level" type="int32" value="2"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="55487ff5-4ca4-4b6d-8c2a-f4bff3d49ff7"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 3rd Level
+                    <attribute id="Add" type="LSString" value="Target_Invisibility;Target_MistyStep"/>
+                    <attribute id="Level" type="int32" value="3"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="9ec8f3ee-4d61-48a9-a193-3b610b2d6597"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 4th Level
+                    <attribute id="Add" type="LSString" value="Projectile_RayOfFrost;Projectile_FireBolt;Target_MageHand;Projectile_AcidSplash;Target_MinorIllusion;Projectile_AcidArrow;Shout_MirrorImage;Target_Invisibility;Target_MistyStep"/>
+                    <attribute id="Level" type="int32" value="4"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="4cd3ccbb-99f2-4087-ad7d-85e480b6aeb4"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 5th Level
+                    <attribute id="Add" type="LSString" value="Projectile_Fireball;Zone_LightningBolt;Target_VampiricTouch;Projectile_AcidArrow;Target_GlyphOfWarding;Projectile_ScorchingRay;Target_Shatter;Zone_BurningHands;Projectile_MagicMissile;Projectile_RayOfSickness;Zone_Thunderwave;Projectile_WitchBolt;Target_RemoveCurse;Shout_FalseLife;Target_Fly;Target_Haste;Target_ProtectionFromEnergy;Shout_Blur;Target_MagicWeapon;Shout_MirrorImage;Target_Jump;Target_MageArmor;Target_ProtectionFromEvilAndGood;Target_Counterspell;Target_DispelMagic;Zone_Fear;Target_HypnoticPattern;Target_SleetStorm;Target_StinkingCloud;Target_CrownOfMadness;Target_HoldPerson;Target_Web;Target_CharmPerson;Zone_ColorSpray;Target_FogCloud;Target_Grease;Target_HideousLaughter;Target_Sleep;Target_FeignDeath;Target_GaseousForm;Shout_AlterSelf;Target_ArcaneLock;Target_Darkness;Target_Darkvision;Shout_DetectThoughts;Zone_GustOfWind;Target_Invisibility;Target_MistyStep;Shout_SeeInvisibility;Shout_DisguiseSelf;Shout_ExpeditiousRetreat;Shout_FeatherFall;Target_Longstrider;Target_BestowCurse;Target_Blindness;Projectile_RayOfEnfeeblement;Target_AnimateDead;Target_FlamingSphere;Target_FindFamiliar;Target_CloudOfDaggers"/>
+                    <attribute id="Level" type="int32" value="5"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="4b4e37a8-0cc9-4cf8-95b7-427d54d753f4"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 6th Level
+                    <attribute id="Add" type="LSString" value="Zone_AetherLance;Target_AnimateDead;Shout_AshardalonsStride;Target_BestowCurse;Shout_Blink;Target_Catnap;Target_Counterspell;Projectile_Electrocute;Target_EnemiesAbound;Target_EruptingEarth;Zone_Fear;Target_FeignDeath;Projectile_Fireball;Target_FireCyclone;Zone_FlashFreeze;Target_Fly;Target_GaseousForm;Target_GlyphOfWarding;Target_Haste;Target_HypnoticPattern;Target_IntellectFortress;Target_LifeTransference;Zone_LightningBolt;Shout_MinuteMeteors;Target_Nondetection;Target_ProtectionFromEnergy;Target_RemoveCurse;Target_SleetStorm;Target_Slow;Target_SpeakWithDead;Target_StinkingCloud;Target_SummonShadowspawn;Teleportation_ThunderStep;Shout_VampiricTouch;Zone_VortexBlast;Shout_WaterWalk"/>
+                    <attribute id="Level" type="int32" value="6"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2d6fd70c-5408-4cde-a30d-ac3d4244679f"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 7th Level
+                    <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Target_EvardsBlackTentacles;Shout_FireShield;Target_GreaterInvisibility;Projectile_IceSpike;Target_IceStorm;Projectile_JumpingJolt;Shout_OrbitalStones;Target_Polymorph;Projectile_RaulothimsPsychicLance;Target_Stoneskin;Target_SummonElemental"/>
+                    <attribute id="Level" type="int32" value="7"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="bc8ca0ed-5679-4672-8712-a790ff825e3f"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 8th Level
+                    <attribute id="Add" type="LSString" value="Target_Banishment;Target_Blight;Target_CharmMonster;Target_Confusion;Target_EvardsBlackTentacles;Shout_FireShield;Target_GreaterInvisibility;Projectile_IceSpike;Target_IceStorm;Projectile_JumpingJolt;Shout_OrbitalStones;Target_Polymorph;Projectile_RaulothimsPsychicLance;Target_Stoneskin;Target_SummonElemental"/>
+                    <attribute id="Level" type="int32" value="8"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="592b8f2c-031d-46e6-9313-63c9f97fb16b"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 9th Level
+                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="9"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="8b10efba-430d-4685-9b3a-ec0cf1ec2593"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 10th Level
+                    <attribute id="Add" type="LSString" value="Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="10"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2b8a54a7-21df-40f7-9085-cb27d0ee617a"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 11th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="b2c91e97-80fb-4d84-9be2-9022984a8ffb"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 12th Level
+                    <attribute id="Add" type="LSString" value="Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone;Target_AetherStorm;Target_Cloudkill;Zone_ConeOfCold;Shout_DevouringDarkness;Target_DominatePerson;Target_FarStep;Zone_Fissure;Target_HoldMonster;Projectile_NegativeEnergyFlood;Target_RarysTelepathicBond;Target_SkillEmpowerment;Projectile_SkyBurst;Target_SteelWindStrike;Projectile_SynapticStatic;Target_Telekinesis;Target_WallOfStone"/>
+                    <attribute id="Level" type="int32" value="12"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2214db12-f655-484f-9708-ed27a8442b93"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 13th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="13"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="94cc166c-ef51-401b-8256-ed1e5dc58db2"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 14th Level
+                    <attribute id="Add" type="LSString" value="Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="14"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="6641a7e9-acd4-40a4-936e-314ccb2e2111"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 15th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="15"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="5ece6eed-b950-40fc-82a1-d817b62bd95d"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 16th Level
+                    <attribute id="Add" type="LSString" value="Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="16"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="179021bf-5d8f-4eed-8ded-1b9297435a12"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 17th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="17"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="aa0fd6b3-c83f-4bb0-93d3-dbbf84fa5ae7"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 18th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="18"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="921ab5bd-b349-4ed3-ba20-bb45acc228fe"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 19th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="19"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="ef023c26-cfc9-46ed-b905-fa1cf214ddce"/>
+                </node>
+                <node id="DefaultValue"> Bladesinging 20th Level
+                    <attribute id="Add" type="LSString" value="Target_Foresight;Shout_Invulnerability;Target_PowerWordKill;Shout_TimeStop;Target_DominateMonster;Target_Feeblemind;Target_MaddeningDarkness;Target_MindBlank;Target_PowerWordStun;Shout_CrownOfStars;Target_FingerOfDeath;Shout_Teleport;Target_CircleOfDeath;Target_Disintegrate;Shout_Eyebite;Target_FleshToStone"/>
+                    <attribute id="Level" type="int32" value="20"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="f2201036-16ce-4cab-9b04-18e193b5bd70"/>
                 </node>
             </children>
         </node>

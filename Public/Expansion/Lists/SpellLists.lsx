@@ -56,6 +56,30 @@
                     <attribute id="Spells" type="LSString" value="Shout_HarnessDivinePower_3"/>
                     <attribute id="UUID" type="guid" value="0808ed29-ff73-4c60-91b1-82837a4b39a0"/>
                 </node>
+                <node id="SpellList"> Fighter's Action Surge 2
+                    <attribute id="Spells" type="LSString" value="Shout_ActionSurge_2"/>
+                    <attribute id="UUID" type="guid" value="c7abe602-b690-44b1-a5e0-a94e103cf3b8"/>
+                </node>
+                <node id="SpellList"> Fiend's Create Thrall
+                    <attribute id="Spells" type="LSString" value="Target_CreateThrall"/>
+                    <attribute id="UUID" type="guid" value="a7079980-d0c8-410d-8a19-1c98421a5d45"/>
+                </node>
+                <node id="SpellList"> Warlock's Eldritch Master
+                    <attribute id="Spells" type="LSString" value="Shout_EldritchMaster"/>
+                    <attribute id="UUID" type="guid" value="a6c15a37-08ec-4672-a7c6-40ac4422b6e8"/>
+                </node>
+                <node id="SpellList"> Bladesinger's Bladesong
+                    <attribute id="Spells" type="LSString" value="Shout_Bladesong"/>
+                    <attribute id="UUID" type="guid" value="3bea78e7-c246-49ff-a556-997046314516"/>
+                </node>
+                <node id="SpellList"> Peace Domain's Emboldening Bond
+                    <attribute id="Spells" type="LSString" value="Target_EmboldeningBond"/>
+                    <attribute id="UUID" type="guid" value="1791ab87-5e01-429e-94ce-69378085fbfb"/>
+                </node>
+                <node id="SpellList"> Peace Domain's Balm of Peace
+                    <attribute id="Spells" type="LSString" value="Shout_BalmOfPeace"/>
+                    <attribute id="UUID" type="guid" value="18d949f6-b89e-4c11-a537-ac4aae7b6c2d"/>
+                </node>
             </children>
         </node>
     </region>

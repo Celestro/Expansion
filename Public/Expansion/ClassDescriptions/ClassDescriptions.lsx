@@ -5,6 +5,26 @@
         <node id="root">
             <children>
                 <node id="ClassDescription">
+                    <attribute id="BaseHp" type="int32" value="0"/>
+                    <attribute id="CanLearnSpells" type="bool" value="false"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
+                    <attribute id="ClassEquipment" type="FixedString" value=""/>
+                    <attribute id="Description" type="FixedString" value="The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."/>
+                    <attribute id="DisplayName" type="FixedString" value="Champion"/>
+                    <attribute id="HasGod" type="bool" value="false"/>
+                    <attribute id="HpPerLevel" type="int32" value="0"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MagicType" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="false"/>
+                    <attribute id="Name" type="FixedString" value="Champion"/>
+                    <attribute id="ParentGuid" type="guid" value="721dfac3-92d4-41f5-b773-b7072a86232f"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="1"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="519d5550-a25d-49c0-adac-bcde31531bc4"/>
+                    <attribute id="SoundMagicType" type="uint8" value="5"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="97984ec2-13fc-45de-aa3c-f7e5293cba6f"/>
+                </node>
+                <node id="ClassDescription">
                     <attribute id="BaseHp" type="int32" value="8"/>
                     <attribute id="CanLearnSpells" type="bool" value="false"/>
                     <attribute id="CharacterCreationPose" type="guid" value="00000000-0000-0000-0000-000000000000"/>
@@ -108,6 +128,49 @@
                     <attribute id="SoundMagicType" type="uint8" value="5"/>
                     <attribute id="SpellCastingAbility" type="uint8" value="5"/>
                     <attribute id="UUID" type="guid" value="ceac6185-dc49-4f70-8cdc-d18fca04c2ea"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="FixedString" value="You have made your pact with a mysterious entity from the Shadowfell – a force that manifests in sentient magic weapons carved from the stuff of shadow. The shadowy force behind these weapons can offer power to warlocks who form pacts with it."/>
+                    <attribute id="DisplayName" type="FixedString" value="Hexblade"/>
+                    <attribute id="LearningStrategy" type="uint8" value="2"/>
+                    <attribute id="Name" type="FixedString" value="Hexblade"/>
+                    <attribute id="ParentGuid" type="guid" value="b4225a4b-4bbe-4d97-9e3c-4719dbd1487c"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="6"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="5222a7f4-d997-4d15-8c67-6eaabdc4ade1"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Warlock"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="6"/>
+                    <attribute id="UUID" type="guid" value="43380d8f-974b-4402-bc70-7fe6abee7321"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CanLearnSpells" type="bool" value="true"/>
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="FixedString" value="Bladesingers master a tradition of wizardry that incorporates swordplay and dance. Originally created by elves, this tradition has been adopted by non-elf practitioners, who honor and expand on the elven ways."/>
+                    <attribute id="DisplayName" type="FixedString" value="Bladesinging"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="Bladesinging"/>
+                    <attribute id="ParentGuid" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="4"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Wizard"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="4"/>
+                    <attribute id="UUID" type="guid" value="3fd79523-a973-4373-a973-732344acc959"/>
+                </node>
+                <node id="ClassDescription">
+                    <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
+                    <attribute id="Description" type="FixedString" value="Shared_ClassDescriptions_New_Stat_11_Description"/>
+                    <attribute id="DisplayName" type="FixedString" value="Peace Domain"/>
+                    <attribute id="LearningStrategy" type="uint8" value="1"/>
+                    <attribute id="MustPrepareSpells" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="PeaceDomain"/>
+                    <attribute id="ParentGuid" type="guid" value="114e7aee-d1d4-4371-8d90-8a2080592faf"/>
+                    <attribute id="PrimaryAbility" type="uint8" value="5"/>
+                    <attribute id="ProgressionTableUUID" type="guid" value="2501ed05-3628-4dda-9d3f-fd66c29c475b"/>
+                    <attribute id="ShortName" type="FixedString" value="Peace"/>
+                    <attribute id="SoundClassType" type="FixedString" value="Cleric"/>
+                    <attribute id="SpellCastingAbility" type="uint8" value="5"/>
+                    <attribute id="UUID" type="guid" value="ab33cf1c-e4f8-492f-b711-ecaeb623aaa6"/>
                 </node>
             </children>
         </node>
