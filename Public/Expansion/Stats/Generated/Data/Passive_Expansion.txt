@@ -3642,8 +3642,8 @@ data "StatsFunctors" "IF(IsWeaponAttack() or IsUnarmedAttack() or SpellId('Targe
 
 new entry "SongOfDefense"
 type "PassiveData"
-data "DisplayName" "Song of Defense"
-data "Description" "SongOfDefense_Passive_Description"
+data "DisplayName" "b20e04c9-647b-48ab-99b6-5fa0fbd957ea;1"
+data "Description" "8d39dadd-360e-4469-a642-e8ae8973abd0;1"
 data "Icon" "PassiveFeature_SongOfDefense"
 data "Properties" "Highlighted"
 data "Boosts" "UnlockInterrupt(Interrupt_SongOfDefense);UnlockInterrupt(Interrupt_SongOfDefense_2);UnlockInterrupt(Interrupt_SongOfDefense_3);UnlockInterrupt(Interrupt_SongOfDefense_4);UnlockInterrupt(Interrupt_SongOfDefense_5)"
