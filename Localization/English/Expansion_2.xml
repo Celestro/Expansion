@@ -91,6 +91,8 @@
   <content contentuid="4c0c5808-0bb4-4a21-82cb-2b665052f53a" version="1">Your Bladesong ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon.</content>
   <content contentuid="778fd309-ba52-40b6-8d5d-9236d6b4219c" version="1">Armor Class and Constitution Saving Throws to maintain concentration increased by [1] and have Advantage on Acrobatics.</content>
   <content contentuid="2bbcd67e-c395-467e-9e41-ce0641ded232" version="1">Dismiss Bladesong</content>
+  <content contentuid="56ed4de5-6eca-4f62-b018-fd166553de36" version="1">Extra Attack</content>
+  <content contentuid="8d39dadd-360e-4469-a642-e8ae8973abd0" version="1">Can make an additional free attack or cast a cantrip after making an unarmed or weapon attack.</content>  
   <content contentuid="b20e04c9-647b-48ab-99b6-5fa0fbd957ea" version="1">Song of Defense</content>
   <content contentuid="8d39dadd-360e-4469-a642-e8ae8973abd0" version="1">When suffering damange, use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot's level</content>
   <content contentuid="76e7c6f3-e15a-40cc-9ee1-04f1993c78f7" version="1">Song of Victory</content>
