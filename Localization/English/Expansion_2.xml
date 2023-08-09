@@ -96,4 +96,5 @@
   <content contentuid="8d39dadd-360e-4469-a642-e8ae8973abd0" version="1">When suffering damange, use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot's level</content>
   <content contentuid="76e7c6f3-e15a-40cc-9ee1-04f1993c78f7" version="1">Song of Victory</content>
   <content contentuid="5538c5d1-bf81-4659-ba88-07222edd392a" version="1">Damage of your melee weapon attacks increased by [1] while your Bladesong is active.</content>
+  <content contentuid="84e070ec-9320-4423-88bb-e9b08b425d3c" version="1">Your resource for using the Blade Song feature.</content>
 </contentList>
