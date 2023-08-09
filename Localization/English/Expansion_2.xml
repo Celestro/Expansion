@@ -86,4 +86,10 @@
   <content contentuid="8dacdd49-0efb-469a-be1e-e508dbfb2146" version="1">Activate to add a bonus of +[1] to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
   <content contentuid="cdac1eaa-bf9e-43da-a352-deffeb061813" version="1">Weapon already affected by the Hex Warrior feature.</content>
   <content contentuid="488c86d5-742a-4b09-a969-cd1f3d77852b" version="1">Cannot be used on a two handed weapon.</content>
+  <content contentuid="a0c4c7aa-99de-455e-953e-c527019d4540" version="1">Bladesong</content>
+  <content contentuid="1b8729cc-9b3d-4126-b413-757e047437bf" version="1">Invoke an elven magic called the Bladesong, gracing you with supernatural speed, agility and focus as long as you aren't wearing medium or heavy armor or using a shield.</content>
+  <content contentuid="4c0c5808-0bb4-4a21-82cb-2b665052f53a" version="1">Your Bladesong ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon.</content>
+  <content contentuid="2bbcd67e-c395-467e-9e41-ce0641ded232" version="1">Dismiss Bladesong</content>
+  <content contentuid="b20e04c9-647b-48ab-99b6-5fa0fbd957ea" version="1"></content>
+  <content contentuid="8d39dadd-360e-4469-a642-e8ae8973abd0" version="1"></content>
 </contentList>
