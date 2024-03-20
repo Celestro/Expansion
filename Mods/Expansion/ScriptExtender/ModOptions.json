@@ -1,0 +1,101 @@
+{
+    "barbarianoptional": {
+        "displayName": "Barbarian Optional Features",
+        "description": "Provides the Instinctive Pounce optional feature at 7th level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "bardoptional": {
+        "displayName": "Bard Optional Features",
+        "description": "Provides the Magical Inspiration optional feature at 2nd level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "clericoptional": {
+        "displayName": "Cleric Optional Features",
+        "description": "Provides the Harness Divine Power optional feature at 2nd level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "druidoptional": {
+        "displayName": "Druid Optional Features",
+        "description": "Provides the Wild Companion optional feature at 2nd level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "monkoptional": {
+        "displayName": "Monk Optional Features",
+        "description": "Provides the Ki-Fueled Attack, Quickened Healing and Focused Aim optional features at 3rd, 4th and 5th levels, respectively.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "paladinoptional": {
+        "displayName": "Paladin's Optional Features",
+        "description": "Provides the Harness Divine Power optional feature at 3rd level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "rangeroptional": {
+        "displayName": "Ranger Optional Features",
+        "description": "Provides the Favored Foe optional feature as a choice amongst the Favored Enemy features at 1st level and provides the Deft Explorer optional features as additional choices for the Natural Explorer feature at 1st, 6th and 10th levels.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "rogueoptional": {
+        "displayName": "Rogue Optional Features",
+        "description": "Provides the Steady Aim optional feature at 3rd level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    },
+    "sorcereroptional": {
+        "displayName": "Sorcerer Optional Features",
+        "description": "Provides the Magical Guidance optional feature at 5th level.",
+        "enabled": true,
+        "dependencies": [],
+        "conflicts": [],
+        "files": {
+            "enabled": [],
+            "disabled": []
+        }
+    }
+}
