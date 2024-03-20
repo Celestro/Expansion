@@ -4,54 +4,6 @@
     <region id="PassiveLists">
         <node id="root">
             <children>
-                <node id="PassiveList"> Warlock Pacts
-                    <attribute id="Passives" type="LSString" value="PactOfTheBlade,PactOfTheChain,PactOfTheTome"/>
-                    <attribute id="UUID" type="guid" value="8d8ac513-c7c8-4f8b-b67f-5a9a14741aae"/>
-                </node>
-                <node id="PassiveList"> Unrestricted Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,BeastSpeech,BeguilingInfluence,DevilsSight,EldritchMind,EldritchSpear,FiendishVigor,GraspOfHadar,LanceOfLethargy,MaskOfManyFaces,RepellingBlast,ThiefOfFiveFates"/>
-                    <attribute id="UUID" type="guid" value="333fb1b0-9398-4ca8-953e-6c0f9a59bbed"/>
-                </node>
-                <node id="PassiveList"> 3rd Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,DevilsSight,EldritchMind,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,MaskOfManyFaces,RepellingBlast,ThiefOfFiveFates"/>
-                    <attribute id="UUID" type="guid" value="60777a89-92fe-4c14-91a2-33b1a02d0a4c"/>
-                </node>
-                <node id="PassiveList"> 5th Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,CloakOfFlies,DevilsSight,EldritchMind,EldritchSmite,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,MaddeningHex,MaskOfManyFaces,MireTheMind,OneWithShadows,RepellingBlast,SignOfIllOmen,ThiefOfFiveFates,ThristingBlade,TombOfLevistus,UndyingServitude"/>
-                    <attribute id="UUID" type="guid" value="8adab8f9-e360-4f79-851b-2c7e050ca23d"/>
-                </node>
-                <node id="PassiveList"> 7th Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,CloakOfFlies,DevilsSight,DreadfulWord,EldritchMind,EldritchSmite,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,MaddeningHex,MaskOfManyFaces,MireTheMind,OneWithShadows,RepellingBlast,RelentlessHex,SculptorOfFlesh,SignOfIllOmen,ThiefOfFiveFates,ThristingBlade,TombOfLevistus,TrickstersEscape,UndyingServitude"/>
-                    <attribute id="UUID" type="guid" value="04903581-d64c-4d33-ac2e-5c8f3b468d39"/>
-                </node>
-                <node id="PassiveList"> 9th Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AscendentStep,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,CloakOfFlies,DevilsSight,DreadfulWord,EldritchMind,EldritchSmite,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GiftOfTheProtectors,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,MaddeningHex,MaskOfManyFaces,MireTheMind,OneWithShadows,OtherworldlyLeap,RepellingBlast,RelentlessHex,SculptorOfFlesh,SignOfIllOmen,ThiefOfFiveFates,ThristingBlade,TombOfLevistus,TrickstersEscape,UndyingServitude,WhispersOfTheGrave"/>
-                    <attribute id="UUID" type="guid" value="fd3b4896-86bc-4258-b0f7-b7bda859be9a"/>
-                </node>
-                <node id="PassiveList"> 12th Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AscendentStep,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,CloakOfFlies,DevilsSight,DreadfulWord,EldritchMind,EldritchSmite,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GiftOfTheProtectors,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,Lifedrinker,MaddeningHex,MaskOfManyFaces,MireTheMind,OneWithShadows,OtherworldlyLeap,RepellingBlast,RelentlessHex,SculptorOfFlesh,SignOfIllOmen,ThiefOfFiveFates,ThristingBlade,TombOfLevistus,TrickstersEscape,UndyingServitude,WhispersOfTheGrave"/>
-                    <attribute id="UUID" type="guid" value="7258951b-1cc1-46b9-a24b-582d22c1a7d3"/>
-                </node>
-                <node id="PassiveList"> 15th Level Warlock Invocations
-                    <attribute id="Passives" type="LSString" value="AgonizingBlast,ArmorOfShadows,AscendentStep,AspectOfTheMoon,BeastSpeech,BeguilingInfluence,BookOfAncientSecrets,ChainsOfCarceri,CloakOfFlies,DevilsSight,DreadfulWord,EldritchMind,EldritchSmite,EldritchSpear,FiendishVigor,GiftOfTheEverLivingOnes,GiftOfTheProtectors,GraspOfHadar,InvestmentOfTheChainMaster,LanceOfLethargy,Lifedrinker,MaddeningHex,MaskOfManyFaces,MasterOfMyriadForms,MireTheMind,OneWithShadows,OtherworldlyLeap,RepellingBlast,RelentlessHex,SculptorOfFlesh,SignOfIllOmen,ShroudOfShadow,ThiefOfFiveFates,ThristingBlade,TombOfLevistus,TrickstersEscape,UndyingServitude,WhispersOfTheGrave"/>
-                    <attribute id="UUID" type="guid" value="b4895af7-8883-4fc3-88bf-69f00cad3053"/>
-                </node>
-                <node id="PassiveList"> Totem Warrior 6th Level Feature
-                    <attribute id="Passives" type="LSString" value="AspectOfTheBeast_Bear,AspectOfTheBeast_Eagle,AspectOfTheBeast_Elk,AspectOfTheBeast_Tiger,AspectOfTheBeast_Wolf"/>
-                    <attribute id="UUID" type="guid" value="44eca18e-9442-42f5-981c-00ece613c5d2"/>
-                </node>
-                <node id="PassiveList"> Totem Warrior 14th Level Feature
-                    <attribute id="Passives" type="LSString" value="TotemicAttunement_Bear,TotemicAttunement_Eagle,TotemicAttunement_Elk,TotemicAttunement_Tiger,TotemicAttunement_Wolf"/>
-                    <attribute id="UUID" type="guid" value="abd6bab4-a202-4f6b-85cd-d30db7839096"/>
-                </node>
-                <node id="PassiveList"> Favored Enemy or Favored Foe
-                    <attribute id="Passives" type="LSString" value="FavoredEnemy_BountyHunter,FavoredEnemy_CloudChaser,FavoredEnemy_DragonSlayer,FavoredEnemy_FavoredFoe,FavoredEnemy_KeeperOfTheVeil,FavoredEnemy_MageBreaker,FavoredEnemy_RangerKnight,FavoredEnemy_SanctifiedStalker"/>
-                    <attribute id="UUID" type="guid" value="d0f13dda-eb37-41f5-aea5-2683f0229e2e"/>
-                </node>	
-                <node id="PassiveList">Deft or Natural Explorer 1st Level
-                    <attribute id="Passives" type="LSString" value="DeftExplorer_Canny,NaturalExplorer_BeastTamer,NaturalExplorer_UrbanTracker,NaturalExplorer_WastelandWander_Cold,NaturalExplorer_WastelandWander_Fire,NaturalExplorer_WastelandWander_Poison"/>
-                    <attribute id="UUID" type="guid" value="72c63024-60af-486e-a180-c7aeee5d77c1"/>
-                </node>
 				<node id="PassiveList">Deft or Natural Explorer 6th Level
                     <attribute id="Passives" type="LSString" value="DeftExplorer_Canny,DeftExplorer_Roving,NaturalExplorer_BeastTamer,NaturalExplorer_UrbanTracker,NaturalExplorer_WastelandWander_Cold,NaturalExplorer_WastelandWander_Fire,NaturalExplorer_WastelandWander_Poison"/>
                     <attribute id="UUID" type="guid" value="f9f5e812-acff-4cbe-b824-265deb89587b"/>
@@ -64,72 +16,8 @@
                     <attribute id="Passives" type="LSString" value="HideInPlainSight,NaturesVeil"/>
                     <attribute id="UUID" type="guid" value="3b5d4e6b-d6f6-4dd9-a523-045b75daed18"/>
                 </node>
-                <node id="PassiveList"> Fighter's Fighting Styles
-                    <attribute id="Passives" type="LSString" value="FightingStyle_Archery,FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_GreatWeaponFighting,FightingStyle_Interception,FightingStyle_Protection,FightingStyle_ThrownWeaponFighting,FightingStyle_TwoWeaponFighting,FightingStyle_UnarmedFighting"/>
-                    <attribute id="UUID" type="guid" value="da3203d8-750a-4de1-b8eb-1eccfccddf46"/>
-                </node>
-                <node id="PassiveList"> Paladin Fighting Styles
-                    <attribute id="Passives" type="LSString" value="FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_GreatWeaponFighting,FightingStyle_Interception,FightingStyle_Protection"/>
-                    <attribute id="UUID" type="guid" value="f8ebba38-932a-4c64-ae55-3df23e2f60fa"/>
-                </node>
-                <node id="PassiveList"> Ranger's Fighting Styles
-                    <attribute id="Passives" type="LSString" value="FightingStyle_Archery,FightingStyle_Defense,FightingStyle_Dueling,FightingStyle_ThrownWeaponFighting,FightingStyle_TwoWeaponFighting,FightingStyle_UnarmedFighting"/>
-                    <attribute id="UUID" type="guid" value="a0bdb113-1cce-45ac-94fb-72d4c3f207e9"/>
-                </node>
-                <node id="PassiveList"> Hunter 7th Level Passives
-                    <attribute id="Passives" type="LSString" value="EscapeTheHorde,MultiattackDefense,SteelWill"/>
-                    <attribute id="UUID" type="guid" value="d925a926-b8db-448d-8e76-f17362327a8d"/>
-                </node>
-                <node id="PassiveList"> Hunter 11th Level Passives
-                    <attribute id="Passives" type="LSString" value="Volley,WhirlwindAttack"/>
-                    <attribute id="UUID" type="guid" value="e73fdea2-3d6c-413d-8451-18a00bc5b0b3"/>
-                </node>
-                <node id="PassiveList"> Hunter 15th Level Passives
-                    <attribute id="Passives" type="LSString" value="Evasion,StandAgainstTheTide,UncannyDodge"/>
-                    <attribute id="UUID" type="guid" value="9ae300f8-94b0-42f2-a106-ac654f64a42a"/>
-                </node>
-                <node id="PassiveList"> Elemental Disciplines 3rd Level
-                    <attribute id="Passives" type="LSString" value="ElementalAttunement,FangsOfTheFireSnake,FistOfFourThunders,FistOfUnbrokenAir,RushOfTheGaleSpirits,ShapeTheFlowingRiver,SweepingCinderStrike"/>
-                    <attribute id="UUID" type="guid" value="5139e7d3-f6ee-4442-ad02-373af169e5f2"/>
-                </node>
-                <node id="PassiveList"> Elemental Disciplines 6th Level
-                    <attribute id="Passives" type="LSString" value="ClenchOfTheNorthWind,ElementalAttunement,FangsOfTheFireSnake,FistOfFourThunders,FistOfUnbrokenAir,GongOfTheSummit,RushOfTheGaleSpirits,ShapeTheFlowingRiver,SweepingCinderStrike"/>
-                    <attribute id="UUID" type="guid" value="dec7186a-5bc6-4efa-9504-8f7d01ff7550"/>
-                </node>
-                <node id="PassiveList"> Elemental Disciplines 11th Level
-                    <attribute id="Passives" type="LSString" value="ClenchOfTheNorthWind,ElementalAttunement,FangsOfTheFireSnake,FistOfFourThunders,FistOfUnbrokenAir,FlamesOfThePhoenix,GongOfTheSummit,RideTheWind,RushOfTheGaleSpirits,ShapeTheFlowingRiver,SweepingCinderStrike"/>
-                    <attribute id="UUID" type="guid" value="43aaca9d-1378-487f-bdd3-e8d0895b98bb"/>
-                </node>
-                <node id="PassiveList"> Elemental Disciplines 17th Level
-                    <attribute id="Passives" type="LSString" value="BreathOfWinter,EternalMountainDefense,ClenchOfTheNorthWind,ElementalAttunement,FangsOfTheFireSnake,FistOfFourThunders,FistOfUnbrokenAir,FlamesOfThePhoenix,GongOfTheSummit,RideTheWind,RushOfTheGaleSpirits,ShapeTheFlowingRiver,SweepingCinderStrike,WaveOfTheRollingEarth"/>
-                    <attribute id="UUID" type="guid" value="1db1691f-93e8-47a3-8267-163afbe2ba50"/>
-                </node>
-                <node id="PassiveList"> Maneuvers
-                    <attribute id="Passives" type="LSString" value="BaitAndSwitch,DisarmingAttack,DistractingStrike,FeintAttack,GoadingAttack,MenacingAttack,Parry,PrecisionAttack,PushingAttack,QuickToss,Rally,Riposte,TripAttack"/>
-                    <attribute id="UUID" type="guid" value="e56262e2-6498-45d7-9819-7893dcb2dea1"/>
-                </node>
-                <node id="PassiveList"> Mystic Arcanum 6th Level
-                    <attribute id="Passives" type="LSString" value="MysticArcanum_CircleOfDeath,MysticArcanum_Eyebite,MysticArcanum_FleshToStone"/>
-                    <attribute id="UUID" type="guid" value="ab857546-b451-4bee-9d3e-cfe81ec91c2e"/>
-                </node>
-                <node id="PassiveList"> Mystic Arcanum 7th Level
-                    <attribute id="Passives" type="LSString" value="MysticArcanum_CrownOfStars,MysticArcanum_FingerOfDeath"/>
-                    <attribute id="UUID" type="guid" value="871723e7-486a-43a3-97aa-86f52e1e3e0c"/>
-                </node>
-                <node id="PassiveList"> Mystic Arcanum 8th Level
-                    <attribute id="Passives" type="LSString" value="MysticArcanum_DominateMonster,MysticArcanum_Feeblemind,MysticArcanum_MaddeningDarkness"/>
-                    <attribute id="UUID" type="guid" value="9e2bb66c-9a4e-4e58-9671-f48973dcf72d"/>
-                </node>
-                <node id="PassiveList"> Mystic Arcanum 9th Level
-                    <attribute id="Passives" type="LSString" value="MysticArcanum_Foresight"/>
-                    <attribute id="UUID" type="guid" value="8858bf3f-b6d6-4782-8664-18924dfb4963"/>
-                </node>
-                <node id="PassiveList"> Signature Spells
-                    <attribute id="Passives" type="LSString" value="SignatureSpells_AnimateDead,SignatureSpells_AshardalonsStride,SignatureSpells_BestowCurse,SignatureSpells_Blink,SignatureSpells_Catnap,SignatureSpells_Counterspell,SignatureSpells_EnemiesAbound,SignatureSpells_EruptingEarth,SignatureSpells_Fear,SignatureSpells_FeignDeath,SignatureSpells_Fireball,SignatureSpells_FlameArrows,SignatureSpells_Fly,SignatureSpells_GaseousForm,SignatureSpells_GlyphOfWarding,SignatureSpells_Haste,SignatureSpells_HypnoticPattern,SignatureSpells_IntellectFortress,SignatureSpells_LifeTransference,SignatureSpells_LightningBolt,SignatureSpells_MinuteMeteors,SignatureSpells_Nondetection,SignatureSpells_ProtectionFromEnergy,SignatureSpells_RemoveCurse,SignatureSpells_SleetStorm,SignatureSpells_Slow,SignatureSpells_SpeakWithDead,SignatureSpells_SpiritShroud,SignatureSpells_StinkingCloud,SignatureSpells_SummonShadowspawn,SignatureSpells_ThunderStep,SignatureSpells_VampiricTouch"/>
-                    <attribute id="UUID" type="guid" value="12ffe752-c644-4106-99df-da3ba20d50df"/>
-                </node>
                 <node id="PassiveList"> Bladesinger Weapon Proficiencies
-                    <attribute id="Passives" type="LSString" value="Proficiency_Clubs,Proficiency_Daggers,Proficiency_Flails,Proficiency_Handaxes,Proficiency_Javelins,Proficiency_LightHammers,Proficiency_Maces,Proficiency_Morningstars,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Sickles,Proficiency_Warpicks"/>
+                    <attribute id="Passives" type="LSString" value="Proficiency_Clubs,Proficiency_Daggers,Proficiency_Flails,Proficiency_Handaxes,Proficiency_Javelins,Proficiency_LightHammers,Proficiency_Longswords,Proficiency_Maces,Proficiency_Morningstars,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Sickles,Proficiency_Spears,Proficiency_Tridents,Proficiency_Warpicks,Proficiency_Warhammers,NoProficiency"/>
                     <attribute id="UUID" type="guid" value="01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"/>
                 </node>
             </children>

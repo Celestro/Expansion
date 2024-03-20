@@ -5,8 +5,8 @@
         <node id="root">
             <children>
                 <node id="TooltipExtraTexts">
-                    <attribute id="Text" type="FixedString" value="BalmOfPeace_AlreadyHealed"/>
-                    <attribute id="UUID" type="guid" value="3b1dfb08-b30f-441b-a345-59fb39fe7cd8"/>
+                    <attribute id="Text" type="TranslatedString" handle="h5ea8dd1cg01a9g452dgaeeag146ce69fcc81" version="1"/>
+                    <attribute id="UUID" type="guid" value="eaaaee81-89b7-4041-9677-44b828c111ea"/>
                 </node>
             </children>
         </node>

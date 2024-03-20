@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="0" revision="0" build="21"/>
+    <version major="4" minor="0" revision="9" build="307"/>
     <region id="SkillLists">
         <node id="root">
             <children>
-                <node id="SkillList"> Monk
-                    <attribute id="Skills" type="LSString" value="Acrobatics, Athletics, History, Insight, Religion, Stealth"/>
-                    <attribute id="UUID" type="guid" value="62053902-433e-45c3-8c80-a171970630a3"/>
-                </node>
-                <node id="SkillList"> Peace Domain
-                    <attribute id="Skills" type="LSString" value="Performance"/>
-                    <attribute id="UUID" type="guid" value="16783d98-211a-49ad-9b85-d802a8d71173"/>
+                <node id="SkillList">
+                    <attribute id="Skills" type="LSString" value="AnimalHandling, Athletics, Intimidation, Nature, Perception, Survival"/>
+                    <attribute id="UUID" type="guid" value="d336d131-a532-4072-80c1-836ee9fa5161"/>
                 </node>
             </children>
         </node>

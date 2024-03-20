@@ -11,10 +11,22 @@
                     <attribute id="UUID" type="guid" value="eed81d66-63fd-454b-b535-1d4c9ee9617b"/>
                 </node>
                 <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="FixedString" value="TwoHandedWeapon_DisplayName"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="488c86d5-742a-4b09-a969-cd1f3d77852b" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="TwoHandedWeapon"/>
                     <attribute id="UUID" type="guid" value="eae08c91-abf9-4851-b5c6-273841947b11"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="e79797137bc54f2ca5678209d5619edd" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="Bladesong_IncompatibleArmor"/>
+                    <attribute id="UUID" type="guid" value="7e28ae351344438681a9d3d822ada041"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd6491492ga9fcg454ag8cdcg000034c71822" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="NotHasActionSurgeResource"/>
+                    <attribute id="UUID" type="guid" value="0cd9ba83-bef4-4a8f-b8d0-ca828ce12982"/>
                 </node>
             </children>
         </node>

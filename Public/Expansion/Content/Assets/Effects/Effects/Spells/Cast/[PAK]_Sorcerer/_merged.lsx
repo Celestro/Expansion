@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="1.85 1.65 1.5" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.15 -1.35 -1.5" />
+					<attribute id="Center" type="fvec3" value="0.35 0.15 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Cast_Sorcerer_MagicalGuidance" />
+					<attribute id="ID" type="FixedString" value="b7e4cdac-6526-4265-8190-6689bf6dadd4" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Cast_Sorcerer_MagicalGuidance" />
+					<attribute id="Radius" type="float" value="2.598076" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/Sorcerer/VFX_Spells_Cast_Sorcerer_MagicalGuidance.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209006" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2644aba9-92c4-54f2-64f8-92aa65c1f83a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="aaad2d87-1c7a-cc7c-e1a8-f6fa77bf640a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="783ce98e-8afb-54ac-6c6e-4c985d5f011b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7f177a1c-73dc-1494-2fef-c8b6ae993b35" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0cdb8dfc-60ec-5b38-3a93-a6103553a55b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0cbd02bb-a8f2-90fe-3d5d-a8055efb7218" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4c4e74a3-a3b0-485a-5422-6f13bcb140c5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7d365265-8eef-0644-e7a6-e194848400ff" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a7920026-79fd-b0d7-1486-f61765e7a4dc" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>
