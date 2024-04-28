@@ -89,6 +89,36 @@
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
                     <attribute id="UUID" type="guid" value="be9b33bf-bf6c-4673-a97c-727c2acee274"/>
                 </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hd6a55ae9ge803g4347gb3c7g0b852bc16ae9" version="1"/>
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="FoeSlayerCharge"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="86cd0a30-9cc3-4847-a857-67bff87822f5"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="SpellMastery1st"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="64680a5e-8575-4385-9526-9681bc732b6f"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="SpellMastery2nd"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Rest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="9c99a91b-3123-40f5-a0bd-608303934272"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="Description" type="TranslatedString" handle="h0ad642d8g5843g4e84gb1f8ge2b826dc8ed7" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h7476cff2gd661g4379g94d3g54f256385e68" version="1"/>
+                    <attribute id="Name" type="FixedString" value="StrokeOfLuck"/>
+                    <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
+                    <attribute id="UUID" type="guid" value="acb51053-ee49-4994-988d-b0fe9397e974"/>
+                </node>
             </children>
         </node>
     </region>

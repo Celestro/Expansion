@@ -4,21 +4,65 @@
     <region id="PassiveLists">
         <node id="root">
             <children>
-				<node id="PassiveList">Deft or Natural Explorer 6th Level
+				<node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value=" Ranger Deft or Natural Explorer 6"/>
                     <attribute id="Passives" type="LSString" value="DeftExplorer_Canny,DeftExplorer_Roving,NaturalExplorer_BeastTamer,NaturalExplorer_UrbanTracker,NaturalExplorer_WastelandWander_Cold,NaturalExplorer_WastelandWander_Fire,NaturalExplorer_WastelandWander_Poison"/>
                     <attribute id="UUID" type="guid" value="f9f5e812-acff-4cbe-b824-265deb89587b"/>
                 </node>
-				<node id="PassiveList">Deft or Natural Explorer 10th Level
+				<node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value=" Ranger Deft or Natural Explorer 10"/>
                     <attribute id="Passives" type="LSString" value="DeftExplorer_Canny,DeftExplorer_Roving,DeftExplorer_Tireless,NaturalExplorer_BeastTamer,NaturalExplorer_UrbanTracker,NaturalExplorer_WastelandWander_Cold,NaturalExplorer_WastelandWander_Fire,NaturalExplorer_WastelandWander_Poison"/>
                     <attribute id="UUID" type="guid" value="d7f8771d-a932-4a4a-97aa-a608d0130e2f"/>
                 </node>
-				<node id="PassiveList">Hide in Plain Sight or Nature's Veil 10th Level
+				<node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Ranger Hide in Plain Sight or Nature's Veil 10"/>
                     <attribute id="Passives" type="LSString" value="HideInPlainSight,NaturesVeil"/>
                     <attribute id="UUID" type="guid" value="3b5d4e6b-d6f6-4dd9-a523-045b75daed18"/>
                 </node>
-                <node id="PassiveList"> Bladesinger Weapon Proficiencies
+				<node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Wizard Signature Spells 20"/>
+                    <attribute id="Passives" type="LSString" value="SignatureSpells_AnimateDead,SignatureSpells_AshardalonsStride,SignatureSpells_BestowCurse,SignatureSpells_Blink,SignatureSpells_Catnap,SignatureSpells_Counterspell,SignatureSpells_EnemiesAbound,SignatureSpells_EruptingEarth,SignatureSpells_Fear,SignatureSpells_FeignDeath,SignatureSpells_Fireball,SignatureSpells_FlameArrows,SignatureSpells_Fly,SignatureSpells_GaseousForm,SignatureSpells_GlyphOfWarding,SignatureSpells_Haste,SignatureSpells_HypnoticPattern,SignatureSpells_IntellectFortress,SignatureSpells_LifeTransference,SignatureSpells_LightningBolt,SignatureSpells_MinuteMeteors,SignatureSpells_Nondetection,SignatureSpells_ProtectionFromEnergy,SignatureSpells_RemoveCurse,SignatureSpells_SleetStorm,SignatureSpells_Slow,SignatureSpells_SpeakWithDead,SignatureSpells_SpiritShroud,SignatureSpells_StinkingCloud,SignatureSpells_SummonShadowspawn,SignatureSpells_SummonShadowspawn,SignatureSpells_VampiricTouch"/>
+                    <attribute id="UUID" type="guid" value="ec16c6d2-5316-46e7-9ed6-bedf5d4169b2"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Wizard Bladesinger Weapon Proficiencies 3"/>
                     <attribute id="Passives" type="LSString" value="Proficiency_Clubs,Proficiency_Daggers,Proficiency_Flails,Proficiency_Handaxes,Proficiency_Javelins,Proficiency_LightHammers,Proficiency_Longswords,Proficiency_Maces,Proficiency_Morningstars,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Sickles,Proficiency_Spears,Proficiency_Tridents,Proficiency_Warpicks,Proficiency_Warhammers,NoProficiency"/>
                     <attribute id="UUID" type="guid" value="01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Knowledge Potent Spellcasting or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,PotentSpellcasting"/>
+                    <attribute id="UUID" type="guid" value="16c4288b-c328-499b-91f5-64d35f6cf815"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Life Divine Strike or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_Life"/>
+                    <attribute id="UUID" type="guid" value="17359adf-cfba-4c3b-b8c1-19e22642b128"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Light Potent Spellcasting or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,PotentSpellcasting"/>
+                    <attribute id="UUID" type="guid" value="81a0dfd7-5149-45f5-9e16-d72354a7c55f"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Nature Divine Strike or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_Nature"/>
+                    <attribute id="UUID" type="guid" value="4778a549-4afc-4271-9251-3cf36134b47d"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Tempest Divine Strike or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_Tempest"/>
+                    <attribute id="UUID" type="guid" value="bb442132-f91d-494d-8ad8-275093fbde0c"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric Trickery Divine Strike or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_Trickery"/>
+                    <attribute id="UUID" type="guid" value="e2e43336-ad5b-439a-9efc-1d93e18e532a"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Cleric War Divine Strike or Blessed Strikes"/>
+                    <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_War"/>
+                    <attribute id="UUID" type="guid" value="a76e4a50-e982-49da-abe0-190dcf2f78c4"/>
                 </node>
             </children>
         </node>

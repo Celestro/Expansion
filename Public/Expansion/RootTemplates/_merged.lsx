@@ -47,6 +47,68 @@
 						<node id="GameMaster" />
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h768ab8eegec01g4a74ga13cg8f58f41c80e4" version="1" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h3aad821dga734g4ca0g9f61g6525eb9def19" version="1" />
+					<attribute id="Icon" type="FixedString" value="ARM_AvengingAngel_Wings" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="66aefeee-109a-4d58-bc0c-a3e3da9a00ed" />
+					<attribute id="Name" type="LSString" value="AngelWings" />
+					<attribute id="ParentTemplateId" type="FixedString" value="465340b0-523f-48ac-a832-4db4a1183c74" />
+					<attribute id="Type" type="FixedString" value="item" />
+					<attribute id="Stats" type="FixedString" value="ARM_AngelWings" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115188075855920" />
+					<children>
+						<node id="Equipment">
+							<attribute id="EquipmentSlots" type="uint32" value="0" />
+							<children>
+								<node id="LongHair" />
+								<node id="ParentRace" />
+								<node id="ShortHair" />
+								<node id="Slot">
+									<attribute id="Object" type="FixedString" value="Wings" />
+								</node>
+								<node id="Visuals">
+									<children>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="7d73f501-f65e-46af-a13b-2cacf3985d05" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="00e372a0-51fe-9b41-2121-eb9dbf4e49ef" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="71180b76-5752-4a97-b71f-911a69197f58" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="00e372a0-51fe-9b41-2121-eb9dbf4e49ef" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="e39505f7-f576-4e70-a99e-8e29cd381a11" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="00e372a0-51fe-9b41-2121-eb9dbf4e49ef" />
+												</node>
+											</children>
+										</node>
+										<node id="Object">
+											<attribute id="MapKey" type="guid" value="47c0315c-7dc6-4862-b39b-8bf3a10f8b54" />
+											<children>
+												<node id="MapValue">
+													<attribute id="Object" type="FixedString" value="00e372a0-51fe-9b41-2121-eb9dbf4e49ef" />
+												</node>
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="GameMaster" />
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

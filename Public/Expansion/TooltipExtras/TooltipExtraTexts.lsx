@@ -5,8 +5,14 @@
         <node id="root">
             <children>
                 <node id="TooltipExtraTexts">
+                    <attribute id="Comment" type="LSString" value="Steady Aim"/>
                     <attribute id="Text" type="TranslatedString" handle="h5ea8dd1cg01a9g452dgaeeag146ce69fcc81" version="1"/>
                     <attribute id="UUID" type="guid" value="eaaaee81-89b7-4041-9677-44b828c111ea"/>
+                </node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Comment" type="LSString" value="Draconic Sorcerer Dread Presence"/>
+                    <attribute id="Text" type="TranslatedString" handle="h63f4a9c4g7d72g4424gba40gd34d3de3d1aa" version="1"/>
+                    <attribute id="UUID" type="guid" value="aab510e0-ac11-4063-a962-1795eb340b3c"/>
                 </node>
             </children>
         </node>

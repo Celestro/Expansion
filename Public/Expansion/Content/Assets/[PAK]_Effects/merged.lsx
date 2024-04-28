@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="EffectBank">
+		<node id="EffectBank">
+			<children>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="6 8 6" />
+					<attribute id="BoundsMin" type="fvec3" value="-6 -4 -6" />
+					<attribute id="Center" type="fvec3" value="0 2 0" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Prepare_DraconicPresence_Charmed" />
+					<attribute id="ID" type="FixedString" value="b638285a-5656-4993-b4f4-f1bd9ad810ba" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Prepare_DraconicPresence_Charmed" />
+					<attribute id="Radius" type="float" value="6" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Prepare/VFX_Sorcerer_Prepare_DraconicPresence_Charmed.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274212" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e47873a4-5031-a742-66a4-1b65ba46b259" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="706c6118-b534-ecc1-051c-6699673cca6a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d2266723-53b8-4f06-2c6b-d07d2a3d0d06" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d63c9aec-8580-3b65-f43d-63a84726629c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ad993549-1f26-645a-b3ce-84b96fe5253a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8751800b-cced-9ecf-949d-f39f358563b6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="33654dbe-cd51-66cb-ce75-ea45afbb56a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c0984abb-f798-0a94-2c7b-ce55adc3ed38" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6cb27dd6-96b7-8c2c-15fd-8cac78575c00" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="6 8 6" />
+					<attribute id="BoundsMin" type="fvec3" value="-6 -4 -6" />
+					<attribute id="Center" type="fvec3" value="0 2 0" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Prepare_DraconicPresence_Frightened" />
+					<attribute id="ID" type="FixedString" value="e6c4267f-abc0-4dd6-b3d0-9c15ae431d6a" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Prepare_DraconicPresence_Frightened" />
+					<attribute id="Radius" type="float" value="6" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Prepare/VFX_Sorcerer_Prepare_DraconicPresence_Frightened.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115198813274212" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e47873a4-5031-a742-66a4-1b65ba46b259" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="706c6118-b534-ecc1-051c-6699673cca6a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d2266723-53b8-4f06-2c6b-d07d2a3d0d06" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d63c9aec-8580-3b65-f43d-63a84726629c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ad993549-1f26-645a-b3ce-84b96fe5253a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8751800b-cced-9ecf-949d-f39f358563b6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="33654dbe-cd51-66cb-ce75-ea45afbb56a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c0984abb-f798-0a94-2c7b-ce55adc3ed38" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6cb27dd6-96b7-8c2c-15fd-8cac78575c00" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="09507f13-8b48-c991-2f7e-46e2958f3344" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_02" />
+					<attribute id="ID" type="FixedString" value="de58aac5-9a9e-40c1-b3f5-cc198b370614" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_02" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_02.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725656" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0fb917cc-128d-3eaa-0927-4c3a42f0101a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d76c84bc-dd9a-bfdd-176f-20c2edd7b437" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="68d0fcb6-403f-f54e-2bed-6f5c3229cb53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e5e9d9d2-40db-dd6e-9186-2059408baf96" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4c92036-3733-5b15-f86d-1a02855d0144" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4b32aed8-01c8-5ab2-adcc-2b5fad7712cf" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="65ddcfa5-6421-09ce-1b2f-c7b0cf039777" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2.400015" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_Root_Textkey_01" />
+					<attribute id="ID" type="FixedString" value="4cb9107f-fe96-47fb-ba61-009daa1ac25b" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_Root_Textkey_01" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/VFX_Sorcerer_Cast_DraconicPresence_Frightened_Root_Textkey_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241811" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ca3fdf34-ccbe-c0dc-5c21-f3b280b01f95" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ebf06a5-c3e5-715d-4fed-3d70b21281a2" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="40e88366-05a2-0475-5b4b-1f10e6168a74" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="65ddcfa5-6421-09ce-1b2f-c7b0cf039777" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="44192e18-75cf-4d16-1747-81ed534b8247" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="50068c14-5352-ef35-8b03-0c142582a705" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="161f2659-7ed2-628b-ac83-0caaaa9c717e" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="41cb0a8d-3d01-66d2-cd31-7e3ebe375501" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_01" />
+					<attribute id="ID" type="FixedString" value="cf2e67a1-9a9b-4b0d-83a3-923d28e93ee3" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_01" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/VFX_Sorcerer_Cast_DraconicPresence_Frightened_BodyFX_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115203108241811" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="68d0fcb6-403f-f54e-2bed-6f5c3229cb53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e5e9d9d2-40db-dd6e-9186-2059408baf96" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Cast_DraconicPresence_Charmed_BodyFX_02" />
+					<attribute id="ID" type="FixedString" value="8e0962ba-4589-4eed-a1d3-f03f52a053f2" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Cast_DraconicPresence_Charmed_BodyFX_02" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/VFX_Sorcerer_Cast_DraconicPresence_Charmed_BodyFX_02.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725656" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c851631a-669c-fb82-9138-93833bdb62f9" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="52c5db17-8a9e-8436-dc11-338301f99bb7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c189fd60-7f63-478a-b030-c3efb0c00e0c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="68f1ce79-3858-d978-a424-317527480bce" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f247fd65-cfa3-679c-15ad-ab21948aa11c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f2219a9d-d817-f816-342a-84a236ec2a00" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="efbe92b2-fb21-d294-49b1-57bc9f54d78b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a1a7099-9c46-4d5f-8f00-a249af1dc519" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="5 5 5" />
+					<attribute id="BoundsMin" type="fvec3" value="-5 -5 -5" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3.425078" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Sorcerer_Cast_DraconicPresence_Charmed_Root_Textkey_01" />
+					<attribute id="ID" type="FixedString" value="af45fbe3-23da-4998-9555-33b186b95f60" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="VFX_Sorcerer_Cast_DraconicPresence_Charmed_Root_Textkey_01" />
+					<attribute id="Radius" type="float" value="5" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/VFX_Sorcerer_Cast_DraconicPresence_Charmed_Root_Textkey_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725559" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ca3fdf34-ccbe-c0dc-5c21-f3b280b01f95" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="02687804-cb16-c702-3eb7-aafa0b8898c0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="44192e18-75cf-4d16-1747-81ed534b8247" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="161f2659-7ed2-628b-ac83-0caaaa9c717e" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8c607aae-c078-9c38-263e-58baefb33f0a" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

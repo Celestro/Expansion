@@ -47,6 +47,19 @@
                     <attribute id="SelectorId" type="FixedString" value="EldritchVersatility"/>
                     <attribute id="UUID" type="guid" value="b9576fb3-fb85-4128-b8c5-3acb80324838"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="hda8e3cfdg797fg4a0fgadd4gb2af02998c82" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h699c4673gc560g4504g800fgcdcc08335a4f" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
+                    <attribute id="SelectorId" type="FixedString" value="SignatureSpells"/>
+                    <attribute id="UUID" type="guid" value="b85750aa-558e-4b8a-a356-de2ad388c1e9"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h996980d1ga2bbg4f2cg8738g5681aad63a93" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h88941415gdb53g4b48gb059g9f70ee1f0411" version="1"/>
+                    <attribute id="SelectorId" type="FixedString" value="MartialVersatility"/>
+                    <attribute id="UUID" type="guid" value="f53cac77-0d9f-4c39-9663-24e59e875917"/>
+                </node>
             </children>
         </node>
     </region>
