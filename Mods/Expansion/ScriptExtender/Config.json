@@ -1,7 +1,0 @@
-{
-    "RequiredVersion": 1,
-    "ModTable": "Expansion_a2c4b0fc-e745-41df-81b7-fa53950d86a0",
-    "FeatureFlags": [
-        "Lua"
-    ]
-}
