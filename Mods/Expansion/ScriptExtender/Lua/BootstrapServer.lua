@@ -182,6 +182,42 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 	end
 end)
 
+-- Bardic Inspiration Scaling
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
+	if Osi.HasPassive(character,"BardicInspiration_2") == 1 then
+		_D("First Check")
+		local d10 = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[10].DiceValue
+		if d10 == "D10" then
+			_D("Second check")
+			Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
+		end
+	elseif Osi.HasPassive(character,"BardicInspiration_2") == 0 then
+		local d12 = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[10].DiceValue
+		if d12 == "D12" then
+			Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D10"
+		end
+	end
+end)
+
+-- Bardic Inspiration Scaling Alternate
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
+	if Osi.HasPassive(character,"BardicInspiration_2") == 1 then
+		DelayedCall(1000, function ()
+			local d10 = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[10].DiceValue
+			if d10 == "D10" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
+			end
+		end)
+	elseif Osi.HasPassive(character,"BardicInspiration_2") == 0 then
+		DelayedCall(1000, function ()
+			local d12 = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[10].DiceValue
+			if d12 == "D12" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D10"
+			end
+		end)
+	end
+end)
+
 -- Divine Strike 14th
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
 	if Osi.HasPassive(character,"Divine_Strike_Life_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Nature_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Tempest_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Trickery_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_War_Toggle_2") == 1 then
@@ -419,6 +455,86 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 				local dsrwar = Ext.Stats.Get("Projectile_DivineStrike_Ranged_War")
 				dsrwar.DescriptionParams = "DealDamage(2d8, MainMeleeWeaponDamageType)"
 				dsrwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+2d8, MainMeleeWeaponDamageType)"
+				dsrwar:Sync()
+			end
+		end)
+	elseif level < 14 then
+		DelayedCall(1000, function ()
+			if Osi.HasPassive(character,"Divine_Strike_Life_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Nature_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Tempest_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Trickery_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_War_Toggle_2") == 0 then
+				local dsmlife = Ext.Stats.Get("Target_DivineStrike_Melee_Life")
+				dsmlife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
+				dsmlife:Sync()
+				local dsrlife = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Life")
+				dsrlife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
+				dsrlife:Sync()
+				local dsclife = Ext.Stats.Get("Target_DivineStrike_Life_Container")
+				dsclife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)"
+				dsclife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
+				dsclife:Sync()
+				local dscnature = Ext.Stats.Get("Target_DivineStrike_Nature_Container")
+				dscnature.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire);DealDamage(1d8,Lightning)"
+				dscnature:Sync()		
+				local dsmncold = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Cold")
+				dsmncold.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold)"
+				dsmncold:Sync()
+				local dsrncold = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Cold")
+				dsrncold.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold)"
+				dsrncold:Sync()
+				local dsmnfire = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Fire")
+				dsmnfire.DescriptionParams = "DealDamage(1d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire)"
+				dsmnfire:Sync()
+				local dsrnfire = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Fire")
+				dsrnfire.DescriptionParams = "DealDamage(1d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire)"
+				dsrnfire:Sync()
+				local dsmnlightning = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Lightning")
+				dsmnlightning.DescriptionParams = "DealDamage(1d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Lightning)"
+				dsmnlightning:Sync()
+				local dsrnlightning = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Lightning")
+				dsrnlightning.DescriptionParams = "DealDamage(1d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Lightning)"
+				dsrnlightning:Sync()
+				local dsctempest = Ext.Stats.Get("Target_DivineStrike_Tempest_Container")
+				dsctempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsctempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
+				dsctempest:Sync()
+				local dsmtempest = Ext.Stats.Get("Target_DivineStrike_Melee_Tempest")
+				dsmtempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
+				dsmtempest:Sync()
+				local dsrtempest = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Tempest")
+				dsrtempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
+				dsrtempest:Sync()
+				local dsctrickery = Ext.Stats.Get("Target_DivineStrike_Trickery_Container")
+				dsctrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsctrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
+				dsctrickery:Sync()
+				local dsmtrickery = Ext.Stats.Get("Target_DivineStrike_Melee_Trickery")
+				dsmtrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsmtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
+				dsmtrickery:Sync()
+				local dsrtrickery = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Trickery")
+				dsrtrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+				dsrtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
+				dsrtrickery:Sync()
+				local dscwar = Ext.Stats.Get("Target_DivineStrike_War_Container")
+				dscwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
+				dscwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
+				dscwar:Sync()
+				local dsmwar = Ext.Stats.Get("Target_DivineStrike_Melee_War")
+				dsmwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
+				dsmwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
+				dsmwar:Sync()
+				local dsrwar = Ext.Stats.Get("Projectile_DivineStrike_Ranged_War")
+				dsrwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
+				dsrwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
 				dsrwar:Sync()
 			end
 		end)
