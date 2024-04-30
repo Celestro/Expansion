@@ -14,6 +14,16 @@
                     <attribute id="Spells" type="LSString" value="Zone_ConeOfCold_Monk;Wall_WallOfStone_Monk;Target_Stoneskin_Monk;Wall_WallOfFire_Monk;Projectile_Fireball_Monk;Shout_GaseousForm_Monk;Shout_Fly_Monk;Target_HoldPerson_Monk;Projectile_ScorchingRay_Monk;Target_Shatter_Monk;Projectile_BladeOfTheRime;Projectile_RayOfFrost_Monk;Projectile_FangsOfTheFireSnake;Zone_Thunderwave_Monk;Target_FistOfUnbrokenAir;Zone_GustOfWind_Monk;Target_ShapeTheFlowingRiver_IceBlock;Projectile_ChromaticOrb_Monk;Zone_BurningHands_Monk;Target_ShockingGrasp_Monk;Target_WaterWhip"/>
                     <attribute id="UUID" type="guid" value="7a35b35e-7101-42f4-82ce-f922bb9f09e4"/>
                 </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Vengeance Paladin SLevel 4"/>
+                    <attribute id="Spells" type="LSString" value="Target_Banishment;Teleportation_DimensionDoor"/>
+                    <attribute id="UUID" type="guid" value="47d6a1a8-eacc-4355-ac2d-dac73ff01490"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Comment" type="LSString" value="Vengeance Paladin SLevel 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_HoldMonster;Target_FarStep"/>
+                    <attribute id="UUID" type="guid" value="e8fce689-c836-45b3-9666-fb45d57ab1f9"/>
+                </node>
             </children>
         </node>
     </region>
