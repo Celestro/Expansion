@@ -1,5 +1,5 @@
 {
-  "OptionalFeatures":{
+  "Optional Features":{
     "Barbarian":{
       "Enabled":true
     },
@@ -30,17 +30,22 @@
     "Sorcerer":{
       "Enabled":true
     },
+    "Wizard":{
+      "Enabled":true
+    }
+  },
+  "Miscellaneous":{
     "Sorcerer Subclasses 14th Level Feature":{
       "Enabled":false
     },
-    "Wizard":{
-      "Enabled":true
-    },
     "Wizard Bladesinger":{
       "Enabled":false
+    },
+    "12th Level Max":{
+      "Enabled":true
     }
   },
-  "XPRate":{
+  "XP Rate":{
     "Base XP":{
       "Enabled":true
     },
