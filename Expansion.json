@@ -1,0 +1,57 @@
+{
+  "OptionalFeatures":{
+    "Barbarian":{
+      "Enabled":true
+    },
+    "Bard":{
+      "Enabled":true
+    },
+    "Cleric":{
+      "Enabled":true
+    },
+    "Druid":{
+      "Enabled":true
+    },
+    "Fighter":{
+      "Enabled":true
+    },
+    "Monk":{
+      "Enabled":true
+    },
+    "Paladin":{
+      "Enabled":true
+    },
+    "Ranger":{
+      "Enabled":true
+    },
+    "Rogue":{
+      "Enabled":true
+    },
+    "Sorcerer":{
+      "Enabled":true
+    },
+    "Sorcerer Subclasses 14th Level Feature":{
+      "Enabled":false
+    },
+    "Wizard":{
+      "Enabled":true
+    },
+    "Wizard Bladesinger":{
+      "Enabled":false
+    }
+  },
+  "XPRate":{
+    "Base XP":{
+      "Enabled":true
+    },
+    "75% XP":{
+      "Enabled":false
+    },
+    "50% XP":{
+      "Enabled":false
+    },
+    "25% XP":{
+      "Enabled":false
+    }
+  }
+}
