@@ -8,7 +8,7 @@
                 <node id="ModuleInfo">
                     <attribute id="Author" type="LSWString" value="DiZ"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
-                    <attribute id="Description" type="LSWString" value="Expands upon base classes"/>
+                    <attribute id="Description" type="LSWString" value="Expands upon the base classes"/>
                     <attribute id="Folder" type="LSWString" value="Expansion"/>
                     <attribute id="GMTemplate" type="FixedString" value=""/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
@@ -22,7 +22,7 @@
                     <attribute id="Tags" type="LSWString" value=""/>
                     <attribute id="Type" type="FixedString" value="Add-on"/>
                     <attribute id="UUID" type="FixedString" value="a2c4b0fc-e745-41df-81b7-fa53950d86a0"/>
-                    <attribute id="Version" type="int64" value="4294967302"/>
+                    <attribute id="Version" type="int64" value="36028797018963968"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version" type="int64" value="4294967298"/>

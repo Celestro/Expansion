@@ -1299,16 +1299,6 @@ EXP_Wizard_Bladesinger = {
     },
 }
 
-------------------------------- RAW's Two Weapon Fighting -------------------------------
-
-function EXP_ModifyRAWTwoWeaponFighting()
-
-	if Ext.Mod.IsModLoaded("f19c68ed-70be-4c3d-b610-e94afc5c5103") then
-		local passive = Ext.Stats.Get("RAW_OffHand_Enabler")
-		passive.Conditions = passive.Conditions .. " and not SpellId('Target_BoomingBlade') and not SpellId('Target_GreenFlameBlade')"
-	end
-end
-
 --------------------------------- Action Surge Changes ----------------------------------
 
 local EXP_Fighter_ActionSurge
@@ -1369,6 +1359,8 @@ function EXP_BlessedStrikes()
 	dsmeleecrit.Conditions = dsmeleecrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
 	dsranged.Conditions = dsranged.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
 	dsrangedcrit.Conditions = dsrangedcrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
+	local dspoisonexp = Ext.Stats.Get("Divine_Strike_Trickery")		
+	dspoisonexp.Boosts = dspoisonexp.Boosts .. ";UnlockSpell(Target_BoomingBlade_DivineStrike_Poison);UnlockSpell(Target_GreenFlameBlade_DivineStrike_Poison)"
 end
 
 -------------------------- Martial Arts Bonus Unarmed Strike --------------------------
@@ -1640,7 +1632,6 @@ local wizardenabled = EXP_Wizardconfig["Enabled"]
 local bladesingerenabled = EXP_Bladesingerconfig["Enabled"]
 
 local function EXP_StatsLoaded()
-	EXP_ModifyRAWTwoWeaponFighting()
 	EXP_ActionSurge()
 	EXP_BlessedStrikes()
 	EXP_MartialArts()
@@ -1739,7 +1730,7 @@ local function EXP_StatsLoaded()
 		print(string.format("Expansion: Switching the Wizard Bladesinger's Song of Victory feature to 12th level."))
 		EXP_WizardBladesinger()
 	elseif	bladesingerenabled ~= true then
-		print(string.format("Expansion: Wizard's Optional Features disabled."))
+		print(string.format("Expansion: Keeping the Wizard Bladesinger's Song of Victory feature to 14th level."))
 	end
 end
 Ext.Events.StatsLoaded:Subscribe(EXP_StatsLoaded)

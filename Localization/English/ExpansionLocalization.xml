@@ -51,6 +51,7 @@
 	<content contentuid="he7903471g9c92g494ag8cd1gb618846b69bc" version="1">Add an additional [1] damage when you deal damage to a creature with a spell.</content>
 	<content contentuid="h792002a4g391dg4a96ga926g3ef5ba03a4ac" version="1">Magical Inspiration: Healing</content>
 	<content contentuid="h0c370ca2ge440g4481ga510g18f9845da391" version="1">Heal an additional [1] hit points when you heal a creature with a spell.</content>
+	<content contentuid="h6edc236ag9155g4734ga926g160e1620cf5f" version="1">Can add an additional [1] to damage dealt or hit points restored by a spell by expending anm &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
 
 	<content contentuid="hb7f6163ega459g4d84gbdaeg54f80f42f3ce" version="1">Harness Divine Power</content>
 	<content contentuid="h25fa5380ge91bg441bga7bag276192a7e347" version="1">You can your &lt;LSTag Type="ActionResource" Tooltip="ChannelDivinity"&gt;Channel Divinity&lt;/LSTag&gt; to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;, the level of which can be no higher than half your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice. You regain all expended uses when you finish a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
@@ -139,6 +140,8 @@
   <content contentuid="h96e39f55g8bf4g4e3eg9e1fge5ca9ae2c1c3" version="1">Primal Awareness</content>
   <content contentuid="hc879165ag99b3g4ebega700g12b2a2c8efbe" version="1">You can focus your awareness through the interconnections of nature. You learn additional spells when you reach certain levels in this class if you don't already know them. You can cast each of these spells once without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot's&lt;/LSTag&gt;. Once you cast a spell in this way, you can't do so again until you finish a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
   <content contentuid="h1d29b2edg0eacg4e20g8db4g7875b0422849" version="1">Can cast without expending a spell slot.</content>
+  <content contentuid="hcfccb2a0g3e5dg4bcag8f52g54720ececbf0" version="1">Speak with Animals: Primal Awareness</content>
+  <content contentuid="h8e066398gcc59g4e51gba02g4601057b4022" version="1">Commune with Nature: Primal Awareness</content>
   <content contentuid="h345bef1cg2fdag4aa6gbe09g8e49f179420a" version="1">Hide in Plain Sight</content>
   <content contentuid="hb222dc82gc871g49ffg8f6eg3c0382f3fe46" version="1">As an action, you can camouflage yourself with your environment to become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; and gain a +[1] bonus to Stealth &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;, as long as you stand still.</content>
   <content contentuid="h6b40ce00ge4d7g4b9bg9a6cgec08a5c6c3fc" version="1">Nature's Veil</content>
@@ -171,10 +174,9 @@
 
   <content contentuid="h43e38d7bgb4bcg48b3g90f9g43ad2b8c1bca" version="1">When you make an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, you can expend one use of your &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt;. Roll a Bardic Inspiration die and add the number rolled to your &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
   <content contentuid="h9fe47639gea70g4a94g8728gda379d0e5794" version="1">Peerless Skill</content>
-  <content contentuid="he0207b69g8f22g4c6cg9975g3fa619a6a454" version="1">Expend one use of your &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; when you make a non-dialogue &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, adding the die the check.</content>
-  <content contentuid="h891cd1d6g4137g445cgad1bg9b3719ba1dab" version="1">Toggle Peerless Skill</content>
-  <content contentuid="hcca9d76bg1996g44acgbcc7g9eeb7fccd330" version="1">Inspire yourself to add a +[1] bonus to your next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
-  <content contentuid="h6d389e5eg8271g4911ga1d0g7a991386e97e" version="1">This entity adds a +[1] bonus to their next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+  <content contentuid="h15722390g6ca3g47deg93e3gb07c6a83e409" version="1">Inspire yourself to add a +[1] bonus to your next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+  <content contentuid="h6263ea28gda28g45c4g87d3gc7affe404c96" version="1">Can use Bardic Inspiration to add a +[1] bonus to the next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+  <content contentuid="hb63bac6bg7bd8g4ab1g912fgc6bedf9b6faf" version="1">You cannot use this ability while already under its effects.</content>
 
   <content contentuid="h33f8e219g3c7fg4c25g8e5fg5fde0bcb7e6d" version="1">You can cast the &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Hide&lt;/LSTag&gt; spell without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
   <content contentuid="h08f12d62g3937g4d53ga10age5d3b720c89b" version="1">Thousand Forms</content>
