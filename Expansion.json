@@ -44,16 +44,16 @@
   },
   "XP Rate":{
     "50% XP":{
-      "Enabled":true
+      "Enabled":false
     },
     "25% XP":{
-      "Enabled":true
+      "Enabled":false
     },
     "Rescaled XP":{
-      "Enabled":true
+      "Enabled":false
     },
     "12th Level Max":{
-      "Enabled":true
+      "Enabled":false
     }
   }
 }
