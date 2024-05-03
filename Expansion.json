@@ -40,23 +40,20 @@
     },
     "Wizard Bladesinger":{
       "Enabled":false
-    },
-    "12th Level Max":{
-      "Enabled":false
     }
   },
   "XP Rate":{
-    "Base XP":{
+    "50% XP":{
       "Enabled":true
     },
-    "75% XP":{
-      "Enabled":false
-    },
-    "50% XP":{
-      "Enabled":false
-    },
     "25% XP":{
-      "Enabled":false
+      "Enabled":true
+    },
+    "Rescaled XP":{
+      "Enabled":true
+    },
+    "12th Level Max":{
+      "Enabled":true
     }
   }
 }
