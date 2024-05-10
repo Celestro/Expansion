@@ -185,10 +185,8 @@ end)
 -- Bardic Inspiration Scaling
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
 	if Osi.HasPassive(character,"BardicInspiration_2") == 1 then
-		_D("First Check")
 		local d10 = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[10].DiceValue
 		if d10 == "D10" then
-			_D("Second check")
 			Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
 		end
 	elseif Osi.HasPassive(character,"BardicInspiration_2") == 0 then
@@ -1293,10 +1291,10 @@ function DedicatedWeapon(weapon, wielder)
     local weaponProperties = Ext.Entity.Get(weapon).Weapon.WeaponProperties
 			
     if proficiencyGroups & ProficiencyGroupBitFlags["Shortswords"] == ProficiencyGroupBitFlags["Shortswords"] or (proficiencyGroups & ProficiencyGroupBitFlags["SimpleWeapons"] == ProficiencyGroupBitFlags["SimpleWeapons"] and weaponProperties & WeaponPropertyBitFlags["Heavy"] == 0) then
-        _P("Monk Weapon")
+--        _P("Monk Weapon")
         return true
     else
-        Ext.Utils.PrintWarning("Not Monk Weapon")
+--        Ext.Utils.PrintWarning("Not Monk Weapon")
         return false
     end
 end
@@ -1332,7 +1330,7 @@ end)
 
 -- Dedicated Weapon Status
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(item, status, character, _)
-	if status == "DEDICATED_WEAPON" then
+	if status == "DEDICATED_WEAPON" and Osi.IsWeapon(item) == 1 and character ~= nil then
 		for _,weaponability in pairs(Ext.Entity.Get(item).Weapon.Rolls) do
 			for _,dice in pairs(weaponability) do
 				for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
@@ -1403,7 +1401,7 @@ end)
 -- D10 Martial Arts
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
 	local level = Osi.GetLevel(character)
-	if level == 17 then
+	if level > 16 then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			if class.ClassUUID == "c4598bdb-fc07-40dd-a62c-90cc138bd76f" and class.Level > 16 then
 				Ext.StaticData.Get("b4136c95-a4f9-4fc1-96bc-00310232d27a","LevelMap").LevelMaps[12].DiceValue="D10"
@@ -1427,6 +1425,38 @@ Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
 			local levelmap = Ext.StaticData.Get("b4136c95-a4f9-4fc1-96bc-00310232d27a","LevelMap").LevelMaps[12].DiceValue
 			if class.ClassUUID == "c4598bdb-fc07-40dd-a62c-90cc138bd76f" and class.Level < 17 and levelmap == "D10" then
 				Ext.StaticData.Get("b4136c95-a4f9-4fc1-96bc-00310232d27a","LevelMap").LevelMaps[12].DiceValue="D8"
+			end
+		end
+	end
+end)
+
+-- D12 Improved Combat Superiority
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 17 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			if class.ClassUUID == "721dfac3-92d4-41f5-b773-b7072a86232f" and class.Level > 17 then
+				Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue="D12"
+			end
+		end
+	end
+end)
+
+-- D12 Improved Combat Superiority
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 17 and Osi.IsPlayer(character) == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "721dfac3-92d4-41f5-b773-b7072a86232f" and class.Level > 17 and levelmap == "D10" then
+				Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue="D12"
+			end
+		end
+	elseif level < 18 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "721dfac3-92d4-41f5-b773-b7072a86232f" and class.Level < 18 and levelmap == "D12" then
+				Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue="D10"
 			end
 		end
 	end
@@ -1501,4 +1531,84 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, st
 			end
 		end
     end
+end)
+
+-- D12 Bardic Inspiration
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 14 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level > 14 then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
+			end
+		end
+	end
+end)
+
+-- D12 Bardic Inspiration Alternative
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 14 and Osi.IsPlayer(character) == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level > 14 and levelmap == "D8" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D10"
+			end
+		end
+	elseif level < 15 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level < 15 and levelmap == "D10" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D8"
+			end
+		end
+	end
+end)
+
+-- Master's Flourish
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, causee, _)
+	if status == "MASTERS_FLOURISH" then
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive_EXP")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile_EXP")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing_EXP")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive_EXP")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile_EXP")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing_EXP")
+		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		pbfdef:Sync()
+		pbfmob:Sync()
+		pbfssh:Sync()
+		tbfdef:Sync()
+		tbfmob:Sync()
+		zbfssh:Sync()
+	end
+end)
+
+-- Master's Flourish Removal
+Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(character, status, causee, _)
+	if status == "MASTERS_FLOURISH" then
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive_EXP")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile_EXP")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing_EXP")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive_EXP")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile_EXP")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing_EXP")
+		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfdef:Sync()
+		pbfmob:Sync()
+		pbfssh:Sync()
+		tbfdef:Sync()
+		tbfmob:Sync()
+		zbfssh:Sync()
+	end
 end)

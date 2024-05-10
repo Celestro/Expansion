@@ -211,3 +211,9 @@ function IsElusive(entity)
 
     return HasPassive('Elusive', entity) & ~HasStatus('SG_Incapacitated', entity)
 end
+
+function HasWindSoul(entity)
+    local entity = entity or context.Source
+
+    return HasStatus('WIND_SOUL', entity)
+end

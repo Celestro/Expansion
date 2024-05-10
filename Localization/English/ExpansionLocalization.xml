@@ -177,9 +177,22 @@
   <content contentuid="h15722390g6ca3g47deg93e3gb07c6a83e409" version="1">Inspire yourself to add a +[1] bonus to your next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
   <content contentuid="h6263ea28gda28g45c4g87d3gc7affe404c96" version="1">Can use Bardic Inspiration to add a +[1] bonus to the next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
   <content contentuid="hb63bac6bg7bd8g4ab1g912fgc6bedf9b6faf" version="1">You cannot use this ability while already under its effects.</content>
+  <content contentuid="he350131bga4f6g4e14g867egaaf0dac15a3d" version="1">Master's Flourish</content>
+  <content contentuid="h06702d9cg291eg4020gb8aag400f35e7951e" version="1">Whenever you use a Blade Flourish option, you can roll a [1] and use it instead of expending a &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; die.</content>
+  <content contentuid="h30b12a16gb3f7g49acg9150ge596f064f2ad" version="1">Blade Flourish options roll a [1] instead of expending &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+  <content contentuid="ha9224d4ag91c6g4844ga38dgfef58afb80c8" version="1">Battle Magic</content>
+  <content contentuid="h2bf22ea4g7d9eg4b0dg8972g3b5f75851ac8" version="1">You have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast spell, you can make one weapon attack as a bonus action.</content>
 
-  <content contentuid="h33f8e219g3c7fg4c25g8e5fg5fde0bcb7e6d" version="1">You can cast the &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Hide&lt;/LSTag&gt; spell without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+  <content contentuid="h7869538bg7640g497fgaa06g86b5b517abe7" version="1">Nature's Sanctuary</content>
+  <content contentuid="hef132e7dg28a8g4a9dgbe12g2001cf3dea2f" version="1">Creatures of the natural world sense your connection to nature and become hesitant to attack you.</content>
+  <content contentuid="h3326643ag1dc9g43b9ga711g478f30cf278e" version="1">When a beast or plant attacks you, you can possibly force them to choose a different target for the attack on a failed Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+  <content contentuid="hca525c2bg9f1fg42e1ga542gf6ed474e499a" version="1">On a successful save, the beast or plant is immune to the effect until the next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+  <content contentuid="h4de66af3gf5f3g4e40ga835g626f3dc60bcf" version="1">Cannot attack the source.</content>
+  <content contentuid="h29e19254g9bfcg48a0gb7ceg2b44e0c89768" version="1">Immune to Nature's Sanctuary.</content>
+  <content contentuid="h33f8e219g3c7fg4c25g8e5fg5fde0bcb7e6d" version="1">You can cast the &lt;LSTag Type="Spell" Tooltip="Shout_AlterSelf"&gt;Hide&lt;/LSTag&gt; spell without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
   <content contentuid="h08f12d62g3937g4d53ga10age5d3b720c89b" version="1">Thousand Forms</content>
+  <content contentuid="h2fa77493gdc93g4fcdga6acge4bc0470aebc" version="1">The fungal spores in your body alter you: you can't be &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;, Deafened, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, or &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;, and any &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against you counts as a normal hit instead, unless you're &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitated&lt;/LSTag&gt;.</content>
+  <content contentuid="h25b356b7g0661g4bddga4a8g6a9d37a70b07" version="1">Fungal Body</content>
 
   <content contentuid="h687ee4c8gdb37g47e6g8453g082736941606" version="1">Your mastery of ki grants you &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in all &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;. Additionally, if you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can spend a &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Point&lt;/LSTag&gt; to reroll it and take the second result.</content>
   <content contentuid="h8374bdfbg27b6g4a36g8a09g509542010692" version="1">Diamond Soul</content>
@@ -224,6 +237,8 @@
   <content contentuid="h3028ab5egfbbfg44f1g9fdagb83cd5942481" version="1">This entity has been transported through the lower planes.</content>
   <content contentuid="h69ff7904gd23cg4cabg99fdgdbbd0077a59e" version="1">This entity has been transported through the lower planes and takes [1] upon returning.</content>
 
+  <content contentuid="h7524fe55ged66g4971g9e56g678ffd10ccc5" version="1">Spell Resistance</content>
+  <content contentuid="h4ebceda9g8e24g439egafc2g819cf919319a" version="1">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells and you have &lt;LSTag Tooltip="Resistance"&gt;Resistance&lt;/LSTag&gt; against the damage of spells.</content>
   <content contentuid="he1839990gf540g4c4egbab6g02a55fe3a296" version="1">Overchannel</content>
   <content contentuid="h92b4e9c0gbbbdg4bccg9fe4gfcee7a0da4e4" version="1">You can increase the power of your simpler spells. When you cast a spell of 1st through 5th level that deals damage, you can deal maximum damage with that spell. The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take [1] for each level of the spell, immediately after you cast it. You take an additional [2] per spell level with each subsequent cast.</content>
   <content contentuid="h45e47255gd6e0g453cga652g621b0577939d" version="1">When you cast a 1st through 5th level spell that deals damage, you can deal maximum damage with that spell. The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take [1] for each level of the spell, immediately after you cast it. You take an additional [2] per spell level with each subsequent cast.</content>
@@ -322,12 +337,23 @@
   <content contentuid="h4d302c77g4d16g47eeg9899gee8cb0ee8ba2" version="1">Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</content>
   <content contentuid="h857397adg6bc5g4592gb6cdg85d9d56b7df0" version="1">Superior Inspiration</content>
   <content contentuid="h3034f4b3g48b1g4f63g8333g60fd62145f2c" version="1">When you roll initiative and have no uses of &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; left, you regain one use.</content>
+  <content contentuid="h7ac5b48fge8acg426bg8b8eg1f43a55589b5" version="1">Supreme Healing</content>
+  <content contentuid="hbb540523g3773g4816g9630gd3a17e1242a7" version="1">When you would normally roll one or more dice to restore &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; with a spell, you instead use the highest number possible for each die.</content>
+  <content contentuid="h5fd84ea6g9ebeg4754g9178g3b47e0c3d3fa" version="1">Corona of Light</content>
+  <content contentuid="hf6e725efg91ccg494cg9bdcg99812b32cc9c" version="1">As an action, you can use &lt;LSTag Type="Spell" Tooltip="Shout_CoronaOfLight"&gt;Corona of Light&lt;/LSTag&gt;.</content>
+  <content contentuid="h9b08ddcfgafe4g446fg8d6ag1baefaecba02" version="1">Emit an [1] radius aura of sunlight around you. Hostile creatures within the aura have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells that deal Fire or Radiant damage.</content>
+  <content contentuid="h4d90bd0ege7c8g4c98g8d79gd6f6c4b53189" version="1">This entity emits an [1] radius aura of sunlight.</content>
+  <content contentuid="hf264b38fgf2eeg4572g99dcg9f0ed6f37c0f" version="1">Has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells that deal Fire or Radiant damage.</content>
+  <content contentuid="h4e79d344g6a5cg4a0fga194ge2962ed1408b" version="1">Stormborn</content>
+  <content contentuid="hb9d09447g6414g448bg93fagd55ea6d80bb9" version="1">You gain the ability to &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt;.</content>
   <content contentuid="hc88d8c3cg3ca9g443fg8d7cg2f3863cdd611" version="1">Improved Duplicity</content>
   <content contentuid="hde8dabe0g866dg48e5g96deg66998a7ba0e1" version="1">You can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can command any number of them to move up to [1].</content>
   <content contentuid="hcc95376agefcdg4f97g812cg47350e391a5f" version="1">Command Duplicate(s)</content>
   <content contentuid="hf33ec9c4g1479g499bgb46dgc9f072d6d9f0" version="1">Command your duplicate(s) to move.</content>
   <content contentuid="h75be88fcg63f2g4e6dg9017g35c69b889191" version="1">Commanded</content>
   <content contentuid="h4c4e66b1g7a07g4f2cg879dg5f270384bbe4" version="1">Can move due to summoner's command.</content>
+  <content contentuid="h1c477f46g093eg439fg9aa5g2261b71b4c6b" version="1">Avatar of Battle</content>
+  <content contentuid="h0769455dg28f3g4ca0g8532gf2b65ee76bd3" version="1">You gain &lt;LSTag Tooltip="Resistance"&gt;Resistance&lt;/LSTag&gt; to bludgeoning, piercing, and slashing damage from nonmagical attacks.</content>
   <content contentuid="h95196965g269ag4730g8e28gc3537f80996d" version="1">Divine Intervention Improvement</content>
   <content contentuid="h240e1e58gcee8g4596g94ebg4d4c1e908877" version="1">You can cast &lt;LSTag Type="Spell" Tooltip="Shout_DivineIntervention"&gt;Divine Intervention&lt;/LSTag&gt; to invoke your God's aid.</content>
   <content contentuid="hcd73c76fg0391g49abgb7b5g54fe4c16f3be" version="1">Call upon your deity in your moment of greatest need.</content>
@@ -338,11 +364,20 @@
   <content contentuid="he63a2c1ag91c1g43c8g9ed8gae8259444712" version="1">Superior Extra Attack</content>
   <content contentuid="hf62756fag5dceg4890g9011g61f535a64c42" version="1">You can make three additional attacks after attacking with your main-hand weapon.</content>
   <content contentuid="h852450ffg190eg44c5g8843g5fb33d09b238" version="1">You can take an additional three weapon attacks when you take the Attack action.</content>
+  <content contentuid="h141e54d7g3bbbg4029gb2a2g9f46b40ec6c3" version="1">Relentless</content>
+  <content contentuid="he8d4356eg8d22g470dg9a15g9ab02002559a" version="1">When you roll initiative and have no &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt; remaining, you regain 1 &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Die&lt;/LSTag&gt;.</content>
+  <content contentuid="hee51f780g4c1eg4fd5g991bge8e9f5a371d2" version="1">Improved Combat Superiority (2)</content>
+  <content contentuid="hc070fd26g5a32g4247g9206g7dbc371945d5" version="2">The size of your &lt;LSTag Type="ActionResource" Tooltip="SuperiorityDie"&gt;Superiority Dice&lt;/LSTag&gt; increases to 1d12.</content>
   <content contentuid="he6f63cc2g2950g4709ga1bbg7f80cf5552dd" version="1">Improved War Magic</content>
   <content contentuid="h6a9e1f03gc23eg4c32gbdf0ge2833eaa72dc" version="1">You have honed your body and magic for war. After you cast a spell, you can make a weapon attack using a bonus action.</content>
+  <content contentuid="he2543e31g97afg4aadg8669geb540123aeae" version="1">Superior Critical</content>
+  <content contentuid="h8f67aa7ega977g4e59gbe62g2d5cf7b6e329" version="2">The number you need to &lt;LSTag Tooltip="AttackRoll"&gt;roll&lt;/LSTag&gt; a &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; while attacking is reduced by 2. This effect can stack.</content>
+  <content contentuid="hb2e372bbgaed9g495fgaa39gf5f0bc14c554" version="1">Survivor</content>
+  <content contentuid="h1fa40eacgf345g4f78ga87cg6f921ee255e8" version="2">You attain the pinnacle of resilience in battle. At the start of each of your turns, you regain [1] if you have no more than half of your &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; left. You don't gain this benefit if you have [2].</content>
+  <content contentuid="h7ff4c21bga65eg4dc3gbed8gea6a92af61f7" version="1">Regain [1] per turn.</content>
   <content contentuid="hb7e698cfg4d01g4c02g8d72g8a074414024d" version="1">Empty Body</content>
-  <content contentuid="h39f09b62g8cbeg40c1g857cg62838f22d08e" version="1">You can use your action to spend 4 &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; for 10 turns. During that time, you also have &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistance&lt;/LSTag&gt; to all damage but force damage.</content>
-  <content contentuid="h952e0f22gc8c1g4131gb4ccg2d872c41113f" version="1">You become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; and gain &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistance&lt;/LSTag&gt; to all damage but force damage.</content>
+  <content contentuid="h39f09b62g8cbeg40c1g857cg62838f22d08e" version="1">You can use your action to spend 4 &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; to become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; for 10 turns. During that time, you also have &lt;LSTag Tooltip="Resistance"&gt;Resistance&lt;/LSTag&gt; to all damage but force damage.</content>
+  <content contentuid="h952e0f22gc8c1g4131gb4ccg2d872c41113f" version="1">You become &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; and gain &lt;LSTag Tooltip="Resistance"&gt;Resistance&lt;/LSTag&gt; to all damage but force damage.</content>
   <content contentuid="h5f4df36fge60cg426agb675g86c92d44cd71" version="1">This entity is &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistant&lt;/LSTag&gt; to all damage except force damage.</content>
   <content contentuid="h05bb9ee6geb06g4761gbfc3gc3e9db4024e4" version="1">Perfect Self</content>
   <content contentuid="h3344c2e8g3f98g4f4eg8408g069b4397cba0" version="1">When you roll for initiative and have no &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; remaining, you regain 4 &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;.</content>
@@ -362,8 +397,12 @@
   <content contentuid="h46c0f116g88fbg4963g8d30g09715eddb27a" version="1">Add your Wisdom modifier to the &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; roll of an attack you make.</content>
   <content contentuid="h0fd97129g9005g4524gbdddgd0a1ed453bc8" version="1">Foe Slayer: Damage</content>
   <content contentuid="h03102422g952cg4af1gbb63gf388454a526b" version="1">Add your Wisdom modifier to the damage roll of an attack you make.</content>
+  <content contentuid="hb9f03c21g6181g4da1g869fg4b62335c5ee3" version="1">Wind Soul</content>
+  <content contentuid="h14956f35gef29g4242g8142g124c70ed98c5" version="1">You gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to lightning and thunder damage, the ability to &lt;LSTag Type="Spell" Tooltip="Projectile_Fly_WindSoul"&gt;Fly&lt;/LSTag&gt; up to [1] and can share your ability to fly with others.</content>
+  <content contentuid="h0783ca61ge6b8g48c9ga1ffg16532804aeab" version="1">Reduce the distance you can &lt;LSTag Type="Spell" Tooltip="Projectile_Fly_WindSoul"&gt;Fly&lt;/LSTag&gt; by half and grant other creatures the same ability to fly.</content>
+  <content contentuid="h12c1ca11g0c72g400fg9769gea8eefbf0b1e" version="1">Has the ability to &lt;LSTag Type="Spell" Tooltip="Projectile_Fly_WindSoul_9m"&gt;Fly&lt;/LSTag&gt;.</content>
   <content contentuid="hdf76f2b7g7771g41abgb629g031cd39b7205" version="1">Draconic Presence</content>
-  <content contentuid="he9dbfac6g9111g4098gae45geeadd586722c" version="1">you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened.</content>
+  <content contentuid="he9dbfac6g9111g4098gae45geeadd586722c" version="1">You can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened.</content>
   <content contentuid="haae057c7gc0c4g4b03g97b6g4c43f3b8aa30" version="1">Eldritch Master</content>
   <content contentuid="h5d45c1cagd4e5g4ab4g831cgf6ad55e29f9c" version="1">You can draw on your inner reserve of mystical power while entreating your patron to regain your expended &lt;LSTag Tooltip="WarlockSpellSlot"&gt;spell slots&lt;/LSTag&gt; from your Pact Magic feature.</content>
   <content contentuid="haf55b93dg0d1bg4fa6ga21egd17f9cf831ae" version="1">Draw on your inner reserve of mystical power while entreating your patron to regain your expended &lt;LSTag Tooltip="WarlockSpellSlot"&gt;spell slots&lt;/LSTag&gt;.</content>
@@ -613,7 +652,7 @@
   <content contentuid="h6a45748egf64fg4c5agb270g35c154f69e57" version="1">This entity is immune to Draconic Presence.</content>
   <content contentuid="hc8a5d9beg19bcg4830g8bbeg88ab5c9267d3" version="1">Dedicated Weapon</content>
   <content contentuid="h9e3002c1g5532g457bgac9fge7ca7dde8862" version="1">You train yourself to use a variety of weapons as monk weapons as long as you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; with it and it lacks the heavy and special properties.</content>
-  <content contentuid="h34fd6f98g8e28g4707g8f4bgce766492acdb" version="1">Touch one weapon that you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; with and lacks to heavy property, focusing your ki on it to treat it as a monk weapon.</content>
+  <content contentuid="h34fd6f98g8e28g4707g8f4bgce766492acdb" version="1">Touch one weapon that you are &lt;LSTag Tooltip="Proficiency"&gt;Proficient&lt;/LSTag&gt; with and lacks the heavy property, focusing your ki on it to treat it as a monk weapon.</content>
   <content contentuid="h2362bebegbe52g40f9g8217gf46d6124c877" version="1">Treated as a monk weapon.</content>
   <content contentuid="h0166820ag96e8g4faaga8c8g1d1fd524d7ca" version="1">Elusive</content>
   <content contentuid="h8f3c1c2dgc40ag404fga637g5007a40451f4" version="1">You are so evasive that attackers rarely gain the upper hand against you. No &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; against you while you aren't &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitated&lt;/LSTag&gt;.</content>

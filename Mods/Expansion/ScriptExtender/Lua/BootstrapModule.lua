@@ -1,18 +1,21 @@
-function EXP_XP75Config()
-	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/XPData_Expansion_D_Base.txt", "Public/Expansion/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt")
-end
-
 function EXP_XP50Config()
-	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/XPData_Expansion_D_Base.txt", "Public/Expansion/Stats/Generated/Data/XPData_Expansion_B_0.50x.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt", "Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_B_0.50x.txt")
 end
 
 function EXP_XP25Config()
-	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/XPData_Expansion_D_Base.txt", "Public/Expansion/Stats/Generated/Data/XPData_Expansion_A_0.25x.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt", "Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_A_0.25x.txt")
+end
+
+function EXP_XPScaledConfig()
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt", "Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_A_Scaled.txt")
 end
 
 function EXP_12thLevelConfig()
-	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/XPData_Expansion_D_Base.txt", "Public/Expansion/Stats/Generated/Data/XPData_Expansion.txt")
-	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/Data_Expansion_B_Level20Max.txt", "Public/Expansion/Stats/Generated/Data/Data_Expansion_A_Level12Max.txt")
+	Ext.IO.AddPathOverride("Public/Expansion/Stats/Generated/Data/XPData_Expansion.txt", "Public/ExpansionXP/Stats/Generated/Data/Empty.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt", "Public/ExpansionXP/Stats/Generated/Data/Empty.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_B_0.50x.txt", "Public/ExpansionXP/Stats/Generated/Data/Empty.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_A_0.25x.txt", "Public/ExpansionXP/Stats/Generated/Data/Empty.txt")
+	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_A_Scaled.txt", "Public/ExpansionXP/Stats/Generated/Data/Empty.txt")
 end
 
 function formatting(file)
@@ -46,7 +49,7 @@ function formatting(file)
 end
 
 function writing()
-	local default = '{"Optional Features":{"Barbarian":{"Enabled":true},"Bard":{"Enabled":true},"Cleric":{"Enabled":true},"Druid":{"Enabled":true},"Fighter":{"Enabled":true},"Monk":{"Enabled":true},"Paladin":{"Enabled":true},"Ranger":{"Enabled":true},"Rogue":{"Enabled":true},"Sorcerer":{"Enabled":true},"Wizard":{"Enabled":true}},"Miscellaneous":{"Sorcerer Subclasses 14th Level Feature":{"Enabled":false},"Wizard Bladesinger":{"Enabled":false},"12th Level Max":{"Enabled":false}},"XP Rate":{"Base XP":{"Enabled":true},"75% XP":{"Enabled":false},"50% XP":{"Enabled":false},"25% XP":{"Enabled":false}}}'
+	local default = '{"Optional Features":{"Barbarian":{"Enabled":true},"Bard":{"Enabled":true},"Cleric":{"Enabled":true},"Druid":{"Enabled":true},"Fighter":{"Enabled":true},"Monk":{"Enabled":true},"Paladin":{"Enabled":true},"Ranger":{"Enabled":true},"Rogue":{"Enabled":true},"Sorcerer":{"Enabled":true},"Wizard":{"Enabled":true}},"Miscellaneous":{"Sorcerer Subclasses 14th Level Feature":{"Enabled":false},"Wizard Bladesinger":{"Enabled":false}},"XP Rate":{"50% XP":{"Enabled":false},"25% XP":{"Enabled":false},"Rescaled XP":{"Enabled":false},"12th Level Max":{"Enabled":false}}}'
 	local defaultJson = formatting(default)
 	Ext.IO.SaveFile("Expansion.json", defaultJson)
 end
@@ -86,40 +89,40 @@ EXP_Wizardconfig = Table["Optional Features"]["Wizard"]
 EXP_Sorcerer14thconfig = Table["Miscellaneous"]["Sorcerer Subclasses 14th Level Feature"]
 EXP_Bladesingerconfig = Table["Miscellaneous"]["Wizard Bladesinger"]
 
-	local EXP_12thLevelMax = Table["Miscellaneous"]["12th Level Max"]
-	local EXP_XPBase = Table["XP Rate"]["Base XP"]
-	local EXP_XP75 = Table["XP Rate"]["75% XP"]
+	local EXP_12thLevelMax = Table["XP Rate"]["12th Level Max"]
 	local EXP_XP50 = Table["XP Rate"]["50% XP"]
 	local EXP_XP25 = Table["XP Rate"]["25% XP"]
+	local EXP_XPScaled = Table["XP Rate"]["Rescaled XP"]
 	local twelfthlevel = EXP_12thLevelMax["Enabled"]
-	local basexpenabled = EXP_XPBase["Enabled"]
-	local sfivexpenabled = EXP_XP75["Enabled"]
 	local fiftyxpenabled = EXP_XP50["Enabled"]
 	local tfivexpenabled = EXP_XP25["Enabled"]
+	local scaledenabled = EXP_XPScaled["Enabled"]
 
-	if	basexpenabled == true and sfivexpenabled ~= true and fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true then
-		print(string.format("Expansion: Base XP enabled."))
-	elseif basexpenabled ~= true and sfivexpenabled == true and fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true then
-		EXP_XP75Config()
-		print(string.format("Expansion: 3/4 of base XP enabled."))
-	elseif basexpenabled ~= true and sfivexpenabled ~= true and fiftyxpenabled == true and tfivexpenabled ~= true and twelfthlevel ~= true then
-		EXP_XP50Config()
-		print(string.format("Expansion: 1/2 of base XP enabled."))
-	elseif basexpenabled ~= true and sfivexpenabled ~= true and fiftyxpenabled ~= true and tfivexpenabled == true and twelfthlevel ~= true then
-		EXP_XP25Config()
-		print(string.format("Expansion: 1/4 of base XP enabled."))
-	elseif basexpenabled == true and sfivexpenabled == true and fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true then
-		EXP_XP75Config()
-		print(string.format("Expansion: Multiple XP rates were selected so going with the lowest. 3/4 of base XP enabled."))
-	elseif fiftyxpenabled == true and tfivexpenabled ~= true and (basexpenabled == true or sfivexpenabled == true) and twelfthlevel ~= true then
-		EXP_XP50Config()
-		print(string.format("Expansion: Multiple XP rates were selected so going with the lowest. 1/2 of base XP enabled."))
-	elseif tfivexpenabled == true and (basexpenabled == true or sfivexpenabled == true or fiftyxpenabled == true) and twelfthlevel ~= true then
-		EXP_XP25Config()
-		print(string.format("Expansion: Multiple XP rates were selected so going with the lowest. 1/4 of base XP enabled."))
-	elseif	basexpenabled ~= true and sfivexpenabled ~= true and fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true then
-		print(string.format("Expansion: No XP rate was selected. Base XP enabled."))
-	elseif	twelfthlevel == true then
-		EXP_12thLevelConfig()
-		print(string.format("Expansion: Maximum level is set to 12 and base XP enabled."))
+	if Ext.Mod.IsModLoaded("3e0ce40c-c129-408c-a2f7-7291152f9d28") then
+		if fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true and scaledenabled ~= true then
+			print(string.format("Expansion: 3/4 of base XP enabled."))
+		elseif fiftyxpenabled == true and tfivexpenabled ~= true and twelfthlevel ~= true and scaledenabled ~= true then
+			EXP_XP50Config()
+			print(string.format("Expansion: 1/2 of base XP enabled."))
+		elseif fiftyxpenabled ~= true and tfivexpenabled == true and twelfthlevel ~= true and scaledenabled ~= true then
+			EXP_XP25Config()
+			print(string.format("Expansion: 1/4 of base XP enabled."))
+		elseif fiftyxpenabled ~= true and tfivexpenabled ~= true and twelfthlevel ~= true and scaledenabled == true then
+			EXP_XPScaledConfig()
+			print(string.format("Expansion: Alternate XP rate scaling enabled."))
+		elseif fiftyxpenabled == true and tfivexpenabled ~= true and twelfthlevel ~= true and (scaledenabled ~= true or scaledenabled == true) then
+			EXP_XP50Config()
+			print(string.format("Expansion: Multiple XP rates were selected so going with the lowest. 1/2 of base XP enabled."))
+		elseif tfivexpenabled == true and (sfivexpenabled == true or fiftyxpenabled == true or scaledenabled == true) and twelfthlevel ~= true then
+			EXP_XP25Config()
+			print(string.format("Expansion: Multiple XP rates were selected so going with the lowest. 1/4 of base XP enabled."))
+		elseif tfivexpenabled ~= true and fiftyxpenabled ~= true and twelfthlevel ~= true and scaledenabled ~= true then
+			print(string.format("Expansion: No XP rate chosen. Using 3/4 EXP by default."))
+		elseif	twelfthlevel == true then
+			EXP_12thLevelConfig()
+			print(string.format("Expansion: Maximum level is set to 12 and XP rate changed to base game's."))
+		end
+	else
+		return
+		print(string.format("Expansion: Expansion XP optional mod isn't loaded. Ignoring XP Rate entries."))
 	end

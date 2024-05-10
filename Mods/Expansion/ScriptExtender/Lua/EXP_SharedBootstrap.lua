@@ -1617,6 +1617,30 @@ EXP_Paladin_AuraProgressions = {
     },
 }
 
+---------------------------------------- SWORDS BARD ----------------------------------------
+
+local EXP_SwordsBard_Progressions
+
+function EXP_SwordsBard()
+    EXP_ApplyStaticData(EXP_SwordsBard_Progressions)
+end
+
+EXP_SwordsBard_Progressions = {
+    ["Progression"] = {
+        ["647925f6-a7de-44a8-834c-1bc6e496921a"] = {
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "add",
+                ["Value"] = "BladeFlourish",
+            },
+        },
+    },
+}
+
 local barbarianenabled = EXP_Barbarianconfig["Enabled"]
 local bardenabled = EXP_Bardconfig["Enabled"]
 local clericenabled = EXP_Clericconfig["Enabled"]
@@ -1639,6 +1663,7 @@ local function EXP_StatsLoaded()
 	EXP_Blindsense()
 	EXP_Elusive()
 	EXP_Paladin_Auras()
+	EXP_SwordsBard()
 	
 	if	barbarianenabled == true then
 		print(string.format("Expansion: Barbarian's Optional Features enabled."))
