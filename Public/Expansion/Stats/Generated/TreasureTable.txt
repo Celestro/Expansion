@@ -1,0 +1,123 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "ST_Gold_Trader_Part"
+new subtable "5,1"
+StartLevel "1"
+EndLevel "1"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "6,1"
+StartLevel "2"
+EndLevel "2"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "7,1"
+StartLevel "3"
+EndLevel "3"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "8,1"
+StartLevel "4"
+EndLevel "4"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "9,1"
+StartLevel "5"
+EndLevel "5"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "10,1"
+StartLevel "6"
+EndLevel "6"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "11,1"
+StartLevel "7"
+EndLevel "7"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "12,1"
+StartLevel "8"
+EndLevel "8"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "13,1"
+StartLevel "9"
+EndLevel "9"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "14,1"
+StartLevel "10"
+EndLevel "10"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "15,1"
+StartLevel "11"
+EndLevel "11"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "16,1"
+StartLevel "12"
+EndLevel "12"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "17,1"
+StartLevel "13"
+EndLevel "13"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "18,1"
+StartLevel "14"
+EndLevel "14"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "19,1"
+StartLevel "15"
+EndLevel "15"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "20,1"
+StartLevel "16"
+EndLevel "16"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "21,1"
+StartLevel "17"
+EndLevel "17"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "22,1"
+StartLevel "18"
+EndLevel "18"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "23,1"
+StartLevel "19"
+EndLevel "19"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "24,1"
+StartLevel "20"
+EndLevel "20"
+object category "Gold",1,0,0,0,0,0,0,0
+
+new treasuretable "ST_Gold_QuestReward_Part"
+new subtable "20,1"
+StartLevel "1"
+EndLevel "5"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "35,1"
+StartLevel "6"
+EndLevel "8"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "50,1"
+StartLevel "9"
+EndLevel "12"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "65,1"
+StartLevel "13"
+EndLevel "16"
+object category "Gold",1,0,0,0,0,0,0,0
+new subtable "80,1"
+StartLevel "17"
+EndLevel "20"
+object category "Gold",1,0,0,0,0,0,0,0
+
+new treasuretable "GEN_Book_Alchemy"
+new subtable "1,9;2,1"
+StartLevel "1"
+EndLevel "5"
+object category "I_BOOK_Alchemy_AlchemySimplePoison",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_ExtractsRuleOfThree",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_ToxinBasic",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_ElixirArcaneCultivation",1,0,0,0,0,0,0,0
+object category "I_BOOK_GLO_Alchemy_ElixirDarkvision",1,0,0,0,0,0,0,0
+object category "I_BOOK_GLO_Alchemy_DrowPoison",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_HealingPotion",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_HealingPotionGreater",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_LightFlask",1,0,0,0,0,0,0,0
+object category "I_BOOK_Alchemy_PotionAnimalSpeaking",1,0,0,0,0,0,0,0
+object category "I_BOOK_GLO_Alchemy_LesserOilSharpness",1,0,0,0,0,0,0,0
+new subtable "1,9;2,1"
+StartLevel "6"
+EndLevel "20"

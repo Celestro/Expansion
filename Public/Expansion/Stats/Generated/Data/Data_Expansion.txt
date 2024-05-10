@@ -1,1 +1,1 @@
-key "MaximumXPCap","410000"
+key "MaximumXPCap","420000"

@@ -330,6 +330,51 @@
 						</node>
 					</children>
 				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="8 9.75 8" />
+					<attribute id="BoundsMin" type="fvec3" value="-8 -6.25 -8" />
+					<attribute id="Center" type="fvec3" value="0 1.75 0" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="2.5" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_CoronaOfLight" />
+					<attribute id="ID" type="FixedString" value="2a316513-65ea-4f45-a0ce-12ffd3436f9c" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Status_CoronaOfLight" />
+					<attribute id="Radius" type="float" value="13.85641" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Status/VFX_Status_CoronaOfLight.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209006" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="534ae993-bbcb-5075-5fbe-5c4984e90db3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ebfbf452-11ae-460a-96e5-5d1afaae10c3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="642f797e-cc01-7453-788a-ade071592d06" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f7fc084b-d098-0d9a-8033-1cb61c3beb37" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="de2d85ce-a0f4-9006-fd86-fcc78ad1a5a7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="03296a40-6fac-272a-34af-c00c243a8c7a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="37d57802-deb2-20c9-c1a4-539fd8a6e6bb" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

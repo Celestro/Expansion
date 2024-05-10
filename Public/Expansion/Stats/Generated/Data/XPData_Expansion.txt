@@ -22,4 +22,20 @@ key "Level11","24000"
 
 key "Level12","30000"
 
-key "MaxXPLevel","12"
+key "Level13","20000"
+
+key "Level14","25000"
+
+key "Level15","30000"
+
+key "Level16","30000"
+
+key "Level17","40000"
+
+key "Level18","40000"
+
+key "Level19","50000"
+
+key "Level20","50000"
+
+key "MaxXPLevel","20"
