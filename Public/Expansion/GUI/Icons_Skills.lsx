@@ -130,14 +130,14 @@
                     <attribute id="V1" type="float" value="0.0"/> 
                     <attribute id="V2" type="float" value="0.03125"/> 
                 </node>
-<node id="IconUV">
+				<node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Canny"/> 
                     <attribute id="U1" type="float" value="0.5625"/> 
                     <attribute id="U2" type="float" value="0.59375"/> 
                     <attribute id="V1" type="float" value="0.0"/> 
                     <attribute id="V2" type="float" value="0.03125"/> 
                 </node>
-<node id="IconUV">
+				<node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Tireless"/>
                     <attribute id="U1" type="float" value="0.59375"/>
                     <attribute id="U2" type="float" value="0.625"/> 
@@ -642,42 +642,42 @@
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf"/>
                     <attribute id="U1" type="float" value="0.84375"/>
                     <attribute id="U2" type="float" value="0.875"/>
                     <attribute id="V1" type="float" value="0.0625"/>
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_BludgeoningWeapon"/>
                     <attribute id="U1" type="float" value="0.875"/>
                     <attribute id="U2" type="float" value="0.90625"/>
                     <attribute id="V1" type="float" value="0.0625"/>
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_SlashingWeapon"/>
                     <attribute id="U1" type="float" value="0.90625"/>
                     <attribute id="U2" type="float" value="0.9375"/>
                     <attribute id="V1" type="float" value="0.0625"/>
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_PiercingWeapon"/>
                     <attribute id="U1" type="float" value="0.9375"/>
                     <attribute id="U2" type="float" value="0.96875"/>
                     <attribute id="V1" type="float" value="0.0625"/>
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Warlock_CreateThrall"/>
                     <attribute id="U1" type="float" value="0.96875"/>
                     <attribute id="U2" type="float" value="1.0"/>
                     <attribute id="V1" type="float" value="0.0625"/>
                     <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CreateThrall"/>
                     <attribute id="U1" type="float" value="0.0"/>
                     <attribute id="U2" type="float" value="0.03125"/>
                     <attribute id="V1" type="float" value="0.09375"/>
@@ -691,7 +691,7 @@
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Ranger_RangersCompanion_Panther"/>
                     <attribute id="U1" type="float" value="0.0625"/>
                     <attribute id="U2" type="float" value="0.09375"/>
                     <attribute id="V1" type="float" value="0.09375"/>

@@ -1,0 +1,6 @@
+new spellset "CommonPantherSummonActions"
+add spell "Shout_Hide"
+add spell "Projectile_Jump"
+add spell "Shout_Dash"
+add spell "Shout_Disengage"
+add spell "RAW_Shout_Dodge"

@@ -60,6 +60,27 @@
                     <attribute id="SelectorId" type="FixedString" value="MartialVersatility"/>
                     <attribute id="UUID" type="guid" value="f53cac77-0d9f-4c39-9663-24e59e875917"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h6344e5b9gfca8g4897g871fgc3ecbe12e560" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9db4c91fg3502g4c0bga155g431812e143a4" version="2"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="MysticArcanum_7th"/>
+                    <attribute id="UUID" type="guid" value="3f459a7e-361c-4c83-9030-3ae0add8c620"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h38a2e405g98d0g4a9bg87d8g56c554a33bd4" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9db4c91fg3502g4c0bga155g431812e143a4" version="2"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="MysticArcanum_8th"/>
+                    <attribute id="UUID" type="guid" value="36a8cf47-96a7-480f-b5f8-e08cc5a61951"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="he9864abbgcd39g433ag8a9bgf2a7c2fde4e4" version="2"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9db4c91fg3502g4c0bga155g431812e143a4" version="2"/>
+                    <attribute id="ProgressionTableId" type="guid" value="a7a958f1-d858-4021-9fa7-cf87e7d71377"/>
+                    <attribute id="SelectorId" type="FixedString" value="MysticArcanum_9th"/>
+                    <attribute id="UUID" type="guid" value="d64f9fad-bbe8-4bb0-9dde-f14a4b3b1abd"/>
+                </node>
             </children>
         </node>
     </region>

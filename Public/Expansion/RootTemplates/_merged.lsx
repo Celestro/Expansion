@@ -109,6 +109,130 @@
 						<node id="GameMaster" />
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Archetype" type="FixedString" value="melee" />
+					<attribute id="DisplayName" type="TranslatedString" handle="h7832b016g3a99g4fe0gaf54gf063a71b519c" version="1" />
+					<attribute id="Icon" type="FixedString" value="73bc3a3f-2c82-0919-4e33-0aa860030ed8-_(Icon_Panther)" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="fcb7e2d8-2082-4fd1-b0b9-996fd00bbc5a" />
+					<attribute id="Name" type="LSString" value="Panther_PlayerWildshape" />
+					<attribute id="ParentTemplateId" type="FixedString" value="abed309e-91fb-434b-b79b-3e15b61d19d7" />
+					<attribute id="SpellSet" type="FixedString" value="CommonPantherSummonActions" />
+					<attribute id="Stats" type="FixedString" value="Companion_Panther" />
+					<attribute id="Type" type="FixedString" value="character" />
+					<attribute id="VocalAlertResourceID" type="FixedString" value="af8c204a-1036-47cf-80c1-9b57a9eaf615" />
+					<attribute id="VocalAngryResourceID" type="FixedString" value="02846db7-b57a-4399-a30e-e535bda2579a" />
+					<attribute id="VocalBoredResourceID" type="FixedString" value="2f9b3360-eb77-49df-b0e1-98eaa8342304" />
+					<attribute id="VocalExhaustedResourceID" type="FixedString" value="438820a2-9944-4373-bbff-e60d89e7b5a3" />
+					<attribute id="VocalRelaxedResourceID" type="FixedString" value="892afbce-bd42-4373-b718-08a340697196" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="LocomotionParams" />
+						<node id="StatusList">
+							<children>
+								<node id="Status">
+									<attribute id="Object" type="FixedString" value="RANGERS_COMPANION_PANTHER_EFFECT" />
+								</node>
+							</children>
+						</node>
+						<node id="SkillList">
+							<children>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_Bite_Panther_Companion" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Target_Claws_Panther" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+								<node id="Skill">
+									<attribute id="AIFlags" type="uint16" value="0" />
+									<attribute id="FallbackStartRound" type="int32" value="-1" />
+									<attribute id="LearningStrategy" type="uint8" value="0" />
+									<attribute id="MinimumImpact" type="int32" value="0" />
+									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
+									<attribute id="ScoreModifier" type="float" value="1" />
+									<attribute id="Skill" type="FixedString" value="Rush_Pounce_Panther" />
+									<attribute id="SpellCastingAbility" type="uint8" value="0" />
+									<attribute id="StartRound" type="int32" value="0" />
+									<children>
+										<node id="SourceConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+										<node id="TargetConditions">
+											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
+											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
+											<children>
+												<node id="Tags" />
+											</children>
+										</node>
+									</children>
+								</node>
+							</children>
+						</node>
+						<node id="OnDeathActions" />
+						<node id="Tags">
+							<children>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="dc860a81-f3c2-4c1a-ab90-e7583324845c" />
+								</node>
+								<node id="Tag">
+									<attribute id="Object" type="guid" value="04ae77c4-f708-4ffa-8b8c-763b062a2e6e" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>
