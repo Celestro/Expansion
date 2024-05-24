@@ -34,14 +34,6 @@
       "Enabled":true
     }
   },
-  "Miscellaneous":{
-    "Sorcerer Subclasses 14th Level Feature":{
-      "Enabled":false
-    },
-    "Wizard Bladesinger":{
-      "Enabled":false
-    }
-  },
   "XP Rate":{
     "50% XP":{
       "Enabled":false
@@ -52,7 +44,35 @@
     "Rescaled XP":{
       "Enabled":false
     },
+    "Holzwurm93s XP":{
+      "Enabled":false
+    },
     "12th Level Max":{
+      "Enabled":false
+    }
+  },
+  "Feats":{
+    "2nd Level":{
+      "Enabled":false
+    },
+    "2nd & 3rd Level":{
+      "Enabled":false
+    },
+    "Every Level":{
+      "Enabled":false
+    },
+    "Every 2nd Level":{
+      "Enabled":false
+    },
+    "Every 3rd Level":{
+      "Enabled":false
+    }
+  },
+  "Miscellaneous":{
+    "Sorcerer Subclasses 14th Level Feature":{
+      "Enabled":false
+    },
+    "Wizard Bladesinger":{
       "Enabled":false
     }
   }
