@@ -38,6 +38,9 @@
     "50% XP":{
       "Enabled":false
     },
+    "33% XP":{
+      "Enabled":true
+    },
     "25% XP":{
       "Enabled":false
     },
