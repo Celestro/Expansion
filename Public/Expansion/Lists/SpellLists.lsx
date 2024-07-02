@@ -76,7 +76,7 @@
                 </node>
                 <node id="SpellList">
                     <attribute id="Comment" type="LSString" value="Ancient Paladin SLevel 5"/>
-                    <attribute id="Spells" type="LSString" value="Target_InsectPlague;Wall_WallOfStone"/>
+                    <attribute id="Spells" type="LSString" value="Shout_CommuneWithNature;Wall_WallOfStone"/>
                     <attribute id="UUID" type="guid" value="8c33c86e-e3e4-4ea2-838e-0823bef06061"/>
                 </node>
                 <node id="SpellList">

@@ -375,6 +375,189 @@
 						</node>
 					</children>
 				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="3 4 3" />
+					<attribute id="BoundsMin" type="fvec3" value="-3 -2 -3" />
+					<attribute id="Center" type="fvec3" value="0 1 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2.000652" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Prepare_ElderChampion_Root_01" />
+					<attribute id="ID" type="FixedString" value="9c727b9d-2a6f-45ed-b755-f2b4bf1f1672" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Prepare_ElderChampion_Root_01" />
+					<attribute id="Radius" type="float" value="3" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Prepare/VFX_Spells_Prepare_ElderChampion_Root_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725663" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="72d7dbb5-40b5-b5db-d403-9c3e9043ca08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="78714ebb-95d3-f012-6d36-0bcb5bcc8dcf" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="6.8 6.8 6.8" />
+					<attribute id="BoundsMin" type="fvec3" value="-6.8 -6.8 -6.8" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_DreadLord" />
+					<attribute id="ID" type="FixedString" value="fbfa6d72-41f7-4a00-86c6-72f621e6e7e8" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Status_DreadLord" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Status/VFX_Status_DreadLord.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209023" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="65a98115-3c63-1682-b753-92e790e5e8e7" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9e65715f-43d3-2c0b-d6b6-938bdbb9b290" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6c627d5c-75a0-b582-66fd-9db11df0e720" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f772e290-5139-aee2-c6aa-4d3f6066ed8a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4f5b525d-cdf7-1d04-2db5-d1f6e28c013b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="4a4f4b89-8d57-c569-e092-1ae44c3c4ad0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a9a01958-f701-9e32-bff5-9619c317c39a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e59f406-68dc-205c-db8a-414bcae7be29" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="decfb8c1-65b6-4a30-bcec-ae63ad35dcda" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c4a8ac5a-cf5b-4a7e-a44d-38f1bc8a81a9" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="91bcdda5-afef-22b0-894c-1c2ead59f2d5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="84ac9aa3-9b44-94d8-b945-0875a9898d53" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b4fc7370-729c-cd65-dbc0-6fa81d7f1c65" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2fb97518-d37f-30e5-f5f8-0ad9cd8bf17a" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="3 4 3" />
+					<attribute id="BoundsMin" type="fvec3" value="-3 -2 -3" />
+					<attribute id="Center" type="fvec3" value="0 1 0" />
+					<attribute id="CullingDistance" type="float" value="30" />
+					<attribute id="Duration" type="float" value="2.000652" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Prepare_DreadLord_Root_01" />
+					<attribute id="ID" type="FixedString" value="572c9261-5541-4505-b90f-e745b453d897" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Prepare_DreadLord_Root_01" />
+					<attribute id="Radius" type="float" value="3" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Prepare/VFX_Spells_Prepare_DreadLord_Root_01.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725663" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="51cff99a-4f4d-c974-dd40-34f5b2ac28d3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d1ef3e42-797d-8039-7481-2e66e44afb72" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7ef80b25-01ef-bf01-dba2-659fbc57318a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="72d7dbb5-40b5-b5db-d403-9c3e9043ca08" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="13416b34-9867-0546-a9d7-2c248e7ce290" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="39f6fbef-4b40-0bdb-e513-aff7232349a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="920df051-7d30-cfbc-b765-1de87b225a61" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2a164945-93f6-a132-bf7a-27ded4da2132" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9ffc448b-a0d8-94ed-9708-e21ce576b173" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="46cb84ae-dfd3-e2a9-e494-40282bee2088" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b183c448-5cd7-2322-4820-3ce1b25feef0" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="706c6118-b534-ecc1-051c-6699673cca6a" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="BoundsMax" type="fvec3" value="2 2 2" />
+					<attribute id="BoundsMin" type="fvec3" value="-2 -2 -2" />
+					<attribute id="Center" type="fvec3" value="0 0 0" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_DreadLord_Ally" />
+					<attribute id="ID" type="FixedString" value="a5c29a6f-801b-4679-913d-aff3653d2807" />
+					<attribute id="Initialized" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="0" />
+					<attribute id="Localized" type="bool" value="False" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="Name" type="LSString" value="VFX_Status_DreadLord_Ally" />
+					<attribute id="Radius" type="float" value="2" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Status/VFX_Status_DreadLord_Ally.lsfx" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115205255725656" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8f1497a0-86ed-325c-ac10-5783e1c2eff3" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1dd1e331-4a2e-f265-6412-f718f099cd82" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a1a7099-9c46-4d5f-8f00-a249af1dc519" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="697508a2-29ca-f603-a7ce-7c15bb4b3e6a" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5fd6b09b-013c-18d6-90ea-725bcc7e93c2" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

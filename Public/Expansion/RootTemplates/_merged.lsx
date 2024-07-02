@@ -191,33 +191,6 @@
 										</node>
 									</children>
 								</node>
-								<node id="Skill">
-									<attribute id="AIFlags" type="uint16" value="0" />
-									<attribute id="FallbackStartRound" type="int32" value="-1" />
-									<attribute id="LearningStrategy" type="uint8" value="0" />
-									<attribute id="MinimumImpact" type="int32" value="0" />
-									<attribute id="OnlyCastOnSelf" type="bool" value="False" />
-									<attribute id="ScoreModifier" type="float" value="1" />
-									<attribute id="Skill" type="FixedString" value="Rush_Pounce_Panther" />
-									<attribute id="SpellCastingAbility" type="uint8" value="0" />
-									<attribute id="StartRound" type="int32" value="0" />
-									<children>
-										<node id="SourceConditions">
-											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
-											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-										<node id="TargetConditions">
-											<attribute id="MaximumHealthPercentage" type="int32" value="100" />
-											<attribute id="MinimumHealthPercentage" type="int32" value="0" />
-											<children>
-												<node id="Tags" />
-											</children>
-										</node>
-									</children>
-								</node>
 							</children>
 						</node>
 						<node id="OnDeathActions" />

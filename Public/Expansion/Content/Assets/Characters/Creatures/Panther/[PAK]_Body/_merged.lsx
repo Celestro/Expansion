@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="0" revision="9" build="0" lslib_meta="v1,bswap_guids" />
+	<region id="AnimationBank">
+		<node id="AnimationBank">
+			<children>
+				<node id="Resource">
+					<attribute id="AdditiveLoopingAnimationID" type="FixedString" value="" />
+					<attribute id="AdditiveLoopingBlendTime" type="float" value="0" />
+					<attribute id="AdditiveLoopingStart" type="float" value="0" />
+					<attribute id="AnchorHand" type="uint8" value="0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="ID" type="FixedString" value="0c0df585-cbdc-fbe0-4467-3cf427ea4a14" />
+					<attribute id="IsPoseBank" type="bool" value="False" />
+					<attribute id="LeftTransitionAnimation" type="FixedString" value="" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="Name" type="LSString" value="PANTHER_Rig_DFLT_UTIL_Spawn_01" />
+					<attribute id="Offset" type="float" value="0" />
+					<attribute id="PreviewVisualResource" type="FixedString" value="513d2300-3b7f-1df1-9d36-62177d77ed6f" />
+					<attribute id="RightTransitionAnimation" type="FixedString" value="" />
+					<attribute id="SkeletonResource" type="FixedString" value="debf30e6-9bdc-37d7-e8fe-25e40b62ddd7" />
+					<attribute id="SourceFile" type="LSString" value="Public/SharedDev/Assets/Characters/_Anims/_Creatures/Panther/PANTHER_Rig/PANTHER_Rig_DFLT_UTIL_Spawn_01.GR2" />
+					<attribute id="SupportingLeg" type="uint8" value="0" />
+					<attribute id="Template" type="FixedString" value="Public/SharedDev/Assets/Characters/_Anims/_Creatures/Panther/PANTHER_Rig/PANTHER_Rig_DFLT_UTIL_Spawn_01.Anim.0" />
+					<attribute id="TimeStep" type="float" value="0.01666667" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209014" />
+					<children>
+						<node id="Events">
+							<attribute id="ID" type="FixedString" value="Effect" />
+							<attribute id="Length" type="float" value="0.1" />
+							<attribute id="TextKeyType" type="uint8" value="2" />
+							<attribute id="Time" type="float" value="0" />
+							<attribute id="Track" type="uint8" value="1" />
+							<children>
+								<node id="Properties">
+									<attribute id="Bone" type="FixedString" value="Dummy_CastFX" />
+									<attribute id="Effect" type="FixedString" value="VFX_Spells_Cast_Ranger_Summon_RangersCompanion_Spawn_Overlay_01" />
+									<attribute id="HardAttach" type="bool" value="False" />
+									<attribute id="InterruptLoopAtEnd" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+						<node id="Events">
+							<attribute id="ID" type="FixedString" value="Overlay_01" />
+							<attribute id="Length" type="float" value="0.1" />
+							<attribute id="TextKeyType" type="uint8" value="2" />
+							<attribute id="Time" type="float" value="0" />
+							<attribute id="Track" type="uint8" value="0" />
+							<children>
+								<node id="Properties">
+									<attribute id="Bone" type="FixedString" value="Dummy_CastFX" />
+									<attribute id="Effect" type="FixedString" value="VFX_Spells_Cast_Ranger_Summon_RangersCompanion_Spawn_Overlay_01" />
+									<attribute id="HardAttach" type="bool" value="True" />
+									<attribute id="InterruptLoopAtEnd" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+						<node id="Events">
+							<attribute id="ID" type="FixedString" value="Spawn_Effect_01" />
+							<attribute id="Length" type="float" value="0.1" />
+							<attribute id="TextKeyType" type="uint8" value="2" />
+							<attribute id="Time" type="float" value="0" />
+							<attribute id="Track" type="uint8" value="1" />
+							<children>
+								<node id="Properties">
+									<attribute id="Bone" type="FixedString" value="" />
+									<attribute id="Effect" type="FixedString" value="VFX_Spells_Cast_Ranger_Summon_RangersCompanion_Spawn_01" />
+									<attribute id="HardAttach" type="bool" value="False" />
+									<attribute id="InterruptLoopAtEnd" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+						<node id="Events">
+							<attribute id="ID" type="FixedString" value="Vocal_Spawn" />
+							<attribute id="Length" type="float" value="0.1" />
+							<attribute id="TextKeyType" type="uint8" value="13" />
+							<attribute id="Time" type="float" value="0.8156009" />
+							<attribute id="Track" type="uint8" value="2" />
+							<children>
+								<node id="Properties">
+									<attribute id="EVocalType" type="uint8" value="8" />
+									<attribute id="Resource" type="FixedString" value="" />
+									<attribute id="SoundObjectIndex" type="uint8" value="4" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

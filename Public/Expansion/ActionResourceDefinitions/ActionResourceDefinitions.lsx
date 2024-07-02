@@ -50,14 +50,6 @@
                     <attribute id="UUID" type="guid" value="9b6b675b-5971-4271-8769-6986d2b54324"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h9b9372c9g28e7g4fbcga73dgad4bfec682c1" version="1"/>
-                    <attribute id="IsHidden" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="RAW_HastePoint"/>
-                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
-                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
-                    <attribute id="UUID" type="guid" value="8cf3d508-9ab8-4ecb-92e7-4e78463376f4"/>
-                </node>
-                <node id="ActionResourceDefinition">
                     <attribute id="Description" type="TranslatedString" handle="h0816336fgf084g485fgba86g5c93d3cbe487" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h43b7a2bfgb84dg451eg8a08g4c57232ac72f" version="1"/>
                     <attribute id="MaxLevel" type="uint32" value="0"/>

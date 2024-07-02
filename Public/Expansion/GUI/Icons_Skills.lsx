@@ -684,7 +684,7 @@
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_HolyNimbus"/>
                     <attribute id="U1" type="float" value="0.03125"/>
                     <attribute id="U2" type="float" value="0.0625"/>
                     <attribute id="V1" type="float" value="0.09375"/>
@@ -698,70 +698,70 @@
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_HolyNimbus"/>
                     <attribute id="U1" type="float" value="0.09375"/>
                     <attribute id="U2" type="float" value="0.125"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_PurityOfSpirit"/>
                     <attribute id="U1" type="float" value="0.125"/>
                     <attribute id="U2" type="float" value="0.15625"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Opportunist"/>
                     <attribute id="U1" type="float" value="0.15625"/>
                     <attribute id="U2" type="float" value="0.1875"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_ElderChampion"/>
                     <attribute id="U1" type="float" value="0.1875"/>
                     <attribute id="U2" type="float" value="0.21875"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ElderChampion"/>
                     <attribute id="U1" type="float" value="0.21875"/>
                     <attribute id="U2" type="float" value="0.25"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_UndyingSentinel"/>
                     <attribute id="U1" type="float" value="0.25"/>
                     <attribute id="U2" type="float" value="0.28125"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Spell_Divination_CommuneWithNature"/>
                     <attribute id="U1" type="float" value="0.28125"/>
                     <attribute id="U2" type="float" value="0.3125"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SupernaturalResistance"/>
                     <attribute id="U1" type="float" value="0.3125"/>
                     <attribute id="U2" type="float" value="0.34375"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_DreadLord"/>
                     <attribute id="U1" type="float" value="0.34375"/>
                     <attribute id="U2" type="float" value="0.375"/>
                     <attribute id="V1" type="float" value="0.09375"/>
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>	
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DreadLord"/>
                     <attribute id="U1" type="float" value="0.375"/>
                     <attribute id="U2" type="float" value="0.40625"/>
                     <attribute id="V1" type="float" value="0.09375"/>

@@ -10,7 +10,7 @@
                     <attribute id="UUID" type="guid" value="f9f5e812-acff-4cbe-b824-265deb89587b"/>
                 </node>
 				<node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value=" Ranger Deft or Natural Explorer 10"/>
+                    <attribute id="Comment" type="LSString" value=" Ranger Deft or Natural Explorer 14"/>
                     <attribute id="Passives" type="LSString" value="DeftExplorer_Canny,DeftExplorer_Roving,DeftExplorer_Tireless,NaturalExplorer_BeastTamer,NaturalExplorer_UrbanTracker,NaturalExplorer_WastelandWander_Cold,NaturalExplorer_WastelandWander_Fire,NaturalExplorer_WastelandWander_Poison"/>
                     <attribute id="UUID" type="guid" value="d7f8771d-a932-4a4a-97aa-a608d0130e2f"/>
                 </node>
@@ -30,7 +30,7 @@
                     <attribute id="UUID" type="guid" value="01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"/>
                 </node>
                 <node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value="Cleric Knowledge Potent Spellcasting or Blessed Strikes"/>
+                    <attribute id="Comment" type="LSString" value="Cleric Knowledge and Light Potent Spellcasting or Blessed Strikes"/>
                     <attribute id="Passives" type="LSString" value="BlessedStrikes,PotentSpellcasting"/>
                     <attribute id="UUID" type="guid" value="16c4288b-c328-499b-91f5-64d35f6cf815"/>
                 </node>
@@ -38,11 +38,6 @@
                     <attribute id="Comment" type="LSString" value="Cleric Life Divine Strike or Blessed Strikes"/>
                     <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_Life"/>
                     <attribute id="UUID" type="guid" value="17359adf-cfba-4c3b-b8c1-19e22642b128"/>
-                </node>
-                <node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value="Cleric Light Potent Spellcasting or Blessed Strikes"/>
-                    <attribute id="Passives" type="LSString" value="BlessedStrikes,PotentSpellcasting"/>
-                    <attribute id="UUID" type="guid" value="81a0dfd7-5149-45f5-9e16-d72354a7c55f"/>
                 </node>
                 <node id="PassiveList">
                     <attribute id="Comment" type="LSString" value="Cleric Nature Divine Strike or Blessed Strikes"/>
