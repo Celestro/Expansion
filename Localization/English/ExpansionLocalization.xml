@@ -88,10 +88,14 @@
   <content contentuid="hfe43f72ega3edg4a06gb98bgd84f9d43eded" version="1">Increase your &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; by +[1].</content>
 
   <content contentuid="h8fd95bb3g31e8g41a2ga5c4g7715586f6dde" version="1">Favored Foe</content>
+  <content contentuid="h9c8193b8gec26g41d7gafd5g853f30e84b08" version="1">Favored Foe: Weapon Attacks</content>
   <content contentuid="hfd56ba78g394dg49e7g93e8gcff21535d535" version="1">The number of times you can use the Favored Foe feature.</content>
   <content contentuid="hd1a21dbbg37eeg44c5gbdedga7196df3c2e3" version="1">You can increase the damage you deal by [1] once per turn whilst marking a creature.</content>
-  <content contentuid="h2c4e85c2ga116g4445g9796g00dbf7ac0ca7" version="1">Deal an additional [1] to a favored foe.</content>
+  <content contentuid="hcbd415f8gf024g4f3fgb26eg3747bba2fadb" version="1">Favored Foe: Spell Attacks</content>
+  <content contentuid="h2c4e85c2ga116g4445g9796g00dbf7ac0ca7" version="1">This entity is a favored foe and takes additional damage from the Ranger.</content>
   <content contentuid="hf9c4a49fg84f4g455dg84d1g31dd3870bcff" version="1">Call on your mystical bond with nature to mark a creature as your favored enemy.</content>
+  <content contentuid="hb5e5db7cgd41ag4226gad30g508156414d16" version="1">Next attack against a favored foe deals an additional [1] damage.</content>
+  <content contentuid="he62ee9a9g8bbeg4610g93dbg3e21abc53d5c" version="1">Favored Foe: Companion</content>
   <content contentuid="hbbc48305g832eg46c0g87ddg2b29ed7db26f" version="1">Deft Explorer: Canny</content>
   <content contentuid="hfdfbc429gef96g46b3ga051g55cbfa594308" version="1">Choose one of your skill proficiencies. Your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; is doubled for any &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; you make using the chosen skill.</content>
   <content contentuid="hada39a13g58bdg4617g8ca6g78d078bc2072" version="1">Deft Explorer: Roving</content>
@@ -179,7 +183,7 @@
   <content contentuid="hb63bac6bg7bd8g4ab1g912fgc6bedf9b6faf" version="1">You cannot use this ability while already under its effects.</content>
   <content contentuid="he350131bga4f6g4e14g867egaaf0dac15a3d" version="1">Master's Flourish</content>
   <content contentuid="h06702d9cg291eg4020gb8aag400f35e7951e" version="1">Whenever you use a Blade Flourish option, you can roll a [1] and use it instead of expending a &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; die.</content>
-  <content contentuid="h30b12a16gb3f7g49acg9150ge596f064f2ad" version="1">Blade Flourish options roll a [1] instead of expending &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt;.</content>
+  <content contentuid="h30b12a16gb3f7g49acg9150ge596f064f2ad" version="1">Blade Flourish options roll a [1] instead of expending &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; die.</content>
   <content contentuid="ha9224d4ag91c6g4844ga38dgfef58afb80c8" version="1">Battle Magic</content>
   <content contentuid="h2bf22ea4g7d9eg4b0dg8972g3b5f75851ac8" version="1">You have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast spell, you can make one weapon attack as a bonus action.</content>
 
@@ -215,6 +219,34 @@
   <content contentuid="hc0a69abag3e0eg4116g8c59g2faa3b9187dd" version="1">Vanish</content>
   <content contentuid="h7925794cgae23g4761g9f55g00fdf66539c9" version="1">You can use the &lt;LSTag Type="Spell" Tooltip="Shout_Hide"&gt;Hide&lt;/LSTag&gt; action as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt;.</content>
 
+  <content contentuid="hd8623728gc004g4aeeg87f6g23e8a8df7fc6" version="1">Companion's Bond Increase</content>
+  <content contentuid="h1faaa23bgb253g4d91g8764ga87e2413fce8" version="1">Panther Companion</content>
+  <content contentuid="h58d250c6gbf1eg44abg8455gb1cceac250d1" version="1">Summon a panther that can pounce on creatures, making them vulnerable to its attacks.</content>
+  <content contentuid="h7b1c49b6ge259g4d46g815agd15a03ec7314" version="1">Pounce</content>
+  <content contentuid="h3d0c37b1g6cf7g4cadg9533g4d442ea60d4e" version="1">Can use this attack as a bonus action against a creature you've knocked prone.</content>
+  <content contentuid="h73501c98gbbb9g40ebgbdc9g1707eff44d57" version="1">This entity has moved a number of meters equal to the status' duration and can knock a creature &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; with its &lt;LSTag Type="Spell" Tooltip="Target_Claws_Panther"&gt;claws&lt;/LSTag&gt; after moving 6m.</content>
+  <content contentuid="h416df3f4g6e3fg41c1g83afg989b97807388" version="1">Knock a creature &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; with your &lt;LSTag Type="Spell" Tooltip="Target_Claws_Panther"&gt;claws&lt;/LSTag&gt;. </content>
+  <content contentuid="hf17f1c85gef9eg46dbg8289gd24eb3e00cb5" version="1">After moving at least [1] and then hitting a creature with your &lt;LSTag Type="Spell" Tooltip="Target_Claws_Panther"&gt;claws&lt;/LSTag&gt; on the same turn, the target is possibly knocked &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;. If the target is &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt;, you can &lt;LSTag Type="Spell" Tooltip="Target_Bite_Panther_Companion"&gt;bite&lt;/LSTag&gt; it as a bonus action.</content>
+  <content contentuid="hc2400a11g3536g4791gbf56g86c33f3254a7" version="1">Prepare to pounce a creature, allowing you to possibly knock it &lt;LSTag Type="Status" Tooltip="PRONE"&gt;Prone&lt;/LSTag&gt; after hitting the target with your &lt;LSTag Type="Spell" Tooltip="Target_Claws_Panther"&gt;claws&lt;/LSTag&gt;.</content>
+  <content contentuid="haf111f6bgd720g43dag8466G7a7307788577" version="1">Can possibly knock prone when using this against a target you've pounced.</content>
+  <content contentuid="h8afa6ae0g105eg4614g973dge3ac59c06f1e" version="1">Pounced</content>
+  <content contentuid="he673972fg02a6g4145g9e7bg6cbc7f8433aa" version="1">This entity is susceptible to being knocked prone by the panther.</content>
+  <content contentuid="hac1a03f5gffa3g4698ga298ge0a692808697" version="1">Ability Score Improvement</content>
+  <content contentuid="h08e5a232ge049g49ceg8b6dgc91b7eaf64ee" version="1">You can increase one ability score of your choice by 2 or increase two ability scores of your choice by 1.</content>
+  <content contentuid="haa928e84g13beg4e59g9ca2gd0587bb7cb45" version="1">Ability Score Improvement: Strength</content>
+  <content contentuid="h033f9637g7665g4c9ag8846gd6be97fbb803" version="1">Increase your &lt;LSTag Tooltip="Strength"&gt;Strength&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="h7c1dd90eg3783g4968g825cgb2cbdb58fb76" version="1">Ability Score Improvement: Dexterity</content>
+  <content contentuid="hc48ada5cg59cfg430egafc2gff9396ea5cde" version="1">Increase your &lt;LSTag Tooltip="Dexterity"&gt;Dexterity&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="h9963d433gb7a1g4976gb746gf1c062d374e3" version="1">Ability Score Improvement: Constitution</content>
+  <content contentuid="h7ead7b56g4e5eg4ab3g9adagb840d72b4ff5" version="1">Increase your &lt;LSTag Tooltip="Constitution"&gt;Constitution&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="hd1da87degb127g4146gac97ge0415ca0cb49" version="1">Ability Score Improvement: Intelligence</content>
+  <content contentuid="h9ca310f5ge9d9g4391gb8b7g4a3b22587b3e" version="1">Increase your &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="h78592271g17a1g48edg89deg951ccc40d3b8" version="1">Ability Score Improvement: Wisdom</content>
+  <content contentuid="h18939696gdc06g4c32ga946g9909bcc79118" version="1">Increase your &lt;LSTag Tooltip="Wisdom"&gt;Wisdom&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="hd718cd3dg0a68g4d2egbd64g62c790b8294b" version="1">Ability Score Improvement: Charisma</content>
+  <content contentuid="h9b382a8agef7bg4a78g9739gd1545c8c7cb9" version="1">Increase your &lt;LSTag Tooltip="Charisma"&gt;Charisma&lt;/LSTag&gt; score by 1.</content>
+  <content contentuid="h7832b016g3a99g4fe0gaf54gf063a71b519c" version="1">Panthera</content>
+  <content contentuid="hc52509deg2ed6g400egada5gd59e627f5eb1" version="3">Your animal companion can &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt;, &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengage&lt;/LSTag&gt;, and &lt;LSTag Type="Spell" Tooltip="Target_Help"&gt;Help&lt;/LSTag&gt; as a bonus action. Additionally, its attacks count as magical for the purpose of overcoming enemies' &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; and &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to non-magical damage.</content>
   <content contentuid="he2e66df4gaf57g47d3gad60g087570657a62" version="1">Share Spells</content>
   <content contentuid="hd03845e6g285ag43cbgbc09g188731e9bb02" version="1">When you cast a spell targeting yourself, you can also affect your beast companion with the spell if the beast is within [1] of you.</content>
   <content contentuid="hf2dba260g1251g42abgb5d5g99ab578c1ab3" version="1">Can be affected by the same spell the ranger casts on their self.</content>
@@ -236,6 +268,10 @@
   <content contentuid="h384f96aag6b7ag40f7gae1ag49db98d6b7cf" version="1">The target returns to the space it previously occupied at the end of your next turn and takes [1] if it is not a fiend.</content>
   <content contentuid="h3028ab5egfbbfg44f1g9fdagb83cd5942481" version="1">This entity has been transported through the lower planes.</content>
   <content contentuid="h69ff7904gd23cg4cabg99fdgdbbd0077a59e" version="1">This entity has been transported through the lower planes and takes [1] upon returning.</content>
+  <content contentuid="h8587aeb8g1fa6g4a23gac11g5bf4d3bc3840" version="1">Create Thrall</content>
+  <content contentuid="hc64b67a9gb587g4d8fgb1a4gb9c727be5eb2" version="1">Touch an &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitated&lt;/LSTag&gt; humanoid creature, causing it to be &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; by you.</content>
+  <content contentuid="h4bec93fdgedffg4616gb475g5f71aaadb411" version="1">The &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; condition is removed when &lt;LSTag Type="Spell" Tooltip="Target_RemoveCurse"&gt;Remove Curse&lt;/LSTag&gt; is used on the creature, the condition is removed or when you use this action again.</content>
+  <content contentuid="h84b21324g9f50g4224g8499g09f43423dba6" version="1">You gain the ability to infect a humanoid's mind with the alien magic of your patron, &lt;LSTag Type="Spell" Tooltip="Target_CreateThrall"&gt;creating a thrall&lt;/LSTag&gt;.</content>
 
   <content contentuid="h7524fe55ged66g4971g9e56g678ffd10ccc5" version="1">Spell Resistance</content>
   <content contentuid="h4ebceda9g8e24g439egafc2g819cf919319a" version="1">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells and you have &lt;LSTag Tooltip="Resistance"&gt;Resistance&lt;/LSTag&gt; against the damage of spells.</content>
@@ -257,10 +293,10 @@
   <content contentuid="h86bcb3c9g6f04g46d6gb029g8433630344b5" version="1">Arcane Charge</content>
   <content contentuid="h6cab21dfg3fb6g4374gb188gd43361dc823b" version="1">You gain the ability to teleport up to [1] after using Action Surge.</content>
   <content contentuid="h4485faafgbfbdg4ed5g983cg75768e14b31d" version="1">Timeless Body</content>
-  <content contentuid="hc38f1555g3210g4becga13bgc31c590d6bb7" version="1">You no longer suffer the negative effects of the &lt;LSTag Type="Spell" Tooltip="Target_Haste&gt;Haste&lt;/LSTag&gt; spell ending.</content>
+  <content contentuid="hc38f1555g3210g4becga13bgc31c590d6bb7" version="1">You always regain full &lt;LSTag Tooltip="HitPoints"&gt;Hit Points&lt;/LSTag&gt; and restore all of your &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; on a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;. Additionally, you no longer suffer the negative effects of the &lt;LSTag Type="Spell" Tooltip="Target_Haste"&gt;Haste&lt;/LSTag&gt; spell ending.</content>
   <content contentuid="h7f781143ge8ceg44f1g9ca9g017bc7075d84" version="1">Soul of Vengeance</content>
-  <content contentuid="h3d599ae2g05fag4d86gbfc0g2949a00410cb" version="1">The authority with which you speak your &lt;LSTag Type="Spell" Tooltip="Target_VowOfEnmity&gt;Vow of Enmity&lt;/LSTag&gt; gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.</content>
-  <content contentuid="hce57670fgc111g49a5g835bgbacf5be1716f" version="1">Make a melee weapon attack against a creature that makes an attack while under the effects of your &lt;LSTag Type="Spell" Tooltip="Target_VowOfEnmity&gt;Vow of Enmity&lt;/LSTag&gt;.</content>
+  <content contentuid="h3d599ae2g05fag4d86gbfc0g2949a00410cb" version="1">The authority with which you speak your &lt;LSTag Type="Spell" Tooltip="Target_VowOfEnmity"&gt;Vow of Enmity&lt;/LSTag&gt; gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.</content>
+  <content contentuid="hce57670fgc111g49a5g835bgbacf5be1716f" version="1">Make a melee weapon attack against a creature that makes an attack while under the effects of your &lt;LSTag Type="Spell" Tooltip="Target_VowOfEnmity"&gt;Vow of Enmity&lt;/LSTag&gt;.</content>
   <content contentuid="h8c263eb2g696ag4a86g8bd9gc26ce00d4c94" version="1">Breath of Winter</content>
   <content contentuid="h1f31c024g90bfg404eg8a63gd8d646110b6a" version="1">Eternal Mountain Defense</content>
   <content contentuid="h52a789d9g991dg47edg9772g2257fb90acb6" version="1">River of Hungry Flame</content>
@@ -381,8 +417,26 @@
   <content contentuid="h5f4df36fge60cg426agb675g86c92d44cd71" version="1">This entity is &lt;LSTag Type="Status" Tooltip="INVISIBILITY"&gt;Invisible&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="RESISTANCE"&gt;Resistant&lt;/LSTag&gt; to all damage except force damage.</content>
   <content contentuid="h05bb9ee6geb06g4761gbfc3gc3e9db4024e4" version="1">Perfect Self</content>
   <content contentuid="h3344c2e8g3f98g4f4eg8408g069b4397cba0" version="1">When you roll for initiative and have no &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt; remaining, you regain 4 &lt;LSTag Type="ActionResource" Tooltip="KiPoint"&gt;Ki Points&lt;/LSTag&gt;.</content>
+  <content contentuid="h065e16a4g9d7ag43d1ga445gf67a7efb645d" version="1">Purity of Spirit</content>
+  <content contentuid="hfe3d58ecgc757g468agbf63g26a8735b0004" version="1">You are always under the effects of a &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromEvilAndGood"&gt;Protection from Evil and Good&lt;/LSTag&gt; spell.</content>
+  <content contentuid="h77787de2g35c7g4950g98e5g6420479a532c" version="1">Holy Nimbus</content>
+  <content contentuid="hc0f35815g37d6g40f6gbeafg4ca2be77f918" version="1">You can emanate an &lt;LSTag Type="Spell" Tooltip="Shout_HolyNimbus"&gt;aura of sunlight&lt;/LSTag&gt;.</content>
+  <content contentuid="hf204423dg008eg48d3gbecfgf8a5023acbaa" version="1">Emanate a [1] aura of sunlight that deals [2] to hostile creatures that start their turns within it and grants you &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; against spells cast by fiends and undead.</content>
+  <content contentuid="hf0f3118ag5289g49dagb4a1gfb7e01ba2e85" version="1">This entity emanates a [1] aura of sunlight that grants &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; against spells cast by fiends and undead.</content>
+  <content contentuid="h241ff7edg11f1g4b04gbdd9g4d64fc727e90" version="1">Deals [1] from aura of sunlight.</content>
+  <content contentuid="h52304636g2c09g4595gbda1g175077a4a3d2" version="1">Supernatural Resistance</content>
+  <content contentuid="h5553e0f9g5fedg456cgaf86g0682db29a8bd" version="1">You gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to bludgeoning, piercing, and slashing damage from nonmagical weapons.</content>
+  <content contentuid="h24c93619gd58ag4277g9dfdg625d526f95d1" version="1">Dread Lord</content>
+  <content contentuid="heb26fbb3gb49eg4256g93f4gd2016d0b50e8" version="1">You can surround yourself with an &lt;LSTag Type="Spell" Tooltip="Shout_DreadLord"&gt;aura of gloom&lt;/LSTag&gt;.</content>
+  <content contentuid="h850e2109g15beg4c5bga7b1g7baa6b4fa4f2" version="1">Surround yourself with an aura of gloom that reduces light in a [1] radius around you. Creatures &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; by you take [2] at the start of their turns while in the aura and when non-hostile creatures, including you, are attacked, &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; is imposed on the &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; if the attacker relies on sight due to shadows draping the creature.</content>
+  <content contentuid="h5a53cf71ge03bg42cega1cag4ef765dd7c8e" version="1">While the aura is active, as a bonus action, you can cause the shadows of the aura to attack a creature within it, dealing [1].</content>
+  <content contentuid="h8817cf25g492fg486fg8d0dg8cf6fc429dff" version="1">This entity imposes &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against them if the attacker relies on sight.</content>
+  <content contentuid="h226806c4g033bg4a51ga579g387d41d87c95" version="1">Deal [1] per turn.</content>
+  <content contentuid="h8ec93a26g5805g4bb7gbab7g6bb41682a441" version="1">Toggle off to remove the Dread Lord VFX.</content>
+  <content contentuid="hbcf5f14dg58eag49afgadf3gbc90a402285a" version="1">Dread Lord: Shadows</content>
+  <content contentuid="h11df3dbdgb78ag40f3gb400g88130f43873d" version="1">Manipulate the shadows of your aura to attack a creature.</content>
   <content contentuid="ha8aa9c4cg40f1g431ag8fc0g240fdedcce08" version="1">Avenging Angel</content>
-  <content contentuid="hba3f126eg144bg4eeagb8a6g5b61fb424959" version="1">You can assume the form of an angelic avenger.</content>
+  <content contentuid="hba3f126eg144bg4eeagb8a6g5b61fb424959" version="1">You can assume the form of an &lt;LSTag Type="Spell" Tooltip="Shout_AvengingAngel"&gt;angelic avenger&lt;/LSTag&gt;.</content>
   <content contentuid="hc2602725gd0edg4e31g80e9g0d77ef237b94" version="1">Assume the form of an angelic avenger, granting you the ability to &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt;. You also emanate a [1] radius aura of menace which &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; creatures that enter or start their turn in the aura.</content>
   <content contentuid="hdd60d0e7g2c98g4c61ga7beg434862304410" version="1">&lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt; against these &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt; creatures also have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt;.</content>
   <content contentuid="h92d3a9efg7c26g4bafgb9d3gfd449c80419b" version="1">This entity has the ability to &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt; and has a [1] aura that &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightens&lt;/LSTag&gt; creatures that enters or starts it turn in the aura.</content>
@@ -436,8 +490,8 @@
   <content contentuid="he600f123gb195g4bb6gba44g6eefeadc11d8" version="1">Choose the Earth Tremor spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h10a0afc2g6eddg42ebg8940g0d02f9ba4abb" version="1">Spell Mastery: Expeditious Retreat</content>
   <content contentuid="h1d549a3eg6548g471fga44dgbe8319b9757d" version="1">Choose the Expeditious Retreat spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
-  <content contentuid="hb2ffcdb8g69dbg4045g888cgb55130252e7a" version="1">Spell Mastery: False Life</content>
-  <content contentuid="h1e20b060ge0c0g4e26g9da7g2447f696025e" version="1">Choose the False Life spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+  <content contentuid="he5a73bafg582ag4f00gad42g9bd0d19efcae" version="1">Spell Mastery: False Life</content>
+  <content contentuid="h8dc17302ga928g48f6g967bg02fd20f26b43" version="1">Choose the False Life spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h1e1da24eg8508g42c0g98d4g2b3f7503371e" version="1">Spell Mastery: Feather Fall</content>
   <content contentuid="h73833d74g725cg4a06g8acbgca0b0acc6a7e" version="1">Choose the Feather Fall spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h0524fe7fg56d7g4a35gb14cge995b241d14c" version="1">Spell Mastery: Find Familiar</content>
@@ -522,8 +576,6 @@
   <content contentuid="h92309965g0e17g4a70g9c9fgc59da525c9e5" version="1">Choose the Kinetic Jaunt spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h3f651ac5g2978g40cag808dg2efc17766f44" version="1">Spell Mastery: Knock</content>
   <content contentuid="hac09546ag6213g4cb1g93e7g3f6f3bcc141e" version="1">Choose the Knock spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
-  <content contentuid="h3f651ac5g2978g40cag808dg2efc17766f44" version="1">Spell Mastery: Knock</content>
-  <content contentuid="hac09546ag6213g4cb1g93e7g3f6f3bcc141e" version="1">Choose the Knock spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h72ae80aeg0fbbg4c9bg8353g652c03ebad06" version="1">Spell Mastery: Levitate</content>
   <content contentuid="h0b017e59g927cg4e8dga8aag53897ca5d958" version="1">Choose the Levitate spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
   <content contentuid="h7d748c7dgedceg4efbg9e57geadcefd3cefd" version="1">Spell Mastery: Magic Weapon</content>
@@ -589,8 +641,6 @@
   <content contentuid="h6c7b4187g2ca4g4fa2gb274gba72d4ff438d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_Fear"&gt;Fear&lt;/LSTag&gt; as a signature spell.</content>
   <content contentuid="hc57495c0g90fdg4d10gb7f1g3c13a8d053d7" version="1">Feign Death</content>
   <content contentuid="hf7ecb35dgbe54g486dg99a9ged06bbaa0d0c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FeignDeath"&gt;Feign Death&lt;/LSTag&gt; as a signature spell.</content>
-  <content contentuid="hf4a9ebd9gb059g4c26ga1dfgc530f9096125" version="1">Fireball</content>
-  <content contentuid="hf206507eg8d65g4e86g8dc6g4011d4a50d4d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; as a signature spell.</content>
   <content contentuid="hf4a9ebd9gb059g4c26ga1dfgc530f9096125" version="1">Fireball</content>
   <content contentuid="hf206507eg8d65g4e86g8dc6g4011d4a50d4d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; as a signature spell.</content>
   <content contentuid="h1498809fg3f0dg4d0bgbaa4gbecff6975a30" version="1">Flame Arrows</content>
@@ -666,8 +716,6 @@
   <content contentuid="h2e08f465g6894g4988g9b51gb56b9502e3ed" version="1">Absorb Elements: Spell Mastery</content>
   <content contentuid="h392cd547g6401g4385ga6a3gaacad4b4a0b9" version="1">Shield: Spell Mastery</content>
   <content contentuid="hcfcbe207gb8eeg4c66ga111g6c625ca26e52" version="1">Counterspell: Spell Mastery</content>
-  <content contentuid="h996980d1ga2bbg4f2cg8738g5681aad63a93" version="1">You can change your Fighting Style selection.</content>
-  <content contentuid="h88941415gdb53g4b48gb059g9f70ee1f0411" version="1">Martial Versatility</content>
   <content contentuid="hc08958d6g4695g43d8g9f88gca62ed683dcb" version="1">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra [1] to the target. When you reach 14th level in the Cleric class, it deals an extra [2].</content>
   <content contentuid="h2ac03398ga868g47bdgbd33g57f28cb1e74c" version="1">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra [1], [2] or [3] to the target. When you reach 14th level in the Cleric class, it deals an extra [4], [5] or [6].</content>
   <content contentuid="hb3b0a6a8g76e7g4f19gaddeg76773e5fe74f" version="1">Deal an additional [1] with a weapon attack or [2] when you've reached 14th level in the Cleric class.</content>
@@ -675,4 +723,23 @@
   <content contentuid="hb17703fagd1d5g45b9gb8e3ge1e62a497003" version="1">You have become as durable as an iron golem. Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll again, using the new result instead. You can do so twice until you next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
   <content contentuid="hfa39cf81gc3f9g4336ga1e6g45e3c9848996" version="1">Indomitable (3)</content>
   <content contentuid="h5df5a2bbgb871g4b67g9c47g3160173f8ef7" version="1">You have become as durable as an iron golem. Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll again, using the new result instead. You can do so thrice until you next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+  <content contentuid="h6344e5b9gfca8g4897g871fgc3ecbe12e560" version="1">Select one of your Level 7 spells. Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; you can cast that spell without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+  <content contentuid="h38a2e405g98d0g4a9bg87d8g56c554a33bd4" version="1">Select one of your Level 8 spells. Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; you can cast that spell without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+  <content contentuid="he9864abbgcd39g433ag8a9bgf2a7c2fde4e4" version="2">Select one of your Level 9 spells. Once per &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt; you can cast that spell without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+  <content contentuid="h5081e0f9gb947g4e6bg9abegf7085fad90be" version="1">Opportunist</content>
+  <content contentuid="hfe604913ge33cg4ea2ga2fbgef39cdcbc6d8" version="1">You can exploit a creature's momentary distraction when it is hit by an attack from another creature while [1] of you by making a melee attack against it.</content>
+  <content contentuid="h3415e492g6016g4c0bg90cfg9f9ddb0c86bf" version="1">You can attack a creature within [1] when it is attacked by another creature.</content>
+  <content contentuid="hf56d1757g848bg4e2dg9970g3cea838a8593" version="1">Elder Champion</content>
+  <content contentuid="h8b3a6b1cgbdf0g47ddgbb16g01f88f3ef589" version="1">As an action, you can undergo a transformation and assume the form of an ancient force of nature. After transforming, you regain [1] at the start of your turns, can cast paladin spells with an &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; cost as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and hostile creatures within [2] of you have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against your paladin spells and Channel Oath options.</content>
+  <content contentuid="hb95bee00g0d81g4279gbf9bg362ea05a20c9" version="1">Assume the form of an ancient force of nature.</content>
+  <content contentuid="h55fca0ffg192bg4bb8gaeddg5935bdd10e62" version="1">After transforming, you regain [1] at the start of your turns, can cast paladin spells with an &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; cost as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; and hostile creatures within [2] of you have &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against your paladin spells and Channel Oath options.</content>
+  <content contentuid="h1779df9dg9073g4c79g9ffcge7354e320260" version="1">Regains [1] per turn.</content>
+  <content contentuid="hfc8b5186ged8dg402fg89c7geef58d933319" version="1">This entity has &lt;LSTag Tooltip="Disadvantage"&gt;Disadvantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against the paladin's spells and Channel Oath options.</content>
+  <content contentuid="hf83ba6b8gdc89g4f7bg81eagba41ada20cb5" version="1">Can use spell as a bonus action.</content>
+  <content contentuid="h7f142c75g8935g4233g85ccge6d93b31b887" version="1">Activate to change paladin spells with an &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; cost use a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; instead.</content>
+  <content contentuid="hb40a085dg11b7g423fga889gb1a8d5e63894" version="1">Undying Sentinel</content>
+  <content contentuid="h87e0cf9dgc2b9g465egae82g5f9746f66188" version="1">The next time this entity is reduced to [1] and are not killed outright, it drops to [2] instead.</content>
+  <content contentuid="bcf0265f-33f4-484e-9cdb-95b21a1f68e1" version="1">Commune with Nature</content>
+  <content contentuid="179cf9ab-a77f-4cab-b6bd-3539150a4acb" version="1">Briefly become one with nature and gain knowledge of the surrounding territory. You gain expertise in &lt;LSTag Tooltip="Nature"&gt;Nature&lt;/LSTag&gt; and &lt;LSTag Tooltip="Survival"&gt;Survival&lt;/LSTag&gt; Ability Checks, doubling your &lt;LSTag Tooltip="ProficiencyBonus"&gt;Proficiency Bonus&lt;/LSTag&gt; with Ability Checks using the skills.</content>
+  <content contentuid="aaa7f56fa2414ab28834ea5d7b0665a8" version="1">Has expertise with &lt;LSTag Tooltip="Nature"&gt;Nature&lt;/LSTag&gt; and &lt;LSTag Tooltip="Survival"&gt;Survival&lt;/LSTag&gt; Ability Checks.</content>
 </contentList>

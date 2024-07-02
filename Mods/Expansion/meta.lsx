@@ -6,7 +6,7 @@
             <children>
                 <node id="Dependencies"/>
                 <node id="ModuleInfo">
-                    <attribute id="Author" type="LSWString" value="DiZ"/>
+                    <attribute id="Author" type="LSWString" value="DiZ/Celes"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSWString" value="Expands upon the base classes"/>
                     <attribute id="Folder" type="LSWString" value="Expansion"/>
@@ -22,7 +22,7 @@
                     <attribute id="Tags" type="LSWString" value=""/>
                     <attribute id="Type" type="FixedString" value="Add-on"/>
                     <attribute id="UUID" type="FixedString" value="a2c4b0fc-e745-41df-81b7-fa53950d86a0"/>
-                    <attribute id="Version" type="int64" value="36028801313931267"/>
+                    <attribute id="Version" type="int64" value="36028812051349509"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version" type="int64" value="4294967298"/>

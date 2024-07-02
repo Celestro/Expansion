@@ -111,10 +111,10 @@ Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
 	end
 end)
 
--- Cantrip Scaling Alternate
+--[[ Cantrip Scaling Alternate
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 	local level = Osi.GetLevel(character)
-	if level > 16 then
+	if level > 16 and level ~= nil then
 		for _, name in pairs(Ext.Stats.GetStats("SpellData")) do
 			local cantrip = Ext.Stats.Get(name)
 			local d4 = Ext.StaticData.Get("b183a804-e9c6-4990-8984-c76d3ed67a9f","LevelMap").LevelMaps[12].AmountOfDices
@@ -180,7 +180,7 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 		eb.DescriptionParams = "3"
 		eb:Sync()
 	end
-end)
+end)--]]
 
 -- Bardic Inspiration Scaling
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
@@ -373,10 +373,10 @@ Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
 	end
 end)
 
--- Divine Strike 14th Alternate
+--[[ Divine Strike 14th Alternate
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 	local level = Osi.GetLevel(character)
-	if level > 13 then
+	if level > 13 and level ~= nil then
 		DelayedCall(1000, function ()
 			if Osi.HasPassive(character,"Divine_Strike_Life_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Nature_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Tempest_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Trickery_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_War_Toggle_2") == 1 then
 				local dsmlife = Ext.Stats.Get("Target_DivineStrike_Melee_Life")
@@ -537,12 +537,20 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function (character)
 			end
 		end)
 	end
-end)
+end)--]]
 
 -- Bladesong Restoration
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, _, _)
 	if (status == "TUT_RESTORATION" or status == "ALCH_POTION_REST_SLEEP_GREATER_RESTORATION") and HasPassive(character,"Bladesong_Resource") == 1 then
 		Osi.ApplyStatus(character,"BLADESONG_RESOURCE_RESTORE",6.0,0)
+	end
+	
+	if (status == "TUT_RESTORATION" or status == "ALCH_POTION_REST_SLEEP_GREATER_RESTORATION") then
+		Osi.ApplyStatus(character,"ALCH_POTION_REST_SLEEP_GREATER_RESTORATION_EXP",6.0,0)
+	end
+	
+	if status == "ALCH_POTION_REST_SLEEP_LESSER_RESTORATION" then
+		Osi.ApplyStatus(character,"ALCH_POTION_REST_SLEEP_LESSER_RESTORATION_EXP",6.0,0)
 	end
 end)
 
@@ -550,7 +558,8 @@ end)
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, _, _)
 	if status == "DEFT_EXPLORER_TIRELESS_TEMPHP" then
 		local wis = Osi.GetAbility(character,"Wisdom")
-		local result = wis + Random(8)
+		local wismod = math.floor((wis - 10) / 2)
+		local result = wismod + Random(8)
 		local thpstatus = "DEFT_EXPLORER_TIRELESS_TEMPHP_" .. result
 		Osi.RemoveStatus(character,"DEFT_EXPLORER_TIRELESS_TEMPHP")
 		Osi.ApplyStatus(character,thpstatus,-1.0,0,character)
@@ -569,174 +578,20 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, st
 	end
 end)
 
-local cleansingTouchStatuses = {
-  "CHILL_TOUCH",
-  "FRIENDS",
-  "RAY_OF_FROST",
-  "SHOCKING_GRASP",
-  "VICIOUSMOCKERY",
-  "ARMS_OF_HADAR",
-  "COLOR_SPRAY",
-  "COMMAND_APPROACH",
-  "COMMAND_HALT",
-  "COMMAND_FLEE",
-  "COMMAND_GROVEL",
-  "COMPELLED_DUEL",
-  "ENSNARING_STRIKE",
-  "FAERIE_FIRE",
-  "HEX_STRENGTH",
-  "HEX_DEXTERITY",
-  "HEX_CONSTITUTION",
-  "HEX_INTELLIGENCE",
-  "HEX_WISDOM",
-  "HEX_CHARISMA",
-  "HUNTERS_MARK",
-  "SEARING_SMITE",
-  "SLEEP",
-  "HIDEOUS_LAUGHTER",
-  "WITCH_BOLT",
-  "BLINDNESS",
-  "BRANDING_SMITE",
-  "CROWN_OF_MADNESS",
-  "ENTHRALL",
-  "HEAT_METAL",
-  "HOLD_PERSON",
-  "ACID_ARROW",
-  "ACID_ARROW_3",
-  "ACID_ARROW_4",
-  "ACID_ARROW_5",
-  "ACID_ARROW_6",
-  "ACID_ARROW_7",
-  "ACID_ARROW_8",
-  "ACID_ARROW_9",
-  "BLINDNESS",
-  "PHANTASMAL_FORCE",
-  "RAY_OF_ENFEEBLEMENT",
-  "CURSE_ABILITY_CHARISMA",
-  "CURSE_ABILITY_CONSTITUTION",
-  "CURSE_ABILITY_DEXTERITY",
-  "CURSE_ABILITY_INTELLIGENCE",
-  "CURSE_ABILITY_STRENGTH",
-  "CURSE_ABILITY_WISDOM",
-  "CURSE_ATTACK",
-  "CURSE_EXTRA_DAMAGE",
-  "CURSE_SKIP_TURN",
-  "FEAR",
-  "HYPNOTIC_PATTERN",
-  "SLOW",
-  "BANISHED",
-  "CONFUSION",
-  "DOMINATE_BEAST",
-  "PHANTASMAL_KILLER",
-  "POLYMORPH_SHEEP",
-  "BANISHING_SMITE",
-  "CONTAGION_SLIMY_DOOM",
-  "CONTAGION_SLIMY_DOOM_1",
-  "CONTAGION_SLIMY_DOOM_2",
-  "CONTAGION_SLIMY_DOOM_3",
-  "CONTAGION_FILTH_FEVER",
-  "CONTAGION_FILTH_FEVER_1",
-  "CONTAGION_FILTH_FEVER_2",
-  "CONTAGION_FILTH_FEVER_3",
-  "CONTAGION_BLINDING_SICKNESS",
-  "CONTAGION_BLINDING_SICKNESS_1",
-  "CONTAGION_BLINDING_SICKNESS_2",
-  "CONTAGION_BLINDING_SICKNESS_3",
-  "CONTAGION_FLESH_ROT",
-  "CONTAGION_FLESH_ROT_1",
-  "CONTAGION_FLESH_ROT_2",
-  "CONTAGION_FLESH_ROT_3",
-  "CONTAGION_MINDFIRE",
-  "CONTAGION_MINDFIRE_1",
-  "CONTAGION_MINDFIRE_2",
-  "CONTAGION_MINDFIRE_3",
-  "CONTAGION_SEIZURE",
-  "CONTAGION_SEIZURE_1",
-  "CONTAGION_SEIZURE_2",
-  "CONTAGION_SEIZURE_3",
-  "HOLD_MONSTER",
-  "SLEEPING_EYEBITE",
-  "EYEBITE_PANICKED",
-  "EYEBITE_SICKENED",
-  "FLESH_TO_STONE_1",
-  "FLESH_TO_STONE_2",
-  "FLESH_TO_STONE_3",
-  "PETRIFIED",
-  "HARM",
-  "IRRESISTIBLE_DANCE",
-  "SUNBEAM",
-  "LOW_DEVILSFEE_WEALTH",
-  "STAGGERING_SMITE",
-  "WYR_GORTASH_CHAINSOFTYRANNY",
-  "CAUSE_FEAR",
-  "CAUSTIC_BREW",
-  "CAUSTIC_BREW_2",
-  "CAUSTIC_BREW_3",
-  "CAUSTIC_BREW_4",
-  "CAUSTIC_BREW_5",
-  "CAUSTIC_BREW_6",
-  "CAUSTIC_BREW_7",
-  "CAUSTIC_BREW_8",
-  "CAUSTIC_BREW_9",
-  "SNARE_RESTRAINED",
-  "MAXIMILIANS_EARTHEN_GRASP",
-  "SUGGESTION",
-  "MIND_WHIP",
-  "MIND_WHIP_MOVEMENT",
-  "MIND_WHIP_MOVEMENT_BLOCK",
-  "ENEMIES_ABOUND",
-  "RAULOTHIMS_PSYCHIC_LANCE",
-  "BLINDING_SMITE_BLINDED"
-}
-
--- Cleansing Touch Shared Statuses
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
-	if status == "CHARMED" then
-		for _, esvStatus in pairs(Ext.Entity.Get(character).ServerCharacter.StatusManager.Statuses) do
-			if status == esvStatus.StatusId and Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
-				local turns = Osi.GetStatusTurns(character,status)
-				Osi.ApplyStatus(character,"CHARMED_CLEANSING_TOUCH_TECHNICAL",turns*6,1,causee)
-			end
-		end
-	elseif status == "FRIGHTENED" then
-		for _, esvStatus in pairs(Ext.Entity.Get(character).ServerCharacter.StatusManager.Statuses) do
-			if status == esvStatus.StatusId and Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
-				local turns = Osi.GetStatusTurns(character,status)
-				Osi.ApplyStatus(character,"FRIGHTENED_CLEANSING_TOUCH_TECHNICAL",turns*6,1,causee)
-			end
-		end
-	elseif status == "POISONED" then
-		for _, esvStatus in pairs(Ext.Entity.Get(character).ServerCharacter.StatusManager.Statuses) do
-			if status == esvStatus.StatusId and Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
-				local turns = Osi.GetStatusTurns(character,status)
-				Osi.ApplyStatus(character,"POISONED_CLEANSING_TOUCH_TECHNICAL",turns*6,1,causee)
-			end
-		end
-	end
-end)
-
 -- Cleansing Touch
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
-	if status == "CLEANSING_TOUCH" then
-		for _, cstatus in pairs(cleansingTouchStatuses) do
-			for _, esvStatus in pairs(Ext.Entity.Get(character).ServerCharacter.StatusManager.Statuses) do
-				if Osi.HasActiveStatus(character,cstatus) == 1 and cstatus == esvStatus.StatusId and Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
-					Osi.RemoveStatus(character,cstatus)
-				end
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, status, causee, _)
+	if status == "CLEANSING_TOUCH" and Osi.IsCharacter(object) == 1 then
+		for _, esvStatus in pairs(Ext.Entity.Get(object).ServerCharacter.StatusManager.Statuses) do
+			if Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
+				Osi.RemoveStatus(object,esvStatus.StatusId)
 			end
-		end
-
-		if Osi.HasActiveStatus(character,"CHARMED_CLEANSING_TOUCH_TECHNICAL") == 1 or Osi.HasActiveStatus(character,"FRIGHTENED_CLEANSING_TOUCH_TECHNICAL") == 1 or Osi.HasActiveStatus(character,"POISONED_CLEANSING_TOUCH_TECHNICAL") == 1 then
-			Osi.RemoveStatus(character,"CHARMED_CLEANSING_TOUCH_TECHNICAL")
-			Osi.RemoveStatus(character,"FRIGHTENED_CLEANSING_TOUCH_TECHNICAL")
-			Osi.RemoveStatus(character,"POISONED_CLEANSING_TOUCH_TECHNICAL")
 		end
 	end
 end)
 
 -- Share Spells Setup
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
-	if (status == "RANGERS_COMPANION_BEAR" or status == "RANGERS_COMPANION_BOAR" or status == "RANGERS_COMPANION_GIANTSPIDER" or status == "RANGERS_COMPANION_RAVEN" or status == "RANGERS_COMPANION_WOLF") and Osi.HasPassive(causee,"ShareSpells") == 1 then
+	if (status == "RANGERS_COMPANION_BEAR" or status == "RANGERS_COMPANION_BOAR" or status == "RANGERS_COMPANION_GIANTSPIDER" or status == "RANGERS_COMPANION_RAVEN" or status == "RANGERS_COMPANION_WOLF" or status == "RANGERS_COMPANION_PANTHER") and Osi.HasPassive(causee,"ShareSpells") == 1 then
 		Osi.SetVarObject(causee,"ShareSpells",character)
 	end
 end)
@@ -798,13 +653,6 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, st
 		Osi.RemoveStatus(summon,status)
 	end
 end)
-
---[[ Test
-Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "before", function (caster, target, spell, _, _, _)
-	if spell == "Target_Antagonize" then
-		_D(Ext.Entity.Get(target):GetAllComponents())
-	end
-end)--]]
 
 -- Spellcasting Ability Status
 Ext.Osiris.RegisterListener("EnteredForceTurnBased", 1, "before", function (caster)
@@ -1167,7 +1015,7 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, 
 	end
 end)
 
--- Leveling Up
+-- Signature Spells Leveling Up
 Ext.Osiris.RegisterListener("LeveledUp", 1, "before", function(character)
 	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 and Osi.HasPassive(character,"SpellMastery") == 1 then
 		local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
@@ -1186,7 +1034,7 @@ Ext.Osiris.RegisterListener("LeveledUp", 1, "before", function(character)
 	end
 end)
 
--- Respeccing
+-- Signature Spells Respeccing
 Ext.Osiris.RegisterListener("RespecCompleted", 1, "after", function(character)
 	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 then
 		local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
@@ -1398,17 +1246,17 @@ Ext.Osiris.RegisterListener("RemovedFrom", 2, "after", function(item, character)
 	end
 end)
 
--- D10 Martial Arts
+--[[ D10 Martial Arts
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
 	local level = Osi.GetLevel(character)
-	if level > 16 then
+	if level > 16 and level ~= nil then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			if class.ClassUUID == "c4598bdb-fc07-40dd-a62c-90cc138bd76f" and class.Level > 16 then
 				Ext.StaticData.Get("b4136c95-a4f9-4fc1-96bc-00310232d27a","LevelMap").LevelMaps[12].DiceValue="D10"
 			end
 		end
 	end
-end)
+end)--]]
 
 -- D10 Martial Arts Alternative
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
@@ -1430,17 +1278,17 @@ Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
 	end
 end)
 
--- D12 Improved Combat Superiority
+--[[ D12 Improved Combat Superiority
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
 	local level = Osi.GetLevel(character)
-	if level > 17 then
+	if level > 17 and level ~= nil then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			if class.ClassUUID == "721dfac3-92d4-41f5-b773-b7072a86232f" and class.Level > 17 then
 				Ext.StaticData.Get("f81e8e9e-ffe0-4173-83d6-7cd8cf718477","LevelMap").LevelMaps[12].DiceValue="D12"
 			end
 		end
 	end
-end)
+end)--]]
 
 -- D12 Improved Combat Superiority
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
@@ -1533,17 +1381,17 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, st
     end
 end)
 
--- D12 Bardic Inspiration
+--[[ D12 Bardic Inspiration
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
 	local level = Osi.GetLevel(character)
-	if level > 14 then
+	if level > 14 and level ~= nil then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level > 14 then
 				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
 			end
 		end
 	end
-end)
+end)--]]
 
 -- D12 Bardic Inspiration Alternative
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
@@ -1551,15 +1399,15 @@ Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
 	if level > 14 and Osi.IsPlayer(character) == 1 then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			local levelmap = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue
-			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level > 14 and levelmap == "D8" then
-				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D10"
+			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level > 14 and levelmap == "D10" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D12"
 			end
 		end
 	elseif level < 15 then
 		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
 			local levelmap = Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue
-			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level < 15 and levelmap == "D10" then
-				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D8"
+			if class.ClassUUID == "92cd50b6-eb1b-4824-8adb-853e90c34c90" and class.Level < 15 and levelmap == "D12" then
+				Ext.StaticData.Get("d627b1c2-d215-476d-a3b1-3ba652d1c0c3","LevelMap").LevelMaps[12].DiceValue="D10"
 			end
 		end
 	end
@@ -1568,18 +1416,24 @@ end)
 -- Master's Flourish
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, causee, _)
 	if status == "MASTERS_FLOURISH" then
-		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive_EXP")
-		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile_EXP")
-		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing_EXP")
-		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive_EXP")
-		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile_EXP")
-		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing_EXP")
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing")
 		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
 		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
 		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
 		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
 		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
 		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		pbfdef.HitCosts = ""
+		pbfmob.HitCosts = ""
+		pbfssh.HitCosts = ""
+		tbfdef.HitCosts = ""
+		tbfmob.HitCosts = ""
+		zbfssh.HitCosts = ""
 		pbfdef:Sync()
 		pbfmob:Sync()
 		pbfssh:Sync()
@@ -1592,18 +1446,24 @@ end)
 -- Master's Flourish Removal
 Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(character, status, causee, _)
 	if status == "MASTERS_FLOURISH" then
-		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive_EXP")
-		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile_EXP")
-		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing_EXP")
-		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive_EXP")
-		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile_EXP")
-		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing_EXP")
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing")
 		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
 		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
 		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
 		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
 		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
 		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfdef.HitCosts = "BardicInspiration:1"
+		pbfmob.HitCosts = "BardicInspiration:1"
+		pbfssh.HitCosts = "BardicInspiration:1"
+		tbfdef.HitCosts = "BardicInspiration:1"
+		tbfmob.HitCosts = "BardicInspiration:1"
+		zbfssh.HitCosts = "BardicInspiration:1"
 		pbfdef:Sync()
 		pbfmob:Sync()
 		pbfssh:Sync()
@@ -1611,4 +1471,270 @@ Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(character, sta
 		tbfmob:Sync()
 		zbfssh:Sync()
 	end
+end)
+
+-- Master's Flourish Adjustments
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
+	if Osi.HasActiveStatus(character,"MASTERS_FLOURISH") == 1 then
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing")
+		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+1d6, MainWeaponDamageType)"
+		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d6, MainWeaponDamageType)"
+		pbfdef.HitCosts = ""
+		pbfmob.HitCosts = ""
+		pbfssh.HitCosts = ""
+		tbfdef.HitCosts = ""
+		tbfmob.HitCosts = ""
+		zbfssh.HitCosts = ""
+		pbfdef:Sync()
+		pbfmob:Sync()
+		pbfssh:Sync()
+		tbfdef:Sync()
+		tbfmob:Sync()
+		zbfssh:Sync()
+	elseif Osi.HasActiveStatus(character,"MASTERS_FLOURISH") == 0 then
+		local pbfdef = Ext.Stats.Get("Projectile_BladeFlourish_Defensive")
+		local pbfmob = Ext.Stats.Get("Projectile_BladeFlourish_Mobile")
+		local pbfssh = Ext.Stats.Get("Projectile_BladeFlourish_Slashing")
+		local tbfdef = Ext.Stats.Get("Target_BladeFlourish_Defensive")
+		local tbfmob = Ext.Stats.Get("Target_BladeFlourish_Mobile")
+		local zbfssh = Ext.Stats.Get("Zone_BladeFlourish_Slashing")
+		pbfdef.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfmob.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfssh.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		tbfdef.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		tbfmob.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		zbfssh.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(BardicInspiration), MainWeaponDamageType)"
+		pbfdef.HitCosts = "BardicInspiration:1"
+		pbfmob.HitCosts = "BardicInspiration:1"
+		pbfssh.HitCosts = "BardicInspiration:1"
+		tbfdef.HitCosts = "BardicInspiration:1"
+		tbfmob.HitCosts = "BardicInspiration:1"
+		zbfssh.HitCosts = "BardicInspiration:1"
+		pbfdef:Sync()
+		pbfmob:Sync()
+		pbfssh:Sync()
+		tbfdef:Sync()
+		tbfmob:Sync()
+		zbfssh:Sync()
+	end
+end)
+
+--[[ D8 Favored Foe
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 13 and level ~= nil then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			if class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level > 13 then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D8"
+			end
+		end
+	end
+end)--]]
+
+-- Favored Foe
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 5 and level < 14 and IsTagged(character,"RANGER_37a733c1-a862-4157-b92a-9cff46232c6a") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue
+			local levelmap7 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue
+			local levelmap8 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue
+			local levelmap9 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue
+			local levelmap10 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue
+			local levelmap11 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue
+			local levelmap12 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level < 6 and levelmap == "D6" then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D4"
+			elseif class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level > 5 and class.Level < 14 and levelmap == "D4" then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D6"
+			end
+		end
+	elseif level > 13 and IsTagged(character,"RANGER_37a733c1-a862-4157-b92a-9cff46232c6a") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level > 13 and (levelmap == "D6" or levelmap == "D4") then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D8"
+			end
+		end
+	end
+end)
+
+-- Favored Foe Alternative
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(character, _, _ ,_)
+	local level = Osi.GetLevel(character)
+	if level > 5 and level < 14 and IsTagged(character,"RANGER_37a733c1-a862-4157-b92a-9cff46232c6a") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue
+			local levelmap7 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue
+			local levelmap8 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue
+			local levelmap9 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue
+			local levelmap10 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue
+			local levelmap11 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue
+			local levelmap12 = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level < 6 and levelmap == "D6" then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue="D4"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D4"
+			elseif class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level > 5 and class.Level < 14 and levelmap == "D4" then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[6].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[7].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[8].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[9].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[10].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[11].DiceValue="D6"
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D6"
+			end
+		end
+	elseif level > 13 and IsTagged(character,"RANGER_37a733c1-a862-4157-b92a-9cff46232c6a") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "36be18ba-23db-4dff-bfa6-ae105ce43144" and class.Level > 13 and (levelmap == "D6" or levelmap == "D4") then
+				Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue="D8"
+			end
+		end
+	end
+end)
+
+-- Panther Level Up
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, causee, _)
+	if Osi.HasActiveStatus(character,"RANGERS_COMPANION_PANTHER") == 1 and (status == "PANTHER_HP_4" or status == "PANTHER_HP_5" or status == "PANTHER_HP_6" or status == "PANTHER_HP_7" or status == "PANTHER_HP_8" or status == "PANTHER_HP_9" or status == "PANTHER_HP_10" or status == "PANTHER_HP_11" or status == "PANTHER_HP_12" or status == "PANTHER_HP_13" or status == "PANTHER_HP_14" or status == "PANTHER_HP_15" or status == "PANTHER_HP_16" or status == "PANTHER_HP_17" or status == "PANTHER_HP_18" or status == "PANTHER_HP_19" or status == "PANTHER_HP_20") then
+		local owner = Osi.CharacterGetOwner(character)
+		local summonlevel = Osi.GetLevel(character)
+		for _,ownerlevel in pairs(Ext.Entity.Get(owner).Classes.Classes) do
+			if ownerlevel.SubClassUUID == "6fd9547d-cc28-400e-bfa9-3a85baa70f24" and summonlevel ~= ownerlevel.Level then
+				local panther = Ext.Entity.Get(character)
+				for _,levels in pairs(Ext.Entity.Get(character).Classes.Classes) do
+					panther.AvailableLevel.Level = ownerlevel.Level
+					panther.EocLevel.Level = ownerlevel.Level
+					levels.Level = ownerlevel.Level
+					panther:Replicate("AvailableLevel")
+					panther:Replicate("EocLevel")
+					panther:Replicate("Classes")
+				end
+			end
+		end	
+	end
+
+	if Osi.HasActiveStatus(character,"RANGERS_COMPANION_PANTHER") == 1 and status ~= "EXP_DISTRACT_SPELL" then
+		if Ext.Mod.IsModLoaded("f19c68ed-70be-4c3d-b610-e94afc5c5103") then
+			if Osi.HasActiveStatus(character,"EXP_DISTRACT_SPELL") == 0 then
+				Osi.ApplyStatus(character,"EXP_DISTRACT_SPELL",-1.0,1)
+			end	
+		else
+			return
+		end
+	end
+end)
+
+-- Grant Divine Strike
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, _)
+    if level ~= "SYS_CC_I" then
+		local party = Osi.DB_Players:Get(nil)
+		for _,p in pairs(party) do
+			if IsTagged(p[1],"CLERIC_1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5") == 1 then
+				_D("Works")
+				for _,cleric in pairs(Ext.Entity.Get(p[1]).Classes.Classes) do
+					if cleric.SubClassUUID == "4b5da2f5-b999-4623-8bff-a63df5560fb3" and (Osi.HasPassive(p[1],"Divine_Strike_Life_Toggle") == 1 or Osi.HasPassive(p[1],"Divine_Strike_Life_Toggle_2") == 1) and Osi.HasSpell(p[1],"Target_DivineStrike_Life_Container") == 0 then
+						Osi.AddPassive(p[1],"Divine_Strike_Life_WeaponAttack")
+					elseif cleric.SubClassUUID == "6dec76d0-df22-411c-8a78-3d6fb843ae50" and (Osi.HasPassive(p[1],"Divine_Strike_Nature_Toggle") == 1 or Osi.HasPassive(p[1],"Divine_Strike_Nature_Toggle_2") == 1) and Osi.HasSpell(p[1],"Target_DivineStrike_Nature_Container") == 0 then
+						Osi.AddPassive(p[1],"Divine_Strike_Nature_WeaponAttack")
+					elseif cleric.SubClassUUID == "89bacf1b-8f15-4972-ada7-bf59c7c78441" and (Osi.HasPassive(p[1],"Divine_Strike_Tempest_Toggle") == 1 or Osi.HasPassive(p[1],"Divine_Strike_Tempest_Toggle_2") == 1) and Osi.HasSpell(p[1],"Divine_Strike_Tempest_WeaponAttack") == 0 then
+						Osi.AddPassive(p[1],"Divine_Strike_Tempest_WeaponAttack")
+					elseif cleric.SubClassUUID == "b9ccf90e-b35b-4b73-b896-8ed2d32ae8c6" and (Osi.HasPassive(p[1],"Divine_Strike_War_Toggle") == 1 or Osi.HasPassive(p[1],"Divine_Strike_War_Toggle_2") == 1) and Osi.HasSpell(p[1],"Divine_Strike_War_WeaponAttack") == 0 then
+						Osi.AddPassive(p[1],"Divine_Strike_War_WeaponAttack")
+					elseif cleric.SubClassUUID == "f013d01b-3310-43f7-81bf-a51130442b5e" and (Osi.HasPassive(p[1],"Divine_Strike_Trickery_Toggle") == 1 or Osi.HasPassive(p[1],"Divine_Strike_Trickery_Toggle_2") == 1) and Osi.HasSpell(p[1],"Target_DivineStrike_Trickery_Container") == 0 then
+						_D("Works too")
+						Osi.AddPassive(p[1],"Divine_Strike_Trickery_WeaponAttack")
+					end
+				end
+			end
+		end
+    end
+end)
+
+-- Sneak Attack
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function(character)
+	local level = Osi.GetLevel(character)
+	if level > 12 and IsTagged(character,"ROGUE_f8a0608b-666c-4be6-a49c-03b369c10bd2") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices
+			if class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 12 and class.Level < 15 and levelmap ~= "7" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="7"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 14 and class.Level < 17 and levelmap ~= "8" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="8"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 16 and class.Level < 19 and levelmap ~= "9" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="9"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 18 and class.Level < 21 and levelmap ~= "10" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="10"
+			end
+		end
+	elseif level > 13 and IsTagged(character,"ROGUE_f8a0608b-666c-4be6-a49c-03b369c10bd2") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 13 and levelmap ~= "6" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="6"
+			end
+		end
+	end
+end)
+
+-- Sneak Attack Alternative
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "after", function(character, _, _ ,_)
+	local level = Osi.GetLevel(character)
+	if level > 12 and IsTagged(character,"ROGUE_f8a0608b-666c-4be6-a49c-03b369c10bd2") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices
+			if class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 12 and class.Level < 15 and levelmap ~= "7" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="7"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 14 and class.Level < 17 and levelmap ~= "8" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="8"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 16 and class.Level < 19 and levelmap ~= "9" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="9"
+			elseif class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 18 and class.Level < 21 and levelmap ~= "10" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="10"
+			end
+		end
+	elseif level > 13 and IsTagged(character,"ROGUE_f8a0608b-666c-4be6-a49c-03b369c10bd2") == 1 then
+		for _,class in pairs(Ext.Entity.Get(character).Classes.Classes) do
+			local levelmap = Ext.StaticData.Get("9b33ff47-74b7-4d17-be41-e5e0e1227bb9","LevelMap").LevelMaps[12].DiceValue
+			if class.ClassUUID == "e8b1eab0-ef11-40a2-8a0b-cee8d062bf2a" and class.Level > 13 and levelmap ~= "6" then
+				Ext.StaticData.Get("a8d270e8-56d4-4d08-95f9-40949a450ed9","LevelMap").LevelMaps[12].AmountOfDices="6"
+			end
+		end
+	end
+end)
+
+-- Nature's Veil
+Ext.Osiris.RegisterListener("RespecCompleted", 1, "after", function(character)
+	DelayedCall(500, function ()
+		local resource = Osi.GetActionResourceValuePersonal(character, "NaturesVeil", 0)
+		if resource > 0 and Osi.HasPassive(character,"NaturesVeil") == 0 then
+		Osi.ApplyStatus(character,"NATURES_VEIL_RESOURCE_REMOVAL",6.0,1)
+		end
+	end)
 end)

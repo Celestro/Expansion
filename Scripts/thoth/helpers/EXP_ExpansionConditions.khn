@@ -190,20 +190,50 @@ function IsDedicatedMonkWeaponAttack()
     end
 end
 
-function EXP_CanSeeInvisible(entity)
-    local entity = entity or context.Source
-    local entity2 = context.Target
+function EXP_IsInvisibleSeen(entity)
+    local entity = entity or context.Target
+    return HasStatus('INVISIBLE_SEEN',entity) 
+        |  HasStatus('INVISIBLE_MAGEHAND_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_SEEN',entity) 
+        |  HasStatus('ONE_WITH_SHADOWS_SEEN',entity) 
+        |  HasStatus('POTION_OF_INVISIBILITY_SEEN',entity) 
+        |  HasStatus('CLOAK_OF_SHADOWS_SEEN',entity) 
+        |  HasStatus('CLOAK_OF_SHADOWS_MONK_SEEN',entity) 
+        |  HasStatus('UMBRAL_CLOAK_SEEN',entity) 
+        |  HasStatus('GREATER_INVISIBILITY_SEEN',entity) 
+        |  HasStatus('SHADOWBLEND_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_SHADARKAI_GLOOMWEAVER_SEEN',entity) 
+        |  HasStatus('HIDE_IN_PLAIN_SIGHT_SEEN',entity) 
+        |  HasStatus('MISTY_ESCAPE_INVISIBLE_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_PANTHER_SEEN',entity) 
+        |  HasStatus('SHROUD_SELF_SEEN',entity) 
+        |  HasStatus('SUPREME_SNEAK_SEEN',entity) 
+        |  HasStatus('MAG_INVISIBLE_WEAPON_SEEN',entity) 
+        |  HasStatus('LOW_POLTERGEIST_INVISIBLE_SEEN',entity)
+end
 
-    if entity == context.Target then
-        entity2 = context.Source
+function EXP_CanSeeInvisible(source, target, sourceObserver, targetObserver)
+    local source = source or context.Source
+    local target = target or context.Target
+    local sourceObserver = sourceObserver or false
+    local targetObserver = targetObserver or false
+
+    local sourcePosition = context.SourcePosition
+    local targetPosition = context.TargetPosition
+
+    if sourceObserver then
+        sourcePosition = context.ObserverPosition
     end
 
-    return Tagged('BLINDSIGHT', entity) 
-       |  (HasStatus('MIND_SPIKE_OWNER', entity) & HasStatus('MIND_SPIKE', entity2, entity))
-       |  (HasStatus('TRUESIGHT', entity) & ~DistanceToGreaterThan(context.SourcePosition, context.TargetPosition, 36.5)) 
-       | ((HasStatus('SEE_INVISIBILITY', entity) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', entity)) & ~DistanceToGreaterThan(context.SourcePosition, context.TargetPosition, 18.5)) 
-       | ((HasPassive('FightingStyle_BlindFighting', entity) | HasPassive('FeralSenses', entity) & ~HasStatus('DEAFENED', entity)) & ~DistanceToGreaterThan(context.SourcePosition, context.TargetPosition, 3)) 
-       | (HasPassive('FeralSenses', entity))
+    if targetObserver then
+        targetPosition = context.ObserverPosition
+    end
+
+    return Tagged('BLINDSIGHT', source) 
+       |  (HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source))
+       |  (HasStatus('TRUESIGHT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 36.5)) 
+       | ((HasStatus('SEE_INVISIBILITY', source) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 18.5)) 
+       | ((HasPassive('FightingStyle_BlindFighting', source) | (HasPassive('Blindsense', source) & ~(HasPassive('Deafness',source) | HasStatus('SG_Deafened',source)))) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 3))
 end
 
 function IsElusive(entity)
@@ -216,4 +246,8 @@ function HasWindSoul(entity)
     local entity = entity or context.Source
 
     return HasStatus('WIND_SOUL', entity)
+end
+
+function EXP_PaladinSpells()
+    return IsSpellChildOrVariantFromContext('Target_Bless') | IsSpellChildOrVariantFromContext('Target_Command') | IsSpellChildOrVariantFromContext('Target_Command_Approach') | IsSpellChildOrVariantFromContext('Target_Command_Drop') | IsSpellChildOrVariantFromContext('Target_Command_Flee') | IsSpellChildOrVariantFromContext('Target_Command_Grovel') | IsSpellChildOrVariantFromContext('Target_Command_Halt') | IsSpellChildOrVariantFromContext('Target_CureWounds') | IsSpellChildOrVariantFromContext('Target_Heroism') | IsSpellChildOrVariantFromContext('Target_ProtectionFromEvilAndGood') | IsSpellChildOrVariantFromContext('Shout_Aid') | IsSpellChildOrVariantFromContext('Target_LesserRestoration') | IsSpellChildOrVariantFromContext('Target_MagicWeapon') | IsSpellChildOrVariantFromContext('Target_ProtectionFromPoison') | IsSpellChildOrVariantFromContext('Shout_CrusadersMantle') | IsSpellChildOrVariantFromContext('Target_Daylight_Container') | IsSpellChildOrVariantFromContext('Target_Daylight') | IsSpellChildOrVariantFromContext('Target_Daylight_Enchantment') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Acid') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Cold') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Fire') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Lightning') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Thunder') | IsSpellChildOrVariantFromContext('Target_RemoveCurse') | IsSpellChildOrVariantFromContext('Teleportation_Revivify') | IsSpellChildOrVariantFromContext('Shout_AuraOfVitality') | IsSpellChildOrVariantFromContext('Target_Banishment') | IsSpellChildOrVariantFromContext('Target_DeathWard') | IsSpellChildOrVariantFromContext('Shout_DestructiveWave') | IsSpellChildOrVariantFromContext('Target_Bane') | IsSpellChildOrVariantFromContext('Target_HuntersMark') | IsSpellChildOrVariantFromContext('Target_HoldPerson') | IsSpellChildOrVariantFromContext('Target_MistyStep') | IsSpellChildOrVariantFromContext('Target_Haste') | IsSpellChildOrVariantFromContext('Target_ProtectionFromEnergy') | IsSpellChildOrVariantFromContext('Target_IceStorm') | IsSpellChildOrVariantFromContext('Target_Stoneskin') | IsSpellChildOrVariantFromContext('Target_InsectPlague') | IsSpellChildOrVariantFromContext('Wall_WallOfStone') | IsSpellChildOrVariantFromContext('Shout_DispelEvilAndGood') | IsSpellChildOrVariantFromContext('Target_Ceremony') | IsSpellChildOrVariantFromContext('Target_Ceremony_BlessedWater') | IsSpellChildOrVariantFromContext('Target_Ceremony_ComingOfAge') | IsSpellChildOrVariantFromContext('Target_Ceremony_Dedication') | IsSpellChildOrVariantFromContext('Shout_DetectEvilAndGood') | IsSpellChildOrVariantFromContext('Shout_DetectMagic') | IsSpellChildOrVariantFromContext('Shout_PrayerOfHealing') | IsSpellChildOrVariantFromContext('Target_WardingBond') | IsSpellChildOrVariantFromContext('Target_CreateFoodAndWater') | IsSpellChildOrVariantFromContext('Target_MagicCircle') | IsSpellChildOrVariantFromContext('Shout_AuraOfLife')
 end

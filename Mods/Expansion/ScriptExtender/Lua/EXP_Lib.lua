@@ -58,6 +58,12 @@ function EXP_ApplyStaticData(defTable)
                         newValue = replacement.Value
                     end
                     Ext.Types.Unserialize(resource[attribute], newValue)
+                elseif type(resource[attribute]) == "boolean" then
+                    if replacement.Type == "overwrite" then
+--                        _D("\tOverwriting " .. attribute .. " boolean")
+                        newValue = replacement.Value
+                    end
+                    resource[attribute] = newValue
                 else
 --                    _D("StaticData Type not mapped: " .. attribute .. " - " .. type(resource[attribute]))
                 end
