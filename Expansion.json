@@ -35,23 +35,68 @@
     }
   },
   "XP Rate":{
-    "50% XP":{
-      "Enabled":false
+    "Level 1":{
+      "EXP": 300.0
     },
-    "33% XP":{
-      "Enabled":true
+    "Level 2":{
+      "EXP": 600.0
     },
-    "25% XP":{
-      "Enabled":false
+    "Level 3":{
+      "EXP": 1800.0
     },
-    "Rescaled XP":{
-      "Enabled":false
+    "Level 4":{
+      "EXP": 3800.0
     },
-    "Holzwurm93s XP":{
-      "Enabled":false
+    "Level 5":{
+      "EXP": 6500.0
     },
-    "12th Level Max":{
-      "Enabled":false
+    "Level 6":{
+      "EXP": 8000.0
+    },
+    "Level 7":{
+      "EXP": 9000.0
+    },
+    "Level 8":{
+      "EXP": 12000.0
+    },
+    "Level 9":{
+      "EXP": 14000.0
+    },
+    "Level 10":{
+      "EXP": 20000.0
+    },
+    "Level 11":{
+      "EXP": 24000.0
+    },
+    "Level 12":{
+      "EXP": 30000.0
+    },
+    "Level 13":{
+      "EXP": 20000.0
+    },
+    "Level 14":{
+      "EXP": 25000.0
+    },
+    "Level 15":{
+      "EXP": 30000.0
+    },
+    "Level 16":{
+      "EXP": 30000.0
+    },
+    "Level 17":{
+      "EXP": 40000.0
+    },
+    "Level 18":{
+      "EXP": 40000.0
+    },
+    "Level 19":{
+      "EXP": 50000.0
+    },
+    "Level 20":{
+      "EXP": 50000.0
+    },
+    "Max Level":{
+      "Level": 20
     }
   },
   "Feats":{
