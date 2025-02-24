@@ -11,7 +11,7 @@
                     <attribute id="DisplayName" type="TranslatedString" handle="f19c7c75-299b-4dd1-bc0b-04597562abba" version="1"/>
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="MustPrepareSpells" type="bool" value="true"/>
-                    <attribute id="Name" type="FixedString" value="Bladesinging"/>
+                    <attribute id="Name" type="FixedString" value="Wizard_Bladesinging"/>
                     <attribute id="ParentGuid" type="guid" value="a865965f-501b-46e9-9eaa-7748e8c04d09"/>
                     <attribute id="PrimaryAbility" type="uint8" value="4"/>
                     <attribute id="ProgressionTableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>

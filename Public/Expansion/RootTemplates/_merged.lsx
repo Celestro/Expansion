@@ -206,6 +206,137 @@
 						</node>
 					</children>
 				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h8cd139f2gb540g43a8g8cdcg2a8e0a6b7355" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="a03eaaf9-e97a-4147-817b-5508f927d9ba" />
+					<attribute id="Name" type="LSString" value="SurfaceCloudkill7Cloud" />
+					<attribute id="ParentTemplateId" type="FixedString" value="adb16a84-5052-4e77-9ef8-4df2d2b7d212" />
+					<attribute id="Type" type="FixedString" value="surface" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209034" />
+					<children>
+						<node id="FX" />
+						<node id="InstanceVisual" />
+						<node id="IntroFX" />
+						<node id="StatusData">
+							<children>
+								<node id="StatusData">
+									<attribute id="AffectedByRoll" type="bool" value="False" />
+									<attribute id="ApplyToCharacters" type="bool" value="True" />
+									<attribute id="ApplyToItems" type="bool" value="False" />
+									<attribute id="ApplyTypes" type="uint8" value="11" />
+									<attribute id="Chance" type="float" value="1" />
+									<attribute id="DontTickWhileOnSurface" type="bool" value="False" />
+									<attribute id="Duration" type="float" value="6" />
+									<attribute id="Force" type="bool" value="False" />
+									<attribute id="KeepAlive" type="bool" value="True" />
+									<attribute id="OnlyOncePerTurn" type="bool" value="True" />
+									<attribute id="Remove" type="bool" value="False" />
+									<attribute id="StatusId" type="FixedString" value="CLOUDKILL_7" />
+									<attribute id="VanishOnApply" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h8cd139f2gb540g43a8g8cdcg2a8e0a6b7355" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="9bbf81c5-4400-41cc-8fb4-fd015a863f23" />
+					<attribute id="Name" type="LSString" value="SurfaceCloudkill8Cloud" />
+					<attribute id="ParentTemplateId" type="FixedString" value="adb16a84-5052-4e77-9ef8-4df2d2b7d212" />
+					<attribute id="Type" type="FixedString" value="surface" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209034" />
+					<children>
+						<node id="FX" />
+						<node id="InstanceVisual" />
+						<node id="IntroFX" />
+						<node id="StatusData">
+							<children>
+								<node id="StatusData">
+									<attribute id="AffectedByRoll" type="bool" value="False" />
+									<attribute id="ApplyToCharacters" type="bool" value="True" />
+									<attribute id="ApplyToItems" type="bool" value="False" />
+									<attribute id="ApplyTypes" type="uint8" value="11" />
+									<attribute id="Chance" type="float" value="1" />
+									<attribute id="DontTickWhileOnSurface" type="bool" value="False" />
+									<attribute id="Duration" type="float" value="6" />
+									<attribute id="Force" type="bool" value="False" />
+									<attribute id="KeepAlive" type="bool" value="True" />
+									<attribute id="OnlyOncePerTurn" type="bool" value="True" />
+									<attribute id="Remove" type="bool" value="False" />
+									<attribute id="StatusId" type="FixedString" value="CLOUDKILL_8" />
+									<attribute id="VanishOnApply" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Description" type="TranslatedString" handle="h8cd139f2gb540g43a8g8cdcg2a8e0a6b7355" version="1" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="d8326974-7515-461c-b58f-ed4362637c8a" />
+					<attribute id="Name" type="LSString" value="SurfaceCloudkill9Cloud" />
+					<attribute id="ParentTemplateId" type="FixedString" value="adb16a84-5052-4e77-9ef8-4df2d2b7d212" />
+					<attribute id="Type" type="FixedString" value="surface" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209034" />
+					<children>
+						<node id="FX" />
+						<node id="InstanceVisual" />
+						<node id="IntroFX" />
+						<node id="StatusData">
+							<children>
+								<node id="StatusData">
+									<attribute id="AffectedByRoll" type="bool" value="False" />
+									<attribute id="ApplyToCharacters" type="bool" value="True" />
+									<attribute id="ApplyToItems" type="bool" value="False" />
+									<attribute id="ApplyTypes" type="uint8" value="11" />
+									<attribute id="Chance" type="float" value="1" />
+									<attribute id="DontTickWhileOnSurface" type="bool" value="False" />
+									<attribute id="Duration" type="float" value="6" />
+									<attribute id="Force" type="bool" value="False" />
+									<attribute id="KeepAlive" type="bool" value="True" />
+									<attribute id="OnlyOncePerTurn" type="bool" value="True" />
+									<attribute id="Remove" type="bool" value="False" />
+									<attribute id="StatusId" type="FixedString" value="CLOUDKILL_9" />
+									<attribute id="VanishOnApply" type="bool" value="False" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="GameObjects">
+					<attribute id="Acceleration" type="float" value="40" />
+					<attribute id="CameraOffset" type="fvec3" value="0 0 0" />
+					<attribute id="CastBone" type="FixedString" value="Dummy_FX" />
+					<attribute id="DestroyTrailFXOnImpact" type="bool" value="True" />
+					<attribute id="Flag" type="int32" value="0" />
+					<attribute id="GroundImpactFX" type="LSString" value="VFX_Spells_Projectile_QuiveringPalm" />
+					<attribute id="GroupID" type="uint32" value="0" />
+					<attribute id="HasGameplayValue" type="bool" value="False" />
+					<attribute id="ImpactFX" type="FixedString" value="" />
+					<attribute id="InitialSpeed" type="float" value="20" />
+					<attribute id="LevelName" type="FixedString" value="" />
+					<attribute id="MapKey" type="FixedString" value="415c8dad-80e8-47bc-ab18-5932fffc2a30" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Projectile_QuiveringPalm" />
+					<attribute id="NeedsImpactSFX" type="bool" value="False" />
+					<attribute id="OffsetMin_Bezier3" type="fvec2" value="0 1" />
+					<attribute id="ParentTemplateId" type="FixedString" value="" />
+					<attribute id="PhysicsOpenTemplate" type="FixedString" value="" />
+					<attribute id="PhysicsTemplate" type="FixedString" value="" />
+					<attribute id="PreviewPathImpactFX" type="FixedString" value="VFX_UI_DestinationBeam_Projectile_01" />
+					<attribute id="PreviewPathMaterial" type="FixedString" value="312a1494-a0e2-c215-cf51-bda58a6b2341" />
+					<attribute id="ShiftBMax_Bezier4" type="float" value="0.25" />
+					<attribute id="ShiftBMin_Bezier4" type="float" value="0.25" />
+					<attribute id="TrailFX" type="FixedString" value="" />
+					<attribute id="Type" type="FixedString" value="projectile" />
+					<attribute id="VelocityMode" type="uint8" value="1" />
+					<attribute id="VisualTemplate" type="FixedString" value="" />
+					<attribute id="_OriginalFileVersion_" type="int64" value="144115207403209007" />
+					<children>
+						<node id="Bounds" />
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

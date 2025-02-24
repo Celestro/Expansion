@@ -81,6 +81,20 @@
                     <attribute id="SelectorId" type="FixedString" value="MysticArcanum_9th"/>
                     <attribute id="UUID" type="guid" value="d64f9fad-bbe8-4bb0-9dde-f14a4b3b1abd"/>
                 </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="h4ce37469g9fd9g41aag86b6ga51ab4c31c03" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="he20414cdg0dc5g422agb2d9g1f966b75aff8" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+                    <attribute id="SelectorId" type="FixedString" value="TotemicAttunement"/>
+                    <attribute id="UUID" type="guid" value="70162fc2-1c5f-415c-a0c8-de20666e3b19"/>
+                </node>
+                <node id="ProgressionDescription">
+                    <attribute id="Description" type="TranslatedString" handle="he81aa861gcad2g4dd4gb395gab09ddc40f1d" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h9ff1d185gfd36g4851g8ca5g3fbfacd25d1e" version="1"/>
+                    <attribute id="ProgressionTableId" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="SelectorId" type="FixedString" value="SuperiorHuntersDefense"/>
+                    <attribute id="UUID" type="guid" value="7c90db09-2cb9-4965-99d4-b96bee319691"/>
+                </node>
             </children>
         </node>
     </region>

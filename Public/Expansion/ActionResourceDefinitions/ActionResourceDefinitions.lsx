@@ -104,12 +104,19 @@
                     <attribute id="UUID" type="guid" value="9c99a91b-3123-40f5-a0bd-608303934272"/>
                 </node>
                 <node id="ActionResourceDefinition">
-                    <attribute id="Description" type="TranslatedString" handle="h0ad642d8g5843g4e84gb1f8ge2b826dc8ed7" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="hc827edcdg601cg4ffcgaf5fg520a9f359914" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h7476cff2gd661g4379g94d3g54f256385e68" version="1"/>
                     <attribute id="Name" type="FixedString" value="StrokeOfLuck"/>
                     <attribute id="ReplenishType" type="FixedString" value="ShortRest"/>
                     <attribute id="ShowOnActionResourcePanel" type="bool" value="true"/>
                     <attribute id="UUID" type="guid" value="acb51053-ee49-4994-988d-b0fe9397e974"/>
+                </node>
+                <node id="ActionResourceDefinition">
+                    <attribute id="IsHidden" type="bool" value="true"/>
+                    <attribute id="Name" type="FixedString" value="SteadyAim"/>
+                    <attribute id="ReplenishType" type="FixedString" value="Turn"/>
+                    <attribute id="ShowOnActionResourcePanel" type="bool" value="false"/>
+                    <attribute id="UUID" type="guid" value="907caadd-bbf8-4ada-b333-30109a900ad3"/>
                 </node>
             </children>
         </node>

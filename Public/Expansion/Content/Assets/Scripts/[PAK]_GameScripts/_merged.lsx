@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="0" revision="0" build="51" />
+	<version major="4" minor="0" revision="0" build="51" lslib_meta="v1,bswap_guids" />
 	<region id="ScriptBank">
 		<node id="ScriptBank">
 			<children>

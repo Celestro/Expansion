@@ -1,246 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="0" revision="0" build="49"/>
-    <region id="IconUVList"> 
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="IconUVList">
         <node id="root">
             <children>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_InstinctivePounce"/> 
-                    <attribute id="U1" type="float" value="0.0"/> 
-                    <attribute id="U2" type="float" value="0.03125"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration"/> 
-                    <attribute id="U1" type="float" value="0.03125"/> 
-                    <attribute id="U2" type="float" value="0.0625"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration_Damage"/> 
-                    <attribute id="U1" type="float" value="0.0625"/> 
-                    <attribute id="U2" type="float" value="0.09375"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration_Healing"/> 
-                    <attribute id="U1" type="float" value="0.09375"/> 
-                    <attribute id="U2" type="float" value="0.125"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Skill_Cleric_HarnessDivinePower"/> 
-                    <attribute id="U1" type="float" value="0.125"/> 
-                    <attribute id="U2" type="float" value="0.15625"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_HarnessDivinePower"/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_BlessedStrikes_Melee"/> 
-                    <attribute id="U1" type="float" value="0.1875"/> 
-                    <attribute id="U2" type="float" value="0.21875"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_BlessedStrikes_Ranged"/> 
-                    <attribute id="U1" type="float" value="0.21875"/> 
-                    <attribute id="U2" type="float" value="0.25"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BlessedStrikes"/> 
-                    <attribute id="U1" type="float" value="0.25"/> 
-                    <attribute id="U2" type="float" value="0.28125"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_WildCompanion"/> 
-                    <attribute id="U1" type="float" value="0.28125"/> 
-                    <attribute id="U2" type="float" value="0.3125"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_KiFueledAttack"/> 
-                    <attribute id="U1" type="float" value="0.3125"/> 
-                    <attribute id="U2" type="float" value="0.34375"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_QuickenedHealing"/> 
-                    <attribute id="U1" type="float" value="0.34375"/> 
-                    <attribute id="U2" type="float" value="0.375"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Monk_QuickenedHealing"/> 
-                    <attribute id="U1" type="float" value="0.375"/> 
-                    <attribute id="U2" type="float" value="0.40625"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Monk_FocusedAim"/> 
-                    <attribute id="U1" type="float" value="0.40625"/> 
-                    <attribute id="U2" type="float" value="0.4375"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FavoredEnemy_FavoredFoe"/> 
-                    <attribute id="U1" type="float" value="0.4375"/> 
-                    <attribute id="U2" type="float" value="0.46875"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Canny"/> 
-                    <attribute id="U1" type="float" value="0.46875"/> 
-                    <attribute id="U2" type="float" value="0.5"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Roving"/> 
-                    <attribute id="U1" type="float" value="0.5"/> 
-                    <attribute id="U2" type="float" value="0.53125"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Tireless"/> 
-                    <attribute id="U1" type="float" value="0.53125"/> 
-                    <attribute id="U2" type="float" value="0.5625"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Canny"/> 
-                    <attribute id="U1" type="float" value="0.5625"/> 
-                    <attribute id="U2" type="float" value="0.59375"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-				<node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Tireless"/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/> 
-                    <attribute id="V1" type="float" value="0.0"/> 
-                    <attribute id="V2" type="float" value="0.03125"/> 
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_NaturesVeil"/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Sorcerer_MagicalGuidance"/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalGuidance"/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SteadyAim"/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Rogue_SteadyAim"/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FocusedAim"/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Ranger_NaturesVeil"/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_VersatileTrickster"/>
+                    <attribute id="MapKey" type="FixedString" value="ARM_AvengingAngel_Wings"/>
                     <attribute id="U1" type="float" value="0.84375"/>
                     <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.0"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_ArcaneCharge"/>
+                    <attribute id="U1" type="float" value="0.34375"/>
+                    <attribute id="U2" type="float" value="0.375"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Barbarian_TotemicAttunement_Eagle"/>
+                    <attribute id="U1" type="float" value="0.56274414"/>
+                    <attribute id="U2" type="float" value="0.59350586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Barbarian_TotemicAttunement_Elk"/>
+                    <attribute id="U1" type="float" value="0.59399414"/>
+                    <attribute id="U2" type="float" value="0.62475586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Bladesong"/>
+                    <attribute id="U1" type="float" value="0.625"/>
+                    <attribute id="U2" type="float" value="0.65625"/>
+                    <attribute id="V1" type="float" value="0.21875"/>
+                    <attribute id="V2" type="float" value="0.25"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Bladesong_Dismiss"/>
+                    <attribute id="U1" type="float" value="0.65625"/>
+                    <attribute id="U2" type="float" value="0.6875"/>
+                    <attribute id="V1" type="float" value="0.21875"/>
+                    <attribute id="V2" type="float" value="0.25"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_BlessedStrikes_Melee"/>
+                    <attribute id="U1" type="float" value="0.1875"/>
+                    <attribute id="U2" type="float" value="0.21875"/>
+                    <attribute id="V1" type="float" value="0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Retaliation"/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.0"/>
+                    <attribute id="MapKey" type="FixedString" value="Action_BlessedStrikes_Ranged"/>
+                    <attribute id="U1" type="float" value="0.21875"/>
+                    <attribute id="U2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DiamondSoul"/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>	
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="Action_CleansingTouch"/>
                     <attribute id="U1" type="float" value="0.9375"/>
                     <attribute id="U2" type="float" value="0.96875"/>
-                    <attribute id="V1" type="float" value="0.0"/>
+                    <attribute id="V1" type="float" value="0"/>
                     <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CleansingTouch"/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.03125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ShareSpells"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
+                    <attribute id="MapKey" type="FixedString" value="Action_Cleric_ImprovedDuplicity"/>
+                    <attribute id="U1" type="float" value="0.65625"/>
+                    <attribute id="U2" type="float" value="0.6875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DragonWings"/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>
+                    <attribute id="MapKey" type="FixedString" value="Action_CoronaOfLight"/>
+                    <attribute id="U1" type="float" value="0.5625"/>
+                    <attribute id="U2" type="float" value="0.59375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_DedicatedWeapon"/>
+                    <attribute id="U1" type="float" value="0.25"/>
+                    <attribute id="U2" type="float" value="0.28125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Canny"/>
+                    <attribute id="U1" type="float" value="0.5625"/>
+                    <attribute id="U2" type="float" value="0.59375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_DeftExplorer_Tireless"/>
+                    <attribute id="U1" type="float" value="0.59375"/>
+                    <attribute id="U2" type="float" value="0.625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="Action_DragonWings"/>
@@ -257,11 +117,438 @@
                     <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_EldritchMaster"/>
+                    <attribute id="U1" type="float" value="0.96875"/>
+                    <attribute id="U2" type="float" value="1"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Monk_FocusedAim"/>
+                    <attribute id="U1" type="float" value="0.40625"/>
+                    <attribute id="U2" type="float" value="0.4375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Monk_QuickenedHealing"/>
+                    <attribute id="U1" type="float" value="0.375"/>
+                    <attribute id="U2" type="float" value="0.40625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Monk_QuiveringPalm"/>
+                    <attribute id="U1" type="float" value="0.84399414"/>
+                    <attribute id="U2" type="float" value="0.87475586"/>
+                    <attribute id="V1" type="float" value="0.00024366472"/>
+                    <attribute id="V2" type="float" value="0.03094542"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_AvengingAngel"/>
+                    <attribute id="U1" type="float" value="0.875"/>
+                    <attribute id="U2" type="float" value="0.90625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_DreadLord"/>
+                    <attribute id="U1" type="float" value="0.34375"/>
+                    <attribute id="U2" type="float" value="0.375"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_ElderChampion"/>
+                    <attribute id="U1" type="float" value="0.1875"/>
+                    <attribute id="U2" type="float" value="0.21875"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_HolyNimbus"/>
+                    <attribute id="U1" type="float" value="0.03125"/>
+                    <attribute id="U2" type="float" value="0.0625"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_PeerlessSkill"/>
+                    <attribute id="U1" type="float" value="0.34375"/>
+                    <attribute id="U2" type="float" value="0.375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Ranger_NaturesVeil"/>
+                    <attribute id="U1" type="float" value="0.8125"/>
+                    <attribute id="U2" type="float" value="0.84375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Ranger_RangersCompanion_Panther"/>
+                    <attribute id="U1" type="float" value="0.0625"/>
+                    <attribute id="U2" type="float" value="0.09375"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Rogue_SteadyAim"/>
+                    <attribute id="U1" type="float" value="0.75"/>
+                    <attribute id="U2" type="float" value="0.78125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Sorcerer_DraconicPresence"/>
+                    <attribute id="U1" type="float" value="0.15625"/>
+                    <attribute id="U2" type="float" value="0.1875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Sorcerer_MagicalGuidance"/>
+                    <attribute id="U1" type="float" value="0.65625"/>
+                    <attribute id="U2" type="float" value="0.6875"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_SpellMastery"/>
+                    <attribute id="U1" type="float" value="0.0625"/>
+                    <attribute id="U2" type="float" value="0.09375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Stormborn"/>
+                    <attribute id="U1" type="float" value="0.46875"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_VersatileTrickster"/>
+                    <attribute id="U1" type="float" value="0.21875"/>
+                    <attribute id="U2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_Warlock_CreateThrall"/>
+                    <attribute id="U1" type="float" value="0.96875"/>
+                    <attribute id="U2" type="float" value="1"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Action_WindSoul"/>
+                    <attribute id="U1" type="float" value="0.59375"/>
+                    <attribute id="U2" type="float" value="0.625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ArcaneCharge"/>
+                    <attribute id="U1" type="float" value="0.375"/>
+                    <attribute id="U2" type="float" value="0.40625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Archdruid"/>
+                    <attribute id="U1" type="float" value="0.71875"/>
+                    <attribute id="U2" type="float" value="0.75"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_AvatarOfBattle"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.53125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_AvengingAngel"/>
+                    <attribute id="U1" type="float" value="0.90625"/>
+                    <attribute id="U2" type="float" value="0.9375"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BattleMagic"/>
+                    <attribute id="U1" type="float" value="0.375"/>
+                    <attribute id="U2" type="float" value="0.40625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BeastSpells"/>
+                    <attribute id="U1" type="float" value="0.6875"/>
+                    <attribute id="U2" type="float" value="0.71875"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BlessedStrikes"/>
+                    <attribute id="U1" type="float" value="0.25"/>
+                    <attribute id="U2" type="float" value="0.28125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Blindsense"/>
+                    <attribute id="U1" type="float" value="0.28125"/>
+                    <attribute id="U2" type="float" value="0.3125"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CleansingTouch"/>
+                    <attribute id="U1" type="float" value="0.96875"/>
+                    <attribute id="U2" type="float" value="1"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CoronaOfLight"/>
+                    <attribute id="U1" type="float" value="0.53125"/>
+                    <attribute id="U2" type="float" value="0.5625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CreateThrall"/>
+                    <attribute id="U1" type="float" value="0"/>
+                    <attribute id="U2" type="float" value="0.03125"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DedicatedWeapon"/>
+                    <attribute id="U1" type="float" value="0.21875"/>
+                    <attribute id="U2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Canny"/>
+                    <attribute id="U1" type="float" value="0.46875"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Roving"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.53125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DeftExplorer_Tireless"/>
+                    <attribute id="U1" type="float" value="0.53125"/>
+                    <attribute id="U2" type="float" value="0.5625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DiamondSoul"/>
+                    <attribute id="U1" type="float" value="0.90625"/>
+                    <attribute id="U2" type="float" value="0.9375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DraconicPresence"/>
+                    <attribute id="U1" type="float" value="0.1875"/>
+                    <attribute id="U2" type="float" value="0.21875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DragonWings"/>
+                    <attribute id="U1" type="float" value="0.03125"/>
+                    <attribute id="U2" type="float" value="0.0625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DreadLord"/>
+                    <attribute id="U1" type="float" value="0.375"/>
+                    <attribute id="U2" type="float" value="0.40625"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ElderChampion"/>
+                    <attribute id="U1" type="float" value="0.21875"/>
+                    <attribute id="U2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_EldritchMaster"/>
+                    <attribute id="U1" type="float" value="0"/>
+                    <attribute id="U2" type="float" value="0.03125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Elusive"/>
+                    <attribute id="U1" type="float" value="0.3125"/>
+                    <attribute id="U2" type="float" value="0.34375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_EmptyBody"/>
+                    <attribute id="U1" type="float" value="0.78125"/>
+                    <attribute id="U2" type="float" value="0.8125"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FavoredEnemy_FavoredFoe"/>
+                    <attribute id="U1" type="float" value="0.4375"/>
+                    <attribute id="U2" type="float" value="0.46875"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FocusedAim"/>
+                    <attribute id="U1" type="float" value="0.78125"/>
+                    <attribute id="U2" type="float" value="0.8125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FoeSlayer"/>
+                    <attribute id="U1" type="float" value="0.9375"/>
+                    <attribute id="U2" type="float" value="0.96875"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FungalBody"/>
+                    <attribute id="U1" type="float" value="0.65625"/>
+                    <attribute id="U2" type="float" value="0.6875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_HarnessDivinePower"/>
+                    <attribute id="U1" type="float" value="0.15625"/>
+                    <attribute id="U2" type="float" value="0.1875"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_HolyNimbus"/>
+                    <attribute id="U1" type="float" value="0.09375"/>
+                    <attribute id="U2" type="float" value="0.125"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PassiveFeature_HurlThroughHell"/>
                     <attribute id="U1" type="float" value="0.125"/>
                     <attribute id="U2" type="float" value="0.15625"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ImprovedDuplicity"/>
+                    <attribute id="U1" type="float" value="0.625"/>
+                    <attribute id="U2" type="float" value="0.65625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ImprovedWarMagic"/>
+                    <attribute id="U1" type="float" value="0.75"/>
+                    <attribute id="U2" type="float" value="0.78125"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_IndomitableMight"/>
+                    <attribute id="U1" type="float" value="0.53125"/>
+                    <attribute id="U2" type="float" value="0.5625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_InstinctivePounce"/>
+                    <attribute id="U1" type="float" value="0"/>
+                    <attribute id="U2" type="float" value="0.03125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_KiFueledAttack"/>
+                    <attribute id="U1" type="float" value="0.3125"/>
+                    <attribute id="U2" type="float" value="0.34375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalGuidance"/>
+                    <attribute id="U1" type="float" value="0.6875"/>
+                    <attribute id="U2" type="float" value="0.71875"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration"/>
+                    <attribute id="U1" type="float" value="0.03125"/>
+                    <attribute id="U2" type="float" value="0.0625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration_Damage"/>
+                    <attribute id="U1" type="float" value="0.0625"/>
+                    <attribute id="U2" type="float" value="0.09375"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MagicalInspiration_Healing"/>
+                    <attribute id="U1" type="float" value="0.09375"/>
+                    <attribute id="U2" type="float" value="0.125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MastersFlourish"/>
+                    <attribute id="U1" type="float" value="0.8125"/>
+                    <attribute id="U2" type="float" value="0.84375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_NaturesSanctuary"/>
+                    <attribute id="U1" type="float" value="0.78125"/>
+                    <attribute id="U2" type="float" value="0.8125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_NaturesVeil"/>
+                    <attribute id="U1" type="float" value="0.625"/>
+                    <attribute id="U2" type="float" value="0.65625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Opportunist"/>
+                    <attribute id="U1" type="float" value="0.15625"/>
+                    <attribute id="U2" type="float" value="0.1875"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PassiveFeature_Overchannel"/>
@@ -276,433 +563,27 @@
                     <attribute id="U2" type="float" value="0.21875"/>
                     <attribute id="V1" type="float" value="0.03125"/>
                     <attribute id="V2" type="float" value="0.0625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_VersatileTrickster"/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_VersatileTrickster"/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_PerfectSelf"/>
+                    <attribute id="U1" type="float" value="0.8125"/>
+                    <attribute id="U2" type="float" value="0.84375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Blindsense"/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PassiveFeature_PersistentRage"/>
                     <attribute id="U1" type="float" value="0.3125"/>
                     <attribute id="U2" type="float" value="0.34375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_ArcaneCharge"/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ArcaneCharge"/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TimelessBody"/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SoulOfVengeance"/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ThousandForms"/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellThief"/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_IndomitableMight"/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
+                    <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PassiveFeature_PrimalChampion"/>
                     <attribute id="U1" type="float" value="0.5625"/>
                     <attribute id="U2" type="float" value="0.59375"/>
                     <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SuperiorInspiration"/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ImprovedDuplicity"/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Cleric_ImprovedDuplicity"/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BeastSpells"/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Archdruid"/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ImprovedWarMagic"/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_EmptyBody"/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_PerfectSelf"/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="ARM_AvengingAngel_Wings"/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-               <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_AvengingAngel"/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_AvengingAngel"/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FoeSlayer"/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_EldritchMaster"/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.03125"/>
-                    <attribute id="V2" type="float" value="0.0625"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_EldritchMaster"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SignatureSpells"/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_SpellMastery"/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellMastery"/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SorcerousRestoration"/>
-                    <attribute id="U1" type="float" value="0.125"/>
-                    <attribute id="U2" type="float" value="0.15625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Sorcerer_DraconicPresence"/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DraconicPresence"/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DedicatedWeapon"/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_DedicatedWeapon"/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_StrokeOfLuck"/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Elusive"/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_PeerlessSkill"/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_BattleMagic"/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellResistance"/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Stormborn"/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Stormborn"/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_AvatarOfBattle"/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CoronaOfLight"/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_CoronaOfLight"/>
-                    <attribute id="U1" type="float" value="0.5625"/>
-                    <attribute id="U2" type="float" value="0.59375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_WindSoul"/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_WindSoul"/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_FungalBody"/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Survivor"/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Relentless"/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SupremeHealing"/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_NaturesSanctuary"/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_MastersFlourish"/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf"/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-               <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_BludgeoningWeapon"/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_SlashingWeapon"/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_PiercingWeapon"/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Warlock_CreateThrall"/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.0625"/>
-                    <attribute id="V2" type="float" value="0.09375"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_CreateThrall"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_HolyNimbus"/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Ranger_RangersCompanion_Panther"/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_HolyNimbus"/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PassiveFeature_PurityOfSpirit"/>
@@ -712,989 +593,51 @@
                     <attribute id="V2" type="float" value="0.125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Opportunist"/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_ElderChampion"/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ElderChampion"/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_UndyingSentinel"/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Spell_Divination_CommuneWithNature"/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SupernaturalResistance"/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Paladin_DreadLord"/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_QuickenedHealing"/>
                     <attribute id="U1" type="float" value="0.34375"/>
                     <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_DreadLord"/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5625"/>
-                    <attribute id="U2" type="float" value="0.59375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Relentless"/>
                     <attribute id="U1" type="float" value="0.71875"/>
                     <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>
-                </node>
-               <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Retaliation"/>
                     <attribute id="U1" type="float" value="0.875"/>
                     <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>	
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ShadowyDodge"/>
+                    <attribute id="U1" type="float" value="0.65649414"/>
+                    <attribute id="U2" type="float" value="0.68725586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.09375"/>
-                    <attribute id="V2" type="float" value="0.125"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0"/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ShareSpells"/>
+                    <attribute id="U1" type="float" value="0"/>
                     <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SignatureSpells"/>
                     <attribute id="U1" type="float" value="0.03125"/>
                     <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.125"/>
-                    <attribute id="U2" type="float" value="0.15625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveAction_Opportunist"/>
-                    <attribute id="U1" type="float" value="0.5625"/>
-                    <attribute id="U2" type="float" value="0.59375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SongOfDefense"/>
                     <attribute id="U1" type="float" value="0.59375"/>
                     <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.125"/>
-                    <attribute id="V2" type="float" value="0.15625"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.125"/>
-                    <attribute id="U2" type="float" value="0.15625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5625"/>
-                    <attribute id="U2" type="float" value="0.59375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-               <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>	
-                </node>
-               <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>	
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.15625"/>
-                    <attribute id="V2" type="float" value="0.1875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.125"/>
-                    <attribute id="U2" type="float" value="0.15625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5625"/>
-                    <attribute id="U2" type="float" value="0.59375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.59375"/>
-                    <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.625"/>
-                    <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.6875"/>
-                    <attribute id="U2" type="float" value="0.71875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.71875"/>
-                    <attribute id="U2" type="float" value="0.75"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.75"/>
-                    <attribute id="U2" type="float" value="0.78125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.78125"/>
-                    <attribute id="U2" type="float" value="0.8125"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.8125"/>
-                    <attribute id="U2" type="float" value="0.84375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.84375"/>
-                    <attribute id="U2" type="float" value="0.875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.875"/>
-                    <attribute id="U2" type="float" value="0.90625"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.90625"/>
-                    <attribute id="U2" type="float" value="0.9375"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.9375"/>
-                    <attribute id="U2" type="float" value="0.96875"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.96875"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.1875"/>
-                    <attribute id="V2" type="float" value="0.21875"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.03125"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.03125"/>
-                    <attribute id="U2" type="float" value="0.0625"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.0625"/>
-                    <attribute id="U2" type="float" value="0.09375"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.09375"/>
-                    <attribute id="U2" type="float" value="0.125"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.125"/>
-                    <attribute id="U2" type="float" value="0.15625"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.15625"/>
-                    <attribute id="U2" type="float" value="0.1875"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.1875"/>
-                    <attribute id="U2" type="float" value="0.21875"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.21875"/>
-                    <attribute id="U2" type="float" value="0.25"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.25"/>
-                    <attribute id="U2" type="float" value="0.28125"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.28125"/>
-                    <attribute id="U2" type="float" value="0.3125"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.3125"/>
-                    <attribute id="U2" type="float" value="0.34375"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.34375"/>
-                    <attribute id="U2" type="float" value="0.375"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.375"/>
-                    <attribute id="U2" type="float" value="0.40625"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.40625"/>
-                    <attribute id="U2" type="float" value="0.4375"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.4375"/>
-                    <attribute id="U2" type="float" value="0.46875"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.46875"/>
-                    <attribute id="U2" type="float" value="0.5"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.5"/>
-                    <attribute id="U2" type="float" value="0.53125"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
-                </node>	
-                <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value=""/>
-                    <attribute id="U1" type="float" value="0.53125"/>
-                    <attribute id="U2" type="float" value="0.5625"/>
                     <attribute id="V1" type="float" value="0.21875"/>
                     <attribute id="V2" type="float" value="0.25"/>
                 </node>
@@ -1706,32 +649,221 @@
                     <attribute id="V2" type="float" value="0.25"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SongOfDefense"/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SorcerousRestoration"/>
+                    <attribute id="U1" type="float" value="0.125"/>
+                    <attribute id="U2" type="float" value="0.15625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SoulOfVengeance"/>
+                    <attribute id="U1" type="float" value="0.4375"/>
+                    <attribute id="U2" type="float" value="0.46875"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellMastery"/>
+                    <attribute id="U1" type="float" value="0.09375"/>
+                    <attribute id="U2" type="float" value="0.125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellResistance"/>
+                    <attribute id="U1" type="float" value="0.40625"/>
+                    <attribute id="U2" type="float" value="0.4375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SpellThief"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.53125"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_StandAgainstTheTide"/>
+                    <attribute id="U1" type="float" value="0.62524414"/>
+                    <attribute id="U2" type="float" value="0.65600586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SteadyAim"/>
+                    <attribute id="U1" type="float" value="0.71875"/>
+                    <attribute id="U2" type="float" value="0.75"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Stormborn"/>
+                    <attribute id="U1" type="float" value="0.4375"/>
+                    <attribute id="U2" type="float" value="0.46875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_StrokeOfLuck"/>
+                    <attribute id="U1" type="float" value="0.28125"/>
+                    <attribute id="U2" type="float" value="0.3125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SuperiorInspiration"/>
                     <attribute id="U1" type="float" value="0.59375"/>
                     <attribute id="U2" type="float" value="0.625"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Bladesong"/>
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SupernaturalResistance"/>
+                    <attribute id="U1" type="float" value="0.3125"/>
+                    <attribute id="U2" type="float" value="0.34375"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_SupremeHealing"/>
+                    <attribute id="U1" type="float" value="0.75"/>
+                    <attribute id="U2" type="float" value="0.78125"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_Survivor"/>
+                    <attribute id="U1" type="float" value="0.6875"/>
+                    <attribute id="U2" type="float" value="0.71875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_ThousandForms"/>
+                    <attribute id="U1" type="float" value="0.46875"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TimelessBody"/>
+                    <attribute id="U1" type="float" value="0.40625"/>
+                    <attribute id="U2" type="float" value="0.4375"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TotemicAttunement_Bear"/>
+                    <attribute id="U1" type="float" value="0.50024414"/>
+                    <attribute id="U2" type="float" value="0.53100586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TotemicAttunement_Eagle"/>
+                    <attribute id="U1" type="float" value="0.46899414"/>
+                    <attribute id="U2" type="float" value="0.49975586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TotemicAttunement_Elk"/>
+                    <attribute id="U1" type="float" value="0.43774414"/>
+                    <attribute id="U2" type="float" value="0.46850586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TotemicAttunement_Tiger"/>
+                    <attribute id="U1" type="float" value="0.40649414"/>
+                    <attribute id="U2" type="float" value="0.43725586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_TotemicAttunement_Wolf"/>
+                    <attribute id="U1" type="float" value="0.53149414"/>
+                    <attribute id="U2" type="float" value="0.56225586"/>
+                    <attribute id="V1" type="float" value="0.093810916"/>
+                    <attribute id="V2" type="float" value="0.12451267"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_UndyingSentinel"/>
+                    <attribute id="U1" type="float" value="0.25"/>
+                    <attribute id="U2" type="float" value="0.28125"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_VersatileTrickster"/>
+                    <attribute id="U1" type="float" value="0.25"/>
+                    <attribute id="U2" type="float" value="0.28125"/>
+                    <attribute id="V1" type="float" value="0.03125"/>
+                    <attribute id="V2" type="float" value="0.0625"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_WildCompanion"/>
+                    <attribute id="U1" type="float" value="0.28125"/>
+                    <attribute id="U2" type="float" value="0.3125"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="PassiveFeature_WindSoul"/>
                     <attribute id="U1" type="float" value="0.625"/>
                     <attribute id="U2" type="float" value="0.65625"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
                 </node>
                 <node id="IconUV">
-                    <attribute id="MapKey" type="FixedString" value="Action_Bladesong_Dismiss"/>
-                    <attribute id="U1" type="float" value="0.65625"/>
-                    <attribute id="U2" type="float" value="0.6875"/>
-                    <attribute id="V1" type="float" value="0.21875"/>
-                    <attribute id="V2" type="float" value="0.25"/>
+                    <attribute id="MapKey" type="FixedString" value="Skill_Cleric_HarnessDivinePower"/>
+                    <attribute id="U1" type="float" value="0.125"/>
+                    <attribute id="U2" type="float" value="0.15625"/>
+                    <attribute id="V1" type="float" value="0"/>
+                    <attribute id="V2" type="float" value="0.03125"/>
                 </node>
-	</children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Spell_Divination_CommuneWithNature"/>
+                    <attribute id="U1" type="float" value="0.28125"/>
+                    <attribute id="U2" type="float" value="0.3125"/>
+                    <attribute id="V1" type="float" value="0.09375"/>
+                    <attribute id="V2" type="float" value="0.125"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf"/>
+                    <attribute id="U1" type="float" value="0.84375"/>
+                    <attribute id="U2" type="float" value="0.875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_BludgeoningWeapon"/>
+                    <attribute id="U1" type="float" value="0.875"/>
+                    <attribute id="U2" type="float" value="0.90625"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_PiercingWeapon"/>
+                    <attribute id="U1" type="float" value="0.9375"/>
+                    <attribute id="U2" type="float" value="0.96875"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="Spell_Transmutation_AlterSelf_SlashingWeapon"/>
+                    <attribute id="U1" type="float" value="0.90625"/>
+                    <attribute id="U2" type="float" value="0.9375"/>
+                    <attribute id="V1" type="float" value="0.0625"/>
+                    <attribute id="V2" type="float" value="0.09375"/>
+                </node>
+            </children>
         </node>
     </region>
-	<region id="TextureAtlasInfo">
-<node id="root">
-	<children>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
                 <node id="TextureAtlasIconSize">
                     <attribute id="Height" type="int32" value="64"/>
                     <attribute id="Width" type="int32" value="64"/>
@@ -1746,5 +878,5 @@
                 </node>
             </children>
         </node>
-    </region>  
+    </region>
 </save>

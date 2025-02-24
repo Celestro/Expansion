@@ -1,26 +1,4 @@
-key "Level1","300"
-
-key "Level2","600"
-
-key "Level3","1800"
-
-key "Level4","3800"
-
-key "Level5","6500"
-
-key "Level6","8000"
-
-key "Level7","9000"
-
-key "Level8","12000"
-
-key "Level9","14000"
-
-key "Level10","20000"
-
-key "Level11","24000"
-
-key "Level12","30000"
+key "Level12","20000"
 
 key "Level13","20000"
 

@@ -79,12 +79,27 @@
                     <attribute id="TableUUID" type="guid" value="b2a03b63-809f-4df9-a179-bf5b899082ef"/>
                     <attribute id="UUID" type="guid" value="8ada3c48-5334-43ba-ac36-ce78c79d21d2"/>
                 </node>
+				<node id="Progression">
+                    <attribute id="Level" type="uint8" value="14" />
+					<attribute id="Name" type="LSString" value="GiantPath" />
+					<attribute id="PassivesRemoved" type="LSString" value="RageGiantUnlock" />
+                    <attribute id="PassivesAdded" type="LSString" value="DemiurgicColossus;RageDemiurgicColossusUnlock" />
+                    <attribute id="ProgressionType" type="uint8" value="1" />
+                    <attribute id="TableUUID" type="guid" value="bdd02775-b9ee-480c-a260-d844580453b4" />
+                    <attribute id="UUID" type="guid" value="086676dd-3b32-4b59-88fd-501841c4dd36" />  
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="TotemWarriorPath"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(abd6bab4-a202-4f6b-85cd-d30db7839096,1,TotemicAttunement)"/>
+                    <attribute id="TableUUID" type="guid" value="48f1760f-86e7-401c-ad52-633fffbae49e"/>
+                    <attribute id="UUID" type="guid" value="1acc0dc9-11c0-460d-b686-b4faf326aaf6"/>
+                </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,7)"/>
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="Bard"/>
-                    <attribute id="PassivesAdded" type="LSString" value="BardicInspiration_2"/>
-                    <attribute id="PassivesRemoved" type="LSString" value="BardicInspiration"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSpells(f923e058-b1d9-4b02-98ef-9daaa82a71b6,1,1,BardSpells)"/>
                     <attribute id="TableUUID" type="guid" value="229c98da-2cd1-4a5e-8051-9d90ec7931e7"/>
@@ -478,7 +493,7 @@
                     <attribute id="Level" type="uint8" value="16"/>
                     <attribute id="Name" type="LSString" value="Fighter"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="ReplacePassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,MartialVersatility)"/>
+                    <attribute id="Selectors" type="LSString" value=""/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
                     <attribute id="UUID" type="guid" value="7c469977-c4fd-4146-86e7-ebbad6df6501"/>
                 </node>
@@ -515,6 +530,23 @@
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
                     <attribute id="UUID" type="guid" value="6f96237b-2d98-4083-a8b6-1719c8100098"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="ArcaneArcher"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="PassivesAdded" type="LSString" value="EverReadyShot"/>
+                    <attribute id="TableUUID" type="guid" value="537d34a9-c60d-4f1b-be41-312ab5d8c792"/>
+                    <attribute id="UUID" type="guid" value="40e18417-c68f-4edb-9997-cc2bc5792959"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="ArcaneArcher"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneShotImproved"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(ca17da37-65bc-4d00-96d1-61e48fcfb51d,1,0,ArcaneShot,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="537d34a9-c60d-4f1b-be41-312ab5d8c792"/>
+                    <attribute id="UUID" type="guid" value="d2f43457-040a-4295-af42-53ca437b66e2"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SuperiorityDie,1,0)"/>
@@ -693,6 +725,16 @@
                     <attribute id="TableUUID" type="guid" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e"/>
                     <attribute id="UUID" type="guid" value="51f0e9b1-bf75-4a87-9332-f5d65e4bcc73"/>
                 </node>
+				<node id="Progression">
+                    <attribute id="Level" type="uint8" value="17" />
+					<attribute id="Name" type="LSString" value="DrunkenMaster5e" />
+                    <attribute id="PassivesAdded" type="LSString" value="IntoxicatedFrenzyUnlock" />
+                    <attribute id="ProgressionType" type="uint8" value="1" />
+				    <attribute id="Boosts" type="LSString" value="" />
+					<attribute id="Selectors" type="LSString" value="" />
+                    <attribute id="TableUUID" type="guid" value="3e4a7b9d-2255-4d5f-b699-45f5b88e0833" />
+                    <attribute id="UUID" type="guid" value="75d33113-e954-4495-98b2-fbb5b46e80f6" />  
+                </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="13"/>
                     <attribute id="Name" type="LSString" value="FourElements"/>
@@ -756,6 +798,14 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(7a35b35e-7101-42f4-82ce-f922bb9f09e4,0,1,FourElements,,,AlwaysPrepared)"/>
                     <attribute id="TableUUID" type="guid" value="6c9fac23-d01a-4e0d-bfb1-28bed5581ee2"/>
                     <attribute id="UUID" type="guid" value="2034d5af-3b99-479e-8c0f-f83b847ee77b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="OpenHand"/>
+                    <attribute id="PassivesAdded" type="LSString" value="QuiveringPalm"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="5a9bf488-fda7-4e49-a3fa-e0aad24fbf43"/>
+                    <attribute id="UUID" type="guid" value="49336dd1-fc41-4ea7-86a5-c57e8ac855d0"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="17"/>
@@ -1158,6 +1208,22 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="1ba04e99-e329-471d-a656-bbd5a363d7c8"/>
                     <attribute id="UUID" type="guid" value="4b901127-66ef-4c2f-9ad5-3d491dba1020"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Hunter"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(9ae300f8-94b0-42f2-a106-ac654f64a42a,1,SuperiorHuntersDefense)"/>
+                    <attribute id="TableUUID" type="guid" value="b19bc1ec-d7ee-4023-9f58-5056fd99be24"/>
+                    <attribute id="UUID" type="guid" value="b6c4959e-9748-4ec5-9a5d-437d94446618"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="GloomStalker"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ShadowyDodge"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="caa60bb8-8ca3-4871-b034-e10a6bc8ca29"/>
+                    <attribute id="UUID" type="guid" value="ce6518b3-671a-49c6-921b-e1c295572916"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="13"/>
@@ -1600,17 +1666,18 @@
                     <attribute id="UUID" type="guid" value="07a2215d-a413-411b-84b0-cbd063462381"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Wizard"/>
-                    <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
-                    <attribute id="UUID" type="guid" value="d6184c47-5b99-4e63-95ac-02f8ce4ccda1"/>
+                    <attribute id="UUID" type="guid" value="925ddc96-48fb-40d6-8d40-8cabf63d33a6"/>
                     <children>
                         <node id="SubClasses">
                             <children>
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="e6a0eb75-7a01-4f40-8563-24ba2615e99b"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="3fd79523-a973-4373-a973-732344acc959"/>
                                 </node>
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="c059dca1-c17d-4dce-8260-83ede5070eac"/>
@@ -1632,9 +1699,6 @@
                                 </node>
                                 <node id="SubClass">
                                     <attribute id="Object" type="guid" value="a12f2924-30b4-4185-9db9-2c5b383ff449"/>
-                                </node>
-                                <node id="SubClass">
-                                    <attribute id="Object" type="guid" value="3fd79523-a973-4373-a973-732344acc959"/>
                                 </node>
                             </children>
                         </node>
@@ -1705,6 +1769,171 @@
                     <attribute id="Selectors" type="LSString" value="SelectPassives(ec16c6d2-5316-46e7-9ed6-bedf5d4169b2,2,SignatureSpells)"/>
                     <attribute id="TableUUID" type="guid" value="d18eda7e-4b7d-490d-9952-cd33a3c60479"/>
                     <attribute id="UUID" type="guid" value="9fe27693-866f-4fb6-8604-d7bc81f83916"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);ProficiencyBonus(Skill,Performance)"/>
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="TrainingInWarAndSong;Bladesong_Resource;Bladesong_ResourceRestoration"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0);SelectPassives(01d6daa1-c87f-4b3f-9bb2-f75aa7370e15,1,TrainingInSongAndWar);AddSpells(3bea78e7-c246-49ff-a556-997046314516,,,,AlwaysPrepared)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="15ebffd5-7d10-4fef-9174-51128e22512f"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="715809c7-f358-43be-910e-53a15ef1efb4"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="930c7fca-f057-498d-85d3-00218430793b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2c8b67c5-144f-4720-9d00-77f4a3789994"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="ff31d0a7-1671-44d3-984d-dcccd77a8f54"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="654791b0-6464-4099-b07e-fac0e9b2add1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="6dd886a6-603b-4eb4-96e5-b41c67321c9b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="4e42a146-774c-4e87-a5bd-720cc7a5747c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="e95bed7a-2f79-492c-b2c2-d294bff7c235"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_6"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="741d14f8-7ab2-4031-bdc9-37f59dcc5aad"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="fb7ce577-10e0-4ee8-b757-2dd8fb8f6810"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="13"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_7"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="092815f9-3e1f-4ecf-9e30-d6184514e416"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="14"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfVictory"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="4d0abe20-4e1a-43ec-855c-8af1194d1e4d"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="15"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_8"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="41ea0ff0-0c49-4840-8ffd-4712668fc7dc"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="16"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="9eb6257d-7d1f-46a7-974c-fe7faa859d51"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value=""/>
+                    <attribute id="Level" type="uint8" value="17"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_9"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="ac108cc8-cdf8-4aba-8f36-eabd31aa66fe"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="18"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="75559209-5045-4ec3-a86d-effee8e64d69"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="19"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2a8013be-d1ab-4f71-ae41-b402c582425b"/>
+                </node>	
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="20"/>
+                    <attribute id="Name" type="LSString" value="Bladesinging"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
+                    <attribute id="UUID" type="guid" value="2971ea68-7c72-4581-8117-41f1247a0255"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="13"/>
@@ -2219,167 +2448,6 @@
                     <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
                     <attribute id="TableUUID" type="guid" value="0bf3a1fe-f4e0-4bd3-aa97-ceec14afa407"/>
                     <attribute id="UUID" type="guid" value="d4482e0e-b5ba-4bf6-a3ec-21823a107af1"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);ProficiencyBonus(Skill,Performance)"/>
-                    <attribute id="Level" type="uint8" value="2"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="TrainingInWarAndSong;Bladesong_Resource;Bladesong_ResourceRestoration"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0);SelectPassives(01d6daa1-c87f-4b3f-9bb2-f75aa7370e15,1,TrainingInSongAndWar);AddSpells(3bea78e7-c246-49ff-a556-997046314516,,,,AlwaysPrepared)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="15ebffd5-7d10-4fef-9174-51128e22512f"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="3"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="715809c7-f358-43be-910e-53a15ef1efb4"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="4"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(80c6b070-c3a6-4864-84ca-e78626784eb4,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="930c7fca-f057-498d-85d3-00218430793b"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="5"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="2c8b67c5-144f-4720-9d00-77f4a3789994"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="6"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack_Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(22755771-ca11-49f4-b772-13d8b8fecd93,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="ff31d0a7-1671-44d3-984d-dcccd77a8f54"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="7"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="654791b0-6464-4099-b07e-fac0e9b2add1"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="8"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(820b1220-0385-426d-ae15-458dc8a6f5c0,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="6dd886a6-603b-4eb4-96e5-b41c67321c9b"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="9"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="4e42a146-774c-4e87-a5bd-720cc7a5747c"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="10"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,1,0,,,,AlwaysPrepared);SelectSpells(f781a25e-d288-43b4-bf5d-3d8d98846687,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="e95bed7a-2f79-492c-b2c2-d294bff7c235"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_6"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="741d14f8-7ab2-4031-bdc9-37f59dcc5aad"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="12"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(bc917f22-7f71-4a25-9a77-7d2f91a96a65,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="fb7ce577-10e0-4ee8-b757-2dd8fb8f6810"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="13"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_7"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="092815f9-3e1f-4ecf-9e30-d6184514e416"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="14"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfVictory"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(dff7917a-0abc-4671-b68f-c03e56212549,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="4d0abe20-4e1a-43ec-855c-8af1194d1e4d"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="15"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_8"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="41ea0ff0-0c49-4840-8ffd-4712668fc7dc"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="16"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(f27a2d0a-0d6c-4c01-98a5-60081abf4807,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="9eb6257d-7d1f-46a7-974c-fe7faa859d51"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="17"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SongOfDefense_9"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="ac108cc8-cdf8-4aba-8f36-eabd31aa66fe"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="18"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="75559209-5045-4ec3-a86d-effee8e64d69"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="19"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="2a8013be-d1ab-4f71-ae41-b402c582425b"/>
-                </node>	
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="20"/>
-                    <attribute id="Name" type="LSString" value="Bladesinging"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(cb123d97-8809-4d71-a0cb-0ecb66177d15,2,0)"/>
-                    <attribute id="TableUUID" type="guid" value="4c35792e-1b72-4c8c-b212-21044a25a054"/>
-                    <attribute id="UUID" type="guid" value="2971ea68-7c72-4581-8117-41f1247a0255"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,4);ActionResource(SpellSlot,1,5)"/>

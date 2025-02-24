@@ -28,6 +28,18 @@
                     <attribute id="Identifier" type="FixedString" value="NotHasActionSurgeResource"/>
                     <attribute id="UUID" type="guid" value="0cd9ba83-bef4-4a8f-b8d0-ca828ce12982"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hdba8b553g7c86g46b3ga353g47b9db63b9a6" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="NotUsedQuiveringPalm"/>
+                    <attribute id="UUID" type="guid" value="508fbd46-ca92-46c7-b6c7-91a5801fb6e9"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha8755461g1351g4404gb991gd64a6c4c3a52" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="HasMovementSteadyAim"/>
+                    <attribute id="UUID" type="guid" value="60b3ad48-a721-4524-9e8b-5447a0ab6eb3"/>
+                </node>
             </children>
         </node>
     </region>

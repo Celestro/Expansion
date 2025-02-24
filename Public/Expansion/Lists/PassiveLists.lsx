@@ -21,13 +21,8 @@
                 </node>
 				<node id="PassiveList">
                     <attribute id="Comment" type="LSString" value="Wizard Signature Spells 20"/>
-                    <attribute id="Passives" type="LSString" value="SignatureSpells_AnimateDead,SignatureSpells_AshardalonsStride,SignatureSpells_BestowCurse,SignatureSpells_Blink,SignatureSpells_Catnap,SignatureSpells_Counterspell,SignatureSpells_EnemiesAbound,SignatureSpells_EruptingEarth,SignatureSpells_Fear,SignatureSpells_FeignDeath,SignatureSpells_Fireball,SignatureSpells_FlameArrows,SignatureSpells_Fly,SignatureSpells_GaseousForm,SignatureSpells_GlyphOfWarding,SignatureSpells_Haste,SignatureSpells_HypnoticPattern,SignatureSpells_IntellectFortress,SignatureSpells_LifeTransference,SignatureSpells_LightningBolt,SignatureSpells_MinuteMeteors,SignatureSpells_Nondetection,SignatureSpells_ProtectionFromEnergy,SignatureSpells_RemoveCurse,SignatureSpells_SleetStorm,SignatureSpells_Slow,SignatureSpells_SpeakWithDead,SignatureSpells_SpiritShroud,SignatureSpells_StinkingCloud,SignatureSpells_SummonShadowspawn,SignatureSpells_SummonShadowspawn,SignatureSpells_VampiricTouch"/>
+                    <attribute id="Passives" type="LSString" value="SignatureSpells_AnimateDead,SignatureSpells_AshardalonsStride,SignatureSpells_BestowCurse,SignatureSpells_Blink,SignatureSpells_Catnap,SignatureSpells_Counterspell,SignatureSpells_EnemiesAbound,SignatureSpells_EruptingEarth,SignatureSpells_Fear,SignatureSpells_FeignDeath,SignatureSpells_Fireball,SignatureSpells_FlameArrows,SignatureSpells_Fly,SignatureSpells_GaseousForm,SignatureSpells_GlyphOfWarding,SignatureSpells_Haste,SignatureSpells_HypnoticPattern,SignatureSpells_IntellectFortress,SignatureSpells_LifeTransference,SignatureSpells_LightningBolt,SignatureSpells_MinuteMeteors,SignatureSpells_Nondetection,SignatureSpells_ProtectionFromEnergy,SignatureSpells_RemoveCurse,SignatureSpells_SleetStorm,SignatureSpells_Slow,SignatureSpells_SpeakWithDead,SignatureSpells_SpiritShroud,SignatureSpells_StinkingCloud,SignatureSpells_SummonShadowspawn,SignatureSpells_ThunderStep,SignatureSpells_VampiricTouch"/>
                     <attribute id="UUID" type="guid" value="ec16c6d2-5316-46e7-9ed6-bedf5d4169b2"/>
-                </node>
-                <node id="PassiveList">
-                    <attribute id="Comment" type="LSString" value="Wizard Bladesinger Weapon Proficiencies 3"/>
-                    <attribute id="Passives" type="LSString" value="Proficiency_Clubs,Proficiency_Daggers,Proficiency_Flails,Proficiency_Handaxes,Proficiency_Javelins,Proficiency_LightHammers,Proficiency_Longswords,Proficiency_Maces,Proficiency_Morningstars,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Sickles,Proficiency_Spears,Proficiency_Tridents,Proficiency_Warpicks,Proficiency_Warhammers,NoProficiency"/>
-                    <attribute id="UUID" type="guid" value="01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"/>
                 </node>
                 <node id="PassiveList">
                     <attribute id="Comment" type="LSString" value="Cleric Knowledge and Light Potent Spellcasting or Blessed Strikes"/>
@@ -58,6 +53,21 @@
                     <attribute id="Comment" type="LSString" value="Cleric War Divine Strike or Blessed Strikes"/>
                     <attribute id="Passives" type="LSString" value="BlessedStrikes,Divine_Strike_War"/>
                     <attribute id="UUID" type="guid" value="a76e4a50-e982-49da-abe0-190dcf2f78c4"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Bladesinger Weapon Proficiencies"/>
+                    <attribute id="Passives" type="LSString" value="Proficiency_Clubs,Proficiency_Daggers,Proficiency_Flails,Proficiency_Handaxes,Proficiency_Javelins,Proficiency_LightHammers,Proficiency_Longswords,Proficiency_Maces,Proficiency_Morningstars,Proficiency_Rapiers,Proficiency_Scimitars,Proficiency_Shortswords,Proficiency_Sickles,Proficiency_Spears,Proficiency_Tridents,Proficiency_Warpicks,Proficiency_Warhammers,NoProficiency"/>
+                    <attribute id="UUID" type="guid" value="01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Totem Warrior 14th Level Feature"/>
+                    <attribute id="Passives" type="LSString" value="TotemicAttunement_Bear,TotemicAttunement_Eagle,TotemicAttunement_Elk,TotemicAttunement_Tiger,TotemicAttunement_Wolf"/>
+                    <attribute id="UUID" type="guid" value="abd6bab4-a202-4f6b-85cd-d30db7839096"/>
+                </node>
+                <node id="PassiveList">
+                    <attribute id="Comment" type="LSString" value="Hunter 15th Level Passives"/>
+                    <attribute id="Passives" type="LSString" value="Evasion,StandAgainstTheTide,UncannyDodge"/>
+                    <attribute id="UUID" type="guid" value="9ae300f8-94b0-42f2-a106-ac654f64a42a"/>
                 </node>
             </children>
         </node>

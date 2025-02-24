@@ -558,6 +558,294 @@
 						</node>
 					</children>
 				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="f8da4b4e-2913-6c3e-5ac5-d7f1a173f6b6" />
+					<attribute id="Name" type="LSString" value="VFX_Status_QuiveringPalm" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Status/VFX_Status_QuiveringPalm.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_QuiveringPalm" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.14433756 -0.14433756 -0.14433756" />
+					<attribute id="BoundsMax" type="fvec3" value="0.14433756 0.14433756 0.14433756" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="Looping" type="bool" value="True" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies" />
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="6cad7520-3d54-fbe5-1c36-1c53e5b2bab9" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Cast_QuiveringPalm" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/Spells/Cast/Monk/VFX_Spells_Cast_QuiveringPalm.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Cast_QuiveringPalm" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -2.309401 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 2.309401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c851631a-669c-fb82-9138-93833bdb62f9" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="58623f9b-7fba-65c8-8b84-646e6e5496b1" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="44192e18-75cf-4d16-1747-81ed534b8247" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="91bcdda5-afef-22b0-894c-1c2ead59f2d5" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="642f797e-cc01-7453-788a-ade071592d06" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="7d667c67-7e15-d75a-773b-1fffe4010d55" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ea1b6f61-7c1e-e0b8-7987-f7528fd27ecc" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="15981e87-bc8a-9f68-ae3d-0a3c2c802d25" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0c5ef267-581e-3d1e-6645-20626faa15ab" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c87070e9-daf3-7416-4a1a-14894e5eec2d" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6ed9bfc0-ce2f-e27c-803d-9cd217ec7dae" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="348802b5-4d62-81ea-3434-eac27306f6f1" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="28bf8b4d-3cc6-0177-dd03-ab090ce9c14f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="9c15f129-f070-7a2b-e66d-d728aaea2383" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b5dd8d98-46ef-79bb-478f-612b8f47c8ca" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="229f5473-a47d-99c6-1ca3-c301f73618d8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="745250bc-1bbf-83d5-d90c-63e223f0745f" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="8b4c2b1c-f215-1e63-1b74-9de660b3177b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5ec03de1-c4fc-4716-83b7-0e4b72749154" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="5be86bc2-ea46-efed-2fcc-d87e006d201a" />
+					<attribute id="Name" type="LSString" value="VFX_Spells_Projectile_QuiveringPalm" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/VFX_Spells_Projectile_QuiveringPalm.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Spells_Projectile_QuiveringPalm" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.1547005 -0.15470052 -1.1547005" />
+					<attribute id="BoundsMax" type="fvec3" value="1.1547005 2.1547005 1.1547005" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="6e1df8de-84a8-ace7-661e-902cb125b655" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="124cf408-571f-1613-7bff-641f6286320b" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="6fd411c4-7edc-d13f-3488-1f4766064e79" />
+					<attribute id="Name" type="LSString" value="VFX_Status_ShadowyDodge_BodyFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/VFX_Status_ShadowyDodge_BodyFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_ShadowyDodge_BodyFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-1.1547005 -1.1547005 -1.1547005" />
+					<attribute id="BoundsMax" type="fvec3" value="1.1547005 1.1547005 1.1547005" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="3.25" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="b7affa60-34c3-a900-3e64-4ddcb6280901" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="ea5ad4ae-397a-9739-65db-b117e4d143c4" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1a1a7099-9c46-4d5f-8f00-a249af1dc519" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="a3c36b9f-f82d-2fd7-168f-4b43038bd8ef" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="9d96daf1-6d24-0da2-ae8b-29582b0a143b" />
+					<attribute id="Name" type="LSString" value="VFX_Status_ShadowyDodge_ChestFX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/VFX_Status_ShadowyDodge_ChestFX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_ShadowyDodge_ChestFX" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.57735026 -0.57735026 -0.57735026" />
+					<attribute id="BoundsMax" type="fvec3" value="0.57735026 0.57735026 0.57735026" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="1.5" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c9fe53ff-2bd5-1155-6f1a-ab4e8e73a118" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f47d2eb0-af43-e862-8a1c-a431867fbe2b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="3ab064f2-97c4-e15c-7374-e164e949fe24" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1f73b5e1-266d-5ca0-9aec-8c13881b8c2b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f53eabba-3eb3-adc8-9527-c1d054e02c40" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0c5ef267-581e-3d1e-6645-20626faa15ab" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="83cd40ca-7912-9dad-cf84-5d627e76a311" />
+					<attribute id="Name" type="LSString" value="VFX_Status_ShadowyDodge_Root_Textkey_FX" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/VFX_Status_ShadowyDodge_Root_Textkey_FX.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_ShadowyDodge_Root_Textkey_FX" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -2.309401 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 2.309401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="96b9c771-49b1-f6b3-f4ad-2ade98066132" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e2cb63c-b33c-93ed-d37c-f56ca2022557" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="140f157b-a206-533f-d951-841df0d277f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1f73b5e1-266d-5ca0-9aec-8c13881b8c2b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="da8dfe5f-2101-e7b6-59c8-46217e2e9e8c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="169d4c17-b1c5-a6aa-25a2-b00302f5f451" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d3d0bd3d-ff74-c4c6-b0d2-326944405606" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="39f6fbef-4b40-0bdb-e513-aff7232349a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0800219e-7597-f36d-ce02-cca518b233bf" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="e0c4c3d1-98ba-ef5a-01b5-0a58a11f2608" />
+					<attribute id="Name" type="LSString" value="VFX_Status_ShadowyDodge_Root_Textkey_FX_2" />
+					<attribute id="SourceFile" type="LSString" value="Public/Expansion/Assets/Effects/Effects_Banks/VFX_Status_ShadowyDodge_Root_Textkey_FX_2.lsfx" />
+					<attribute id="EffectName" type="FixedString" value="VFX_Status_ShadowyDodge_Root_Textkey_FX_2" />
+					<attribute id="BoundsMin" type="fvec3" value="-2.309401 -2.309401 -2.309401" />
+					<attribute id="BoundsMax" type="fvec3" value="2.309401 2.309401 2.309401" />
+					<attribute id="CullingDistance" type="float" value="0" />
+					<attribute id="Duration" type="float" value="2" />
+					<attribute id="Looping" type="bool" value="False" />
+					<attribute id="InterruptionMode" type="uint32" value="2" />
+					<children>
+						<node id="Dependencies">
+							<children>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="5874a588-b4ad-4a78-a823-8f5f739555be" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="2e2cb63c-b33c-93ed-d37c-f56ca2022557" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="e134d272-5f69-4d15-2b3a-1c1ff819852b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="140f157b-a206-533f-d951-841df0d277f6" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="f47d2eb0-af43-e862-8a1c-a431867fbe2b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="d3d0bd3d-ff74-c4c6-b0d2-326944405606" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="39f6fbef-4b40-0bdb-e513-aff7232349a8" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="0800219e-7597-f36d-ce02-cca518b233bf" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="1f73b5e1-266d-5ca0-9aec-8c13881b8c2b" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="c69a4529-5742-aaff-610d-a9e870d67088" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="40533123-4f89-85b7-477a-665c22c6bada" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="07cd0018-5007-9a9e-6dc3-c97820b50058" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="da8dfe5f-2101-e7b6-59c8-46217e2e9e8c" />
+								</node>
+								<node id="DependentResource">
+									<attribute id="Object" type="FixedString" value="169d4c17-b1c5-a6aa-25a2-b00302f5f451" />
+								</node>
+							</children>
+						</node>
+					</children>
+				</node>
 			</children>
 		</node>
 	</region>

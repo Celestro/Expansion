@@ -14,6 +14,16 @@
                     <attribute id="Text" type="TranslatedString" handle="h63f4a9c4g7d72g4424gba40gd34d3de3d1aa" version="1"/>
                     <attribute id="UUID" type="guid" value="aab510e0-ac11-4063-a962-1795eb340b3c"/>
                 </node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Comment" type="LSString" value="Quivering Palm End"/>
+                    <attribute id="Text" type="TranslatedString" handle="h94099b74g9dabg4394gbe93ga3f89cbad007" version="1"/>
+                    <attribute id="UUID" type="guid" value="1f248267-1f14-45a9-b627-36cdda8cbb90"/>
+                </node>
+                <node id="TooltipExtraTexts">
+                    <attribute id="Comment" type="LSString" value="Quivering Palm Affect One Creature"/>
+                    <attribute id="Text" type="TranslatedString" handle="hf1eb175ege34fg4b39gaaa4g6701589fb3f8" version="1"/>
+                    <attribute id="UUID" type="guid" value="7631a776-f888-49f7-b374-0f3a4441f2b8"/>
+                </node>
             </children>
         </node>
     </region>
