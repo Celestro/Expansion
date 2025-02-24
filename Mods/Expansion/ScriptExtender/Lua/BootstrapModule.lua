@@ -1,4 +1,4 @@
-function EXP_XP50Config()
+--[[function EXP_XP50Config()
 	Ext.IO.AddPathOverride("Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_C_0.75x.txt", "Public/ExpansionXP/Stats/Generated/Data/XPData_Expansion_B_0.50x.txt")
 end
 
@@ -161,4 +161,4 @@ EXP_Every3rdLevelFeatconfig = Table["Feats"]["Every 3rd Level"]
 	else
 		return
 		print(string.format("Expansion: Expansion XP optional mod isn't loaded. Ignoring XP Rate entries."))
-	end
+	end--]]

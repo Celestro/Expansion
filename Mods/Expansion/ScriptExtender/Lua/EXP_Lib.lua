@@ -44,6 +44,9 @@ function EXP_ApplyStaticData(defTable)
                     elseif replacement.Type == "overwrite" then
 --                        _D("\tOverwriting " .. attribute .. " - " .. replacement.Value)
                         newValue = replacement.Value
+                    elseif replacement.Type == "remove" then
+--                        _D("\tRemoving from " .. attribute .. " - " .. replacement.Value)
+                        newValue = string.gsub(resource[attribute], EXP_EscapeRegex(replacement.Value) .. ";?", "")
                     end
                     resource[attribute] = newValue
                 elseif type(resource[attribute]) == "userdata"  then
@@ -56,6 +59,16 @@ function EXP_ApplyStaticData(defTable)
                     elseif replacement.Type == "overwrite" then
 --                        _D("\tOverwriting " .. attribute .. " userdata")
                         newValue = replacement.Value
+                    elseif replacement.Type == "remove" then
+--                        _D("\Removing " .. attribute .. " userdata")
+                        newValue = Ext.Types.Serialize(resource[attribute])
+                        for v, values in pairs(newValue) do
+							for _, value in pairs(replacement.Value) do
+								if values == value then
+									table.remove(newValue, v)
+								end
+							end
+						end
                     end
                     Ext.Types.Unserialize(resource[attribute], newValue)
                 elseif type(resource[attribute]) == "boolean" then
@@ -86,6 +99,10 @@ function EXP_Set_Add(set, elem)
     if not set[elem] then
         set[elem] = true
     end
+end
+
+function EXP_EscapeRegex(s)
+    return string.gsub(s, "%W", "%%%1")
 end
 
 -- Concatenates the elements of set to a string, using sep as a separator

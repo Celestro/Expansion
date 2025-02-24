@@ -1,0 +1,427 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "Expansion",
+    "Tabs": [
+        {
+            "TabName": "Settings",
+            "TabId": "settings",
+            "Sections": [
+                {
+                    "SectionId": "optional_features_settings",
+                    "SectionName": "Class Optional Features",
+                    "Settings": [
+                        {
+                            "Id": "Barbarian",
+                            "Name": "Barbarian",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Barbarian's Primal Knowledge and Instictive Pounce optional features.",
+                            "Handles": {"DescriptionHandle": "hf8152995g419cg4d60gb565gcb59ac4bfc84",
+                                "NameHandle": "h52300e69gcce1g47f1ga27fg39e35a3e0e44"}
+                        },
+                        {
+                            "Id": "Bard",
+                            "Name": "Bard",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Bard's Magical Inspiration optional feature.",
+                            "Handles": {"DescriptionHandle": "h0bc53ec5g7f14g4df0g853bg78cbd2461434",
+                                "NameHandle": "h61a82a8cg0958g455ag9207g782cadb89f94"}
+                        },
+                        {
+                            "Id": "Cleric",
+                            "Name": "Cleric",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Cleric's Harness Divine Power, Cantrip Versatility and Blessed Strikes optional features.",
+                            "Handles": {"DescriptionHandle": "ha6ff7920g5274g4366gbc45gc32e2ab4ec93",
+                                "NameHandle": "hc15886f2g1a16g47d8ga84cg54e9a26be958"}
+                        },
+                        {
+                            "Id": "Druid",
+                            "Name": "Druid",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Druid's Wild Companion and Cantrip Versatility optional features.",
+                            "Handles": {"DescriptionHandle": "he244f793g9d73g4093gad2ag2c512437db7c",
+                                "NameHandle": "h88a690e4g5e6bg41cegbe2egcede049a93ce"}
+                        },
+                        {
+                            "Id": "Fighter",
+                            "Name": "Fighter",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Fighter's Martial Versatility optional feature.",
+                            "Handles": {"DescriptionHandle": "hdd977b6cg67a8g4df5g83dcgc55ad62dcfd5",
+                                "NameHandle": "h4345052egc96ag49e4g9dc1g901ce8d1bde9"}
+                        },
+                        {
+                            "Id": "Monk",
+                            "Name": "Monk",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Monk's Dedicated Weapon, Ki-Fueled Attack, Quickened Healing and Focused Aim optional features.",
+                            "Handles": {"DescriptionHandle": "hc3e0351dga572g441cg86ccgaef38bb127d3",
+                                "NameHandle": "h571dc570ga83eg4669ga07agb4c99bbda8cd"}
+                        },
+                        {
+                            "Id": "Paladin",
+                            "Name": "Paladin",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Paladin's Harness Divine Power and Martial Versatility optional features.",
+                            "Handles": {"DescriptionHandle": "h3f439a16ga3b5g4a3cgbba2gd9835fb9e546",
+                                "NameHandle": "hd6f22730gfd0ag432dg97c1g61564509621c"}
+                        },
+                        {
+                            "Id": "Ranger",
+                            "Name": "Ranger",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Ranger's Favored Foe, Deft Explorer, Primal Awareness, Martial Versatility and Nature's Veil optional features.",
+                            "Handles": {"DescriptionHandle": "h4979eff6g1b6dg45bfg9aedga940877de882",
+                                "NameHandle": "hf5c9316bge1aeg4f6ag9ebfg5575ad5d3540"}
+                        },
+                        {
+                            "Id": "Rogue",
+                            "Name": "Rogue",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Rogue's Steady Aim optional feature.",
+                            "Handles": {"DescriptionHandle": "h600d0054g0635g4413g8537g0c812bce8125",
+                                "NameHandle": "h09d8f34dg826dg41a6gbd37g5369a9de9809"}
+                        },
+                        {
+                            "Id": "Sorcerer",
+                            "Name": "Sorcerer",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Sorcerer's Magical Guidance optional feature.",
+                            "Handles": {"DescriptionHandle": "hc6a7745bg40acg463egadcbg526e0c89c934",
+                                "NameHandle": "hd940bd68ga2b1g4ba6g83c0g7bf1ab3d999b"}
+                        },
+                        {
+                            "Id": "Warlock",
+                            "Name": "Warlock",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Warlock's Eldritch Versatility optional feature.",
+                            "Handles": {"DescriptionHandle": "h0dccaea7ge782g447fg96f5g568523d124a7",
+                                "NameHandle": "hf9faf6c7gf7a1g4a09g86fbg88802ce9c1b4"}
+                        },
+                        {
+                            "Id": "Wizard",
+                            "Name": "Wizard",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable the Wizard's Cantrip Formulas optional feature.",
+                            "Handles": {"DescriptionHandle": "hfa48445cg090dg4dfdgb67bg414d54911224",
+                                "NameHandle": "h4e69ca6bgc863g4e0fga5c6gff7e671aefde"}
+                        }
+                    ]
+                },
+                {
+                    "SectionId": "xp_rate_settings",
+                    "SectionName": "XP Rate",
+                    "Settings": [
+                        {
+                            "Id": "Level1",
+                            "Name": "Level 1",
+                            "Type": "int",
+                            "Default": 300,
+                            "Description": "The EXP required to reach level 2.",
+                            "Handles": {"DescriptionHandle": "h3b5278c5gad8cg4093g84b8gf82768d47479",
+                            "NameHandle": "h083dbb23gd274g4147gaa77g717c89392af8"}
+                        },
+                        {
+                            "Id": "Level2",
+                            "Name": "Level 2",
+                            "Type": "int",
+                            "Default": 600,
+                            "Description": "The EXP required to reach level 3.",
+                            "Handles": {"DescriptionHandle": "he2a6ee33g6934g4cc0gaee7g66bd6d702341",
+                            "NameHandle": "h54e52eefgd520g45ecgabdfg71a1d2bb51cc"}
+                        },
+                        {
+                            "Id": "Level3",
+                            "Name": "Level 3",
+                            "Type": "int",
+                            "Default": 1800,
+                            "Description": "The EXP required to reach level 4.",
+                            "Handles": {"DescriptionHandle": "ha6bc9510g8b85g4e0dg8b45g2f00682e82e9",
+                            "NameHandle": "h061c6db3g670eg462cg82b6g0b3bb6201d90"}
+                        },
+                        {
+                            "Id": "Level4",
+                            "Name": "Level 4",
+                            "Type": "int",
+                            "Default": 3800,
+                            "Description": "The EXP required to reach level 5.",
+                            "Handles": {"DescriptionHandle": "h6b9a8cb4gcdf2g48afga9feg53677dcc9e94",
+                            "NameHandle": "hcadb61fag167cg4a7fg9778g2fc48e431c29"}
+                        },
+                        {
+                            "Id": "Level5",
+                            "Name": "Level 5",
+                            "Type": "int",
+                            "Default": 6500,
+                            "Description": "The EXP required to reach level 6.",
+                            "Handles": {"DescriptionHandle": "hb6d213d6g2c16g4552g9f78gbd421ab4b941",
+                            "NameHandle": "h0483d186g3496g4aafga08agf17c6a4a3c53"}
+                        },
+                        {
+                            "Id": "Level6",
+                            "Name": "Level 6",
+                            "Type": "int",
+                            "Default": 8000,
+                            "Description": "The EXP required to reach level 7.",
+                            "Handles": {"DescriptionHandle": "hf5479478gfaedg422bg9227gf651e01d5d54",
+                            "NameHandle": "hd325800dgb882g4716gb2b5gce4b4b5de4fa"}
+                        },
+                        {
+                            "Id": "Level7",
+                            "Name": "Level 7",
+                            "Type": "int",
+                            "Default": 9000,
+                            "Description": "The EXP required to reach level 8.",
+                            "Handles": {"DescriptionHandle": "h7719ad6ag11adg4432gbed2g1a7c23ac88b3",
+                            "NameHandle": "h1db653d7gb1f0g45feg9849g3f6979759260"}
+                        },
+                        {
+                            "Id": "Level8",
+                            "Name": "Level 8",
+                            "Type": "int",
+                            "Default": 12000,
+                            "Description": "The EXP required to reach level 9.",
+                            "Handles": {"DescriptionHandle": "h801242ccg089ag4004ga0afg032ec82178c4",
+                            "NameHandle": "h8e9622a6g610fg4749g9e09ge2ae744ed536"}
+                        },
+                        {
+                            "Id": "Level9",
+                            "Name": "Level 9",
+                            "Type": "int",
+                            "Default": 14000,
+                            "Description": "The EXP required to reach level 10.",
+                            "Handles": {"DescriptionHandle": "h1aa3bd88g19b1g41abg90b2g915eca14560d",
+                            "NameHandle": "h81b690d3g5431g439dgb811g24cc7c2fda7c"}
+                        },
+                        {
+                            "Id": "Level10",
+                            "Name": "Level 10",
+                            "Type": "int",
+                            "Default": 20000,
+                            "Description": "The EXP required to reach level 11.",
+                            "Handles": {"DescriptionHandle": "h7927393fg806dg4f01gbbfdg9916cf1e07ca",
+                            "NameHandle": "hafdd27d4g6d0ag44a6g9783g1c8315463e97"}
+                        },
+                        {
+                            "Id": "Level11",
+                            "Name": "Level 11",
+                            "Type": "int",
+                            "Default": 24000,
+                            "Description": "The EXP required to reach level 12.",
+                            "Handles": {"DescriptionHandle": "h0d2820f9gc137g4dd4gbf0bgfc1d8f9a3af7",
+                            "NameHandle": "hfcbfadceg3ba8g4b2ega1d6g8906543630e6"}
+                        },
+                        {
+                            "Id": "Level12",
+                            "Name": "Level 12",
+                            "Type": "int",
+                            "Default": 30000,
+                            "Description": "The EXP required to reach level 13.",
+                            "Handles": {"DescriptionHandle": "h9bdd68d2g0a69g4caag8dabg9737902ce7ae",
+                            "NameHandle": "h9838189ag598bg485bgb4e4gdb24e19c941e"}
+                        },
+                        {
+                            "Id": "Level13",
+                            "Name": "Level 13",
+                            "Type": "int",
+                            "Default": 20000,
+                            "Description": "The EXP required to reach level 14.",
+                            "Handles": {"DescriptionHandle": "h7f8603bbgcaedg4d3bgad68g554b3637f5db",
+                            "NameHandle": "h5385173bg43c1g41aeg8ffdg503a6884195f"}
+                        },
+                        {
+                            "Id": "Level14",
+                            "Name": "Level 14",
+                            "Type": "int",
+                            "Default": 25000,
+                            "Description": "The EXP required to reach level 15.",
+                            "Handles": {"DescriptionHandle": "h568fa1ccgf5f2g4eddg8fdegb02e967215fd",
+                            "NameHandle": "h463d91ccgf28eg4e58ga3e0g465c4b6f8e2a"}
+                        },
+                        {
+                            "Id": "Level15",
+                            "Name": "Level 15",
+                            "Type": "int",
+                            "Default": 30000,
+                            "Description": "The EXP required to reach level 16.",
+                            "Handles": {"DescriptionHandle": "h03b5fc8dgaf48g4900g8201g84ed64282862",
+                            "NameHandle": "had3027b9g6bc2g49c4gb099g21531834832c"}
+                        },
+                        {
+                            "Id": "Level16",
+                            "Name": "Level 16",
+                            "Type": "int",
+                            "Default": 30000,
+                            "Description": "The EXP required to reach level 17.",
+                            "Handles": {"DescriptionHandle": "h06e17d96gd953g4c3dgae21g4b1314f1f25a",
+                            "NameHandle": "h4e2c5b71g8453g4af1g9585g3b4e5690af70"}
+                        },
+                        {
+                            "Id": "Level17",
+                            "Name": "Level 17",
+                            "Type": "int",
+                            "Default": 40000,
+                            "Description": "The EXP required to reach level 18.",
+                            "Handles": {"DescriptionHandle": "h0ee5f8c0g2ffbg42e9g8a70gd7a5fcecb716",
+                            "NameHandle": "h7fa8d587g90ddg4ef7g950cg614a44fca24a"}
+                        },
+                        {
+                            "Id": "Level18",
+                            "Name": "Level 18",
+                            "Type": "int",
+                            "Default": 40000,
+                            "Description": "The EXP required to reach level 19.",
+                            "Handles": {"DescriptionHandle": "h309965b6g7f33g4b11g9565gb39fb86628c9",
+                            "NameHandle": "h3dce0e04g8eceg4d76gbfc3g1d28e1422c23"}
+                        },
+                        {
+                            "Id": "Level19",
+                            "Name": "Level 19",
+                            "Type": "int",
+                            "Default": 50000,
+                            "Description": "The EXP required to reach level 20.",
+                            "Handles": {"DescriptionHandle": "h4d4c1516g0d62g45b8g8c5ag6ab2a503d2c8",
+                            "NameHandle": "h5c680544gb463g4ed4gb98eg362d28461f7b"}
+                        },
+                        {
+                            "Id": "MaxLevel",
+                            "Name": "MaxLevel",
+                            "Type": "int",
+                            "Default": 20,
+                            "Description": "The maximum level you can reach. Requires class progressions to match the specified number or could result in crash when attempting to level to that point.",
+                            "Handles": {"DescriptionHandle": "h0c6a7627g6481g4dc0gb1afgb56da1492c90",
+                            "NameHandle": "hd794ded1g9d8eg4ef2g98f5g9be72c7689bf"}
+                        },
+                        {
+                            "Id": "MaxXP",
+                            "Name": "Maximum XP",
+                            "Type": "int",
+                            "Default": 420000,
+                            "Description": "The maximum amount of XP you can gain. Only adjust if requiring higher amount of XP for other mods, especially to levels beyond 20.",
+                            "Handles": {"DescriptionHandle": "h50a6b850g406dg45baga493ga182edea535b",
+                            "NameHandle": "he8beb469g4921g4c61g9814c7611a4c2b349"}
+                        }
+                    ]
+                },
+				{
+					"SectionId": "class_feat_selection",
+					"SectionName": "Class Feat Selection",
+					"Settings": [
+						{
+							"Id": "BaseClassFeatSelection",
+							"Name": "Base Class Feat Selection",
+							"Default": true,
+							"Description": "Check this setting to allow the additional feats to be granted to base game classes.",
+							"Type": "checkbox",
+							"Handles": {"NameHandle":"hd6353d9dg9acbg4965g9aeeg3016ec618b42","DescriptionHandle":"h1eb29760g0800g4d4ag9da3g8c9022ed40a0"}
+						},
+						{
+							"Id": "CustomClassFeatSelection",
+							"Name": "Custom Class Feat Selection",
+							"Default": false,
+							"Description": "Check this setting to allow the additional feats to be granted to custom classes.",
+							"Type": "checkbox",
+							"Handles": {"NameHandle":"ha36bcd7egbfeeg4708g9eabga554b27defb9","DescriptionHandle":"h6fc2c72fg135fg4580gb846g958a34ca83fa"}
+						}
+					]
+				},
+                {
+                    "SectionId": "basec_feats_settings",
+                    "SectionName": "Base Class Feats",
+                    "Settings": [
+                        {
+                            "Id": "BaseClassFeats",
+                            "Name": "Additional Base Game Class Feats",
+                            "Type": "enum",
+                            "Default": "None",
+                            "Options": {
+                                "Choices": [
+                                    "None",
+                                    "2nd Level",
+                                    "2nd & 3rd Level",
+                                    "Every Level",
+                                    "Every 2nd Level",
+                                    "Every 3rd Level"
+                                ]
+                            },
+                            "Description": "Choose the number of additional feats gained at various levels in base game classes.",
+                            "Handles": {"DescriptionHandle": "h18b1971cg9551g4acbg95e4gb264545ae1b5",
+                                "NameHandle": "hde3e362bgbc98g4decgba47gdc47019ba40a"}
+                        }
+                    ],
+					"VisibleIf": {
+						"Conditions": [{"SettingId": "BaseClassFeatSelection", "ExpectedValue": "true", "Operator": "=="}]
+					}
+                },
+                {
+                    "SectionId": "customc_feats_settings",
+                    "SectionName": "Custom Class Feats",
+                    "Settings": [
+                        {
+                            "Id": "CustomClassFeats",
+                            "Name": "Additional Custom Class Feats",
+                            "Type": "enum",
+                            "Default": "None",
+                            "Options": {
+                                "Choices": [
+                                    "None",
+                                    "2nd Level",
+                                    "2nd & 3rd Level",
+                                    "Every Level",
+                                    "Every 2nd Level",
+                                    "Every 3rd Level"
+                                ]
+                            },
+                            "Description": "Choose the number of additional feats gained at various levels in custom classes.",
+                            "Handles": {"DescriptionHandle": "h4346cf24gd31dg4eb3g93f5ga6e5aee4bcf7",
+                                "NameHandle": "h8624f61eg14fbg406bg9412g0400278e5488"}
+                        }
+                    ],
+					"VisibleIf": {
+						"Conditions": [{"SettingId": "CustomClassFeatSelection", "ExpectedValue": "true", "Operator": "=="}]
+					}
+                },
+                {
+                    "SectionId": "miscellaneous_settings",
+                    "SectionName": "Miscellaneous",
+                    "Settings": [
+                        {
+                            "Id": "Sorcerer11thSubclass",
+                            "Name": "11th Level Sorcerer Subclass Feature",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Change the base game Sorcerer subclass 11th level features to 14th level per DnD tabletop.",
+                            "Handles": {
+                                "DescriptionHandle": "h466f2f1cg32c2g40e9gbcc4gf4b39ce8cace",
+                                "NameHandle": "hcae3640dg823fg4643g9f77g6fb23ef0ff0e"
+                            }
+                        },
+                        {
+                            "Id": "WizardBladesinger",
+                            "Name": "14th Level Bladesinger Feature",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Change the Bladesinger's Song of Victory feature to 12th level.",
+                            "Handles": {
+                                "DescriptionHandle": "h575b18a1g43bcg46cdg8243g600f1effdf6b",
+                                "NameHandle": "h8d7d560eg6a8cg42a2ga094g332f948a0a9d"
+                            }
+                        }
+					]
+                }
+            ]
+        }
+    ]
+}

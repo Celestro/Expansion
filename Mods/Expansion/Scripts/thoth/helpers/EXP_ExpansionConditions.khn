@@ -1,0 +1,375 @@
+local __util = require 'larian.util'
+
+function HasProficiencyInAcrobatics()
+	return HasProficiencyBonus(Ability.Dexterity,Skill.Acrobatics,context.Source)
+end
+
+function HasProficiencyInAnimalHandling()
+	return HasProficiencyBonus(Ability.Wisdom,Skill.AnimalHandling,context.Source)
+end
+
+function HasProficiencyInAthletics()
+	return HasProficiencyBonus(Ability.Strength,Skill.Athletics,context.Source)
+end
+
+function HasProficiencyInArcana()
+	return HasProficiencyBonus(Ability.Intelligence,Skill.Arcana,context.Source)
+end
+
+function HasProficiencyInDeception()
+	return HasProficiencyBonus(Ability.Charisma,Skill.Deception,context.Source)
+end
+
+function HasProficiencyInHistory()
+	return HasProficiencyBonus(Ability.Intelligence,Skill.History,context.Source)
+end
+
+function HasProficiencyInInsight()
+	return HasProficiencyBonus(Ability.Wisdom,Skill.Insight,context.Source)
+end
+
+function HasProficiencyInIntimidation()
+	return HasProficiencyBonus(Ability.Charisma,Skill.Intimidation,context.Source)
+end
+
+function HasProficiencyInInvestigation()
+	return HasProficiencyBonus(Ability.Intelligence,Skill.Investigation,context.Source)
+end
+
+function HasProficiencyInMedicine()
+	return HasProficiencyBonus(Ability.Wisdom,Skill.Medicine,context.Source)
+end
+
+function HasProficiencyInNature()
+	return HasProficiencyBonus(Ability.Intelligence,Skill.Nature,context.Source)
+end
+
+function HasProficiencyInPerception()
+	return HasProficiencyBonus(Ability.Wisdom,Skill.Perception,context.Source)
+end
+
+function HasProficiencyInPerformance()
+	return HasProficiencyBonus(Ability.Charisma,Skill.Performance,context.Source)
+end
+
+function HasProficiencyInPersuasion()
+	return HasProficiencyBonus(Ability.Charisma,Skill.Persuasion,context.Source)
+end
+
+function HasProficiencyInReligion()
+	return HasProficiencyBonus(Ability.Intelligence,Skill.Religion,context.Source)
+end
+
+function HasProficiencyInSleightOfHand()
+	return HasProficiencyBonus(Ability.Dexterity,Skill.SleightOfHand,context.Source)
+end
+
+function HasProficiencyInStealth()
+	return HasProficiencyBonus(Ability.Dexterity,Skill.Stealth,context.Source)
+end
+
+function HasProficiencyInSurvival()
+	return HasProficiencyBonus(Ability.Wisdom,Skill.Survival,context.Source)
+end
+
+function HasMediumArmor(entity)
+    entity = entity or context.Target
+    local armor = GetActiveArmor(entity)
+    local hasMediumArmor = armor.ArmorType == ArmorType.Hide or armor.ArmorType == ArmorType.ChainShirt or armor.ArmorType == ArmorType.ScaleMail or armor.ArmorType == ArmorType.BreastPlate or armor.ArmorType == ArmorType.HalfPlate
+    return ConditionResult(hasMediumArmor)
+end
+
+function NoMediumOrHeavyArmorOrShield(entity)
+    entity = entity or context.Target
+    result = Character(entity) & ~HasHeavyArmor(entity) & ~HasMediumArmor(entity) & ~HasShieldEquipped(entity)
+    return ConditionResult(result.Result, {ConditionError("Bladesong_IncompatibleArmor")})
+end
+
+function EXP_HasAnyExtraAttackBladesinging(entity)
+    local entity = entity or context.Target
+	local result = HasAnyStatus({'EXTRA_ATTACK','EXTRA_ATTACK_2','EXTRA_ATTACK_WAR_MAGIC','EXTRA_ATTACK_WAR_PRIEST','MAG_MARTIAL_EXERTION','WILDSTRIKE_EXTRA_ATTACK','WILDSTRIKE_2_EXTRA_ATTACK','STALKERS_FLURRY','EXTRA_ATTACK_THIRSTING_BLADE','COMMANDERS_STRIKE_D10','COMMANDERS_STRIKE_D8','EXTRA_ATTACK_BLADESINGING','EXTRA_ATTACK_CANTRIP'},{},{}, entity, context.Source, false).Result
+    return ConditionResult(result)
+end
+
+function HasCleansingTouchStatus()
+	return HasAnyStatus({'CHILL_TOUCH','FRIENDS','RAY_OF_FROST','SHOCKING_GRASP','VICIOUSMOCKERY','ARMS_OF_HADAR','COLOR_SPRAY','COMMAND_APPROACH','COMMAND_HALT','COMMAND_FLEE','COMMAND_GROVEL','COMPELLED_DUEL','ENSNARING_STRIKE','FAERIE_FIRE','HEX_STRENGTH','HEX_DEXTERITY','HEX_CONSTITUTION','HEX_INTELLIGENCE','HEX_WISDOM','HEX_CHARISMA','HUNTERS_MARK','SEARING_SMITE','SLEEP','HIDEOUS_LAUGHTER','WITCH_BOLT','BLINDNESS','BRANDING_SMITE','CROWN_OF_MADNESS','ENTHRALL','HEAT_METAL','HOLD_PERSON','ACID_ARROW','ACID_ARROW_3','ACID_ARROW_4','ACID_ARROW_5','ACID_ARROW_6','ACID_ARROW_7','ACID_ARROW_8','ACID_ARROW_9','PHANTASMAL_FORCE','RAY_OF_ENFEEBLEMENT','CURSE_ABILITY_CHARISMA','CURSE_ABILITY_CONSTITUTION','CURSE_ABILITY_DEXTERITY','CURSE_ABILITY_INTELLIGENCE','CURSE_ABILITY_STRENGTH','CURSE_ABILITY_WISDOM','CURSE_ATTACK','CURSE_EXTRA_DAMAGE','CURSE_SKIP_TURN','FEAR','HYPNOTIC_PATTERN','SLOW','BANISHED','CONFUSION','DOMINATE_BEAST','PHANTASMAL_KILLER','POLYMORPH_SHEEP','BANISHING_SMITE','CONTAGION_SLIMY_DOOM','CONTAGION_SLIMY_DOOM_1','CONTAGION_SLIMY_DOOM_2','CONTAGION_SLIMY_DOOM_3','CONTAGION_FILTH_FEVER','CONTAGION_FILTH_FEVER_1','CONTAGION_FILTH_FEVER_2','CONTAGION_FILTH_FEVER_3','CONTAGION_BLINDING_SICKNESS','CONTAGION_BLINDING_SICKNESS_1','CONTAGION_BLINDING_SICKNESS_2','CONTAGION_BLINDING_SICKNESS_3','CONTAGION_FLESH_ROT','CONTAGION_FLESH_ROT_1','CONTAGION_FLESH_ROT_2','CONTAGION_FLESH_ROT_3','CONTAGION_MINDFIRE','CONTAGION_MINDFIRE_1','CONTAGION_MINDFIRE_2','CONTAGION_MINDFIRE_3','CONTAGION_SEIZURE','CONTAGION_SEIZURE_1','CONTAGION_SEIZURE_2','CONTAGION_SEIZURE_3','HOLD_MONSTER','SLEEPING_EYEBITE','EYEBITE_PANICKED','EYEBITE_SICKENED','FLESH_TO_STONE','FLESH_TO_STONE_1','FLESH_TO_STONE_2','FLESH_TO_STONE_3','HARM','IRRESISTIBLE_DANCE','SUNBEAM','LOW_DEVILSFEE_WEALTH','STAGGERING_SMITE','WYR_GORTASH_CHAINSOFTYRANNY','CAUSE_FEAR','CAUSTIC_BREW','CAUSTIC_BREW_2','CAUSTIC_BREW_3','CAUSTIC_BREW_4','CAUSTIC_BREW_5','CAUSTIC_BREW_6','CAUSTIC_BREW_7','CAUSTIC_BREW_8','CAUSTIC_BREW_9','SNARE_RESTRAINED','MAXIMILIANS_EARTHEN_GRASP','MIND_SPIKE','SUGGESTION','MIND_WHIP','MIND_WHIP_MOVEMENT','MIND_WHIP_MOVEMENT_BLOCK','ENEMIES_ABOUND','RAULOTHIMS_PSYCHIC_LANCE','BLINDING_SMITE_BLINDED','BLINDED','CHARMED_CLEANSING_TOUCH_TECHNICAL','FRIGHTENED_CLEANSING_TOUCH_TECHNICAL','POISONED_CLEANSING_TOUCH_TECHNICAL'},{},{}, context.Target)
+end
+
+function EXP_ShareSpells()
+    return SpellId('Target_CureWounds') | SpellId('Target_CureWounds_2') | SpellId('Target_CureWounds_3') | SpellId('Target_CureWounds_4') | SpellId('Target_CureWounds_5') | SpellId('Shout_DetectMagic') | SpellId('Shout_DetectMagic_2') | SpellId('Shout_DetectMagic_3') | SpellId('Shout_DetectMagic_4') | SpellId('Shout_DetectMagic_5') | SpellId('Target_Jump') | SpellId('Target_Jump_2') | SpellId('Target_Jump_3') | SpellId('Target_Jump_4') | SpellId('Target_Jump_5') | SpellId('Target_Longstrider') | SpellId('Target_Longstrider_2') | SpellId('Target_Longstrider_3') | SpellId('Target_Longstrider_4') | SpellId('Target_Longstrider_5') | SpellId('Shout_ZephyrStrike') | SpellId('Shout_ZephyrStrike_2') | SpellId('Shout_ZephyrStrike_3') | SpellId('Shout_ZephyrStrike_4') | SpellId('Shout_ZephyrStrike_5') | SpellId('Target_Barkskin') | SpellId('Target_Barkskin_3') | SpellId('Target_Barkskin_4') | SpellId('Target_Barkskin_5') | SpellId('Target_Darkvision') | SpellId('Target_Darkvision_3') | SpellId('Target_Darkvision_4') | SpellId('Target_Darkvision_5') | SpellId('Target_EnhanceAbility_BearsEndurance') | SpellId('Target_EnhanceAbility_BullsStrength') | SpellId('Target_EnhanceAbility_CatsGrace') | SpellId('Target_EnhanceAbility_EaglesSplendor') | SpellId('Target_EnhanceAbility_FoxsCunning') | SpellId('Target_EnhanceAbility_OwlsWisdom') | SpellId('Target_LesserRestoration') | SpellId('Target_LesserRestoration_3') | SpellId('Target_LesserRestoration_4') | SpellId('Target_LesserRestoration_5') | SpellId('Shout_PassWithoutTrace') | SpellId('Shout_PassWithoutTrace_3') | SpellId('Shout_PassWithoutTrace_4') | SpellId('Shout_PassWithoutTrace_5') | SpellId('Target_ProtectionFromPoison') | SpellId('Target_ProtectionFromPoison_3') | SpellId('Target_ProtectionFromPoison_4') | SpellId('Target_ProtectionFromPoison_5') | SpellId('Shout_AshardalonsStride') | SpellId('Shout_AshardalonsStride_4') | SpellId('Shout_AshardalonsStride_5') | SpellId('Target_Nondetection') | SpellId('Target_Nondetection_4') | SpellId('Target_Nondetection_5') | SpellId('Target_ProtectionFromEnergy') | SpellId('Target_ProtectionFromEnergy_4') | SpellId('Target_ProtectionFromEnergy_5') | SpellId('Target_FreedomOfMovement') | SpellId('Target_FreedomOfMovement_4') | SpellId('Target_FreedomOfMovement_5') | SpellId('Shout_GuardianOfNature_PrimalBeast') | SpellId('Shout_GuardianOfNature_PrimalBeast_5') | SpellId('Shout_GuardianOfNature_GreatTree') | SpellId('Shout_GuardianOfNature_GreatTree_5') | SpellId('Target_Stoneskin') | SpellId('Target_Stoneskin_5') | SpellId('Target_GreaterRestoration')
+end
+
+function EXP_HasHigherPriorityExtraAttackQueuedBladesinging(status, entity)
+    local entity = entity or context.Target
+    local eaQueuedStatuses = {'EXTRA_ATTACK_3_Q'
+        , 'EXTRA_ATTACK_2_Q'
+        , 'EXTRA_ATTACK_BLADESINGING_Q'
+        , 'EXTRA_ATTACK_CANTRIP_Q'
+        , 'EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_MAGIC_Q'
+        , 'MAG_MARTIAL_EXERTION_Q'
+        , 'WILDSTRIKE_EXTRA_ATTACK_Q'
+        , 'STALKERS_FLURRY_Q'
+        , 'EXTRA_ATTACK_THIRSTING_BLADE_Q'
+        , 'COMMANDERS_STRIKE_Q_D10'
+        , 'COMMANDERS_STRIKE_Q_D8'
+        , 'WILDSTRIKE_2_EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_PRIEST_Q'
+    }
+    for i,v in ipairs(eaQueuedStatuses) do
+        if (v == status) then
+            return ConditionResult(false)
+        end
+        if HasStatus(v, entity, context.Source, false).Result then
+            return ConditionResult(true)
+        end
+    end
+    return ConditionResult(false)
+end
+
+function EXP_IsMagical()
+    return HasDamageEffectFlag(DamageFlags.Magical)
+end
+
+function HasActionSurgeResource(entity)
+    entity = entity or context.Source
+    result = HasActionResource('ActionSurgeCharge', 1, 0, false, false, entity)
+    return ConditionResult(result.Result, {ConditionError("NotHasActionSurgeResource")})
+end
+
+function StrengthEqualTo(value)
+    return ConditionResult(context.Source.Strength == value)
+end
+
+function AthleticsCheck()
+    return IsSkillChecked(Skill.Athletics)
+end
+
+function StrengthCheck()
+    return IsAbilityChecked(Ability.Strength)
+end
+
+function EXP_HasHigherPriorityExtraAttackQueued(status, entity)
+    local entity = entity or context.Target
+    local eaQueuedStatuses = {'EXTRA_ATTACK_3_Q'
+        , 'EXTRA_ATTACK_2_Q'
+        , 'EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_MAGIC_Q'
+        , 'MAG_MARTIAL_EXERTION_Q'
+        , 'WILDSTRIKE_EXTRA_ATTACK_Q'
+        , 'STALKERS_FLURRY_Q'
+        , 'EXTRA_ATTACK_THIRSTING_BLADE_Q'
+        , 'COMMANDERS_STRIKE_Q_D10'
+        , 'COMMANDERS_STRIKE_Q_D8'
+        , 'WILDSTRIKE_2_EXTRA_ATTACK_Q'
+        , 'EXTRA_ATTACK_WAR_PRIEST_Q'
+    }
+    for i,v in ipairs(eaQueuedStatuses) do
+        if (v == status) then
+            return ConditionResult(false)
+        end
+        if HasStatus(v, entity, context.Source, false).Result then
+            return ConditionResult(true)
+        end
+    end
+    return ConditionResult(false)
+end
+
+function EXP_HasAnyExtraAttack(entity)
+    local entity = entity or context.Target
+	local result = HasAnyStatus({'EXTRA_ATTACK','EXTRA_ATTACK_2','EXTRA_ATTACK_3','EXTRA_ATTACK_WAR_MAGIC','EXTRA_ATTACK_WAR_PRIEST','MAG_MARTIAL_EXERTION','WILDSTRIKE_EXTRA_ATTACK','WILDSTRIKE_2_EXTRA_ATTACK','STALKERS_FLURRY','EXTRA_ATTACK_THIRSTING_BLADE','COMMANDERS_STRIKE_D10','COMMANDERS_STRIKE_D8'},{},{}, entity, context.Source, false).Result
+    return ConditionResult(result)
+end
+
+function IsDedicatedMonkWeaponAttack()
+    local attackWeapon = GetAttackWeapon(context.Source)
+    if attackWeapon.IsValid then
+        return ~HasWeaponProperty(WeaponProperties.Heavy, attackWeapon) & IsProficientWith(context.Source, attackWeapon)
+    else
+        return IsUnarmedAttack()
+    end
+end
+
+function EXP_IsInvisibleSeen(entity)
+    local entity = entity or context.Target
+    return HasStatus('INVISIBLE_SEEN',entity) 
+        |  HasStatus('INVISIBLE_MAGEHAND_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_SEEN',entity) 
+        |  HasStatus('ONE_WITH_SHADOWS_SEEN',entity) 
+        |  HasStatus('POTION_OF_INVISIBILITY_SEEN',entity) 
+        |  HasStatus('CLOAK_OF_SHADOWS_SEEN',entity) 
+        |  HasStatus('CLOAK_OF_SHADOWS_MONK_SEEN',entity) 
+        |  HasStatus('UMBRAL_CLOAK_SEEN',entity) 
+        |  HasStatus('GREATER_INVISIBILITY_SEEN',entity) 
+        |  HasStatus('SHADOWBLEND_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_SHADARKAI_GLOOMWEAVER_SEEN',entity) 
+        |  HasStatus('HIDE_IN_PLAIN_SIGHT_SEEN',entity) 
+        |  HasStatus('MISTY_ESCAPE_INVISIBLE_SEEN',entity) 
+        |  HasStatus('INVISIBILITY_PANTHER_SEEN',entity) 
+        |  HasStatus('SHROUD_SELF_SEEN',entity) 
+        |  HasStatus('SUPREME_SNEAK_SEEN',entity) 
+        |  HasStatus('MAG_INVISIBLE_WEAPON_SEEN',entity) 
+        |  HasStatus('LOW_POLTERGEIST_INVISIBLE_SEEN',entity)
+end
+
+function IsElusive(entity)
+    local entity = entity or context.Source
+
+    return HasPassive('Elusive', entity) & ~HasStatus('SG_Incapacitated', entity)
+end
+
+function HasWindSoul(entity)
+    local entity = entity or context.Source
+
+    return HasStatus('WIND_SOUL', entity)
+end
+
+function EXP_PaladinSpells()
+    return IsSpellChildOrVariantFromContext('Target_Bless') | IsSpellChildOrVariantFromContext('Target_Command') | IsSpellChildOrVariantFromContext('Target_Command_Approach') | IsSpellChildOrVariantFromContext('Target_Command_Drop') | IsSpellChildOrVariantFromContext('Target_Command_Flee') | IsSpellChildOrVariantFromContext('Target_Command_Grovel') | IsSpellChildOrVariantFromContext('Target_Command_Halt') | IsSpellChildOrVariantFromContext('Target_CureWounds') | IsSpellChildOrVariantFromContext('Target_Heroism') | IsSpellChildOrVariantFromContext('Target_ProtectionFromEvilAndGood') | IsSpellChildOrVariantFromContext('Shout_Aid') | IsSpellChildOrVariantFromContext('Target_LesserRestoration') | IsSpellChildOrVariantFromContext('Target_MagicWeapon') | IsSpellChildOrVariantFromContext('Target_ProtectionFromPoison') | IsSpellChildOrVariantFromContext('Shout_CrusadersMantle') | IsSpellChildOrVariantFromContext('Target_Daylight_Container') | IsSpellChildOrVariantFromContext('Target_Daylight') | IsSpellChildOrVariantFromContext('Target_Daylight_Enchantment') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Acid') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Cold') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Fire') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Lightning') | IsSpellChildOrVariantFromContext('Target_ElementalWeapon_Thunder') | IsSpellChildOrVariantFromContext('Target_RemoveCurse') | IsSpellChildOrVariantFromContext('Teleportation_Revivify') | IsSpellChildOrVariantFromContext('Shout_AuraOfVitality') | IsSpellChildOrVariantFromContext('Target_Banishment') | IsSpellChildOrVariantFromContext('Target_DeathWard') | IsSpellChildOrVariantFromContext('Shout_DestructiveWave') | IsSpellChildOrVariantFromContext('Target_Bane') | IsSpellChildOrVariantFromContext('Target_HuntersMark') | IsSpellChildOrVariantFromContext('Target_HoldPerson') | IsSpellChildOrVariantFromContext('Target_MistyStep') | IsSpellChildOrVariantFromContext('Target_Haste') | IsSpellChildOrVariantFromContext('Target_ProtectionFromEnergy') | IsSpellChildOrVariantFromContext('Target_IceStorm') | IsSpellChildOrVariantFromContext('Target_Stoneskin') | IsSpellChildOrVariantFromContext('Target_InsectPlague') | IsSpellChildOrVariantFromContext('Wall_WallOfStone') | IsSpellChildOrVariantFromContext('Shout_DispelEvilAndGood') | IsSpellChildOrVariantFromContext('Target_Ceremony') | IsSpellChildOrVariantFromContext('Target_Ceremony_BlessedWater') | IsSpellChildOrVariantFromContext('Target_Ceremony_ComingOfAge') | IsSpellChildOrVariantFromContext('Target_Ceremony_Dedication') | IsSpellChildOrVariantFromContext('Shout_DetectEvilAndGood') | IsSpellChildOrVariantFromContext('Shout_DetectMagic') | IsSpellChildOrVariantFromContext('Shout_PrayerOfHealing') | IsSpellChildOrVariantFromContext('Target_WardingBond') | IsSpellChildOrVariantFromContext('Target_CreateFoodAndWater') | IsSpellChildOrVariantFromContext('Target_MagicCircle') | IsSpellChildOrVariantFromContext('Shout_AuraOfLife')
+end
+
+function NotUsedQuiveringPalm(entity)
+    entity = entity or context.Source
+    result = ~HasStatus('QUIVERING_PALM_TECHNICAL',entity)
+    return ConditionResult(result.Result, {ConditionError("NotUsedQuiveringPalm")})
+end
+
+function EXP_HasMovementSteadyAim(entity)
+    entity = entity or context.Source
+    result = HasActionResource('SteadyAim',1,0,false,false,entity)
+    return ConditionResult(result.Result, {ConditionError("HasMovementSteadyAim")})
+end
+
+function EXP_HasEnemyWithinRange(inclusionStatus, distance, tag, NumberOfEnemy, target, source)
+    distance = distance or 1.5
+    NumberOfEnemy = NumberOfEnemy or 1
+    target = target or context.Target
+    source = source or context.Source
+
+    local errorTrue = {ConditionError("HasAllyWithinRange", {ConditionErrorData.MakeFromNumber(distance, EErrorDataType.Distance)})}
+    local errorFalse = {ConditionError("HasNotAllyWithinRange", {ConditionErrorData.MakeFromNumber(distance, EErrorDataType.Distance)})}
+
+    local enemies = GetEnemiesWithinRange(distance, target, source)
+    if enemies ~= nil then
+        -- Only do the check when we are surounded by more than or equal the NumberOfEnemy
+        if #enemies.Enemies >= NumberOfEnemy then
+            for _, entity in ipairs(enemies.Enemies) do
+                -- ensure entity has the included status
+                local noIncludedStatus = ConditionResult(inclusionStatus == nil)
+                if inclusionStatus then
+                    noIncludedStatus = HasStatus(inclusionStatus, entity, source)
+                end
+
+                -- filter by tag if provided
+                local hasTag = ConditionResult(tag == nil)
+                if tag then
+                    hasTag = Tagged(tag, entity)
+                end
+
+                if noIncludedStatus.Result and hasTag.Result then
+                    return ConditionResult(true, errorFalse, errorTrue)
+                end
+            end
+        end
+    end
+    return ConditionResult(false, errorFalse, errorTrue)
+end
+
+function EXP_CanSeeSneaking(source, target, from, to)
+	local source = source or context.Source
+	local target = target or context.Target
+	
+	return HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source)
+end
+
+function EXP_CanSeeInvisible(source, target, sourceObserver, targetObserver)
+    local source = source or context.Source
+    local target = target or context.Target
+    local sourceObserver = sourceObserver or false
+    local targetObserver = targetObserver or false
+
+    local sourcePosition = context.SourcePosition
+    local targetPosition = context.TargetPosition
+
+    if sourceObserver then
+        sourcePosition = context.ObserverPosition
+    end
+
+    if targetObserver then
+        targetPosition = context.ObserverPosition
+    end
+
+    return Tagged('BLINDSIGHT', source) 
+       |  (HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source))
+       |  (HasStatus('TRUESIGHT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 36.5)) 
+       | ((HasStatus('SEE_INVISIBILITY', source) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 18.5)) 
+       | ((HasPassive('FightingStyle_BlindFighting', source) | (HasPassive('Blindsense', source) & ~(HasPassive('Deafness',source) | HasStatus('SG_Deafened',source)))) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 3))
+end
+
+function EXP_CanSeeBlinded(source, target, from, to)
+	local source = source or context.Source
+	local target = target or context.Target
+	
+	return HasStatus('SG_Blinded', source) & (Tagged('BLINDSIGHT', source) 
+       |  (HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source))
+       |  (HasStatus('TRUESIGHT', source) & ~DistanceToTargetGreaterThan(36.5)) 
+       | ((HasStatus('SEE_INVISIBILITY', source) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToTargetGreaterThan(18.5)) 
+       | ((HasPassive('FightingStyle_BlindFighting', source) | (HasPassive('Blindsense', source) & ~(HasPassive('Deafness',source) | HasStatus('SG_Deafened',source)))) & ~DistanceToTargetGreaterThan(3)))
+end
+
+function EXP_CanSee(source, target, from, to)
+	local source = source or context.Source
+	local target = target or context.Target
+    local from = from or context.SourcePosition
+    local to = to or context.Target	
+		
+	return CanSee(source, target) | EXP_CanSeeSneaking(source, target, from, to) | EXP_CanSeeInvisible(source, target, from, to) | EXP_CanSeeBlinded(source, target, from, to)
+end
+
+function IsFrenzyQualified(entity)
+	local entity = entity or context.Source
+	return ~HasStatus('FOB_QUALIFIER1',entity) & ~HasStatus('FOB_QUALIFIER2',entity) & ~HasStatus('FOB_QUALIFIER3',entity) & ~HasStatus('FOB_QUALIFIER4',entity) & ~HasStatus('FOB_QUALIFIER5',entity) 
+end
+
+function IsFrenzyTarget(entity, source)
+	local entity = entity or context.Target
+	local source = source or context.Source
+	return ~HasStatus('FOB_TARGET1',entity,source) & ~HasStatus('FOB_TARGET2',entity,source) & ~HasStatus('FOB_TARGET3',entity,source) & ~HasStatus('FOB_TARGET4',entity,source)
+end	
+
+function IsPriorFrenzyTarget()
+	local result = HasStatus('FOB_TARGET1',context.Target,context.Source) | HasStatus('FOB_TARGET2',context.Target,context.Source) | HasStatus('FOB_TARGET3',context.Target,context.Source) | HasStatus('FOB_TARGET4',context.Target,context.Source) 
+    return ConditionResult(result.Result, {}, {ConditionError("HasAlreadyBeenFlurried")})
+end   	
+
+function IsInvalidFrenzyTarget()
+	local result = HasStatus('FOB_QUALIFIER2',context.Source) & ~Character()
+    return ConditionResult(result.Result, {ConditionError("IsNotCreatureFrenzyTarget")})
+end
+
+function GIsECWeaponThrow()
+	return HasStatus('ELEMENTAL_CLEAVER_ACID',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_COLD',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_FIRE',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_LIGHTNING',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_THUNDER',context.HitDescription.ThrownObject) | GIsECWeaponThrowAltDetect()
+end
+
+function GIsECWeaponThrowAltDetect()
+	return HasAttribute('InventoryBound',context.HitDescription.ThrownObject) &  HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)
+end
+
+function EXP_SizeEqualTo(size, entity)
+    entity = entity or context.Source
+    return ConditionResult(entity.Size ~= Size.None and entity.Size.value == size.value)
+end
+
+function EXP_ReachAttackCheck()
+    return (HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('MeleeOffHandWeaponAttack') | HasStringInSpellRoll('MeleeUnarmedAttack') | HasStringInSpellRoll('MeleeSpellAttack') | HasStringInSpellRoll('ShoveCheck') | SpellId('Target_Grapple') | SpellId('Target_ReleaseGrapple') | SpellId('Throw_Carry')) & ~TargetRadiusGreaterThan(1.5) & ~SpellId('Target_BoomingBlade') & ~SpellId('Target_GreenFlameBlade') & ~HasStringInSpellRoll('SCAGtrips')
+end
+
+function EXP_MightyImpelCheck()
+    local result = Ally()
+    if not result.Result then
+        local st = ~SavingThrow(Ability.Strength, SourceSpellDC(10,context.Source,Ability.Strength))
+        return ConditionResult(st.Result, {}, {}, st.Chance)
+    end
+
+    return result
+end

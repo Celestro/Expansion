@@ -1,0 +1,244 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_D6WeaponIncrease((TAG)_WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787);
+
+DB_D8WeaponIncrease((TAG)_WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787);
+DB_D8WeaponIncrease((TAG)_WPN_FLAIL_5d7b1304-6d20-4d60-ba1b-0fbb491bfc18);
+DB_D8WeaponIncrease((TAG)_WPN_HAND_CROSSBOW_1c12ee6d-50e2-459f-90c8-ae56701190ce);
+DB_D8WeaponIncrease((TAG)_WPN_SCIMITAR_206f9701-7b24-4eaf-9ac4-a47746c251e2);
+DB_D8WeaponIncrease((TAG)_WPN_SHORTBOW_81197304-7116-4d7b-8ef4-207bbf636682);
+DB_D8WeaponIncrease((TAG)_WPN_TRIDENT_c808f076-4a0f-422a-97db-e985ce35f3f9);
+
+DB_D10WeaponIncrease((TAG)_WPN_BATTLEAXE_7609654e-b213-410d-b08f-6d2930da6411);
+DB_D10WeaponIncrease((TAG)_WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787);
+DB_D10WeaponIncrease((TAG)_WPN_FLAIL_5d7b1304-6d20-4d60-ba1b-0fbb491bfc18);
+DB_D10WeaponIncrease((TAG)_WPN_GREATCLUB_ab44887d-0eb0-4fef-bd9d-943ea8971aa2);
+DB_D10WeaponIncrease((TAG)_WPN_HAND_CROSSBOW_1c12ee6d-50e2-459f-90c8-ae56701190ce);
+DB_D10WeaponIncrease((TAG)_WPN_LIGHT_CROSSBOW_a302a8e2-a3f9-41e1-a68c-70a453e65399);
+DB_D10WeaponIncrease((TAG)_WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba);
+DB_D10WeaponIncrease((TAG)_WPN_LONGSWORD_96a99a42-ec5d-4081-9d62-c9e3f0057136);
+DB_D10WeaponIncrease((TAG)_WPN_MORNINGSTAR_aa4cfcea-aee8-44b9-a460-e7231df796b1);
+DB_D10WeaponIncrease((TAG)_WPN_RAPIER_aeaf4e95-38d7-45ec-8900-40bc9e6106b0);
+DB_D10WeaponIncrease((TAG)_WPN_SCIMITAR_206f9701-7b24-4eaf-9ac4-a47746c251e2);
+DB_D10WeaponIncrease((TAG)_WPN_SHORTBOW_81197304-7116-4d7b-8ef4-207bbf636682);
+DB_D10WeaponIncrease((TAG)_WPN_TRIDENT_c808f076-4a0f-422a-97db-e985ce35f3f9);
+DB_D10WeaponIncrease((TAG)_WPN_WARHAMMER_1dff197e-b74c-4173-94d3-e1323239556c);
+DB_D10WeaponIncrease((TAG)_WPN_WAR_PICK_eed87cdb-c5ee-45c2-9a5a-6949dce87a1e);
+
+DB_MonkDamageDie("DEDICATED_WEAPON_D6");
+DB_MonkDamageDie("DEDICATED_WEAPON_D8");
+DB_MonkDamageDie("DEDICATED_WEAPON_D10");
+KBSECTION
+// Check Monk inventory for weapons
+
+IF
+LeveledUp(_Character)
+AND
+IsTagged(_Character,MONK_e1e460bb-d0ae-4452-8529-c9e176558731,1)
+THEN
+IterateInventory(_Character,"CheckMonkWeapons","CompleteWeaponCheck");
+
+// Apply and track Dedicated Weapon Status
+
+IF
+StatusApplied(_Item,"DEDICATED_WEAPON",(CHARACTER)_Causee,_)
+THEN
+SetVarObject(_Item,"DedicatedWeapon",_Causee);
+SetDualEntityEvent(_Causee, _Item, "MonkWeaponDamageDie", 0);
+
+// Check for Dedicated Weapon status
+
+IF
+EntityEvent((ITEM)_Item,"CheckMonkWeapons")
+AND
+IsWeapon(_Item,1)
+AND
+GetInventoryOwner(_Item,_Character)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON",1)
+AND
+GetVarObject(_Item,"DedicatedWeapon",_Causee)
+AND
+_Character == _Causee
+THEN
+SetDualEntityEvent(_Character, _Item, "MonkWeaponDamageDie", 0);
+
+// Apply damage die override to Monk weapon
+
+IF
+DualEntityEvent((CHARACTER)_Character, (ITEM)_Item, "MonkWeaponDamageDie")
+AND
+DB_D6WeaponIncrease(_Tag)
+AND
+HasPassive(_Character,"MonkLevel5",1)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON_D6",0)
+THEN
+ApplyStatus(_Item,"DEDICATED_WEAPON_D6",-1.0,1,_Character);
+
+IF
+DualEntityEvent((CHARACTER)_Character, (ITEM)_Item, "MonkWeaponDamageDie")
+AND
+DB_D8WeaponIncrease(_Tag)
+AND
+HasPassive(_Character,"MonkLevel11",1)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON_D8",0)
+THEN
+ApplyStatus(_Item,"DEDICATED_WEAPON_D8",-1.0,1,_Character);
+
+IF
+DualEntityEvent((CHARACTER)_Character, (ITEM)_Item, "MonkWeaponDamageDie")
+AND
+DB_D10WeaponIncrease(_Tag)
+AND
+HasPassive(_Character,"MonkLevel17",1)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON_D10",0)
+THEN
+ApplyStatus(_Item,"DEDICATED_WEAPON_D10",-1.0,1,_Character);
+
+// Override Monk Weapon on Equip
+
+IF
+Equipped((ITEM)_Item,_Character)
+AND
+IsWeapon(_Item,1)
+AND
+IsTagged(_Character,(TAG)_MONK_e1e460bb-d0ae-4452-8529-c9e176558731,1)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON",1)
+AND
+GetVarObject(_Item,"DedicatedWeapon",_Causee)
+AND
+_Character == _Causee
+THEN
+SetDualEntityEvent(_Character, _Item, "MonkWeaponDamageDie", 0);
+
+// Override Monk Weapon on Add to inventory
+
+IF
+AddedTo((ITEM)_Item,_Character, _)
+AND
+IsWeapon(_Item,1)
+AND
+IsTagged(_Character,MONK_e1e460bb-d0ae-4452-8529-c9e176558731,1)
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON",1)
+AND
+GetVarObject(_Item,"DedicatedWeapon",_Causee)
+AND
+_Character == _Causee
+THEN
+SetDualEntityEvent(_Character, _Item, "MonkWeaponDamageDie", 0);
+
+// Revert Monk Weapon on Drop/Remove from inventory
+
+IF
+RemovedFrom((ITEM)_Item,_Character)
+AND
+IsWeapon(_Item,1)
+AND
+DB_MonkDamageDie(_Status)
+AND
+HasActiveStatus(_Item,_Status,1)
+THEN
+DebugText(_Character,"Dedicated Weapon");
+RemoveStatus(_Item, _Status);
+
+// Dex over Str for Greatclubs
+
+IF
+StartedPreviewingSpell((CHARACTER)_Character,_,_,_)
+AND
+GetEquippedWeapon(_Character,_Item)
+AND
+IsTagged(_Item,WPN_GREATCLUB_ab44887d-0eb0-4fef-bd9d-943ea8971aa2,1)
+AND
+GetAbility(_Character,"Strength",_Str)
+AND
+GetAbility(_Character,"Dexterity",_Dex)
+AND
+_Dex >= _Str
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON",1)
+AND
+GetVarObject(_Item,"DedicatedWeapon",_Causee)
+AND
+_Character == _Causee
+THEN
+ApplyStatus(_Character,"DEDICATED_WEAPON_DEX_TECHNICAL",6.0,1,_Character);
+ApplyStatus(_Item,"DEDICATED_WEAPON_DEX_TECHNICAL",6.0,1,_Character);
+
+IF
+StartedPreviewingSpell((CHARACTER)_Character,_Spell,_,_)
+AND
+GetEquippedWeapon(_Character,_Item)
+AND
+IsTagged(_Item,WPN_GREATCLUB_ab44887d-0eb0-4fef-bd9d-943ea8971aa2,1)
+AND
+GetAbility(_Character,"Strength",_Str)
+AND
+GetAbility(_Character,"Dexterity",_Dex)
+AND
+_Str > _Dex
+AND
+HasActiveStatus(_Item,"DEDICATED_WEAPON",1)
+THEN
+RemoveStatus(_Character,"DEDICATED_WEAPON_DEX_TECHNICAL");
+RemoveStatus(_Item,"DEDICATED_WEAPON_DEX_TECHNICAL");
+
+IF
+StatusApplied((CHARACTER)_Character,"GUIDANCE",_Causee,_)
+AND
+_Character == _Causee
+THEN
+DebugText(_Character,"Both equal");
+
+IF
+LeveledUp(_Character)
+AND
+IsTagged(_Character,MONK_e1e460bb-d0ae-4452-8529-c9e176558731,1)
+THEN
+SetEntityEvent(_Character,"MonkLevelPassive",0);
+
+IF
+EntityEvent(_Character,"MonkLevelPassive")
+AND
+GetLevel(_Character,_Level)
+AND
+_Level > 4
+AND
+_Level < 11
+THEN
+AddPassive(_Character,"MonkLevel5");
+RemovePassive(_Character,"MonkLevel11");
+RemovePassive(_Character,"MonkLevel17");
+
+IF
+EntityEvent(_Character,"MonkLevelPassive")
+AND
+GetLevel(_Character,_Level)
+AND
+_Level > 10
+AND
+_Level < 17
+THEN
+AddPassive(_Character,"MonkLevel11");
+RemovePassive(_Character,"MonkLevel5");
+RemovePassive(_Character,"MonkLevel17");
+
+IF
+EntityEvent(_Character,"MonkLevelPassive")
+AND
+GetLevel(_Character,_Level)
+AND
+_Level > 16
+THEN
+AddPassive(_Character,"MonkLevel17");
+RemovePassive(_Character,"MonkLevel5");
+RemovePassive(_Character,"MonkLevel11");
+EXITSECTION
+
+ENDEXITSECTION
