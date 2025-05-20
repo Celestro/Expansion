@@ -121,201 +121,352 @@
                     ]
                 },
                 {
-                    "SectionId": "xp_rate_settings",
-                    "SectionName": "XP Rate",
+                    "SectionId": "miscellaneous_settings",
+                    "SectionName": "Miscellaneous",
                     "Settings": [
                         {
-                            "Id": "Level1",
-                            "Name": "Level 1",
-                            "Type": "int",
-                            "Default": 300,
-                            "Description": "The EXP required to reach level 2.",
-                            "Handles": {"DescriptionHandle": "h3b5278c5gad8cg4093g84b8gf82768d47479",
-                            "NameHandle": "h083dbb23gd274g4147gaa77g717c89392af8"}
+                            "Id": "Sorcerer11thSubclass",
+                            "Name": "11th Level Sorcerer Subclass Feature",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Change the base game Sorcerer subclass 11th level features to 14th level per DnD tabletop.",
+                            "Handles": {
+                                "DescriptionHandle": "h466f2f1cg32c2g40e9gbcc4gf4b39ce8cace",
+                                "NameHandle": "hcae3640dg823fg4643g9f77g6fb23ef0ff0e"
+                            }
                         },
                         {
-                            "Id": "Level2",
-                            "Name": "Level 2",
-                            "Type": "int",
-                            "Default": 600,
-                            "Description": "The EXP required to reach level 3.",
-                            "Handles": {"DescriptionHandle": "he2a6ee33g6934g4cc0gaee7g66bd6d702341",
-                            "NameHandle": "h54e52eefgd520g45ecgabdfg71a1d2bb51cc"}
+                            "Id": "WizardBladesinger",
+                            "Name": "14th Level Bladesinger Feature",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Change the Bladesinger's Song of Victory feature to 12th level.",
+                            "Handles": {
+                                "DescriptionHandle": "h575b18a1g43bcg46cdg8243g600f1effdf6b",
+                                "NameHandle": "h8d7d560eg6a8cg42a2ga094g332f948a0a9d"
+                            }
                         },
                         {
-                            "Id": "Level3",
-                            "Name": "Level 3",
-                            "Type": "int",
-                            "Default": 1800,
-                            "Description": "The EXP required to reach level 4.",
-                            "Handles": {"DescriptionHandle": "ha6bc9510g8b85g4e0dg8b45g2f00682e82e9",
-                            "NameHandle": "h061c6db3g670eg462cg82b6g0b3bb6201d90"}
+                            "Id": "ExpansionBladesinger",
+                            "Name": "Expansion's Bladesinger",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Switch the base game's Bladesinger features to those of the original Expansion's Bladesinger.",
+                            "Handles": {
+                                "DescriptionHandle": "h53270026g0d78g4849gb083g8d894229d2bd",
+                                "NameHandle": "h69486c47g5d08g463aga5bag83cb70d0dde6"
+                            }
                         },
                         {
-                            "Id": "Level4",
-                            "Name": "Level 4",
-                            "Type": "int",
-                            "Default": 3800,
-                            "Description": "The EXP required to reach level 5.",
-                            "Handles": {"DescriptionHandle": "h6b9a8cb4gcdf2g48afga9feg53677dcc9e94",
-                            "NameHandle": "hcadb61fag167cg4a7fg9778g2fc48e431c29"}
-                        },
-                        {
-                            "Id": "Level5",
-                            "Name": "Level 5",
-                            "Type": "int",
-                            "Default": 6500,
-                            "Description": "The EXP required to reach level 6.",
-                            "Handles": {"DescriptionHandle": "hb6d213d6g2c16g4552g9f78gbd421ab4b941",
-                            "NameHandle": "h0483d186g3496g4aafga08agf17c6a4a3c53"}
-                        },
-                        {
-                            "Id": "Level6",
-                            "Name": "Level 6",
-                            "Type": "int",
-                            "Default": 8000,
-                            "Description": "The EXP required to reach level 7.",
-                            "Handles": {"DescriptionHandle": "hf5479478gfaedg422bg9227gf651e01d5d54",
-                            "NameHandle": "hd325800dgb882g4716gb2b5gce4b4b5de4fa"}
-                        },
-                        {
-                            "Id": "Level7",
-                            "Name": "Level 7",
-                            "Type": "int",
-                            "Default": 9000,
-                            "Description": "The EXP required to reach level 8.",
-                            "Handles": {"DescriptionHandle": "h7719ad6ag11adg4432gbed2g1a7c23ac88b3",
-                            "NameHandle": "h1db653d7gb1f0g45feg9849g3f6979759260"}
-                        },
-                        {
-                            "Id": "Level8",
-                            "Name": "Level 8",
-                            "Type": "int",
-                            "Default": 12000,
-                            "Description": "The EXP required to reach level 9.",
-                            "Handles": {"DescriptionHandle": "h801242ccg089ag4004ga0afg032ec82178c4",
-                            "NameHandle": "h8e9622a6g610fg4749g9e09ge2ae744ed536"}
-                        },
-                        {
-                            "Id": "Level9",
-                            "Name": "Level 9",
-                            "Type": "int",
-                            "Default": 14000,
-                            "Description": "The EXP required to reach level 10.",
-                            "Handles": {"DescriptionHandle": "h1aa3bd88g19b1g41abg90b2g915eca14560d",
-                            "NameHandle": "h81b690d3g5431g439dgb811g24cc7c2fda7c"}
-                        },
-                        {
-                            "Id": "Level10",
-                            "Name": "Level 10",
-                            "Type": "int",
-                            "Default": 20000,
-                            "Description": "The EXP required to reach level 11.",
-                            "Handles": {"DescriptionHandle": "h7927393fg806dg4f01gbbfdg9916cf1e07ca",
-                            "NameHandle": "hafdd27d4g6d0ag44a6g9783g1c8315463e97"}
-                        },
-                        {
-                            "Id": "Level11",
-                            "Name": "Level 11",
-                            "Type": "int",
-                            "Default": 24000,
-                            "Description": "The EXP required to reach level 12.",
-                            "Handles": {"DescriptionHandle": "h0d2820f9gc137g4dd4gbf0bgfc1d8f9a3af7",
-                            "NameHandle": "hfcbfadceg3ba8g4b2ega1d6g8906543630e6"}
-                        },
-                        {
-                            "Id": "Level12",
-                            "Name": "Level 12",
-                            "Type": "int",
-                            "Default": 30000,
-                            "Description": "The EXP required to reach level 13.",
-                            "Handles": {"DescriptionHandle": "h9bdd68d2g0a69g4caag8dabg9737902ce7ae",
-                            "NameHandle": "h9838189ag598bg485bgb4e4gdb24e19c941e"}
-                        },
-                        {
-                            "Id": "Level13",
-                            "Name": "Level 13",
-                            "Type": "int",
-                            "Default": 20000,
-                            "Description": "The EXP required to reach level 14.",
-                            "Handles": {"DescriptionHandle": "h7f8603bbgcaedg4d3bgad68g554b3637f5db",
-                            "NameHandle": "h5385173bg43c1g41aeg8ffdg503a6884195f"}
-                        },
-                        {
-                            "Id": "Level14",
-                            "Name": "Level 14",
-                            "Type": "int",
-                            "Default": 25000,
-                            "Description": "The EXP required to reach level 15.",
-                            "Handles": {"DescriptionHandle": "h568fa1ccgf5f2g4eddg8fdegb02e967215fd",
-                            "NameHandle": "h463d91ccgf28eg4e58ga3e0g465c4b6f8e2a"}
-                        },
-                        {
-                            "Id": "Level15",
-                            "Name": "Level 15",
-                            "Type": "int",
-                            "Default": 30000,
-                            "Description": "The EXP required to reach level 16.",
-                            "Handles": {"DescriptionHandle": "h03b5fc8dgaf48g4900g8201g84ed64282862",
-                            "NameHandle": "had3027b9g6bc2g49c4gb099g21531834832c"}
-                        },
-                        {
-                            "Id": "Level16",
-                            "Name": "Level 16",
-                            "Type": "int",
-                            "Default": 30000,
-                            "Description": "The EXP required to reach level 17.",
-                            "Handles": {"DescriptionHandle": "h06e17d96gd953g4c3dgae21g4b1314f1f25a",
-                            "NameHandle": "h4e2c5b71g8453g4af1g9585g3b4e5690af70"}
-                        },
-                        {
-                            "Id": "Level17",
-                            "Name": "Level 17",
-                            "Type": "int",
-                            "Default": 40000,
-                            "Description": "The EXP required to reach level 18.",
-                            "Handles": {"DescriptionHandle": "h0ee5f8c0g2ffbg42e9g8a70gd7a5fcecb716",
-                            "NameHandle": "h7fa8d587g90ddg4ef7g950cg614a44fca24a"}
-                        },
-                        {
-                            "Id": "Level18",
-                            "Name": "Level 18",
-                            "Type": "int",
-                            "Default": 40000,
-                            "Description": "The EXP required to reach level 19.",
-                            "Handles": {"DescriptionHandle": "h309965b6g7f33g4b11g9565gb39fb86628c9",
-                            "NameHandle": "h3dce0e04g8eceg4d76gbfc3g1d28e1422c23"}
-                        },
-                        {
-                            "Id": "Level19",
-                            "Name": "Level 19",
-                            "Type": "int",
-                            "Default": 50000,
-                            "Description": "The EXP required to reach level 20.",
-                            "Handles": {"DescriptionHandle": "h4d4c1516g0d62g45b8g8c5ag6ab2a503d2c8",
-                            "NameHandle": "h5c680544gb463g4ed4gb98eg362d28461f7b"}
-                        },
-                        {
-                            "Id": "MaxLevel",
-                            "Name": "MaxLevel",
-                            "Type": "int",
-                            "Default": 20,
-                            "Description": "The maximum level you can reach. Requires class progressions to match the specified number or could result in crash when attempting to level to that point.",
-                            "Handles": {"DescriptionHandle": "h0c6a7627g6481g4dc0gb1afgb56da1492c90",
-                            "NameHandle": "hd794ded1g9d8eg4ef2g98f5g9be72c7689bf"}
-                        },
-                        {
-                            "Id": "MaxXP",
-                            "Name": "Maximum XP",
-                            "Type": "int",
-                            "Default": 420000,
-                            "Description": "The maximum amount of XP you can gain. Only adjust if requiring higher amount of XP for other mods, especially to levels beyond 20.",
-                            "Handles": {"DescriptionHandle": "h50a6b850g406dg45baga493ga182edea535b",
-                            "NameHandle": "he8beb469g4921g4c61g9814c7611a4c2b349"}
+                            "Id": "ExpansionBladesingerIcon",
+                            "Name": "Expansion's Bladesinger Subclass Icon",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Switch the base game's Bladesinger subclass icon to the one created for Expansion's Bladesinger.",
+                            "Handles": {
+                                "DescriptionHandle": "h32d14f34ga873g4f89gb528g4d6cb32c8721",
+                                "NameHandle": "h6b29f5c7gf644g4ab3g8596gb16fcaf2997f"
+                            }
                         }
-                    ]
+					]
+                }
+            ]
+        },
+        {
+            "TabName": "Levels",
+            "TabId": "Levels",
+            "Settings": [
+                {
+                    "Id": "MaxLevel",
+                    "Name": "MaxLevel",
+                    "Type": "int",
+                    "Default": 20,
+                    "Description": "The maximum level you can reach. Requires class progressions to match the specified number or could result in crash when attempting to level to that point.",
+                    "Handles": {"DescriptionHandle": "h0c6a7627g6481g4dc0gb1afgb56da1492c90",
+                    "NameHandle": "hd794ded1g9d8eg4ef2g98f5g9be72c7689bf"}
                 },
-				{
+                {
+                    "Id": "MaxXP",
+                    "Name": "Maximum XP",
+                    "Type": "int",
+                    "Default": 420000,
+                    "Description": "The maximum amount of XP you can gain. Only adjust if requiring higher amount of XP for other mods, especially to levels beyond 20.",
+                    "Handles": {"DescriptionHandle": "h50a6b850g406dg45baga493ga182edea535b",
+                    "NameHandle": "he8beb469g4921g4c61g9814c7611a4c2b349"}
+                },
+                {
+                    "Id": "Level1",
+                    "Name": "Level 1",
+                    "Type": "int",
+                    "Default": 300,
+                    "Description": "The EXP required to reach level 2.",
+                    "Handles": {"DescriptionHandle": "h3b5278c5gad8cg4093g84b8gf82768d47479",
+                    "NameHandle": "h083dbb23gd274g4147gaa77g717c89392af8"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "2", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level2",
+                    "Name": "Level 2",
+                    "Type": "int",
+                    "Default": 600,
+                    "Description": "The EXP required to reach level 3.",
+                    "Handles": {"DescriptionHandle": "he2a6ee33g6934g4cc0gaee7g66bd6d702341",
+                    "NameHandle": "h54e52eefgd520g45ecgabdfg71a1d2bb51cc"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "3", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level3",
+                    "Name": "Level 3",
+                    "Type": "int",
+                    "Default": 1800,
+                    "Description": "The EXP required to reach level 4.",
+                    "Handles": {"DescriptionHandle": "ha6bc9510g8b85g4e0dg8b45g2f00682e82e9",
+                    "NameHandle": "h061c6db3g670eg462cg82b6g0b3bb6201d90"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "4", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level4",
+                    "Name": "Level 4",
+                    "Type": "int",
+                    "Default": 3800,
+                    "Description": "The EXP required to reach level 5.",
+                    "Handles": {"DescriptionHandle": "h6b9a8cb4gcdf2g48afga9feg53677dcc9e94",
+                    "NameHandle": "hcadb61fag167cg4a7fg9778g2fc48e431c29"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "5", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level5",
+                    "Name": "Level 5",
+                    "Type": "int",
+                    "Default": 6500,
+                    "Description": "The EXP required to reach level 6.",
+                    "Handles": {"DescriptionHandle": "hb6d213d6g2c16g4552g9f78gbd421ab4b941",
+                    "NameHandle": "h0483d186g3496g4aafga08agf17c6a4a3c53"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "6", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level6",
+                    "Name": "Level 6",
+                    "Type": "int",
+                    "Default": 8000,
+                    "Description": "The EXP required to reach level 7.",
+                    "Handles": {"DescriptionHandle": "hf5479478gfaedg422bg9227gf651e01d5d54",
+                    "NameHandle": "hd325800dgb882g4716gb2b5gce4b4b5de4fa"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "7", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level7",
+                    "Name": "Level 7",
+                    "Type": "int",
+                    "Default": 9000,
+                    "Description": "The EXP required to reach level 8.",
+                    "Handles": {"DescriptionHandle": "h7719ad6ag11adg4432gbed2g1a7c23ac88b3",
+                    "NameHandle": "h1db653d7gb1f0g45feg9849g3f6979759260"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "8", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level8",
+                    "Name": "Level 8",
+                    "Type": "int",
+                    "Default": 12000,
+                    "Description": "The EXP required to reach level 9.",
+                    "Handles": {"DescriptionHandle": "h801242ccg089ag4004ga0afg032ec82178c4",
+                    "NameHandle": "h8e9622a6g610fg4749g9e09ge2ae744ed536"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "9", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level9",
+                    "Name": "Level 9",
+                    "Type": "int",
+                    "Default": 14000,
+                    "Description": "The EXP required to reach level 10.",
+                    "Handles": {"DescriptionHandle": "h1aa3bd88g19b1g41abg90b2g915eca14560d",
+                    "NameHandle": "h81b690d3g5431g439dgb811g24cc7c2fda7c"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "10", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level10",
+                    "Name": "Level 10",
+                    "Type": "int",
+                    "Default": 20000,
+                    "Description": "The EXP required to reach level 11.",
+                    "Handles": {"DescriptionHandle": "h7927393fg806dg4f01gbbfdg9916cf1e07ca",
+                    "NameHandle": "hafdd27d4g6d0ag44a6g9783g1c8315463e97"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "11", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level11",
+                    "Name": "Level 11",
+                    "Type": "int",
+                    "Default": 24000,
+                    "Description": "The EXP required to reach level 12.",
+                    "Handles": {"DescriptionHandle": "h0d2820f9gc137g4dd4gbf0bgfc1d8f9a3af7",
+                    "NameHandle": "hfcbfadceg3ba8g4b2ega1d6g8906543630e6"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "12", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level12",
+                    "Name": "Level 12",
+                    "Type": "int",
+                    "Default": 30000,
+                    "Description": "The EXP required to reach level 13.",
+                    "Handles": {"DescriptionHandle": "h9bdd68d2g0a69g4caag8dabg9737902ce7ae",
+                    "NameHandle": "h9838189ag598bg485bgb4e4gdb24e19c941e"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "13", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level13",
+                    "Name": "Level 13",
+                    "Type": "int",
+                    "Default": 20000,
+                    "Description": "The EXP required to reach level 14.",
+                    "Handles": {"DescriptionHandle": "h7f8603bbgcaedg4d3bgad68g554b3637f5db",
+                    "NameHandle": "h5385173bg43c1g41aeg8ffdg503a6884195f"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "14", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level14",
+                    "Name": "Level 14",
+                    "Type": "int",
+                    "Default": 25000,
+                    "Description": "The EXP required to reach level 15.",
+                    "Handles": {"DescriptionHandle": "h568fa1ccgf5f2g4eddg8fdegb02e967215fd",
+                    "NameHandle": "h463d91ccgf28eg4e58ga3e0g465c4b6f8e2a"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "15", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level15",
+                    "Name": "Level 15",
+                    "Type": "int",
+                    "Default": 30000,
+                    "Description": "The EXP required to reach level 16.",
+                    "Handles": {"DescriptionHandle": "h03b5fc8dgaf48g4900g8201g84ed64282862",
+                    "NameHandle": "had3027b9g6bc2g49c4gb099g21531834832c"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "16", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level16",
+                    "Name": "Level 16",
+                    "Type": "int",
+                    "Default": 30000,
+                    "Description": "The EXP required to reach level 17.",
+                    "Handles": {"DescriptionHandle": "h06e17d96gd953g4c3dgae21g4b1314f1f25a",
+                    "NameHandle": "h4e2c5b71g8453g4af1g9585g3b4e5690af70"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "17", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level17",
+                    "Name": "Level 17",
+                    "Type": "int",
+                    "Default": 40000,
+                    "Description": "The EXP required to reach level 18.",
+                    "Handles": {"DescriptionHandle": "h0ee5f8c0g2ffbg42e9g8a70gd7a5fcecb716",
+                    "NameHandle": "h7fa8d587g90ddg4ef7g950cg614a44fca24a"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "18", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level18",
+                    "Name": "Level 18",
+                    "Type": "int",
+                    "Default": 40000,
+                    "Description": "The EXP required to reach level 19.",
+                    "Handles": {"DescriptionHandle": "h309965b6g7f33g4b11g9565gb39fb86628c9",
+                    "NameHandle": "h3dce0e04g8eceg4d76gbfc3g1d28e1422c23"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "19", "Operator": ">="}
+                        ]
+                    }
+                },
+                {
+                    "Id": "Level19",
+                    "Name": "Level 19",
+                    "Type": "int",
+                    "Default": 50000,
+                    "Description": "The EXP required to reach level 20.",
+                    "Handles": {"DescriptionHandle": "h4d4c1516g0d62g45b8g8c5ag6ab2a503d2c8",
+                    "NameHandle": "h5c680544gb463g4ed4gb98eg362d28461f7b"},
+                    "VisibleIf": {
+                        "Conditions": [
+                            {"SettingId": "MaxLevel", "ExpectedValue": "20", "Operator": ">="}
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "TabName": "Feats",
+            "TabId": "Feats",
+            "Sections": [
+                {
 					"SectionId": "class_feat_selection",
 					"SectionName": "Class Feat Selection",
 					"Settings": [
@@ -392,34 +543,6 @@
 					"VisibleIf": {
 						"Conditions": [{"SettingId": "CustomClassFeatSelection", "ExpectedValue": "true", "Operator": "=="}]
 					}
-                },
-                {
-                    "SectionId": "miscellaneous_settings",
-                    "SectionName": "Miscellaneous",
-                    "Settings": [
-                        {
-                            "Id": "Sorcerer11thSubclass",
-                            "Name": "11th Level Sorcerer Subclass Feature",
-                            "Type": "checkbox",
-                            "Default": false,
-                            "Description": "Change the base game Sorcerer subclass 11th level features to 14th level per DnD tabletop.",
-                            "Handles": {
-                                "DescriptionHandle": "h466f2f1cg32c2g40e9gbcc4gf4b39ce8cace",
-                                "NameHandle": "hcae3640dg823fg4643g9f77g6fb23ef0ff0e"
-                            }
-                        },
-                        {
-                            "Id": "WizardBladesinger",
-                            "Name": "14th Level Bladesinger Feature",
-                            "Type": "checkbox",
-                            "Default": false,
-                            "Description": "Change the Bladesinger's Song of Victory feature to 12th level.",
-                            "Handles": {
-                                "DescriptionHandle": "h575b18a1g43bcg46cdg8243g600f1effdf6b",
-                                "NameHandle": "h8d7d560eg6a8cg42a2ga094g332f948a0a9d"
-                            }
-                        }
-					]
                 }
             ]
         }
