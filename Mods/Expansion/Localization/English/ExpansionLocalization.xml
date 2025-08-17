@@ -78,6 +78,14 @@
 	<content contentuid="hcae3640dg823fg4643g9f77g6fb23ef0ff0e" version="1">11th Level Sorcerer Subclass Features</content>
 	<content contentuid="h575b18a1g43bcg46cdg8243g600f1effdf6b" version="1">Change the Bladesinger's Song of Victory feature to 12th level.</content>
 	<content contentuid="h8d7d560eg6a8cg42a2ga094g332f948a0a9d" version="1">14th Level Bladesinger Feature</content>
+	<content contentuid="h53270026g0d78g4849gb083g8d894229d2bd" version="1">Switch the base game's Bladesinger features to those of the original Expansion's Bladesinger.</content>
+	<content contentuid="h69486c47g5d08g463aga5bag83cb70d0dde6" version="1">Expansion's Bladesinger</content>
+	<content contentuid="h32d14f34ga873g4f89gb528g4d6cb32c8721" version="1">Switch the base game's Bladesinger subclass icon to the one created for Expansion's Bladesinger.</content>
+	<content contentuid="h6b29f5c7gf644g4ab3g8596gb16fcaf2997f" version="1">Expansion's Bladesinger Subclass Icon</content>
+	<content contentuid="hc2b54579gc610g4986gba41ga0db7fa9720e" version="1">Enable Epic Boons to be received by base game classes at 20th level.</content>
+	<content contentuid="h978a1b2fg6336g471cg9558g849b39bf1844" version="1">Epic Boons</content>
+	<content contentuid="h285f29d0g7547g4e8aga121ge65a4ac55417" version="1">Enable Epic Boons to be received by custom classes at 20th level.</content>
+	<content contentuid="hc1ec3348g50ceg4b75g8233ga9b4c40e8c2a" version="1">Epic Boons</content>
 	<content contentuid="21066223-d5e8-444f-b0cc-4f649b3b5cc5" version="1">In combat, a bladesinger uses a series of intricate, elegant maneuvers that fend off harm and allow the bladesinger to channel magic into devastating attacks and a cunning defense.
 
 	Level 2 -  &lt;LSTag Type="Passive" Tooltip="TrainingInWarAndSong"&gt;Training in War and Song&lt;/LSTag&gt;, &lt;LSTag Type="Passive" Tooltip="Bladesong_Resource"&gt;Bladesong&lt;/LSTag&gt;
@@ -85,8 +93,8 @@
 	Level 10 - &lt;LSTag Type="Passive" Tooltip="SongOfDefense"&gt;Song of Defense&lt;/LSTag&gt;
 	Level 14 - &lt;LSTag Type="Passive" Tooltip="SongOfVictory"&gt;Song of Victory&lt;/LSTag&gt;</content>
 	<content contentuid="f19c7c75-299b-4dd1-bc0b-04597562abba" version="1">Bladesinging</content>
-	<content contentuid="7c2d8b56-c598-4d53-b653-945b942f7730" version="1">Choose a type of one-handed melee weapon to gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in.</content>
-	<content contentuid="2a15fc63-ef81-4881-b7b4-e593ed7c394b" version="1">Training in War and Song</content>
+	<content contentuid="7c2d8b56-c598-4d53-b653-945b942f7730" version="1">Choose a type of one-handed melee weapon to gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in. This weapon replaces your quarterstaff and you will be able to channel your magic through it during combat.</content>
+	<content contentuid="2a15fc63-ef81-4881-b7b4-e593ed7c394b" version="1">Bladesinger's Weapon</content>
 	<content contentuid="27adf46d-fa49-41a9-ab0e-d1590232c1bc" version="1">You gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with light armor and you gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with one type of one-handed melee weapon of your choice. You also gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in the Performance skill if you don’t already have it.</content>
 	<content contentuid="1ae7c683-e5d1-4430-b72a-16cae830bd36" version="1">You can direct your magic to absorb damage while your Bladesong is active. When you take damage, you can use your reaction to expend one &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; and reduce that damage to you by an amount equal to five times the &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot's&lt;/LSTag&gt; level.</content>
 	<content contentuid="8b644f45-4b53-4acb-a78b-780fc50b1c49" version="1">You can add your &lt;LSTag Tooltip="Intelligence"&gt;Intelligence&lt;/LSTag&gt; modifier (minimum of +1) to the damage of your melee weapon attacks while your Bladesong is active.</content>
@@ -97,19 +105,17 @@
 	<content contentuid="27e203e5-3e29-4b09-99c9-fa7060784031" version="1">Add bonus of +[1] to an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; or a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
 	<content contentuid="bad85182-6102-4901-903d-590a3ba91e77" version="1">You can forge an empowering bond among people who are at peace with one another. As an action, you choose [1] allied creatures within [2] of you (including yourself) and create a magical bond among them or until you use this feature again. While any bonded creature is within [2] of another, the creature can add a bonus of +[3] to an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; it makes once per turn.</content>
 	<content contentuid="8dacdd49-0efb-469a-be1e-e508dbfb2146" version="1">Activate to add a bonus of +[1] to &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt;.</content>
-	<content contentuid="cdac1eaa-bf9e-43da-a352-deffeb061813" version="1">Weapon already affected by the Hex Warrior feature.</content>
-	<content contentuid="488c86d5-742a-4b09-a969-cd1f3d77852b" version="1">Cannot be used on a two handed weapon.</content>
-	<content contentuid="hee205f06gca41g4dedg89cdg8bfb80bbd016" version="1">Bladesong Charge</content>
-	<content contentuid="a0c4c7aa-99de-455e-953e-c527019d4540" version="1">Bladesong</content>
-	<content contentuid="1b8729cc-9b3d-4126-b413-757e047437bf" version="1">Invoke an elven magic called the Bladesong, gracing you with supernatural speed, agility and focus as long as you aren't wearing medium or heavy armor or using a shield.</content>
-	<content contentuid="4c0c5808-0bb4-4a21-82cb-2b665052f53a" version="1">Your Bladesong ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon.</content>
+	<content contentuid="h5369ba87g093ag41a1g98f7g56642be8116d" version="1">You gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; with Light Armour and in the Performance skill. You also gain Proficiency with a melee weapon of your choice.</content>
+	<content contentuid="h3e02b669g8cffg4ce0gad36g29381c391254" version="1">Invoke the Bladesong. You gain a +[1] bonus to &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; and your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; increases by [2]. You also gain &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; in Acrobatics and a +[1] bonus to Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h4c0c5808g0bb4g4a21g82cbg2b665052f53a" version="1">Bladesong ends early if you use two hands to make an attack with a weapon without the Versatile property.</content>
 	<content contentuid="778fd309-ba52-40b6-8d5d-9236d6b4219c" version="1">&lt;LSTag Tooltip="ArmourClass"&gt;Armor Class&lt;/LSTag&gt; and Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; to maintain concentration increased by [1], your &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt; is increased by [2] and have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Acrobatics &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt;.</content>
 	<content contentuid="2bbcd67e-c395-467e-9e41-ce0641ded232" version="1">Dismiss Bladesong</content>
 	<content contentuid="77abc5bdfbad49ef8d145ef2b15390a7" version="1">Dismiss the effects of Bladesong.</content>
 	<content contentuid="h3c1d456cg3205g414bg83f3g3553efeefe16" version="1">Bladesinging: Extra Attack</content>
 	<content contentuid="5d65f927-a55e-44a9-a03e-bf1b7e1a0ae6" version="1">Can make an additional free attack or cast a cantrip after making an unarmed or weapon attack.</content>
-	<content contentuid="b20e04c9-647b-48ab-99b6-5fa0fbd957ea" version="1">Song of Defense</content>
-	<content contentuid="e92507b0899a4e6b9c6fdd9688a116b5" version="1">When you take damage, you can use your reaction to expend a spell slot and reduce the damage taken by five times the spell slot's level.</content>
+	<content contentuid="h4df080ecg1c1bg4af3g961bg14cf5dca77ea" version="1">Song of Defence: 7</content>
+	<content contentuid="h54dc276agbb97g4972g8b10gf2d3e8cfeca7" version="1">Song of Defence: 8</content>
+	<content contentuid="hc42e96dcgad67g40b7g8ac4ga1b3be190025" version="1">Song of Defence: 9</content>
 	<content contentuid="8d39dadd-360e-4469-a642-e8ae8973abd0" version="1">When you take damage, you can use your reaction to expend a Level [1] spell slot and reduce the damage taken by [2].</content>
 	<content contentuid="fb87975e461a44c392ac30bcebfba43d" version="1">Reduced damage taken by -[1].</content>
 	<content contentuid="76e7c6f3-e15a-40cc-9ee1-04f1993c78f7" version="1">Song of Victory</content>
@@ -117,7 +123,8 @@
 	<content contentuid="h84e070ecg9320g4423g88bbge9b08b425d3c" version="1">The number of times you can use the Bladesong feature.</content>
 	<content contentuid="e79797137bc54f2ca5678209d5619edd" version="1">Cannot activate while wearing medium or heavy armor or while equipped with a shield.</content>
 	<content contentuid="0a07d1346d794825bf36c51b03e0e555" version="1">No Proficiency</content>
-	<content contentuid="a85ab2e07b7d4cc5babd8694e19f778d" version="1">You can choose to not become proficient in a weapon.</content>
+	<content contentuid="a85ab2e07b7d4cc5babd8694e19f778d" version="1">You can choose to not become proficient in a weapon and keep your quarterstaff.</content>
+	<content contentuid="hd8b5dde4gac64g4725gb148g8655b2421e88" version="3">Bladesinging impeded by a weapon. If you make an attack with the weapon, your &lt;LSTag Type="Status" Tooltip="BLADESONG"&gt;Bladesong&lt;/LSTag&gt; ends.</content>
 
 	<content contentuid="h5517943ag0e65g4efcg96beg0f09361fce6d" version="1">Instinctive Pounce</content>
 	<content contentuid="h96b0d51bg1c81g4212ga725g4d0c96e56755" version="1">As part of the bonus action you take to enter your &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;, you can move up to half your &lt;LSTag Tooltip="MovementSpeed"&gt;Movement Speed&lt;/LSTag&gt;.</content>
@@ -270,10 +277,10 @@
 	<content contentuid="h7869538bg7640g497fgaa06g86b5b517abe7" version="1">Nature's Sanctuary</content>
 	<content contentuid="hef132e7dg28a8g4a9dgbe12g2001cf3dea2f" version="1">Creatures of the natural world sense your connection to nature and become hesitant to attack you.</content>
 	<content contentuid="h3326643ag1dc9g43b9ga711g478f30cf278e" version="1">When a beast or plant attacks you, you can possibly force them to choose a different target for the attack on a failed Wisdom &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
-	<content contentuid="hca525c2bg9f1fg42e1ga542gf6ed474e499a" version="1">On a successful save, the beast or plant is immune to the effect until the next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hca525c2bg9f1fg42e1ga542gf6ed474e499a" version="1">The beast or plant is immune to the effect until the next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 	<content contentuid="h4de66af3gf5f3g4e40ga835g626f3dc60bcf" version="1">Cannot attack the source.</content>
 	<content contentuid="h29e19254g9bfcg48a0gb7ceg2b44e0c89768" version="1">Immune to Nature's Sanctuary.</content>
-	<content contentuid="h33f8e219g3c7fg4c25g8e5fg5fde0bcb7e6d" version="1">You can cast the &lt;LSTag Type="Spell" Tooltip="Shout_AlterSelf"&gt;Hide&lt;/LSTag&gt; spell without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h33f8e219g3c7fg4c25g8e5fg5fde0bcb7e6d" version="1">You can cast the &lt;LSTag Type="Spell" Tooltip="Shout_AlterSelf"&gt;Alter Self&lt;/LSTag&gt; spell without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h08f12d62g3937g4d53ga10age5d3b720c89b" version="1">Thousand Forms</content>
 	<content contentuid="h2fa77493gdc93g4fcdga6acge4bc0470aebc" version="1">The fungal spores in your body alter you: you can't be &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;Blinded&lt;/LSTag&gt;, Deafened, &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;, or &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poisoned&lt;/LSTag&gt;, and any &lt;LSTag Tooltip="CriticalHit"&gt;Critical Hit&lt;/LSTag&gt; against you counts as a normal hit instead, unless you're &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitated&lt;/LSTag&gt;.</content>
 	<content contentuid="h25b356b7g0661g4bddga4a8g6a9d37a70b07" version="1">Fungal Body</content>
@@ -550,221 +557,229 @@
 	<content contentuid="h1db56622g73a8g4970ga11dgb2caedc99d2e" version="1">Spell Mastery: 2nd Level</content>
 	<content contentuid="h226a1469g173dg4cb0gac46gf189a5e06d4d" version="1">Choose a 2nd-level spell in your spellbook. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h3973c19fga17fg4020g87feg4f3ac8210f61" version="1">Spell Mastery: Absorb Elements</content>
-	<content contentuid="h22153db2ga90fg428cg90c9g986f3b9c8d29" version="1">Choose the Absorb Elements spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h22153db2ga90fg428cg90c9g986f3b9c8d29" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Shout_AbsorbElements"&gt;Absorb Elements&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hb35a9f0fg9f18g41a6g8ab8gade769689397" version="1">Spell Mastery: Arctic Breath</content>
+	<content contentuid="h3d1ba973gcaedg48d7g82feg3568f7dbc26b" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Zone_ArcticBreath"&gt;Arctic Breath&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h99367879ge4cdg41f6g90edg5cc9abb971a7" version="1">Spell Mastery: Blade Mirage</content>
+	<content contentuid="hbf085bbcge033g4088g9ffeg21f51c579051" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Target_BladeMirage"&gt;Blade Mirage&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h71c1534cg877ag4082g88cfg33d026803f1a" version="1">Spell Mastery: Burning Hands</content>
-	<content contentuid="hf35da3e6g9bdag4cb3g95fbgfdd8fb93340b" version="1">Choose the Burning Hands spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hf35da3e6g9bdag4cb3g95fbgfdd8fb93340b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_BurningHands"&gt;Burning Hands&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h5b00b7f8g9adag4d52g8aafga5ba119e4eff" version="1">Spell Mastery: Catapult</content>
-	<content contentuid="h5c894b91g176eg4e37gb51fgb314f5f2d85c" version="1">Choose the Catapult spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5c894b91g176eg4e37gb51fgb314f5f2d85c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Throw_Catapult"&gt;Catapult&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h4fd07f9dg72a7g4476ga3d9gd082ddb739ef" version="1">Spell Mastery: Cause Fear</content>
-	<content contentuid="hc52e0c3cg68acg4e4cg95efg808dc1a71ded" version="1">Choose the Cause Fear spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hc52e0c3cg68acg4e4cg95efg808dc1a71ded" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CauseFear"&gt;Cause Fear&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h88ffb47eg5115g49aega2dagbad45524a8d8" version="1">Spell Mastery: Charm Person</content>
-	<content contentuid="h05a1d9e8ga053g4186g8ddag06fc8f257145" version="1">Choose the Charm Person spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h05a1d9e8ga053g4186g8ddag06fc8f257145" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CharmPerson"&gt;Charm Person&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h9d1d0522g1e76g43a7g8048g0c0250f4540a" version="1">Spell Mastery: Chromatic Orb</content>
-	<content contentuid="hfd3f4729g39e1g425egb095gec5defd80fd7" version="1">Choose the Chromatic Orb spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hfd3f4729g39e1g425egb095gec5defd80fd7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_ChromaticOrb"&gt;Chromatic Orb&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h8e866e3dg8582g4861g8159g18ac3cc568f7" version="1">Spell Mastery: Color Spray</content>
-	<content contentuid="h0589a493g763fg4be9ga63cg3a2019f85170" version="1">Choose the Color Spray spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h0589a493g763fg4be9ga63cg3a2019f85170" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_ColorSpray"&gt;Color Spray&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h3b62073cge611g4b9ag8875gc9a0f4c216e3" version="1">Spell Mastery: Crashing Wave</content>
+	<content contentuid="h7b05ea86g4737g4227g8a7bgcd2f3f2d3e47" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_CrashingWave"&gt;Crashing Wave&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h07f94547g9d3bg44fdga890gc1afd8d67f13" version="1">Spell Mastery: Detect Magic</content>
-	<content contentuid="hebdee736geedeg42c8gb0e9g368c71e90f8d" version="1">Choose the Detect Magic spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hebdee736geedeg42c8gb0e9g368c71e90f8d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DetectMagic"&gt;Detect Magic&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hb2ffcdb8g69dbg4045g888cgb55130252e7a" version="1">Spell Mastery: Disguise Self</content>
-	<content contentuid="h1e20b060ge0c0g4e26g9da7g2447f696025e" version="1">Choose the Disguise Self spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h1e20b060ge0c0g4e26g9da7g2447f696025e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguise Self&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h07f807a1g8270g4226gad1bg638d374d466f" version="1">Spell Mastery: Earth Tremor</content>
-	<content contentuid="he600f123gb195g4bb6gba44g6eefeadc11d8" version="1">Choose the Earth Tremor spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
-	<content contentuid="h10a0afc2g6eddg42ebg8940g0d02f9ba4abb" version="1">Spell Mastery: Expeditious Retreat</content>
-	<content contentuid="h1d549a3eg6548g471fga44dgbe8319b9757d" version="1">Choose the Expeditious Retreat spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="he600f123gb195g4bb6gba44g6eefeadc11d8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_EarthTremor"&gt;Earth Tremor&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hbc7d893dg15b7g440dg877fg55da1ad3e1b7" version="1">Spell Mastery: Entomb</content>
+	<content contentuid="ha0c49b95g8a8fg47a9gb5bcg26c0a48d6531" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Entomb"&gt;Entomb&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he5a73bafg582ag4f00gad42g9bd0d19efcae" version="1">Spell Mastery: False Life</content>
-	<content contentuid="h8dc17302ga928g48f6g967bg02fd20f26b43" version="1">Choose the False Life spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h8dc17302ga928g48f6g967bg02fd20f26b43" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_FalseLife"&gt;False Life&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h1e1da24eg8508g42c0g98d4g2b3f7503371e" version="1">Spell Mastery: Feather Fall</content>
-	<content contentuid="h73833d74g725cg4a06g8acbgca0b0acc6a7e" version="1">Choose the Feather Fall spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h73833d74g725cg4a06g8acbgca0b0acc6a7e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_FeatherFall"&gt;Feather Fall&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h0524fe7fg56d7g4a35gb14cge995b241d14c" version="1">Spell Mastery: Find Familiar</content>
-	<content contentuid="h2c53e7d5g360fg4226g8957g7ed0a07656b3" version="1">Choose the Find Familiar spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h2c53e7d5g360fg4226g8957g7ed0a07656b3" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FindFamiliar"&gt;Find Familiar&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6951aceeg9b21g46afg929aga122bca0a7ac" version="1">Spell Mastery: Fog Cloud</content>
-	<content contentuid="h162e2ffeg3abfg4feegab8agf7ff9834e12f" version="1">Choose the Fog Cloud spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h162e2ffeg3abfg4feegab8agf7ff9834e12f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FogCloud"&gt;Fog Cloud&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h115c6194g8264g4ee2gae66g950f8b9865b0" version="1">Spell Mastery: Frost Finger</content>
-	<content contentuid="ha7644a33g902dg4205gaa21g1f915149c453" version="1">Choose the Frost Finger spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha7644a33g902dg4205gaa21g1f915149c453" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_FrostFinger"&gt;Frost Finger&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h51ba8e19g0396g4b62g8ce0ge06c4405af64" version="1">Spell Mastery: Grease</content>
-	<content contentuid="h2afea721g6e66g4c73ga9efg5939201828ec" version="1">Choose the Grease spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h2afea721g6e66g4c73ga9efg5939201828ec" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Grease"&gt;Grease&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h7a21c9ccgf70dg40abg84d3gf058dd3c2d28" version="1">Spell Mastery: Ice Knife</content>
-	<content contentuid="hd4877f1dga099g4c2fgac26g811a212e1a60" version="1">Choose the Ice Knife spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hd4877f1dga099g4c2fgac26g811a212e1a60" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_IceKnife"&gt;Ice Knife&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hf7b19a6dg03abg405cg9326gdb06792fd943" version="1">Spell Mastery: Jump</content>
-	<content contentuid="h47babfc5g0d40g4c96g9053ge671565b9875" version="1">Choose the Jump spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h47babfc5g0d40g4c96g9053ge671565b9875" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Jump"&gt;Jump&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hf38ca3d2g92bfg44e6g9c86gf412ddbfe0f9" version="1">Spell Mastery: Longstrider</content>
-	<content contentuid="hd3e3f4a2g1d22g4e73g822ag764cf6cfa910" version="1">Choose the Longstrider spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hd3e3f4a2g1d22g4e73g822ag764cf6cfa910" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Longstrider"&gt;Longstrider&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he13203aagc0b8g4ff6g9635g992502adc103" version="1">Spell Mastery: Mage Armor</content>
-	<content contentuid="hc3fd622cgf8c3g4e2fga720gda057ffc8c08" version="1">Choose the Mage Armor spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hc3fd622cgf8c3g4e2fga720gda057ffc8c08" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MageArmor"&gt;Mage Armor&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h18b356ebg754eg4793gacd9gde639cee7eda" version="1">Spell Mastery: Magic Missile</content>
-	<content contentuid="hdaf1e2feg427cg4abdg84c6gd1d42ed481a5" version="1">Choose the Magic Missile spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hdaf1e2feg427cg4abdg84c6gd1d42ed481a5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_MagicMissile"&gt;Magic Missile&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6b5d1439gbf28g4eefgb7bbg17a6c4b271d3" version="1">Spell Mastery: Protection from Evil and Good</content>
-	<content contentuid="hba0379d9g44e5g40d2g8ad8g238b1d02e9dd" version="1">Choose the Protection from Evil and Good spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hba0379d9g44e5g40d2g8ad8g238b1d02e9dd" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromEvilAndGood"&gt;Protection from Evil and Good&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hbff2e882gb22bg42b2gbd25g33e97c612661" version="1">Spell Mastery: Ray of Sickness</content>
-	<content contentuid="h1f9e9cbcgd876g4681gb70bgd4cad9062801" version="1">Choose the Ray of Sickness spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h1f9e9cbcgd876g4681gb70bgd4cad9062801" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfSickness"&gt;Ray of Sickness&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h58de7b91g8043g4192g8ec6g7c8368cbb24f" version="1">Spell Mastery: Shield</content>
-	<content contentuid="h0a2bcc68g1cddg4b04gb5a2g97f7454f9da1" version="1">Choose the Shield spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h0a2bcc68g1cddg4b04gb5a2g97f7454f9da1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Shield_Wizard"&gt;Shield&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h1c754322g5744g45d1ga0cbg127c323ceb60" version="1">Spell Mastery: Sleep</content>
-	<content contentuid="h60111085g239bg4237g8c1dgc9a970db2a43" version="1">Choose the Sleep spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h60111085g239bg4237g8c1dgc9a970db2a43" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Sleep"&gt;Sleep&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h23f9bafdgba39g4c1dg87e4gee907b22bb37" version="1">Spell Mastery: Snare</content>
-	<content contentuid="he1336ccdg1b79g4100ga1fagffbe6d1441ea" version="1">Choose the Snare spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="he1336ccdg1b79g4100ga1fagffbe6d1441ea" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Snare"&gt;Snare&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hc99ca37ag5d74g4d10g8b58g9cfe67bcc4de" version="1">Spell Mastery: Caustic Brew</content>
-	<content contentuid="ha9fe88d4gc12fg41a2gbc5cgbdd6448b1d3d" version="1">Choose the Caustic Brew spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha9fe88d4gc12fg41a2gbc5cgbdd6448b1d3d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_TashasCausticBrew"&gt;Caustic Brew&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h00c57db8gfa93g4e25gbc67g30f7da3c11be" version="1">Spell Mastery: Hideous Laughter</content>
-	<content contentuid="h83026081g8cc7g4ce8g9c9eg153b599b1d0a" version="1">Choose the Hideous Laughter spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h83026081g8cc7g4ce8g9c9eg153b599b1d0a" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HideousLaughter"&gt;Hideous Laughter&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h40ee7728g21c6g4d0ega9e6g193b893f84ff" version="1">Spell Mastery: Thunderwave</content>
-	<content contentuid="h4d9afffegf5bag499ag8e6bg769566d18b35" version="1">Choose the Thunderwave spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h4d9afffegf5bag499ag8e6bg769566d18b35" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_Thunderwave"&gt;Thunderwave&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h2b8dbc66g5611g4048g89c5g8ffc60123b12" version="1">Spell Mastery: Unseen Servant</content>
-	<content contentuid="heb9d3ebag1d32g4237ga6baga50976e54de9" version="1">Choose the Unseen Servant spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="heb9d3ebag1d32g4237ga6baga50976e54de9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_UnseenServant"&gt;Unseen Servant&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="ha4521818g1190g4026g9f7bgab397d657e54" version="1">Spell Mastery: Witch Bolt</content>
-	<content contentuid="h29f7661cgf17fg4e09g923cgb1285204bd92" version="1">Choose the Witch Bolt spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h29f7661cgf17fg4e09g923cgb1285204bd92" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_WitchBolt"&gt;Witch Bolt&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h87ddaecbg9a52g4551ga6c5gf044f93da003" version="1">Spell Mastery: Aganazzar's Scorcher</content>
-	<content contentuid="ha9318249ge346g4feegb822g3f3848fcfc41" version="1">Choose the Aganazzar's Scorcher spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha9318249ge346g4feegb822g3f3848fcfc41" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_AganazzarsScorcher"&gt;Aganazzar's Scorcher&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6e416473g6f84g475fg8da2g08fb159ae26e" version="1">Spell Mastery: Alter Self</content>
-	<content contentuid="he1fff12dg9b8bg4d93g999eg31a30032de8e" version="1">Choose the Alter Self spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="he1fff12dg9b8bg4d93g999eg31a30032de8e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_AlterSelf"&gt;Alter Self&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="haea80161g8267g4fb9ga9c1gf68f17b7012d" version="1">Spell Mastery: Blindness</content>
-	<content contentuid="h71b07a1agd03bg46d6g8c8fg9964a194c52b" version="1">Choose the Blindness spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h71b07a1agd03bg46d6g8c8fg9964a194c52b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Blindness&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h8959f0ccg1ee6g42baga18cgf2ac91f34cf9" version="1">Spell Mastery: Blur</content>
-	<content contentuid="h3af4e90cg093fg490bg8c28ga872b4d16e86" version="1">Choose the Blur spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h3af4e90cg093fg490bg8c28ga872b4d16e86" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Blur"&gt;Blur&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h9fbb93d4g9ce2g4f38gb6b1ga877db5747cb" version="1">Spell Mastery: Borrowed Knowledge</content>
-	<content contentuid="h31c9e51cg17e7g42acgafd0g5eee661839d7" version="1">Choose the Borrowed Knowledge spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h31c9e51cg17e7g42acgafd0g5eee661839d7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_BorrowedKnowledge"&gt;Borrowed Knowledge&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hdc74f754g9439g4dbdg9104g70737e58c818" version="1">Spell Mastery: Cloud of Daggers</content>
-	<content contentuid="h331baa69g017dg4660ga801g818fc39b616a" version="1">Choose the Cloud of Daggers spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h331baa69g017dg4660ga801g818fc39b616a" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CloudOfDaggers"&gt;Cloud of Daggers&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h9032534dg3a0eg4001g8422g48206d4e5c48" version="1">Spell Mastery: Continual Flame</content>
-	<content contentuid="h61b0b32dg48f2g42d9g9bbag16a1c2af4f9f" version="1">Choose the Continual Flame spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h61b0b32dg48f2g42d9g9bbag16a1c2af4f9f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ContinualFlame"&gt;Continual Flame&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h8b5301d7gafe9g4ae0g8eb6g4f0cdd69d636" version="1">Spell Mastery: Crown of Madness</content>
-	<content contentuid="h6d0777eag2145g4d52g8bc2g8f72a65f2727" version="1">Choose the Crown of Madness spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h6d0777eag2145g4d52g8bc2g8f72a65f2727" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CrownOfMadness"&gt;Crown of Madness&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h102258a6g06abg4a04gbdf2g4bf2e00ce8c2" version="1">Spell Mastery: Darkness</content>
-	<content contentuid="h37562c47g423cg45d6gad17gd5d61ab77159" version="1">Choose the Darkness spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h37562c47g423cg45d6gad17gd5d61ab77159" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Darkness"&gt;Darkness&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h83cf09aege733g4003g85d5gefa087284f78" version="1">Spell Mastery: Darkvision</content>
-	<content contentuid="h19e9a483g2370g40b3g88c4g3f82040e3e02" version="1">Choose the Darkvision spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h19e9a483g2370g40b3g88c4g3f82040e3e02" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Darkvision"&gt;Darkvision&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h326a8705g8810g4e1ag9123gad0d1b04f1c0" version="1">Spell Mastery: Detect Thoughts</content>
-	<content contentuid="h291b850eg3f61g40fegb7cagb04351f47322" version="1">Choose the Detect Thoughts spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h291b850eg3f61g40fegb7cagb04351f47322" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DetectThoughts"&gt;Detect Thoughts&lt;/LSTag&gt;.. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h216a6ac7g4cd9g4223ga940ga9575bc2342b" version="1">Spell Mastery: Dragon's Breath</content>
-	<content contentuid="ha1660ba6gebfbg48bega899gb0dd47fbd314" version="1">Choose the Dragon's Breath spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha1660ba6gebfbg48bega899gb0dd47fbd314" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_DragonsBreath"&gt;Dragon's Breath&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h465e1590gaf06g4f07g82f7gead8bc1f2299" version="1">Spell Mastery: Dust Devil</content>
-	<content contentuid="h40098fd2gb359g4d38g8944gd036b427bbc6" version="1">Choose the Dust Devil spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h40098fd2gb359g4d38g8944gd036b427bbc6" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_DustDevil"&gt;Dust Devil&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h27653c9eg41d4g4e97ga4c5g1ea34ffb4492" version="1">Spell Mastery: Enhance Ability</content>
-	<content contentuid="h780f2417g0bd6g4d41ga3b3gc819d6c16bc7" version="1">Choose the Enhance Ability spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h780f2417g0bd6g4d41ga3b3gc819d6c16bc7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnhanceAbility"&gt;Enhance Ability&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h6ddbc0a1g796fg4d78g84cdgfa3b2232fb7f" version="1">Spell Mastery: Enlarge/Reduce</content>
-	<content contentuid="h22ef4fe8g3489g49e1gbcf1g554a0eea54d8" version="1">Choose the Enlarge/Reduce spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h22ef4fe8g3489g49e1gbcf1g554a0eea54d8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnlargeReduce"&gt;Enlarge/Reduce&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h3aabc7c9g6d1cg486bga95cga991d7896bd4" version="1">Spell Mastery: Flaming Sphere</content>
-	<content contentuid="h9f04378fg5f9cg41f0ga0c8g0104be5649f1" version="1">Choose the Flaming Sphere spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h9f04378fg5f9cg41f0ga0c8g0104be5649f1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlamingSphere"&gt;Flaming Sphere&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hf454f026g16c7g4e36gb362g6d7a78065fc9" version="1">Spell Mastery: Flock of Familiars</content>
-	<content contentuid="hb75ccaaag9c0eg45c0gac3bg22bf2ad505c6" version="1">Choose the Flock of Familiars spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hb75ccaaag9c0eg45c0gac3bg22bf2ad505c6" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlockOfFamiliars"&gt;Flock of Familiars&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="ha57abdaag9261g4202gaa33g8925bb75013b" version="1">Spell Mastery: Gust of Wind</content>
-	<content contentuid="h5b511d7cg4189g42ffg8cf5gd18e757688bc" version="1">Choose the Gust of Wind spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5b511d7cg4189g42ffg8cf5gd18e757688bc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_GustOfWind"&gt;Gust of Wind&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hc366c702ga652g40ebg987agbc608bc90f06" version="1">Spell Mastery: Hold Person</content>
-	<content contentuid="h1970d5b9g3451g4376gabc5g362943020b0f" version="1">Choose the Hold Person spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h1970d5b9g3451g4376gabc5g362943020b0f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HoldPerson"&gt;Hold Person&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h016a1ab9g7b6fg4dbag9466ge46ef7e79a4b" version="1">Spell Mastery: Invisibility</content>
-	<content contentuid="ha4dc8599gb147g4762g9a7dg1914dec17dca" version="1">Choose the Invisibility spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha4dc8599gb147g4762g9a7dg1914dec17dca" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Invisibility"&gt;Invisibility&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h1b408894g458eg4113gb64egd7de65ba46e9" version="1">Spell Mastery: Kinetic Jaunt</content>
-	<content contentuid="h92309965g0e17g4a70g9c9fgc59da525c9e5" version="1">Choose the Kinetic Jaunt spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h92309965g0e17g4a70g9c9fgc59da525c9e5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_KineticJaunt"&gt;Kinetic Jaunt&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h3f651ac5g2978g40cag808dg2efc17766f44" version="1">Spell Mastery: Knock</content>
-	<content contentuid="hac09546ag6213g4cb1g93e7g3f6f3bcc141e" version="1">Choose the Knock spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hac09546ag6213g4cb1g93e7g3f6f3bcc141e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Knock"&gt;Knock&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h72ae80aeg0fbbg4c9bg8353g652c03ebad06" version="1">Spell Mastery: Levitate</content>
-	<content contentuid="h0b017e59g927cg4e8dga8aag53897ca5d958" version="1">Choose the Levitate spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h0b017e59g927cg4e8dga8aag53897ca5d958" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Levitate"&gt;Levitate&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h7d748c7dgedceg4efbg9e57geadcefd3cefd" version="1">Spell Mastery: Magic Weapon</content>
-	<content contentuid="h2a6a9042ge446g422dg9fcfg9007b81fc060" version="1">Choose the Magic Weapon spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h2a6a9042ge446g422dg9fcfg9007b81fc060" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MagicWeapon"&gt;Magic Weapon&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h00cda868gee0dg4ce0ga3d5ge4fa33b500cd" version="1">Spell Mastery: Maximillian's Earthen Grasp</content>
-	<content contentuid="h7b36a036g3d0dg4d79gb35eg1d7e9297a8f9" version="1">Choose the Maximillian's Earthen Grasp spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h7b36a036g3d0dg4d79gb35eg1d7e9297a8f9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MaximilliansEarthenGrasp"&gt;Maximillian's Earthen Grasp&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he3a77361g1577g4597gac32ga48d53031d83" version="1">Spell Mastery: Acid Arrow</content>
-	<content contentuid="h075bcc44ga9a2g4b6eg98c5ge8418cf43dd9" version="1">Choose the Acid Arrow spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h075bcc44ga9a2g4b6eg98c5ge8418cf43dd9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_AcidArrow"&gt;Acid Arrow&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hf967c080g3baag4dc7ga750g69291243e0da" version="1">Spell Mastery: Mind Spike</content>
-	<content contentuid="h2daca294g2ec4g48b1g9e3bg19a60ccfbac4" version="1">Choose the Mind Spike spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h2daca294g2ec4g48b1g9e3bg19a60ccfbac4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MindSpike"&gt;Mind Spike&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h81d940e3g3078g417ag89ecg2b49e480eef4" version="1">Spell Mastery: Mirror Image</content>
-	<content contentuid="hf0526abcg0d55g40a7gb1a8g62a8184b133f" version="1">Choose the Mirror Image spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hf0526abcg0d55g40a7gb1a8g62a8184b133f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_MirrorImage"&gt;Mirror Image&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h522bfc32gef4fg4a13gadddg139a63643fb7" version="1">Spell Mastery: Misty Step</content>
-	<content contentuid="ha50d226dgb88bg45deg92b9gfa5b649bbb52" version="1">Choose the Misty Step spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="ha50d226dgb88bg45deg92b9gfa5b649bbb52" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h060baaaag6b3ag460bg8a4eg855158c85c81" version="1">Spell Mastery: Nathair's Mischief</content>
-	<content contentuid="h1eebe68cg0460g46b9ga499g5121510631cd" version="1">Choose the Nathair's Mischief spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h1eebe68cg0460g46b9ga499g5121510631cd" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_NathairsMischief"&gt;Nathair's Mischief&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he3c7d27ag5725g49ebgadfagd7db3a783941" version="1">Spell Mastery: Phantasmal Force</content>
-	<content contentuid="hcc220f86g1eebg46a8g9556g3e14793a4893" version="1">Choose the Phantasmal Force spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hcc220f86g1eebg46a8g9556g3e14793a4893" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_PhantasmalForce"&gt;Phantasmal Force&lt;/LSTag&gt;. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="he4f10b38g7cb3g40cbga931ga133b12a31ea" version="1">Spell Mastery: Ray of Enfeeblement</content>
-	<content contentuid="h503f2342g6861g4619g98ecg2123e1b626da" version="1">Choose the Ray of Enfeeblement spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h503f2342g6861g4619g98ecg2123e1b626da" version="1">Choose Ray of Enfeeblement. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h2aeac0ddg7533g411ag90d2g36181d0b13f1" version="1">Spell Mastery: Rime's Binding Ice</content>
-	<content contentuid="h5cf7b90fg9a76g40e3gae83g4b1fc3a06c64" version="1">Choose the Rime's Binding Ice spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5cf7b90fg9a76g40e3gae83g4b1fc3a06c64" version="1">Choose Rime's Binding Ice. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h9ffedc53ge8e2g4a19g8888g779ca8247314" version="1">Spell Mastery: Scorching Ray</content>
-	<content contentuid="hb75fe67egbf66g43cfg89afgb65f2987a4d2" version="1">Choose the Scorching Ray spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hb75fe67egbf66g43cfg89afgb65f2987a4d2" version="1">Choose Scorching Ray. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h2664db83g4decg4260ga386g00219244ccb3" version="1">Spell Mastery: Shadow Blade</content>
-	<content contentuid="hd301ce0bg902fg4898gbe06ge7577e46326b" version="1">Choose the Shadow Blade spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hd301ce0bg902fg4898gbe06ge7577e46326b" version="1">Choose Shadow Blade. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hd76a4776gc575g4b13ga82fgc07fa54723c2" version="1">Spell Mastery: Shatter</content>
-	<content contentuid="h53d31574ge888g4671gad05g617faee8b75d" version="1">Choose the Shatter spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h53d31574ge888g4671gad05g617faee8b75d" version="1">Choose Shatter. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h8d4619d3g0292g4f90g92d5gdb523d3048ff" version="1">Spell Mastery: Snilloc's Snowball Storm</content>
-	<content contentuid="h5a9171a0g28a7g421cgadffg8517f1bfec20" version="1">Choose the Snilloc's Snowball Storm spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5a9171a0g28a7g421cgadffg8517f1bfec20" version="1">Choose Snilloc's Snowball Storm. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h08127166ge9b8g468dg8fc3gd4b907f48c94" version="1">Spell Mastery: Suggestion</content>
-	<content contentuid="h290228cdgeea1g4e5agbd51g4e4e28598b48" version="1">Choose the Suggestion spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h290228cdgeea1g4e5agbd51g4e4e28598b48" version="1">Choose Suggestion. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hfad9e1e1gda63g483dgaa92g555e43112c55" version="1">Spell Mastery: Tasha's Mind Whip</content>
-	<content contentuid="hcc69ff4cgf6a0g487aga80cg26060c7c1ec5" version="1">Choose the Tasha's Mind Whip spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hcc69ff4cgf6a0g487aga80cg26060c7c1ec5" version="1">Choose Tasha's Mind Whip. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h29572630gdf4dg4d0bgbdaagf22cf54d1116" version="1">Spell Mastery: Vortex Warp</content>
-	<content contentuid="h5be33190gaa25g43c6g976bgce866e83bc47" version="1">Choose the Vortex Warp spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5be33190gaa25g43c6g976bgce866e83bc47" version="1">Choose Vortex Warp. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="hed59d242ga43eg4327g9984gc5fce55583b7" version="1">Spell Mastery: Warding Wind</content>
-	<content contentuid="h4bcfa649g2b6bg402dgbec5g5914ee98de4c" version="1">Choose the Warding Wind spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h4bcfa649g2b6bg402dgbec5g5914ee98de4c" version="1">Choose Warding Wind. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h93165fd1g772dg4fb9ga551gaf5f10b2482c" version="1">Spell Mastery: Web</content>
-	<content contentuid="h8083bbf1g44d1g4a2bg98e4gecfd3805f0eb" version="1">Choose the Web spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h8083bbf1g44d1g4a2bg98e4gecfd3805f0eb" version="1">Choose Web. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h07b4ac5fg08d0g41d9g96efg6733e5cda467" version="1">Spell Mastery: Wither and Bloom</content>
-	<content contentuid="h77ec531bg1b9eg45c1g85e1gde09d4b5c6fa" version="1">Choose the Wither and Bloom spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h77ec531bg1b9eg45c1g85e1gde09d4b5c6fa" version="1">Choose Wither and Bloom. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 	<content contentuid="h699c4673gc560g4504g800fgcdcc08335a4f" version="1">Signature Spells</content>
 	<content contentuid="hda8e3cfdg797fg4a0fgadd4gb2af02998c82" version="1">You gain mastery over two powerful 3rd level spells and can cast them with little effort.</content>
 	<content contentuid="h5c6d4245g199fg4412gb6fbg86f15aaf4f31" version="1">Can cast lowest level of spell without expending a spell slot.</content>
-	<content contentuid="ha52feadcg9351g4f56g9959g95d6685556de" version="1">Animate Dead</content>
+	<content contentuid="ha52feadcg9351g4f56g9959g95d6685556de" version="1">Signature Spells: Animate Dead</content>
 	<content contentuid="h3b52cef0g4600g4538g98b1gb359cfd3464f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_AnimateDead"&gt;Animate Dead&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h0e958b24g2c8cg4d1fg8d78g51f41af8f844" version="1">Ashardalon's Stride</content>
+	<content contentuid="he1c06712g6391g4d31gb0e3gae256c65cab2" version="1">Signature Spells: Antagonize</content>
+	<content contentuid="h8dd5c66cgfbd7g4fa7ga2f6g552164316f97" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Antagonize"&gt;Antagonize&lt;/LSTag&gt; as a signature spell.</content>
+	<content contentuid="h0e958b24g2c8cg4d1fg8d78g51f41af8f844" version="1">Signature Spells: Ashardalon's Stride</content>
 	<content contentuid="h50f57cf9g9ce2g4502gbed6g7dc3c6fc1b91" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_AshardalonsStride"&gt;Ashardalon's Stride&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h0dc0b72ag7ddag481fgabf1g1ee8feef3ab1" version="1">Bestow Curse</content>
+	<content contentuid="h0dc0b72ag7ddag481fgabf1g1ee8feef3ab1" version="1">Signature Spells: Bestow Curse</content>
 	<content contentuid="h8ff3ecb0g2061g4f9cg8bfagccbc153f499e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse"&gt;Bestow Curse&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="he68d0eecg6043g4247gb00agaa5c6a15322e" version="1">Blink</content>
+	<content contentuid="he68d0eecg6043g4247gb00agaa5c6a15322e" version="1">Signature Spells: Blink</content>
 	<content contentuid="hed512dc5g6820g49ddgb826g64ee87d4cc00" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Blink"&gt;Blink&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="he76b08dfgd02cg4be2g8cccg7ddb057d2ce9" version="1">Catnap</content>
+	<content contentuid="he76b08dfgd02cg4be2g8cccg7ddb057d2ce9" version="1">Signature Spells: Catnap</content>
 	<content contentuid="h73171932g6a22g418aga98cg6dd9d75be63d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Catnap"&gt;Catnap&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hd965de7ag380bg4726gad19g5872024e99a6" version="1">Counterspell</content>
+	<content contentuid="hd965de7ag380bg4726gad19g5872024e99a6" version="1">Signature Spells: Counterspell</content>
 	<content contentuid="h94895606g086cg406bgbed7g8dc472219e06" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Counterspell_Success"&gt;Counterspell&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h28fbb3a7g7831g4cb3g86c9g3be9cb1b9318" version="1">Enemies Abound</content>
+	<content contentuid="h28fbb3a7g7831g4cb3g86c9g3be9cb1b9318" version="1">Signature Spells: Enemies Abound</content>
 	<content contentuid="hc7909f8cg6a67g452ag93b5g3263eb5f9ec5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnemiesAbound"&gt;Enemies Abound&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h01f41740gf6bbg4e47g9c74gb591c1c8605d" version="1">Erupting Earth</content>
+	<content contentuid="h01f41740gf6bbg4e47g9c74gb591c1c8605d" version="1">Signature Spells: Erupting Earth</content>
 	<content contentuid="h596c5b81gc190g427ag86a7g7cbaac5cd629" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EruptingEarth"&gt;Erupting Earth&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h83924a16ged54g4c10ga2d9g22354b7b0e01" version="1">Fear</content>
+	<content contentuid="h83924a16ged54g4c10ga2d9g22354b7b0e01" version="1">Signature Spells: Fear</content>
 	<content contentuid="h6c7b4187g2ca4g4fa2gb274gba72d4ff438d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_Fear"&gt;Fear&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hc57495c0g90fdg4d10gb7f1g3c13a8d053d7" version="1">Feign Death</content>
+	<content contentuid="hc57495c0g90fdg4d10gb7f1g3c13a8d053d7" version="1">Signature Spells: Feign Death</content>
 	<content contentuid="hf7ecb35dgbe54g486dg99a9ged06bbaa0d0c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FeignDeath"&gt;Feign Death&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hf4a9ebd9gb059g4c26ga1dfgc530f9096125" version="1">Fireball</content>
+	<content contentuid="hf4a9ebd9gb059g4c26ga1dfgc530f9096125" version="1">Signature Spells: Fireball</content>
 	<content contentuid="hf206507eg8d65g4e86g8dc6g4011d4a50d4d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h1498809fg3f0dg4d0bgbaa4gbecff6975a30" version="1">Flame Arrows</content>
+	<content contentuid="h1498809fg3f0dg4d0bgbaa4gbecff6975a30" version="1">Signature Spells: Flame Arrows</content>
 	<content contentuid="h7c9c59f8g9f02g42fcg868egdf4e2390a79f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlameArrows"&gt;Flame Arrows&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h7d48dc4ag427dg48d5g9616g91b183943001" version="1">Fly</content>
+	<content contentuid="h7d48dc4ag427dg48d5g9616g91b183943001" version="1">Signature Spells: Fly</content>
 	<content contentuid="h51f897dcg19f3g4487ga2b1g225a6e83cd10" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h590464c4gf399g41f7gadb3g3f6a33c93a5f" version="1">Gaseous Form</content>
+	<content contentuid="h590464c4gf399g41f7gadb3g3f6a33c93a5f" version="1">Signature Spells: Gaseous Form</content>
 	<content contentuid="hc07fb3b9g991eg4826ga839g845074b3c719" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_GaseousForm"&gt;Gaseous Form&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h1b2ef4f0gcc16g485fga56fg8d4c558a8d77" version="1">Glyph of Warding</content>
+	<content contentuid="h1b2ef4f0gcc16g485fga56fg8d4c558a8d77" version="1">Signature Spells: Glyph of Warding</content>
 	<content contentuid="h9e2297ddge8fbg447agbf7cg8e88dcc80812" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_GlyphOfWarding"&gt;Glyph of Warding&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h0e723558g04c8g4753gaef1gd66826575642" version="1">Haste</content>
+	<content contentuid="h0e723558g04c8g4753gaef1gd66826575642" version="1">Signature Spells: Haste</content>
 	<content contentuid="hf7166969g120cg45fcgb604g07ee06692e8c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Haste"&gt;Haste&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h24f765f9g1c6eg4a1dg946ag487089a36f10" version="1">Hypnotic Pattern</content>
+	<content contentuid="h24f765f9g1c6eg4a1dg946ag487089a36f10" version="1">Signature Spells: Hypnotic Pattern</content>
 	<content contentuid="hcb043b3eg0d95g4eeaga975g6af69e5ee7f2" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HypnoticPattern"&gt;Hypnotic Pattern&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="ha98ff679ga463g479cg82e3g5730dcc15a58" version="1">Intellect Fortress</content>
+	<content contentuid="ha98ff679ga463g479cg82e3g5730dcc15a58" version="1">Signature Spells: Intellect Fortress</content>
 	<content contentuid="h42d50406gf894g432eg9628g1f4a6c36d4c8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_IntellectFortress"&gt;Intellect Fortress&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h6791de46g8f47g4ca7g9681g5d36103137cf" version="1">Life Transference</content>
+	<content contentuid="h6791de46g8f47g4ca7g9681g5d36103137cf" version="1">Signature Spells: Life Transference</content>
 	<content contentuid="hce8de64bg07f5g4d4eg9115g61cc47b6b372" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_LifeTransference"&gt;Life Transference&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hafac054cgabe7g4a92g8998gca51c76e64e4" version="1">Lightning Bolt</content>
+	<content contentuid="hafac054cgabe7g4a92g8998gca51c76e64e4" version="1">Signature Spells: Lightning Bolt</content>
 	<content contentuid="h56066fd9g2826g4aefgbe41g6edd08456b75" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h55f37f99g997eg4cd2g8e03g9dd3a9c4238d" version="1">Minute Meteors</content>
+	<content contentuid="h55f37f99g997eg4cd2g8e03g9dd3a9c4238d" version="1">Signature Spells: Minute Meteors</content>
 	<content contentuid="hda1dcc5ag3964g49a3g8e33g31a1c417e273" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_MinuteMeteors"&gt;Minute Meteors&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h5586dfb1g5b5dg4779g8ca8g99de5365cfe7" version="1">Nondetection</content>
+	<content contentuid="h5586dfb1g5b5dg4779g8ca8g99de5365cfe7" version="1">Signature Spells: Nondetection</content>
 	<content contentuid="h88ac3931ge0dag4f95g99d6gd902dffcb0d0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Nondetection"&gt;Nondetection&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h368dda2bg6d1dg42bcgbb47g8f314f88ca40" version="1">Protection from Energy</content>
+	<content contentuid="h368dda2bg6d1dg42bcgbb47g8f314f88ca40" version="1">Signature Spells: Protection from Energy</content>
 	<content contentuid="h99fbde3dg24b3g43fcg9d95gef9708f197a2" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromEnergy"&gt;Protection from Energy&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h4ec99ea7gd012g4b28gb8d9gab75e9b24b01" version="1">Remove Curse</content>
+	<content contentuid="h4ec99ea7gd012g4b28gb8d9gab75e9b24b01" version="1">Signature Spells: Remove Curse</content>
 	<content contentuid="h1e01f276gdc9ag4d42g8467gd0a07720d412" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_RemoveCurse"&gt;Remove Curse&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h09788b9ag269dg4ac8g9c0fg9c5f23b8236a" version="1">Sleet Storm</content>
+	<content contentuid="h09788b9ag269dg4ac8g9c0fg9c5f23b8236a" version="1">Signature Spells: Sleet Storm</content>
 	<content contentuid="ha415b8c0gb8f8g47ecg8f7bg9ea9f155fab2" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SleetStorm"&gt;Sleet Storm&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h8842365cg9183g4e04gafb1g78f1f5e351eb" version="1">Slow</content>
+	<content contentuid="h8842365cg9183g4e04gafb1g78f1f5e351eb" version="1">Signature Spells: Slow</content>
 	<content contentuid="hddaa7189g438bg4cbeg94d5g4a6b97ad43e4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Slow"&gt;Slow&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h10a8cbf2g9b6cg428cg8523g6e95eda23678" version="1">Speak with Dead</content>
+	<content contentuid="h10a8cbf2g9b6cg428cg8523g6e95eda23678" version="1">Signature Spells: Speak with Dead</content>
 	<content contentuid="h0399a7fagfee8g44d1ga6cbg3904fb830fa4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SpeakWithDead"&gt;Speak with Dead&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hcfa237f1g1efbg4c20gb775g104ba153b8b6" version="1">Spirit Shroud</content>
+	<content contentuid="hcfa237f1g1efbg4c20gb775g104ba153b8b6" version="1">Signature Spells: Spirit Shroud</content>
 	<content contentuid="hbab4953fg5ee3g4be5gad3dge84eac1a9ea3" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_SpiritShroud"&gt;Spirit Shroud&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hdc532e87gfea7g434bg8916gbd9844fd224f" version="1">Stinking Cloud</content>
+	<content contentuid="hdc532e87gfea7g434bg8916gbd9844fd224f" version="1">Signature Spells: Stinking Cloud</content>
 	<content contentuid="h3fa38566g41d1g4e2eg8473g1e01fb4ec33c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_StinkingCloud"&gt;Stinking Cloud&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="h4592895agf782g4007gaac2g94fe117f7c49" version="1">Summon Shadowspawn</content>
+	<content contentuid="h4592895agf782g4007gaac2g94fe117f7c49" version="1">Signature Spells: Summon Shadowspawn</content>
 	<content contentuid="haf6091beg032ag4b36g9d04ga39dd0e1623e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SummonShadowspawn"&gt;Summon Shadowspawn&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hd22a9015gaf28g4318g8b9bga4c74dfe671e" version="1">Thunder Step</content>
+	<content contentuid="hd22a9015gaf28g4318g8b9bga4c74dfe671e" version="1">Signature Spells: Thunder Step</content>
 	<content contentuid="h9e3dd04ag9083g42e9gb4bfg2ed838dcd0b1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Teleportation_ThunderStep"&gt;Thunder Step&lt;/LSTag&gt; as a signature spell.</content>
-	<content contentuid="hfc58d95bg5c9bg4992g8ebagd8819e267c58" version="1">Vampiric Touch</content>
+	<content contentuid="hfc58d95bg5c9bg4992g8ebagd8819e267c58" version="1">Signature Spells: Vampiric Touch</content>
 	<content contentuid="h1bcce343g764ag4d09g8a4dg8d98940900a8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_VampiricTouch"&gt;Vampiric Touch&lt;/LSTag&gt; as a signature spell.</content>
 	<content contentuid="h6d8f354dgee0ag41eag83f0g5a7ab82d1dc2" version="1">Sorcerous Restoration</content>
 	<content contentuid="h72322df5g74d4g4192gb031g4d5b3206a45d" version="1">You regain 4 expended &lt;LSTag Type="ActionResource" Tooltip="SorceryPoint"&gt;Sorcery Points&lt;/LSTag&gt; whenever you finish a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
@@ -797,9 +812,9 @@
 	<content contentuid="h2e08f465g6894g4988g9b51gb56b9502e3ed" version="1">Absorb Elements: Spell Mastery</content>
 	<content contentuid="h392cd547g6401g4385ga6a3gaacad4b4a0b9" version="1">Shield: Spell Mastery</content>
 	<content contentuid="hcfcbe207gb8eeg4c66ga111g6c625ca26e52" version="1">Counterspell: Spell Mastery</content>
-	<content contentuid="hc08958d6g4695g43d8g9f88gca62ed683dcb" version="1">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra [1] to the target. When you reach 14th level in the Cleric class, it deals an extra [2].</content>
+	<content contentuid="hc08958d6g4695g43d8g9f88gca62ed683dcb" version="1">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra [1] to the target.</content>
 	<content contentuid="h2ac03398ga868g47bdgbd33g57f28cb1e74c" version="1">You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra [1], [2] or [3] to the target. When you reach 14th level in the Cleric class, it deals an extra [4], [5] or [6].</content>
-	<content contentuid="hb3b0a6a8g76e7g4f19gaddeg76773e5fe74f" version="1">Deal an additional [1] with a weapon attack or [2] when you've reached 14th level in the Cleric class.</content>
+	<content contentuid="hb3b0a6a8g76e7g4f19gaddeg76773e5fe74f" version="1">Deal an additional [1] with a weapon attack. The damage increases to [2] at 14th level in the Cleric class.</content>
 	<content contentuid="hd7b7817bg70b3g48edgbb39g7c34bebc7ac5" version="1">Indomitable (2)</content>
 	<content contentuid="hb17703fagd1d5g45b9gb8e3ge1e62a497003" version="1">You have become as durable as an iron golem. Whenever you fail a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll again, using the new result instead. You can do so twice until you next &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
 	<content contentuid="hfa39cf81gc3f9g4336ga1e6g45e3c9848996" version="1">Indomitable (3)</content>
@@ -884,11 +899,490 @@
 	<content contentuid="hf19169c8gd6bag42e7gbe48g92424973cf0b" version="1">Punch twice against a single target in quick succession.</content>
 	<content contentuid="h88093f9cg7bcbg445dg928fg37f4d0c15ef6" version="1">Flurry of Blows: Multi Target</content>
 	<content contentuid="he2164820ge1b0g4c98ga40egee448c406ab5" version="1">Punch in sequence against up to two targets.</content>
+	<content contentuid="he882f6bfg2d32g4cccg958aga594d4b11689" version="1">May make an additional strike as part of &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
 	<content contentuid="h0aa6fbd6g506bg4867gafdbg8855b4fd637c" version="1">Flurry of Blows Followup</content>
-	<content contentuid="hcec5ac8eg8c72g4b25g8150gae55fc3e8817" version="1">May make an additional attack as part of &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
+	<content contentuid="hcec5ac8eg8c72g4b25g8150gae55fc3e8817" version="1">May make an additional attack as part of  &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
 	<content contentuid="hb1b1331cg8dfbg4ca0gb99fg59349d3cb023" version="1">Flurry of Blows: Group</content>
 	<content contentuid="h380a00c3g6e7ag4123g8517g4018edc776df" version="1">Strike a group of up to five creatures in quick succession.</content>
 	<content contentuid="hb08c1632g859cg4984g8a7dg13580804ddbb" version="1">Punch in sequence against up to five different creatures.</content>
+	<content contentuid="h6c22cd9cg4804g4d5agbcbcgaf988c8f7fe3" version="1">Flurry of Blows: Cancel</content>
+	<content contentuid="h92f7acbcg5128g42e9g9cb2g4a05642c0a58" version="1">End the sequence of attacks in your &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;.</content>
 	<content contentuid="h0014d61bg9dacg4f08ga14ag33b2a3e227a6" version="1">Ever-Ready Shot</content>
 	<content contentuid="h811ca555gd55fg4dfdga914gfe716e0cc02f" version="1">Your magical archery is available whenever battle starts. If you roll initiative and have no uses of &lt;LSTag Type="ActionResource" Tooltip="ArcaneShot"&gt;Arcane Shot&lt;/LSTag&gt; remaining, you regain one use of it.</content>
+	<content contentuid="h2276cec9g518fg4ee8g8016g0069456c075c" version="1">Arcane Shot Improved</content>
+	<content contentuid="he5402818g1125g4611ga633g4aec45c76345" version="1">Each of your Arcane Shots deal an additional [1] damage.</content>
+	<content contentuid="hc9d0cb25g5715g4c00g80a6g68ccd1029231" version="1">Improved Reaper</content>
+	<content contentuid="he9b740c8g48f6g4da5g8df8g494d496af319" version="1">Your Necromancy spells that only target 1 creature can target an additional creature within [1] of the target.</content>
+	<content contentuid="h33b54f2eg497cg48e7gb623g9bd0e1e34c34" version="1">Alter Self</content>
+	<content contentuid="h2ce06e95gd1afg4954g94c8g6cb33f52beb1" version="1">Change your appearance or gain natural weapons.</content>
+	<content contentuid="h97cddef0g9a53g4bb7gb227g9b2bcf260840" version="1">Alter Self: Masc Tiefling</content>
+	<content contentuid="h027933fbgf4b5g4df0ga7b6gf76b6cf802c6" version="1">Alter Self: Femme Tiefling</content>
+	<content contentuid="h0e0abcefgc15eg4afcgac5dg2ed67b9082e1" version="1">Alter Self: Masc Drow</content>
+	<content contentuid="he82e7a56g0dd4g4b35g905eg9d4490d45113" version="1">Alter Self: Femme Drow</content>
+	<content contentuid="h6f10f3deg93b7g451ag98dfgc0d3bf54a94e" version="1">Alter Self: Masc Human</content>
+	<content contentuid="ha6c862e8g8520g469bgb81bga7582fbe979f" version="1">Alter Self: Femme Human</content>
+	<content contentuid="h1c5d4736g4787g495cga876gb55d5b7c0f65" version="1">Alter Self: Masc Githyanki</content>
+	<content contentuid="hadb0ba20g0aafg4f2bg85f2g12bb1d78a2c7" version="1">Alter Self: Femme Githyanki</content>
+	<content contentuid="ha5b8e094gaaabg4ee1ga382g8fba16729c6e" version="1">Alter Self: Masc Dwarf</content>
+	<content contentuid="hd1e48713g573bg46a4gae10g39e8de1c019c" version="1">Alter Self: Femme Dwarf</content>
+	<content contentuid="h1b418129g897bg4138g986bg10a547c5246c" version="1">Alter Self: Masc Elf</content>
+	<content contentuid="h0902da46g9468g441ag8c43g3cc820ec3329" version="1">Alter Self: Femme Elf</content>
+	<content contentuid="h010ca9abgadc5g4ecdg95e2g6e2a8cb1b098" version="1">Alter Self: Masc Half-Elf</content>
+	<content contentuid="h2cbd9cffg273eg4848ga948gd1a0eb8b1740" version="1">Alter Self: Femme Half-Elf</content>
+	<content contentuid="h0e6b0dfdgb5eag4fc9g811ege150b5b38f9f" version="1">Alter Self: Masc Halfling</content>
+	<content contentuid="hcb8fd758g22feg48d9g97f5g9b260eb7b161" version="1">Alter Self: Femme Halfling</content>
+	<content contentuid="h1fe79f01g3d12g489bg847egb02ad9027667" version="1">Alter Self: Masc Gnome</content>
+	<content contentuid="hcaed1143g6d42g4508gad7cg829985d7bde3" version="1">Alter Self: Femme Gnome</content>
+	<content contentuid="h52c27fbbg70e5g4f5dg8953gee79ad06a6dd" version="1">Alter Self: Masc Dragonborn</content>
+	<content contentuid="hb357f781gec1cg4566gbca5gb1b8aac991fd" version="1">Alter Self: Femme Dragonborn</content>
+	<content contentuid="hb450d7bcgb446g4eaega21cg9c3daa5cb67a" version="1">Alter Self: Masc Half-Orc</content>
+	<content contentuid="h32dae33bgbf5eg42f1g8909gbff445ca608f" version="1">Alter Self: Femme Half-Orc</content>
+	<content contentuid="h12bf0c8agad79g4933g8b9fg8b18b590524c" version="1">Alter Self: Masc Strong Human</content>
+	<content contentuid="he0dd2213g16aeg4d09ga6d4g570a34764d8a" version="1">Alter Self: Femme Strong Human</content>
+	<content contentuid="h5ec274a5g2919g4a0agb74dg7b2251855763" version="1">Alter Self: Masc Strong Drow</content>
+	<content contentuid="h5826b20fgc009g47edg901bg16d721e117fc" version="1">Alter Self: Femme Strong Drow</content>
+	<content contentuid="hc880594eg1a2ag4743gb595g6179d4fbcec1" version="1">Alter Self: Masc Strong Elf</content>
+	<content contentuid="had65c0ebgb85bg4024g967dg1dd7d88957ab" version="1">Alter Self: Femme Strong Elf</content>
+	<content contentuid="hfd0a53c9g5e16g48ffg8764g09f9bfe6f807" version="1">Alter Self: Masc Strong Half-Elf</content>
+	<content contentuid="hc9acf85cga698g4057g892fgc6974a3050ca" version="1">Alter Self: Femme Strong Half-Elf</content>
+	<content contentuid="h74cb76f5g210ag4718g9aa9gd299563b7a1c" version="1">Alter Self: Masc Strong Tiefling</content>
+	<content contentuid="hcdc93e7bg8d20g4665ga3a4gf71f3c81c803" version="1">Alter Self: Femme Strong Tiefling</content>
+	<content contentuid="hbe28d46fg3b31g4497ga7dfgd22a3cce7d77" version="1">Alter Self: Bludgeoning Weapon</content>
+	<content contentuid="h387a1c05gcf55g4b33gabaeg7f2f97ee9840" version="1">Alter Self: Piercing Weapon</content>
+	<content contentuid="h6f07ae45gedc2g4db7ga0acg9156e395e5e6" version="1">Alter Self: Slashing Weapon</content>
+	<content contentuid="h57b8da30g001eg4118gb208g369110330386" version="1">Grow a natural weapon that deals [1], is magical and has a +1 bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; and damage rolls.</content>
+	<content contentuid="h916d7508g7e05g423bg8223g1da251b2d870" version="1">Bludgeoning Weapon</content>
+	<content contentuid="hfcd05529g302ag485cg842fg80e70e2eae05" version="1">Slashing Weapon</content>
+	<content contentuid="h3be39c2fg9167g4fedgba03gca9bacbb2894" version="1">Piercing Weapon</content>
+	<content contentuid="h98a470f0g76f2g472dg8864gdd720a9a7da1" version="1">This entity's unarmed strikes deal [1], are magical and have a +1 bonus to their &lt;LSTag Tooltip="AttackRoll"&gt;attack&lt;/LSTag&gt; and damage rolls.</content>
+	<content contentuid="h870fa36fgb5e3g4bf5ga9b1gd84e695905ee" version="1">Weapon Enhancement</content>
+	<content contentuid="ha057ec3fga181g41f2gbf37g65e80718615c" version="1">Hit a target with your natural weapon.</content>
+	<content contentuid="h605274f5g5a8ag4d00gaa86g8db82acd10ed" version="1">Alter Self: Change</content>
+	<content contentuid="hba4c14bcg7309g46f0g96a2gf08f2bcab84d" version="1">Change your appearance again.</content>
+	<content contentuid="h24b72104gb5b2g45cfg84e3g566e3f9f3b6b" version="1">Command Undead</content>
+	<content contentuid="h3f793ba4gf8ffg428bgb285gb8626fb12e45" version="1">You can use &lt;LSTag Type="Spell" Tooltip="Target_CommandUndead"&gt;magic&lt;/LSTag&gt; to bring undead under your control, even those created by other wizards.</content>
+	<content contentuid="hdb634813ga39dg480cgbe83g00f8a402039d" version="1">Use your necromatic magic to target an undead creature, possibly causing it to become friendly to you and obeying your commands until you use this ability again.</content>
+	<content contentuid="h2b869fa1g01a2g4f7bg84c4g9aef7d3fd83f" version="1">The target cannot be affected by this ability again.</content>
+	<content contentuid="h91649c55gc431g4d4cgb2fcg17da28a7f009" version="1">If the target has an Intelligence of 8 or higher, it has &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on the &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;. If it fails the &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; and has an Intelligence of 12 or higher, it can repeat the &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; at the end of every hour until it succeeds and breaks free.</content>
+	<content contentuid="h03fa7a28gd66fg4910g8f46g087671dcfd27" version="1">Controlled by a necromancer's &lt;LSTag Type="Spell" Tooltip="Target_CommandUndead"&gt;Command Undead&lt;/LSTag&gt; feature.</content>
+	<content contentuid="h9c65dca0g28b4g4c9bg8753g6f876028066c" version="1">Temporarily Commanded</content>
+	<content contentuid="h98da989bg80c7g4033gb9f6g06cb009127f7" version="1">This entity repeats the &lt;LSTag Type="Spell" Tooltip="Target_CommandUndead"&gt;Command Undead&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; every 600 turns and breaks free on success.</content>
+	<content contentuid="h8744a5c6g33c6g4e83g8b8egb044ccb24c5c" version="1">Immunity: Command Undead</content>
+	<content contentuid="h35f9c6dbg7cbcg41d8g8788gb2fe7c059bc2" version="1">Immune to &lt;LSTag Type="Spell" Tooltip="Target_CommandUndead"&gt;Command Undead&lt;/LSTag&gt;.</content>
+	<content contentuid="h978d1228g9af6g42fcg9a1fge5c6d4899472" version="1">Standby</content>
+	<content contentuid="h28eb35b5g7db2g41deg80c0g67debd77ba74" version="1">Can't move, but won't prevent waypoint travel.</content>
+	<content contentuid="h3fe7d00dg380fg4a4agb37dg6305306515af" version="1">Umbral Form</content>
+	<content contentuid="he18b9b50gb040g441cg84aegf386c7903bab" version="1">You can transform yourself into a &lt;LSTag Type="Spell" Tooltip="Shout_UmbralForm"&gt;shadowy form&lt;/LSTag&gt;.</content>
+	<content contentuid="h19556775g5702g40f4g989bg0b237ea72661" version="1">Transform yourself into a shadowy form. In this form, you have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage except Force and Radiant damage.</content>
+	<content contentuid="h879cb12dg2a31g4bafg9feagc0b647106ca3" version="1">Gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all damage except Force and Radiant and can move through creatures and objects.</content>
+	<content contentuid="h1a4f5749g12f3g474eg8a86g6bdf174d9850" version="1">This form ends early if you are &lt;LSTag Type="Status" Tooltip="INCAPACITATED"&gt;Incapacitated&lt;/LSTag&gt;, you die or you dismiss it.</content>
+	<content contentuid="h09d3f93bg80e2g4e76g8f01gc73de7cbe5eb" version="1">Dismiss Umbral Form</content>
+	<content contentuid="h26d6ba1dg3cb8g4ad9g820ag14d8b2fa6b79" version="1">Dismiss your shadowy form.</content>
+	<content contentuid="h70e0a2eeg0c80g4550ga350g9fe89f918852" version="1">Umbral Form: Space</content>
+	<content contentuid="h52d3ac8dg80b3g4737ga4acga8e18d332b80" version="1">Take [1] per turn while in a creature's space.</content>
+	<content contentuid="hbe8bdc04gad66g4ed5gaf01g774c23b1c67b" version="1">Demiurgic Colossus</content>	
+	<content contentuid="h66219103g8c6fg45ccgb965g230ada31e682" version="1">Increase your size to Huge when you enter your &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt;.</content>
+	<content contentuid="ha9ff3916g832eg47eag8990gc38d56b5a8a1" version="1">Intoxicated Frenzy</content>
+	<content contentuid="hd0b41855gf224g4e2agb485g3bc83fea9b2b" version="1">You gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your &lt;LSTag Type="Spell" Tooltip="Target_FlurryOfBlows"&gt;Flurry of Blows&lt;/LSTag&gt;, you can make up to three additional attacks with it (up to a total of five), provided that each attack targets a different creature.</content>
+	<content contentuid="hafc993e9g9f88g4bfbga3f0g57c88331a595" version="1">Must be a new target.</content>
+	<content contentuid="h32accfa6gc3acg4ba3ga353g576ed5fec18a" version="1">Must be a creature.</content>
+	<content contentuid="h19d190afgbf16g402dgafdfg48aec77b5df2" version="1">You are blessed with divine might in battle.</content>
+	<content contentuid="he0d3be84g5d99g4bf2gbf83ge580123fc796" version="1">Divine Might</content>
+	<content contentuid="h90956fcbgd7f0g4e0dga36fgf57cd087897f" version="1">You can draw on the power of nature to conceal yourself.</content>
+	<content contentuid="h1a45a0c0g6c69g4987gb59dgd4d227c4fd8b" version="1">Nature's Guise</content>
+	<content contentuid="h30640cdeg7775g460fg9fafg1196516f11a6" version="1">Boon of Combat Prowess</content>
+	<content contentuid="h28166fbcgedbeg4211ga862g22d330cade06" version="1">When you miss with a melee weapon attack, you can choose to hit instead.</content>
+	<content contentuid="h462f84e3g3dd6g4928ga6d5g7f12af5aca7e" version="1">You can't use this boon again until you finish a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h30640cdeg7775g460fg9fafg1196516f11a6" version="1">Boon of Dimensional Travel</content>
+	<content contentuid="h28166fbcgedbeg4211ga862g22d330cade06" version="1">As an action, you can cast &lt;LSTag Type="Spell" Tooltip="Target_MistyStep"&gt;Misty Step&lt;/LSTag&gt;, without using a spell slot or any components. Once you do so, you can't use this boon again until you finish a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="hb9f931a3ge0a4g4bc0gb9b5gd148b7409f12" version="1">Doesn't require a spell slot.</content>
+	<content contentuid="h9058189eg9884g4509g897dg1c03ab5e93c5" version="1">Boon of Fate</content>
+	<content contentuid="h909ef72bgc144g4b34g8dabg43caf0cb9139" version="1">When another creature that you can see within [1] of you makes an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, or a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can roll a [2] and apply the result as a bonus or penalty to the roll.</content>
+	<content contentuid="h8633f446g565ag42b1g914cg14ae4c8e3b9a" version="1">You can roll a [2] and apply the result as a bonus or penalty to another creature's &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;.</content>
+	<content contentuid="hc71638a5geb2dg40d0gbbb6gb33897625b73" version="1">The target gains a +[1] bonus to its next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; if it an allied creature or -[1] penalty if it is a hostile creature.</content>
+	<content contentuid="h0151622dgf022g43cbg88ecg7d9a0f241f9b" version="1">This entity gains a +[1] bonus to its next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+	<content contentuid="h6106e67fg8c36g4678gbe59gbe6bfba5709e" version="1">The target gains a -[1] penalty to its next &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;.</content>
+	<content contentuid="h64bde775g7dd4g4ea6g92c5gbe2f0de76d2d" version="1">Boon of Fortitude</content>
+	<content contentuid="hd62bf90ag10b0g4f06ga803g6d687b878423" version="1">Your hit point maximum is increased by 40.</content>
+	<content contentuid="h45301711gc345g46d4gb29cgf871342cc337" version="1">Boon of High Magic</content>
+	<content contentuid="h905bf032g18b9g4e22ga13cge89584c59670" version="1">You gain one 9th-level &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h9257db2cg90adg4308g9259g3f1ca31065f3" version="1">Boon of Invincibility</content>
+	<content contentuid="h57b9e8c4g67fbg4cbcg8bcdg2a65592250f6" version="1">When you take damage from any source, you can reduce that damage to 0.</content>
+	<content contentuid="h14f24ee1g2c69g4fdagacfbgd6e7c9c01fd7" version="1">Boon of Irresistible Offense</content>
+	<content contentuid="hcb9622c5g4a7dg47bag9b0dg531f95e45ba5" version="1">You can bypass the damage &lt;LSTag Tooltip="Resistances"&gt;Resistance&lt;/LSTag&gt; of any creature.</content>
+	<content contentuid="h57512b9ag3bedg408bg9ab0gc00c7b5f208e" version="1">Boon of Luck</content>
+	<content contentuid="h34e5b36fge72ag4dafgad20g43cc3723ff7d" version="1">You can add a [1] roll to any &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt;, &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt;, or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; you make. Once you use this boon, you can't use it again until you finish a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h5a15ec6cg9155g41fegae33gc856e3f94f57" version="1">Add a [1] roll to an &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Check&lt;/LSTag&gt; you make.</content>
+	<content contentuid="h5be98e45g64b0g4a78ga728g7771087e98eb" version="2">Add a +[1] bonus to an &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; or &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; you make.</content>
+	<content contentuid="hdf65196bgd073g40dagb7c2gae677ef05632" version="1">Boon of Luck</content>
+	<content contentuid="h14dc9712ge7bdg4b80g99e8ga86c79b53243" version="1">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against spells and other magical effects.</content>
+	<content contentuid="hb89a584bg27fbg41a6gbc78g0a5ac280b0af" version="1">Boon of Peerless Aim</content>
+	<content contentuid="hbb7c9e9dg0c90g4eceg8405gafe6249492e9" version="1">You can give yourself a +[1] bonus to a ranged &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; you make.</content>
+	<content contentuid="hc42e82fege263g48bfg8ce1g722bc82c0251" version="1">Give yourself a +[1] bonus to a ranged &lt;LSTag Tooltip="AttackRoll"&gt;Attack Roll&lt;/LSTag&gt; you make.</content>
+	<content contentuid="hd4fa8bcdga8a3g4eebga102g1a0afa41baa7" version="1">Boon of Perfect Health</content>
+	<content contentuid="h6c5208edg2b78g4944g9f92gf54baed9a9c9" version="1">You are immune to &lt;LSTag Type="Status" Tooltip="DISEASED"&gt;Diseases&lt;/LSTag&gt;and &lt;LSTag Type="Status" Tooltip="POISONED"&gt;Poison&lt;/LSTag&gt; and you have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on Constitution &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
+	<content contentuid="h86fa6b9cg30beg453bg8a9fg42b59a098eb6" version="1">Boon of Quick Casting</content>
+	<content contentuid="h3255dff7ga1ddg423bgb34cge84d5aa2cf68" version="1">Choose one of your spells of 1st through 3rd level that has a casting time of 1 &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt;. That spell's casting time is now 1 &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;Bonus Action&lt;/LSTag&gt; for you.</content>
+	<content contentuid="h3b2e8f70g857bg4fc1g8c04g038245f0e6da" version="1">Boon of Recovery</content>
+	<content contentuid="hf7c7e2dcge690g4b76ga7d0gdb56fe746694" version="1">You can use a bonus action to regain [1]. Once you use this boon, you can't use it again until you finish a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h98fafeebg38b8g40b2g8c4bg24ebb993cc7e" version="1">Regain [1].</content>
+	<content contentuid="h39812e21g7bb2g4c50gb3f7ga59a2196a4e5" version="1">Boon of Resilience</content>
+	<content contentuid="hcbe2df09g48d1g4cc0gbc19g1e6f133f1dac" version="1">You have &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to bludgeoning, piercing, and slashing damage from nonmagical weapons.</content>
+	<content contentuid="ha94a3108ga2bcg40f5gaf2eg542092f2f500" version="1">Boon of Skill Proficiency</content>
+	<content contentuid="h285fdd2fgacb6g4e5dgb951g0ae4251c5bbe" version="1">You gain &lt;LSTag Tooltip="Proficiency"&gt;Proficiency&lt;/LSTag&gt; in all skills.</content>
+	<content contentuid="hdeb53026g3e23g42dcgb0a1g5b0921d4cc41" version="1">Boon of Speed</content>
+	<content contentuid="h44fabfe2ga73ag402eg87eeg988e236ca3a3" version="1">Your walking speed increases by [1]. In addition, you can use a bonus action to take the &lt;LSTag Type="Spell" Tooltip="Shout_Dash"&gt;Dash&lt;/LSTag&gt; or &lt;LSTag Type="Spell" Tooltip="Shout_Disengage"&gt;Disengage&lt;/LSTag&gt; action.</content>
+	<content contentuid="h7bbb551agb78ag427ag8410g5610c681efba" version="1">You can use the Dash or Disengage action as a bonus action. Once you do so, you can't do so again until you finish a &lt;LSTag Tooltip="ShortRest"&gt;Short Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h53304c5egfff3g42acga217gd5dffdbc052d" version="1">Boon of Spell Mastery</content>
+	<content contentuid="h67d57fd0g47eeg4731g8c73g2f20f4985091" version="1">You can choose one 1st-level sorcerer, warlock, or wizard spell that you can cast and cast it at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h76cc5d87gf446g4ef6gaca0g63e55d2ba656" version="1">Boon of Spell Recall</content>
+	<content contentuid="he7c4bbd0g3ad8g4f2ega59dgcbb23d0b2846" version="1">You can cast any spell you know or have prepared without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;.</content>
+	<content contentuid="he399cd0age65eg4391ga551g28ef303f177a" version="1">Cast a spell you know or have prepared without expending a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt;. Once you do so, you can't use this boon again until you finish a &lt;LSTag Tooltip="LongRest"&gt;Long Rest&lt;/LSTag&gt;.</content>
+	<content contentuid="h9887d699g4c0fg4bf5ga3c7ge1f4afbbab56" version="1">Boon of the Fire Soul</content>
+	<content contentuid="haa88a5f7g4befg40cfgadd8g32af9711d5a4" version="1">You have &lt;LSTag Tooltip="Immune"&gt;immunity&lt;/LSTag&gt; to fire damage. You can also cast &lt;LSTag Type="Spell" Tooltip="Zone_BuringHands_BoonOfTheFireSoul"&gt;Burning Hands&lt;/LSTag&gt; (save DC 15) at will, without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; or any components.</content>
+	<content contentuid="hfeb58872g8ea9g453bga149g6656eb2f6f53" version="1">Burning Hands: Boon of the Fire Soul</content>
+	<content contentuid="hc476a43cgb907g4340g8d5agf6e717d763c1" version="1">Boon of the Night Spirit</content>
+	<content contentuid="ha1ae7389gb9f4g4ecbga397g90ed9bf93fab" version="1">While completely in an area of dim light or darkness, you can become &lt;LSTag Type="Spell" Tooltip="Shout_BoonOfTheNightSpirit"&gt;invisible&lt;/LSTag&gt;.</content>
+	<content contentuid="hf32c82bcg9f2eg422dg9bd7g13e3d3049567" version="2">&lt;LSTag Type="Image" Info="SoftWarning"/&gt; Invisibility ends early if you use an &lt;LSTag Type="ActionResource" Tooltip="ActionPoint"&gt;Action&lt;/LSTag&gt; or &lt;LSTag Type="ActionResource" Tooltip="ReactionActionPoint"&gt;Reaction&lt;/LSTag&gt;.</content>
+	<content contentuid="h2203d242g4ae4g47f2gbe62g469d868755fe" version="1">Boon of the Stormborn</content>
+	<content contentuid="h21d3b405g5df7g4673gae08gad3a76c6f976" version="1">You have &lt;LSTag Tooltip="Immune"&gt;immunity&lt;/LSTag&gt; to lightning and thunder damage. You can also cast &lt;LSTag Type="Spell" Tooltip="Zone_Thunderwave_BoonOfStormborn"&gt;Burning Hands&lt;/LSTag&gt; (save DC 15) at will, without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; or any components.</content>
+	<content contentuid="h196f993cg907ag41bdgacebg41bdd45dacbb" version="1">Thunderwave: Boon of the Stormborn</content>
+	<content contentuid="hbe2b9abcg89f7g445bgb8b9g86f01ea763c9" version="1">You have &lt;LSTag Tooltip="Immune"&gt;immunity&lt;/LSTag&gt; to lightning and thunder damage. You can also cast &lt;LSTag Type="Spell" Tooltip="Zone_Thunderwave_BoonOfStormborn"&gt;Burning Hands&lt;/LSTag&gt; (save DC 15) at will, without using a &lt;LSTag Tooltip="SpellSlot"&gt;Spell Slot&lt;/LSTag&gt; or any components.</content>
+	<content contentuid="hffd9a4cbg7cdcg45ebgbb67g6f53a683b2a9" version="1">Thunderwave: Boon of the Stormborn</content>
+	<content contentuid="h267be8aag889fg4e72gb2caga89286057b1b" version="1">Boon of Truesight</content>
+	<content contentuid="hcaa228b2gd2dag470cg8f46g89ce9a0f4bc6" version="1">You have &lt;LSTag Type="Status" Tooltip="TRUESIGHT"&gt;Truesight&lt;/LSTag&gt; out to a range of [1].</content>
+	<content contentuid="h91ce14fbgd99cg482agbe39gfc0da9a55b83" version="1">Boon of the Unfettered</content>
+	<content contentuid="h3450b309gf4adg4f40g87c7g4917ea0461d6" version="1">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="AbilityCheck"&gt;Ability Checks&lt;/LSTag&gt; made to resist being grappled. In addition, you can use an action to automatically escape a grapple or free yourself of restraints of any kind.</content>
+	<content contentuid="h2c7b44a4gc2fcg4dbegb4b7g77097a0d43d9" version="1">Can see any &lt;LSTag Type="Status" Tooltip="INVISIBLE"&gt;Invisible&lt;/LSTag&gt; creatures and objects and see through illusions.</content>
+	<content contentuid="h531633c7g1ff4g46c9g8631gef87f2cbaa30" version="1">When you are targeted by an Illusion spell that forces you to make a &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;, you can automatically succeed on the save.</content>
+	<content contentuid="h0dcc7c4cg8203g45f4g864cg1ee233eb476d" version="1">Boon of Undetectability</content>
+	<content contentuid="h69d8ba04g52fcg4394g9b27g50373f0313b1" version="1">You gain a +[1] bonus to Dexterity (Stealth) &lt;LSTag Tooltip="AbilityCheck"&gt;checks&lt;/LSTag&gt;, and you can't be detected or targeted by divination magic, including scrying sensors.</content>
+	<content contentuid="h7ced1141ga2b2g4708g9180gf001beb75438" version="1">Nondetection</content>
+	<content contentuid="h8f797474g46c7g4892gbdd8g452ac66d37a9" version="1">Hidden from divination magic and cannot be targeted by divination spells.</content>
+	<content contentuid="h1537c3b0g9a8fg4c6eg825dge2a96df61fa0" version="1">Boon of Quick Casting: Arctic Breath</content>
+	<content contentuid="h65c28a7cg5a8ag4704g9534g4a24357eb2e9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_ArcticBreath"&gt;Arctic Breath&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hea08b63eg7230g4c21ga2b1gd282d6648768" version="1">Boon of Quick Casting: Armor of Agathys</content>
+	<content contentuid="h5246cc91g7103g405eg9cd2g32db4bb61c84" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_ArmorOfAgathys"&gt;Armor of Agathys&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hbbe0f2b2g59a5g4141g9d00g2adb5b022da9" version="1">Boon of Quick Casting: Arms of Hadar</content>
+	<content contentuid="h07eff629gfc3ag42d1g872bgfb09aab4b977" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_ArmsOfHadar"&gt;Arms of Hadar&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h1805b06agaca8g4fdbg8fc2gc2364336f3a2" version="1">Boon of Quick Casting: Burning Hands</content>
+	<content contentuid="h5a41298fg221fg4534gabf6gcb66430aa26e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_BurningHands"&gt;Burning Hands&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5bbc7651g8a18g429cg8118g468db946e87d" version="1">Boon of Quick Casting: Catapult</content>
+	<content contentuid="he5d65814gb813g43dagbf78g1a24835a5bc0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Throw_Catapult"&gt;Catapult&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h3f8791f2ga49cg4981gbdf4g05d3b783de5c" version="1">Boon of Quick Casting: Cause Fear</content>
+	<content contentuid="h8f915492gd187g415aga562g01df3b0e52a1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CauseFear"&gt;Cause Fear&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hbc3ada81g0242g4cadgb11dgbbcf7ebdeb12" version="1">Boon of Quick Casting: Charm Person</content>
+	<content contentuid="h5af41cefg6c39g407fg8a63g005206d72e81" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CharmPerson"&gt;Charm Person&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he82a4507g80ebg4519gac3cgf815d3c5ee34" version="1">Boon of Quick Casting: Chaos Bolt</content>
+	<content contentuid="hf5fa8277g060bg47c4ga343g31902fca04d9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ChaosBolt"&gt;Chaos Bolt&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hae49edc4gfe26g4243gb9e9gb74088fe05dc" version="1">Boon of Quick Casting: Chromatic Orb</content>
+	<content contentuid="h3f23c291gad48g4e7dg8d70g2abf1cd2779b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_ChromaticOrb"&gt;Chromatic Orb&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9be53aebg3a1fg46f4g9f49g36c5f8c44967" version="1">Boon of Quick Casting: Color Spray</content>
+	<content contentuid="hba41e543gb94ag470dgbdb8g803d0e963c11" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_ColorSpray"&gt;Color Spray&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hda5f6871g6c32g44c1gb0a7g386023f2bf18" version="1">Boon of Quick Casting: Crashing Wave</content>
+	<content contentuid="he3699f18g4b71g422bg9e00g0c3f865a6048" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_CrashingWave"&gt;Crashing Wave&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h15de3f61gbe0cg4206ga9d2g0c98b740a178" version="1">Boon of Quick Casting: Cure Wounds</content>
+	<content contentuid="h76bbf4e3gfeb7g4c8bg861fg02d3f8057565" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CureWounds"&gt;Cure Wounds&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9dba27e5g2234g416cg9069g3d7d9b498a5f" version="1">Boon of Quick Casting: Detect Evil and Good</content>
+	<content contentuid="hc8b1c626g5a69g4d57ga366gb7e0b6d28192" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DetectEvilAndGood"&gt;Detect Evil and Good&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="haf082a95g41a9g4e63g9b9fg8748dc63ff52" version="1">Boon of Quick Casting: Detect Magic</content>
+	<content contentuid="h0880ffd2g9d08g48bbgba4dg687e757b2685" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DetectMagic"&gt;Detect Magic&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h95a85423g98f3g470dga755g374b72332c7b" version="1">Boon of Quick Casting: Disguise Self</content>
+	<content contentuid="hde344c8bg46fcg4a3dgb3e9gb7ed6f678807" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DisguiseSelf"&gt;Disguise Self&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h1f2fdfbfg9930g4662gb481g013a190479c3" version="1">Boon of Quick Casting: Divine Favor</content>
+	<content contentuid="hc98e373dg0cbdg46cbga3e1g0586e863b670" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DivineFavor"&gt;Divine Favor&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hc9ef292cg813cg43d4g962dgbeabff07fe21" version="1">Boon of Quick Casting: Earth Tremor</content>
+	<content contentuid="hf14472a7g0941g4aa8ga949g817bfc284500" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_EarthTremor"&gt;Earth Tremor&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h188255a6gb15cg4cf6gaeceg7b290df56f00" version="1">Boon of Quick Casting: Entomb</content>
+	<content contentuid="h3fabc594ga204g4ae7g813cge001de357c6a" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Entomb"&gt;Entomb&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hc47a0cfag476eg4165g9491g239c56c16a17" version="1">Boon of Quick Casting: False Life</content>
+	<content contentuid="h4f11d6f7g38b7g4cfdg8217g455ed1e14fe5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_FalseLife"&gt;False Life&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h87943422gdb24g4e2dg98a1g2fb8b012c4f9" version="1">Boon of Quick Casting: Find Familiar</content>
+	<content contentuid="hd6a0afe1g14f9g4da9gb25egad9fb34f6a8b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FindFamiliar"&gt;Find Familiar&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9c13d93cg840eg4535ga44bg25463c527bf8" version="1">Boon of Quick Casting: Fog Cloud</content>
+	<content contentuid="h7605a5ddg2d2cg401cg8c28g95f69fa67f41" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FogCloud"&gt;Fog Cloud&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h62f01385gfd59g4f40gb8f8g9673d4de28ed" version="1">Boon of Quick Casting: Frost Finger</content>
+	<content contentuid="h3017a12fg0e02g46a7g840egd76ecc9badd3" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_FrostFinger"&gt;Frost Finger&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5888befbg8648g4afdgaebag3ebb467278cf" version="1">Boon of Quick Casting: Grease</content>
+	<content contentuid="ha24a2bdfga122g42f8gad6ag7f8dccc15101" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Goodberry"&gt;Goodberry&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hfee4a5e5g8771g43f2gaf1eg5db328482120" version="1">Boon of Quick Casting: Grease</content>
+	<content contentuid="hab0dc12agfbe9g4f4bg8b9agfca6a9528c10" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Grease"&gt;Grease&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h31b51b0bgf9efg4182gbe25ge38e206f3e52" version="1">Boon of Quick Casting: Guilding Bolt</content>
+	<content contentuid="h0da18110gb3feg462ag970fgac2ea6b973ec" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_GuidingBolt"&gt;Guilding Bolt&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he930254fg53c6g40aeg8c7eg9401f7bb3987" version="1">Boon of Quick Casting: Heroism</content>
+	<content contentuid="h5bd54b1ag08a9g4594ga0cbg848f999ee7d0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Heroism"&gt;Heroism&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h244b1dc6ge5cdg42a2g9aa7gd6dda144a455" version="1">Boon of Quick Casting: Ice Knife</content>
+	<content contentuid="h022034ceg245eg4b16g934dgeb49966e4ad7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_IceKnife"&gt;Ice Knife&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb88958f1gfe07g49d9gb4dfg18a4bb8a0e57" version="1">Boon of Quick Casting: Inflict Wounds</content>
+	<content contentuid="hd740d995g86afg4fe8g9125g2cf656232b66" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_InflictWounds"&gt;Inflict Wounds&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he36e2b47g3146g4737g959ag2833d218a2d7" version="1">Boon of Quick Casting: Jump</content>
+	<content contentuid="he4ec458cg5b07g42f2ga2a2g07477ca52fde" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Jump"&gt;Jump&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h0cec0785ga497g467ag9c61gdd985f91dd63" version="1">Boon of Quick Casting: Longstrider</content>
+	<content contentuid="h01b388edg6b01g421eg883bgc79ce4fda86e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Longstrider"&gt;Longstrider&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h4be33ee6g38cfg429bg906dg6e162a3ebba6" version="1">Boon of Quick Casting: Mage Armor</content>
+	<content contentuid="ha2957646g2f43g4a70gbfd2g016100edf9a0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MageArmor"&gt;Mage Armor&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h05489ca7g0915g47e2g9ef5g4c4aebd79426" version="1">Boon of Quick Casting: Magic Missile</content>
+	<content contentuid="hc0d2fda5gbe33g4348gbc85gf5e9604032ac" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_MagicMissile"&gt;Magic Missile&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="haa35defag1808g4e6eg9246g2b878a27ff7a" version="1">Boon of Quick Casting: Protection from Evil and Good</content>
+	<content contentuid="h99b2e1a7g6ab5g4119gb280g1a249332c87c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromEvilAndGood"&gt;Protection from Evil and Good&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb7140182g4390g4805ga0a0gd99a01537d0f" version="1">Boon of Quick Casting: Ray of Sickness</content>
+	<content contentuid="h4fd79e67g6806g429fg8e03g75a5bc613af7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfSickness"&gt;Ray of Sickness&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hfa5a7f01g6d40g4c94gbec7gf0fbe855a279" version="1">Boon of Quick Casting: Sleep</content>
+	<content contentuid="h61055fd8g1e62g4376g90e5gd99e65a72f79" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Sleep"&gt;Sleep&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h241a3615g7015g425ag97d1g8faf2c3e1411" version="1">Boon of Quick Casting: Snare</content>
+	<content contentuid="h419aacdbgaffag4656gb9a7g4a73c941eba7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Snare"&gt;Snare&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hbb6a944dge503g4bbag9001gb5dc571addc7" version="1">Boon of Quick Casting: Speak with Animals</content>
+	<content contentuid="h7c3a2c8cgc8edg4e8dga3eeg34fd495b7955" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_SpeakWithAnimals"&gt;Speak with Animals&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h2d538488g426eg4f80ga3c4g2ed154aba72b" version="1">Boon of Quick Casting: Caustic Brew</content>
+	<content contentuid="hbd12c7c3ga16ag40c3gb85cgb2075001d0bc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_TashasCausticBrew"&gt;Caustic Brew&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hfd0b52deg1cc0g47dag94e2gffcbe8c25aa8" version="1">Boon of Quick Casting: Hideous Laughter</content>
+	<content contentuid="h58a50b45g3a3dg4242g9d1bg6b468e05d3be" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HideousLaughter"&gt;Hideous Laughter&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h657163e3g5b91g4ef9gb50dg2ea4f86776e2" version="1">Boon of Quick Casting: Thunderwave</content>
+	<content contentuid="hb67b7c55g634fg48c4g8fcag714405e56766" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_Thunderwave"&gt;Thunderwave&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h05a54ca5ge514g48ddg86e8g8583f17cf1da" version="1">Boon of Quick Casting: Unseen Servant</content>
+	<content contentuid="hf8e784d8g124dg46f6gaf11ge2490ce98afc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_UnseenServant"&gt;Unseen Servant&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha014ed14ga985g4a24gb7deg59218bb6d297" version="1">Boon of Quick Casting: Witch Bolt</content>
+	<content contentuid="hb0f81a28g8882g4acdg91a0g9bc93ff51cd4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_WitchBolt"&gt;Witch Bolt&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h0bf22dccg1239g423dga104g1006b7727b42" version="1">Boon of Quick Casting: Aganazzar's Scorcher</content>
+	<content contentuid="hf23bab86g023fg46fegbeebg0ce612ba962d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_AganazzarsScorcher"&gt;Aganazzar's Scorcher&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5479fe1dg9591g4bedg9c5cg3213c90729db" version="1">Boon of Quick Casting: Aid</content>
+	<content contentuid="h6dee7d13gfa97g4c17ga703gb1c3e6d578b8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Aid"&gt;Aid&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hdbab66b3g246ag4cb2ga27ag6409b708d0ab" version="1">Boon of Quick Casting: Alter Self</content>
+	<content contentuid="hb10e2f68gd0c2g4eb2g95c2g5e680cf799ef" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_AlterSelf"&gt;Alter Self&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h0843a79eg228cg4219gad07g57e01951efaf" version="1">Boon of Quick Casting: Arcane Lock</content>
+	<content contentuid="h45772542gcac6g4e85gbf7ag02564efdd9f4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ArcaneLock"&gt;Arcane Lock&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hc94bd544gb8dbg4e0eg9a1ag013a9dc9e4e9" version="1">Boon of Quick Casting: Barkskin</content>
+	<content contentuid="h77a75950ge0d8g4cdbg8269g1f6aa06eb9f9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Barkskin"&gt;Barkskin&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6ee7e052gf17cg4969g9db1gc68a2ebd54aa" version="1">Boon of Quick Casting: Blindness</content>
+	<content contentuid="h9634529cgf092g42e0ga994g65092a0ec867" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Blindness"&gt;Blindness&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h7234fa12gcdbbg4a67g9e3eg2bb56b60d007" version="1">Boon of Quick Casting: Blur</content>
+	<content contentuid="hef90e8f5g20a2g4a53g953bg52834a3c93a3" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Blur"&gt;Blur&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb7267df6ge564g40fbg8185gd1cc9e502d64" version="1">Boon of Quick Casting: Borrowed Knowledge</content>
+	<content contentuid="hf343e009g166dg45d2g8c6fga5578602b845" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_BorrowedKnowledge"&gt;Borrowed Knowledge&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6b49fe61gb79dg4fcdga87dg0f7e30bdbc40" version="1">Boon of Quick Casting: Calm Emotions</content>
+	<content contentuid="ha6525fb0g02e5g490aga444g19f3415235b1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CalmEmotions"&gt;Calm Emotions&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hbcfd4ba5g4f48g44bdg8781gd77d3dd80a99" version="1">Boon of Quick Casting: Cloud of Daggers</content>
+	<content contentuid="h5a69efa7g42f5g4ba7g8834gf1652fced8f5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CloudOfDaggers"&gt;Cloud of Daggers&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hebf171f7ga855g4aa8ga3bcgda77174195b6" version="1">Boon of Quick Casting: Continual Flame</content>
+	<content contentuid="hd10b3c0fgf8e9g4a78gadf9g9bd7e9ed6669" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ContinualFlame"&gt;Continual Flame&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h93200906g5b4ag416cg8b58g8d2184e63698" version="1">Boon of Quick Casting: Crown of Madness</content>
+	<content contentuid="hbae8fb05g4e08g4bffga852gd42ea6e6f845" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CrownOfMadness"&gt;Crown of Madness&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hcc8fe1d3gb629g484fg9eb5gd188cb88c481" version="1">Boon of Quick Casting: Darkness</content>
+	<content contentuid="h7879ee5dga8b3g4e73g994bgbbea82059bb9" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Darkness"&gt;Darkness&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5cedcca1ga0f9g4813g9499g7a9ec0d086e8" version="1">Boon of Quick Casting: Darkvision</content>
+	<content contentuid="hbbec7e40gaea0g4cf7g9a60gff148d2bd309" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Darkvision"&gt;Darkvision&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h2028cf05ge5bdg4e02g93bcgbe3ed97996c1" version="1">Boon of Quick Casting: Detect Thoughts</content>
+	<content contentuid="hdd94751egdecbg4ef9gad46g5eea1d96c48e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_DetectThoughts"&gt;Detect Thoughts&lt;/LSTag&gt;.. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9d76433bg3c63g4666gbdacg224417c52694" version="1">Boon of Quick Casting: Dust Devil</content>
+	<content contentuid="hc538e7a5g7b59g4121g9752g975980420b5e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_DustDevil"&gt;Dust Devil&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h1cb55d13gc72ag4f9aga5e1g6cb93b8c41dd" version="1">Boon of Quick Casting: Enthrall</content>
+	<content contentuid="h0c27b538ga40ag4a87g8d8fgdafb0354cb3d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Enthrall"&gt;Enthrall&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h65f098ecgb88fg468cg9844g5bc0834ece46" version="1">Boon of Quick Casting: Enhance Ability</content>
+	<content contentuid="h29c66abdg138dg4803g87d6g3b8ba5e69dfa" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnhanceAbility"&gt;Enhance Ability&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hea27600agee67g45c2gbec5gc581762cf3e4" version="1">Boon of Quick Casting: Enlarge/Reduce</content>
+	<content contentuid="h974ecf12g379dg47cfgbf18g3b931b5018fe" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnlargeReduce"&gt;Enlarge/Reduce&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6f57827cgc6aag4b4fgb873gd3089204eb6a" version="1">Boon of Quick Casting: Flaming Sphere</content>
+	<content contentuid="ha9cf5f60g3748g4f3cgb0e0gc13187c98855" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlamingSphere"&gt;Flaming Sphere&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h19d43f0bg159cg4aaag90b7g407df240b637" version="1">Boon of Quick Casting: Flock of Familiars</content>
+	<content contentuid="h6736bd7cg9f15g41adg9c40gd49b8c626716" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlockOfFamiliars"&gt;Flock of Familiars&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha214a714gd895g4ff5gb619gdd507d60d933" version="1">Boon of Quick Casting: Gust of Wind</content>
+	<content contentuid="h3c77ca8fg6c48g4422ga1e3ga92c15241f04" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_GustOfWind"&gt;Gust of Wind&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hd8d902c3g1f73g4cc9g9ef4gefcac04bda6d" version="1">Boon of Quick Casting: Heat Metal</content>
+	<content contentuid="h9a83dbf7g1137g41d4g86e2g2ae1c8560078" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HeatMetal"&gt;Heat Metal&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9047bae6gff95g451cg8bfbgfe6fc8332884" version="1">Boon of Quick Casting: Hold Person</content>
+	<content contentuid="hd99cb240g4a5bg4e63ga8adg229eb7bfbdfd" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HoldPerson"&gt;Hold Person&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hec5aeb9dg7f4bg40d5gb7cegb17982370b0e" version="1">Boon of Quick Casting: Invisibility</content>
+	<content contentuid="hd48f4f30g119eg449cg8153ge23d17b95331" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Invisibility"&gt;Invisibility&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h14d79f30g06fag4867g8f08gc8eb6c56844b" version="1">Boon of Quick Casting: Knock</content>
+	<content contentuid="h3cc1ac44g98b1g4789gbcefg4435b266262e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Knock"&gt;Knock&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hba8316e9g6a27g4c26g8c67gb63ed6e8a786" version="1">Boon of Quick Casting: Lesser Restoration</content>
+	<content contentuid="h40a334faga0dbg4a91g8bccg511243d1f1b6" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_LesserRestoration"&gt;Lesser Restoration&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h77435b6agebdcg4728ga653g39d7b04bd0c8" version="1">Boon of Quick Casting: Levitate</content>
+	<content contentuid="h9f1ffdbcg35f2g4bbcgad48g0db65f84d212" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Levitate"&gt;Levitate&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h8772742agdb6cg4cc2gba1ag9862581e5747" version="1">Boon of Quick Casting: Maximillian's Earthen Grasp</content>
+	<content contentuid="hcaecdfb0g2abbg4f4dgb191gcc89e1998a62" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MaximilliansEarthenGrasp"&gt;Maximillian's Earthen Grasp&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hd84aadf1g6be8g47e2g81b3g3d2dd26971a4" version="1">Boon of Quick Casting: Acid Arrow</content>
+	<content contentuid="hed86e1degf36bg468ag8cc6gade849a40dcb" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_AcidArrow"&gt;Acid Arrow&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hc3c72c1bgd0b5g49c6gb441g5145f1440f40" version="1">Boon of Quick Casting: Mind Spike</content>
+	<content contentuid="hf250e3d7g10dcg494bgbfa4g5391bdb54464" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MindSpike"&gt;Mind Spike&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf18ed5d0g8f62g4390gaa12gde24e3dbaef5" version="1">Boon of Quick Casting: Mirror Image</content>
+	<content contentuid="h54d5351bg6438g4075g903bgf61d73c0e5bc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_MirrorImage"&gt;Mirror Image&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf666275cg66bcg418fgb961ge5f28a3ef725" version="1">Boon of Quick Casting: Mirror Image</content>
+	<content contentuid="hd9cbb389g0a16g4f02gb0cfg9f0ddcc9259a" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_MirrorImage"&gt;Mirror Image&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h22cd55ffga0acg4729g8308g5e85e0ce7055" version="1">Boon of Quick Casting: Nathair's Mischief</content>
+	<content contentuid="h6f14bea0gf7b2g4f19g9a70g3e2fdda45e0e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_NathairsMischief"&gt;Nathair's Mischief&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h26c88853g7627g41fagb0b4gb0943a71dcef" version="1">Boon of Quick Casting: Pass Without Trace</content>
+	<content contentuid="haa42e34cg6f00g4807ga2a7g05020ab69ef4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_PassWithoutTrace"&gt;Pass Without Trace&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he42224e6g746bg475fgb393g6953be5637d9" version="1">Boon of Quick Casting: Phantasmal Force</content>
+	<content contentuid="ha3ae8b66gd739g45d0g8409g1e4326caa6b5" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_PhantasmalForce"&gt;Phantasmal Force&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hacb825bfga179g49b1g9a34g8d579123f27f" version="1">Boon of Quick Casting: Protection From Poison</content>
+	<content contentuid="h3ad8ad77g6b8ag4da2ga2dag127b49df894e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromPoison"&gt;Protection From Poison&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h515f6366g05aeg492bg8f97gecb2369f372d" version="1">Boon of Quick Casting: Ray of Enfeeblement</content>
+	<content contentuid="h86e28adag2311g4849g93aaga1a4f2d15434" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_RayOfEnfeeblement"&gt;Ray of Enfeeblement&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h55927730gecbfg443bgaf41g9340c309e2e1" version="1">Boon of Quick Casting: Rime's Binding Ice</content>
+	<content contentuid="h2f8070efg4ccdg42c5gb690g1e55ee9b3c12" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_RimesBindingIce"&gt;Rime's Binding Ice&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hdefc4a2dg5e63g4ebcgb899g7f25101552e1" version="1">Boon of Quick Casting: Scorching Ray</content>
+	<content contentuid="h3cdbd218gada0g4157gb29egc7b9321e6cb7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_ScorchingRay"&gt;Scorching Ray&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9db751a3g5365g481eg8de5gdf9067d5d6a2" version="1">Boon of Quick Casting: See Invisibility</content>
+	<content contentuid="h923340d7ga1bdg42a8g8cf5ga3b1247ba21c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_SeeInvisibility"&gt;See Invisibility&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h05b735cfg6af4g4ab6g853dgdbc513240345" version="1">Boon of Quick Casting: Shatter</content>
+	<content contentuid="hfb98dda9ga389g4a4ag8973g194dc9273afc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Shatter"&gt;Shatter&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf136579cg4553g4304g930agb5ab263f8edc" version="1">Boon of Quick Casting: Silence</content>
+	<content contentuid="h839823c5g0040g46c7g9e3dg094d658b4244" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Silence"&gt;Shatter&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h04e077c5g0965g4957gb2b4g10b1946b0cf3" version="1">Boon of Quick Casting: Snilloc's Snowball Storm</content>
+	<content contentuid="h60c5055bg079bg45a1g8503g5e1431c58e04" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SnillocsSnowballStorm"&gt;Snilloc's Snowball Storm&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hfca03da8g5544g40c2gadb2g2c83998ed3cc" version="1">Boon of Quick Casting: Spike Growth</content>
+	<content contentuid="hc44147aagfab8g4fd3g8e1eg4b7409f1a836" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SpikeGrowth"&gt;Spike Growth&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h97127c39ged61g4407g8609g92b45decce8a" version="1">Boon of Quick Casting: Suggestion</content>
+	<content contentuid="h3a7d64b4g869ag4459ga3b6g87609cc21377" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Suggestion"&gt;Suggestion&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf087eb5fg92a3g4da9gbc00g732d63e409a0" version="1">Boon of Quick Casting: Summon Beast</content>
+	<content contentuid="h5ecef900gdcbeg4cebg8ef2g8abab36cd2b7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SummonBeast"&gt;Summon Beast&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="habc46588g09fcg4c0bg97a1g4a052def579a" version="1">Boon of Quick Casting: Tasha's Mind Whip</content>
+	<content contentuid="h166fe0efg60a8g43bdg9b70g616a8729a89c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_TashasMindWhip"&gt;Tasha's Mind Whip&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha161b6c4g9928g4ab1ga016ga475bc95a536" version="1">Boon of Quick Casting: Vortex Warp</content>
+	<content contentuid="had2b4671ga892g4a6egbf54gf9f5f7f3b228" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_VortexWarp"&gt;Vortex Warp&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h929ab21cgab88g4834gadcbg1d9bbf1e4004" version="1">Boon of Quick Casting: Warding Wind</content>
+	<content contentuid="h9185412ag4f09g4c4bg9ee9g24591284cd74" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_WardingWind"&gt;Warding Wind&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf212ec8bgf58eg48b8gbe98gd01f5254d5db" version="1">Boon of Quick Casting: Web</content>
+	<content contentuid="hdb9fbbacg4c28g4756gb1c0g62a440ee613c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Web"&gt;Web&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h0b486cd3g934ag43d1gba1bge8c5053721c2" version="1">Boon of Quick Casting: Wither and Bloom</content>
+	<content contentuid="h916544aeg1510g44abgbbb7gef5a19a4dfb2" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_WitherAndBloom"&gt;Wither and Bloom&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h9110f1ceg9bf6g40cegb9a8g1558f1ecc52f" version="1">Boon of Quick Casting: Zone of Truth</content>
+	<content contentuid="h19e34fa5gc2e8g46f2g9433gcdc95d741850" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ZoneOfTruth"&gt;Zone of Truth&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h619000eag621eg4815g83a4gf95415bb61df" version="1">Boon of Quick Casting: Animate Dead</content>
+	<content contentuid="h2a97d9deg5560g48ceg9fbdgb219aae47123" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_AnimateDead"&gt;Animate Dead&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h610ab700g7a2eg4b1dg8e5agdc1a3d346be4" version="1">Boon of Quick Casting: Antagonize</content>
+	<content contentuid="hc09a24abg0fdeg4fe7ga916g455bfbcf1d7e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Antagonize"&gt;Antagonize&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha680af21g6bfag401dgb71fgd402020f044e" version="1">Boon of Quick Casting: Antagonize</content>
+	<content contentuid="h61038caeg39e4g42ebgb87eg543d336d592e" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Antagonize"&gt;Antagonize&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h3b2aec72gdb0eg483bga823g623fde22c482" version="1">Boon of Quick Casting: Beacon of Hope</content>
+	<content contentuid="h71c20591g6d38g404fg96ecg2ae8ed28d90a" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_BeaconOfHope"&gt;Beacon of Hope&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hbfa89466g6edfg4391ga206gd4475a56fcef" version="1">Boon of Quick Casting: Bestow Curse</content>
+	<content contentuid="hcd665d87g8310g42e9g848eg931d8de75754" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_BestowCurse"&gt;Bestow Curse&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha4b1181egd436g4b06ga1ffg78203922fd98" version="1">Boon of Quick Casting: Blink</content>
+	<content contentuid="h841a1247ge969g40begb1a8g1ea87b24a3b8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Blink"&gt;Blink&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="ha4b1181egd436g4b06ga1ffg78203922fd98" version="1">Boon of Quick Casting: Blink</content>
+	<content contentuid="h841a1247ge969g40begb1a8g1ea87b24a3b8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_Blink"&gt;Blink&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf4b8d40cgcaa4g441bgbb2agebf0d7abc036" version="1">Boon of Quick Casting: Call Lightning</content>
+	<content contentuid="ha9b52130g8915g46e4g98e5gaf6d0a28ae78" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CallLightning"&gt;Call Lightning&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h139c0059g9da3g40f2g8c8dg069debf5e175" version="1">Boon of Quick Casting: Catnap</content>
+	<content contentuid="h98b59988g3cbfg4898g837ag42d4942f55e8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Catnap"&gt;Catnap&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hdb4a41c0gf16cg460eg8afcg78ea1684c382" version="1">Boon of Quick Casting: Conjure Barrage</content>
+	<content contentuid="h5ccc461dg5130g4916g8c48Gd8d6ee7df97f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_ConjureBarrage"&gt;Conjure Barrage&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6d817dc2ge85bg4d73ga1d8g8cc142affcf5" version="1">Boon of Quick Casting: Create Food and Water</content>
+	<content contentuid="h4a78ff95g0d04g4f8egb001g184f727a47d1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_CreateFoodAndWater"&gt;Create Food and Water&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he5e4e753g9188g4c68g8c5cg9542cd3e27a0" version="1">Boon of Quick Casting: Crusader's Mantle</content>
+	<content contentuid="ha020cb09g7515g4158g8d39g75551499f6de" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_CrusadersMantle"&gt;Crusader's Mantle&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6a42545dgbe68g4fcdg9165g147044b49662" version="1">Boon of Quick Casting: Daylight</content>
+	<content contentuid="hf26e60bdg503dg4632gaa53g53a8b50e2550" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Daylight_Container"&gt;Daylight&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf933b35bg32b7g4b31gadbfgf7a1a29fd2f2" version="1">Boon of Quick Casting: Elemental Weapon</content>
+	<content contentuid="hdc09506eg41bdg47e1g9dc9g01bd5bc24596" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ElementalWeapon"&gt;Elemental Weapon&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf933b35bg32b7g4b31gadbfgf7a1a29fd2f2" version="1">Boon of Quick Casting: Enemies Abound</content>
+	<content contentuid="hdc09506eg41bdg47e1g9dc9g01bd5bc24596" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EnemiesAbound"&gt;Enemies Abound&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h6cb78865g77cfg4ab3gbeefgfe0203c51800" version="1">Boon of Quick Casting: Erupting Earth</content>
+	<content contentuid="h96c8d0a1ge63ag4111ga8beg1f792a2778c7" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_EruptingEarth"&gt;Erupting Earth&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h61374995gf928g481fg8c62g97f83297d5a4" version="1">Boon of Quick Casting: Fear</content>
+	<content contentuid="hc72d8603ga97bg434bg9645gfea0b3494700" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_Fear"&gt;Fear&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h8a6a23d0g9b80g44d1gb865gb9e19581671e" version="1">Boon of Quick Casting: Feign Death</content>
+	<content contentuid="hc87c41e7gc6afg4fcag9632g6ec8b786e5d3" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FeignDeath"&gt;Feign Death&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hec15759bg5149g4889g9767g6edab4140a2c" version="1">Boon of Quick Casting: Fireball</content>
+	<content contentuid="hd4ae54a1g72dfg4a35gafa1ga5012117fc85" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fireball"&gt;Fireball&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5c89b7e9g33e0g49d8g9a74g68799a37ec62" version="1">Boon of Quick Casting: Flame Arrows</content>
+	<content contentuid="h0e0dceebg8d20g41b5g82cdg67129ea69cd8" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_FlameArrows"&gt;Flame Arrows&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h3dbd886dg8b86g456agbc39g994be616a012" version="1">Boon of Quick Casting: Fly</content>
+	<content contentuid="ha346db1egfe23g43eag9be4ga98e63eaeb64" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Projectile_Fly"&gt;Fly&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h516e27eeg2fd5g45d8gbb33ge9d8ce18601b" version="1">Boon of Quick Casting: Gaseous Form</content>
+	<content contentuid="hb2dfc8d6gf4a3g487agbafeg450371d14a45" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_GaseousForm"&gt;Gaseous Form&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h54429065gb767g4a01g8a2ag1048bf06f4d8" version="1">Boon of Quick Casting: Glyph of Warding</content>
+	<content contentuid="h38806ee6g37bfg4d1dg9609g6891350f971c" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_GlyphOfWarding"&gt;Glyph of Warding&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf1b742d8gfb90g4f7fgb737gd2e3113c2abd" version="1">Boon of Quick Casting: Haste</content>
+	<content contentuid="ha094223eg3d4dg4ebaga579g096fbef6d0fe" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Haste"&gt;Haste&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h85ddd4a3g1fefg4c2egbd36gf24915219365" version="1">Boon of Quick Casting: Hunger of Hadar</content>
+	<content contentuid="hc009b6a4g14e5g46d3gb77cg9693b7f68df0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HungerOfHadar"&gt;Hunger of Hadar&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h05d3cf10g912fg4022gbf20g8118fcc7dc7d" version="1">Boon of Quick Casting: Hypnotic Pattern</content>
+	<content contentuid="hd1b070cdgc1c7g4bc4gb835g797581cb96a6" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_HypnoticPattern"&gt;Hypnotic Pattern&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h26683b37g6816g48edgbc6bg071273e9dab3" version="1">Boon of Quick Casting: Intellect Fortress</content>
+	<content contentuid="he402b47fgd7c2g4e96g8cdagc4ba3b0e07ad" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_IntellectFortress"&gt;Intellect Fortress&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h485f59dcg0eb2g4c3cgbeddg582eda866e7b" version="1">Boon of Quick Casting: Life Transference</content>
+	<content contentuid="h4e1fdc88g6037g4373g8c29g8bc7c0dc50fd" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_LifeTransference"&gt;Life Transference&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb5cd89f8g5487g419ag9dadg47ca04524726" version="1">Boon of Quick Casting: Lightning Bolt</content>
+	<content contentuid="ha31ed89fg23c7g4cb3gb053g185c2cb638ae" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Zone_LightningBolt"&gt;Lightning Bolt&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h81ea78d9g718bg4e7cg811fg79818c05055c" version="1">Boon of Quick Casting: Minute Meteors</content>
+	<content contentuid="hd6698fcfgbd4fg4f3ag9283g3c8224c1aca4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_MinuteMeteors"&gt;Minute Meteors&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h828ee082gd188g46bcga6cfg3f14caa50b8b" version="1">Boon of Quick Casting: Motivational Speech</content>
+	<content contentuid="h09eb5b06g7e89g4198ga6ffg0c45e949aba0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_MotivationalSpeech"&gt;Motivational Speech&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h24e4696cg4efdg4f16gb3e1g0613d815c07d" version="1">Boon of Quick Casting: Nondetection</content>
+	<content contentuid="h787bbbfagfab0g41d8g82d9g2790f1fbd67d" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Nondetection"&gt;Nondetection&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="he9742bd1gc8b9g461fga9afg2f5aa6f18518" version="1">Boon of Quick Casting: Plant Growth</content>
+	<content contentuid="h808c71a4g1560g46aag8ca4ge586cbc8caa2" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_PlantGrowth"&gt;Plant Growth&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h5999ca57g0206g44c7g8626g379614262f15" version="1">Boon of Quick Casting: Protection from Energy</content>
+	<content contentuid="h315ae2b1g8b49g4805ga879g60f0e310115f" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_ProtectionFromEnergy"&gt;Protection from Energy&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h95811cf0gb8e6g4f18g8ed9gfdd67286d977" version="1">Boon of Quick Casting: Remove Curse</content>
+	<content contentuid="h2266c0a1g233ag4592g83f8gb2d04e69ceac" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_RemoveCurse"&gt;Remove Curse&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hff7f3eddge58fg49f3g964egee71c2f7088f" version="1">Boon of Quick Casting: Revivify</content>
+	<content contentuid="h28513e0agecd8g49beg9014g93e8316aeee4" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Teleportation_Revivify"&gt;Revivify&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hb7d423feg9529g4328g929agf5833156fc38" version="1">Boon of Quick Casting: Sleet Storm</content>
+	<content contentuid="h5e108166gc20bg40e2g82fdgbde53b8b61c0" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SleetStorm"&gt;Sleet Storm&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h526d77b8gfd74g471fgbac8g2a2147728957" version="1">Boon of Quick Casting: Slow</content>
+	<content contentuid="h44251210g0298g490bg8702gee3b17c7584b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_Slow"&gt;Slow&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h8c69fcd4gbbc6g4c72g9d15g12d8242adcb2" version="1">Boon of Quick Casting: Speak with Dead</content>
+	<content contentuid="hbf8e6d48g4e26g478agb5b5g5036a1ac1c17" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SpeakWithDead"&gt;Speak with Dead&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h8dc595d9g7c8cg464egb043g8fe2bd69a901" version="1">Boon of Quick Casting: Spirit Guardians</content>
+	<content contentuid="h8b13307age61dg4d52gaf13g313ed22a45c1" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_SpiritGuardians"&gt;Spirit Guardians&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hf6eeb551gcbe4g4a5dg97fagc8778a6e1db1" version="1">Boon of Quick Casting: Stinking Cloud</content>
+	<content contentuid="hbb8b969ag9906g449bg91e8g278ae6d1a6fc" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_StinkingCloud"&gt;Stinking Cloud&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h54e7ad76g6b01g478fg8ed1g8cb14f4b9075" version="1">Boon of Quick Casting: Summon Shadowspawn</content>
+	<content contentuid="h8c088f9dgfb34g4f9eg950bg4d8c8890e634" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_SummonShadowspawn"&gt;Summon Shadowspawn&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h11796731g7dfeg4c39g8450g9ee888b0c1ff" version="1">Boon of Quick Casting: Thunder Step</content>
+	<content contentuid="hdcd71cd9g6e63g428dgb558g0d88faaa0a0b" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Teleportation_ThunderStep"&gt;Thunder Step&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h74b497d2g168ag4796gb8c7gac289acee7dd" version="1">Boon of Quick Casting: Vampiric Touch</content>
+	<content contentuid="hd27e312dg3a90g4cd1g87a2ga78f985c9d59" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Target_VampiricTouch"&gt;Vampiric Touch&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="hae88c7ffgb607g4e8eg831agb9b8c9533087" version="1">Boon of Quick Casting: Water Walk</content>
+	<content contentuid="h5e9a01ccgd532g408cga6acg9e862ce73f55" version="1">Choose &lt;LSTag Type="Spell" Tooltip="Shout_WaterWalk"&gt;Water Walk&lt;/LSTag&gt;. You can cast the spell as a &lt;LSTag Type="ActionResource" Tooltip="BonusActionPoint"&gt;bonus action&lt;/LSTag&gt;.</content>
+	<content contentuid="h3ba82fcbg613fg4be1ga091g0b46f53548b7" version="1">Boon of Spell Mastery: Absorb Elements</content>
+	<content contentuid="h21589267gcfadg4144gb6efg88b1d49a80a5" version="1">Boon of Spell Mastery: Arctic Breath</content>
+	<content contentuid="h2d22f568gd37dg4c78g8dacgde0adf27f7b4" version="1">Boon of Spell Mastery: Blade Mirage</content>
+	<content contentuid="h9638cc70ge787g4458g8076g6bd472f48a8e" version="1">Boon of Spell Mastery: Burning Hands</content>
+	<content contentuid="hc4e7acc8gfa93g478cgb0e9g4b3a59446968" version="1">Boon of Spell Mastery: Catapult</content>
+	<content contentuid="h3d95c371gc9b1g4c48gbb1fgc092fd452adf" version="1">Boon of Spell Mastery: Cause Fear</content>
+	<content contentuid="hc9de710dg2232g49e2g8d10gfa28e4ee759b" version="1">Boon of Spell Mastery: Charm Person</content>
+	<content contentuid="h32d8aa4fge11dg42a8g8226g1d60f78bfcd4" version="1">Boon of Spell Mastery: Chromatic Orb</content>
+	<content contentuid="h3ef40778gbc09g4f47gb9fbg79783be5feef" version="1">Boon of Spell Mastery: Color Spray</content>
+	<content contentuid="hfaec2fa5gb279g410agae7ag3db8d226962f" version="1">Boon of Spell Mastery: Crashing Wave</content>
+	<content contentuid="h820b29a2gce3dg40abgba38g8d4467ba1fc6" version="1">Boon of Spell Mastery: Detect Magic</content>
+	<content contentuid="h480edae2g716dg44b1g9edcg67d1c1d04479" version="1">Boon of Spell Mastery: Disguise Self</content>
+	<content contentuid="h9476dfd0g4d17g41e0g95f4g512d894c565b" version="1">Boon of Spell Mastery: Earth Tremor</content>
+	<content contentuid="he3242a78g82c1g4946gb97fg1beae5184bc1" version="1">Bonn of Spell Mastery: Entomb</content>
+	<content contentuid="hff015322g6506g4ba8gaf90ga8b92fa939a3" version="1">Boon of Spell Mastery: Expeditious Retreat</content>
+	<content contentuid="hc21e7ea4g419fg4d1dg82bfgdeb471ac2d5f" version="1">Boon of Spell Mastery: False Life</content>
+	<content contentuid="h64c0d0acga138g4e03ga893g5d3c32efe23c" version="1">Boon of Spell Mastery: Feather Fall</content>
+	<content contentuid="hdd50b18fg16afg474cg9ba9g5fe7e08874ff" version="1">Boon of Spell Mastery: Find Familiar</content>
+	<content contentuid="hce1b3eddg058dg405ag8046gf50a10c55a00" version="1">Boon of Spell Mastery: Fog Cloud</content>
+	<content contentuid="h52e66769gfa49g4289g81cbg3a6261846640" version="1">Boon of Spell Mastery: Frost Finger</content>
+	<content contentuid="hbe09d986ge420g4a55gba88gf14b4a234fcb" version="1">Boon of Spell Mastery: Grease</content>
+	<content contentuid="h65092e59gade9g4e8dg9613g56b354cd2a93" version="1">Boon of Spell Mastery: Ice Knife</content>
+	<content contentuid="h93ffded4g56ddg4e75gb8bcgff7925f894c9" version="1">Boon of Spell Mastery: Jump</content>
+	<content contentuid="hcbf6a8f5g1fa7g40ceg94ddg47df31075a82" version="1">Boon of Spell Mastery: Longstrider</content>
+	<content contentuid="h95395300g22a4g4a71gb433g943e03837ff7" version="1">Boon of Spell Mastery: Mage Armor</content>
+	<content contentuid="h33f890b4g447fg4acdg8426gbd6592ed6984" version="1">Boon of Spell Mastery: Magic Missile</content>
+	<content contentuid="ha7006423gcf37g4faega715g1b7a03f914a8" version="1">Boon of Spell Mastery: Protection from Evil and Good</content>
+	<content contentuid="h3085f48dg5f0bg4402gb3e4gd984ea72d476" version="1">Boon of Spell Mastery: Ray of Sickness</content>
+	<content contentuid="h951f28a7g94abg4e6dg9163g2a0460fb7dfd" version="1">Boon of Spell Mastery: Shield</content>
+	<content contentuid="h47d9d5d7g4737g4411g8ed0g979d4b361501" version="1">Boon of Spell Mastery: Sleep</content>
+	<content contentuid="h0b9a2d34ge63dg4c42g9b94g082b896b1380" version="1">Boon of Spell Mastery: Snare</content>
+	<content contentuid="h0cada638g6bf3g40bag95edg8aab3fe5dd8b" version="1">Boon of Spell Mastery: Caustic Brew</content>
+	<content contentuid="hbada8f79g0d63g4977gaaccg260577fe4451" version="1">Boon of Spell Mastery: Hideous Laughter</content>
+	<content contentuid="h661a67ccg90d3g4ebeg873dg14a165d02f35" version="1">Boon of Spell Mastery: Thunderwave</content>
+	<content contentuid="h309b9a0cg984bg4633gbf82gc5c4184db7c5" version="1">Boon of Spell Mastery: Unseen Servant</content>
+	<content contentuid="h50a0e285gac6bg4194g9633gaa18417aeae0" version="1">Boon of Spell Mastery: Witch Bolt</content>
+	<content contentuid="ha474f0adgf4fcg426fg8912g54f276ccbabb" version="1">Boon of Spell Mastery: Armor of Agathys</content>
+	<content contentuid="h3b9ff138g9685g4305g8b7cgaf6a2d0387ff" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Shout_ArmorOfAgathys"&gt;Armor of Agathys&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h5385695dgc068g4bd5g9548g712ba69e91e1" version="1">Boon of Spell Mastery: Arms of Hadar</content>
+	<content contentuid="h0d30dc33gbc8dg4660g8051g32b35bfc9c38" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Shout_ArmsOfHadar"&gt;Arms of Hadar&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h616b115dg5918g44f2g858cg14abee24266a" version="1">Boon of Spell Mastery: Chaos Bolt</content>
+	<content contentuid="h891b5713g47acg48c9gb84dg9906ebce36b4" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Target_ChaosBolt"&gt;Chaos Bolt&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="hf82c0ae5g23d3g4874gad19g68efa5692bee" version="1">Boon of Spell Mastery: Hellish Rebuke</content>
+	<content contentuid="h6084f7b6g8a49g4d0dg83feg05ae78d85784" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Shout_HellishRebuke"&gt;Hellish Rebuke&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
+	<content contentuid="h299a2794ge416g4d12ga7b0g084cc2e52c44" version="1">Boon of Spell Mastery: Hex</content>
+	<content contentuid="h45a43313g34c4g42c5g8b59gb2acef75bcd4" version="1">Choose the &lt;LSTag Type="Spell" Tooltip="Target_Hex"&gt;Hex&lt;/LSTag&gt; spell. You can cast the spell at its lowest level without expending a &lt;LSTag Tooltip="SpellSlot"&gt;spell slot&lt;/LSTag&gt;.</content>
 </contentList>

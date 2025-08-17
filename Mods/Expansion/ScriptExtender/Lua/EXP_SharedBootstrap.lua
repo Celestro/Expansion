@@ -119,13 +119,231 @@ EXP_Bard_Base = {
 ---------------------------------------- CLERIC -----------------------------------------
 
 local EXP_Cleric_OptionalFeatures
+local EXP_ClericSubclassesOptionalFeatures
 
 function EXP_Cleric()
     EXP_ApplyStaticData(EXP_Cleric_OptionalFeatures)
+
+	if Ext.Mod.IsModLoaded("a6474f89-8efc-443d-cc95-9cdf142f931e") then
+		EXP_ApplyStaticData(EXP_ClericSubclassesOptionalFeatures)
+	end
+
+	local dsmlife = Ext.Stats.Get("Target_DivineStrike_Melee_Life")
+	if dsmlife.DescriptionParams == "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)" then
+		dsmlife.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+	
+	if dsmlife.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)" then
+		dsmlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Radiant)"
+	end
+	
+	local dsrlife = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Life")
+	if dsrlife.DescriptionParams == "DealDamage(1d8,Radiant);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" then
+		dsrlife.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Radiant);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)"
+	end
+	
+	if dsrlife.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Radiant)" then
+		dsrlife.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Radiant)"
+	end
+
+	local dsclife = Ext.Stats.Get("Target_DivineStrike_Life_Container")
+	if dsmlife.DescriptionParams == "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)" then
+		dsclife.DescriptionParams = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
+	end
+
+	if dsclife.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Radiant)" then
+		dsclife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Radiant)"
+	end
+
+	local dscnature = Ext.Stats.Get("Target_DivineStrike_Nature_Container")
+	if dscnature.DescriptionParams == "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire);DealDamage(1d8,Lightning)" then
+		dscnature.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Fire);DealDamage(LevelMapValue(DivineStrikes),Lightning)"
+	end
+
+	if dscnature.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold" then
+		dscnature.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Cold)"
+	end
+
+	local dsmncold = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Cold")
+	if dsmncold.DescriptionParams == "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsmncold.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsmncold.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold)" then
+		dsmncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Cold)"
+	end
+
+	local dsrncold = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Cold")
+	if dsrncold.DescriptionParams == "DealDamage(1d8,Cold)" then
+		dsrncold.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Cold);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)"
+	end
+	
+	if dsrncold.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Cold)" then
+		dsrncold.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Cold)"
+	end
+	
+	local dsmnfire = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Fire")
+	if dsmnfire.DescriptionParams == "DealDamage(1d8,Fire)" then
+		dsmnfire.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsmnfire.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire)" then
+		dsmnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Fire)"
+	end
+
+	local dsrnfire = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Fire")
+	if dsrnfire.DescriptionParams == "DealDamage(1d8,Fire);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" then
+		dsrnfire.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Fire);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)"
+	end
+
+	if dsrnfire.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Fire)" then
+		dsrnfire.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Fire)"
+	end
+		
+	local dsmnlightning = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Lightning")
+	if dsmnlightning.DescriptionParams == "DealDamage(1d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsmnlightning.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsmnlightning.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Lightning)" then
+		dsmnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Lightning)"
+	end
+
+	local dsrnlightning = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Lightning")
+	if dsrnlightning.DescriptionParams == "DealDamage(1d8,Lightning)" then
+		dsrnlightning.DescriptionParams = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Lightning)"
+	end
+
+	if dsrnlightning.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Cold)" then
+		dsrnlightning.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Lightning)"
+	end
+
+	local dsctempest = Ext.Stats.Get("Target_DivineStrike_Tempest_Container")
+	if dsctempest.DescriptionParams == "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsctempest.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+	
+	if dsctempest.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)" then
+		dsctempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Thunder)"
+	end
+
+	local dsmtempest = Ext.Stats.Get("Target_DivineStrike_Melee_Tempest")
+	if dsmtempest.DescriptionParams == "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsmtempest.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsmtempest.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)" then
+		dsmtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Thunder)"
+	end
+
+	local dsrtempest = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Tempest")
+	if dsrtempest.DescriptionParams == "DealDamage(1d8,Thunder);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" then
+		dsrtempest.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Thunder);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)"
+	end
+
+	if dsrtempest.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,Thunder)" then
+		dsrtempest.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Thunder)"
+	end
+
+	local dsctrickery = Ext.Stats.Get("Target_DivineStrike_Trickery_Container")
+	if dsctrickery.DescriptionParams == "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsctrickery.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsctrickery.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)" then
+		dsctrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Poison)"
+	end
+		
+	local dsmtrickery = Ext.Stats.Get("Target_DivineStrike_Melee_Trickery")
+	if dsmtrickery.DescriptionParams == "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dsmtrickery.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dsmtrickery.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)" then
+		dsmtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Poison)"
+	end
+
+	local dsrtrickery = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Trickery")
+	if dsrtrickery.DescriptionParams == "DealDamage(1d8,Poison);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" then
+		dsrtrickery.DescriptionParams = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Poison)"
+	end
+
+	if dsrtrickery.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)" then
+		dsrtrickery.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes),Poison)"
+	end
+
+	local dscwar = Ext.Stats.Get("Target_DivineStrike_War_Container")
+	if dscwar.DescriptionParams == "DealDamage(1d8, MainMeleeWeaponDamageType)" then
+		dscwar.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), MainMeleeWeaponDamageType)"
+	end
+
+	if dscwar.TooltipDamageList == "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" then
+		dscwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(DivineStrikes), MainMeleeWeaponDamageType)"
+	end
+
+	local dsmwar = Ext.Stats.Get("Target_DivineStrike_Melee_War")
+	if dsmwar.DescriptionParams == "DealDamage(1d8, MainMeleeWeaponDamageType)" then
+		dsmwar.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), MainMeleeWeaponDamageType)"
+	end
+
+	if dsmwar.TooltipDamageList == "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" then
+		dsmwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+LevelMapValue(DivineStrikes), MainMeleeWeaponDamageType)"
+	end
+
+	local dsrwar = Ext.Stats.Get("Projectile_DivineStrike_Ranged_War")
+	if dsrwar.DescriptionParams == "DealDamage(1d8,MainRangedWeaponDamageType);DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" then
+		dsrwar.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), MainRangedWeaponDamageType)"
+	end
+
+	if dsrwar.TooltipDamageList == "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(1d8,MainRangedWeaponDamageType)" then
+		dsrwar.TooltipDamageList = "DealDamage(MainRangedWeapon+LevelMapValue(DivineStrikes), MainRangedWeaponDamageType)"
+	end
+
+	local dscdeath = Ext.Stats.Get("Target_DivineStrike_Death_Container")
+	if dscdeath.DescriptionParams == "DealDamage(1d8, Necrotic);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" then
+		dscdeath.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), Necrotic);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
+	end
+
+	if dscdeath.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Necrotic)" then
+		dscdeath.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes), Necrotic)"
+	end
+
+	local dsmdeath = Ext.Stats.Get("Target_DivineStrike_Melee_Death")
+	if dscdeath.DescriptionParams == "DealDamage(1d8,Necrotic)" then
+		dsmdeath.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), Necrotic)"
+	end
+
+	if dscdeath.TooltipDamageList == "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Necrotic)" then
+		dsmdeath.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes), Necrotic)"
+	end
+	
+	local dsrdeath = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Death")
+	if dsrdeath.DescriptionParams == "DealDamage(1d8,Necrotic)" then
+		dsrdeath.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes), Necrotic)"
+	end
+
+	if dsrdeath.TooltipDamageList == "DealDamage(MainRangedWeapon , MainRangedWeaponDamageType);DealDamage(1d8,Necrotic)" then
+		dsrdeath.TooltipDamageList = "DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(DivineStrikes), Necrotic)"
+	end
+
+	local dsdeathint = Ext.Stats.Get("Interrupt_DivineStrike_Necrotic")
+	if dsdeathint.DescriptionParams == "DealDamage(1d8,Necrotic)" then
+		dsdeathint.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Necrotic)"
+	end
+
+	dsdeathint:SetRawAttribute("Properties","DealDamage(LevelMapValue(DivineStrikes),Necrotic,Magical);ApplyStatus(DIVINESTRIKE_MELEE_VFX,100,1)")
+
+	local dsdeathcritint = Ext.Stats.Get("Interrupt_DivineStrike_Necrotic_Critical")
+	if dscdeath.DescriptionParams == "DealDamage(1d8,Necrotic)" then
+		dsdeathcritint.DescriptionParams = "DealDamage(LevelMapValue(DivineStrikes),Necrotic)"
+	end
+	
+	dsdeathcritint:SetRawAttribute("Properties","DealDamage(LevelMapValue(DivineStrikes),Necrotic,Magical);ApplyStatus(DIVINESTRIKE_MELEE_CRITICAL_VFX,100,1)")
 end
 
 EXP_Cleric_OptionalFeatures = {
     ["Progression"] = {
+-- 	2nd Level Cleric Divine Power Resource
         ["ef18265f-dda6-4eb6-8dd0-b14c57202c33"] = {
             ["Boosts"] = {
                 ["Type"] = "add",
@@ -136,6 +354,7 @@ EXP_Cleric_OptionalFeatures = {
                 ["Value"] = "HarnessDivinePower",
             },
         },
+-- 4th Level Cleric Cantrip Versatility
         ["051cd419-b843-4996-807e-d0ac78084ef0"] = {
             ["SelectSpells"] = {
                 ["Type"] = "overwrite",
@@ -154,6 +373,7 @@ EXP_Cleric_OptionalFeatures = {
 				},
 			},
 		},
+-- 8th Level Cleric Cantrip Versatility
         ["4cfd9e91-38ef-4b24-8a2a-9b736be91cf8"] = {
             ["SelectSpells"] = {
                 ["Type"] = "add",
@@ -172,6 +392,7 @@ EXP_Cleric_OptionalFeatures = {
 				},
 			},
 		},
+-- 12th Level Cleric Cantrip Versatility
         ["e209aba2-bb27-4416-af41-09ce37b7f08f"] = {
             ["SelectSpells"] = {
                 ["Type"] = "add",
@@ -190,6 +411,7 @@ EXP_Cleric_OptionalFeatures = {
 				},
 			},
 		},
+-- 16th Level Cleric Cantrip Versatility
         ["4391ca3e-c54a-4116-aafb-4ed4879a7f27"] = {
             ["SelectSpells"] = {
                 ["Type"] = "add",
@@ -208,6 +430,7 @@ EXP_Cleric_OptionalFeatures = {
 				},
 			},
 		},
+-- 19th Level Cleric Cantrip Versatility
         ["dc375fe5-6a6c-4ab2-9397-e2dff4b7607b"] = {
             ["SelectSpells"] = {
                 ["Type"] = "add",
@@ -226,18 +449,21 @@ EXP_Cleric_OptionalFeatures = {
 				},
 			},
 		},
+-- 6th Level Cleric Divine Power Resource
         ["1ba0c22a-2655-4f3c-8bf8-f3314587ccaa"] = {
             ["Boosts"] = {
                 ["Type"] = "add",
                 ["Value"] = "ActionResource(DivinePowerPoint,1,0)",
             },
         },
+-- 18th Level Cleric Divine Power Resource
         ["df19223d-09be-4007-b05d-c94c9ea85420"] = {
             ["Boosts"] = {
                 ["Type"] = "add",
                 ["Value"] = "ActionResource(DivinePowerPoint,1,0)",
             },
         },
+-- 8th Level Knowledge Domain Cleric Blessed Strikes or Potent Spellcasting
         ["8424b93e-7546-4c9e-ab2d-e26fa7ccf7c5"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -245,7 +471,7 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "16c4288b-c328-499b-91f5-64d35f6cf815"
                 }
                 },
@@ -255,6 +481,7 @@ EXP_Cleric_OptionalFeatures = {
                 ["Value"] = "",
             },
 		},
+-- 8th Level Life Domain Cleric Blessed Strikes or Divine Strikes
         ["20ce2664-ba58-4291-be05-dca5b2c4293d"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -262,14 +489,14 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "17359adf-cfba-4c3b-b8c1-19e22642b128"
                 }
                 },
             },
             ["PassivesAdded"] = {
-                ["Type"] = "overwrite",
-                ["Value"] = "",
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Life_Toggle",
             },
             ["AddSpells"] = {
                 ["Type"] = "overwrite",
@@ -277,6 +504,7 @@ EXP_Cleric_OptionalFeatures = {
                 },
             },
 		},
+-- 8th Level Light Domain Cleric Blessed Strikes or Potent Spellcasting
         ["c993dc9e-df2b-4cc9-857c-49b17982b56e"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -284,7 +512,7 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "16c4288b-c328-499b-91f5-64d35f6cf815"
                 }
                 },
@@ -294,6 +522,7 @@ EXP_Cleric_OptionalFeatures = {
                 ["Value"] = "",
             },
 		},
+-- 8th Level Nature Domain Cleric Blessed Strikes or Divine Strikes
         ["f5a8a6b4-8514-494d-bbe8-2a0196dc8efa"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -301,14 +530,14 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "4778a549-4afc-4271-9251-3cf36134b47d"
                 }
                 },
             },
             ["PassivesAdded"] = {
-                ["Type"] = "overwrite",
-                ["Value"] = "",
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Nature_Toggle",
             },
             ["AddSpells"] = {
                 ["Type"] = "overwrite",
@@ -316,6 +545,7 @@ EXP_Cleric_OptionalFeatures = {
                 },
             },
 		},
+-- 8th Level Tempest Domain Cleric Blessed Strikes or Divine Strikes
         ["cf1e11e2-5561-49b7-9c6a-83edffcd0f09"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -323,14 +553,14 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "bb442132-f91d-494d-8ad8-275093fbde0c"
                 }
                 },
             },
             ["PassivesAdded"] = {
-                ["Type"] = "overwrite",
-                ["Value"] = "",
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Tempest_Toggle",
             },
             ["AddSpells"] = {
                 ["Type"] = "overwrite",
@@ -338,6 +568,7 @@ EXP_Cleric_OptionalFeatures = {
                 },
             },
 		},
+-- 8th Level Trickery Domain Cleric Blessed Strikes or Divine Strikes
         ["f39b339b-e367-403b-b33e-8191eb8363e0"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -345,14 +576,14 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "e2e43336-ad5b-439a-9efc-1d93e18e532a"
                 }
                 },
             },
             ["PassivesAdded"] = {
-                ["Type"] = "overwrite",
-                ["Value"] = "",
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Trickery_Toggle",
             },
             ["AddSpells"] = {
                 ["Type"] = "overwrite",
@@ -360,6 +591,7 @@ EXP_Cleric_OptionalFeatures = {
                 },
             },
 		},
+-- 8th Level War Domain Cleric Blessed Strikes or Divine Strikes
         ["bb079588-93de-40de-bf1f-2718b1e08512"] = {
             ["SelectPassives"] = {
                 ["Type"] = "add",
@@ -367,14 +599,14 @@ EXP_Cleric_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "DivineMight",
                         UUID = "a76e4a50-e982-49da-abe0-190dcf2f78c4"
                 }
                 },
             },
             ["PassivesAdded"] = {
-                ["Type"] = "overwrite",
-                ["Value"] = "",
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_War_Toggle",
             },
             ["AddSpells"] = {
                 ["Type"] = "overwrite",
@@ -382,28 +614,136 @@ EXP_Cleric_OptionalFeatures = {
                 },
             },
 		},
+-- 8th Level Death Domain Cleric Blessed Strikes or Divine Strikes
+        ["25d9e305-146b-45cf-947f-d7840f5905fc"] = {
+            ["SelectPassives"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                {
+                        Amount = "1",
+                        Amount2 = "0",
+                        Arg3 = "DivineMight",
+                        UUID = "f70bcfbc-4b5b-49ba-b5fe-b45e13bf4025"
+                }
+                },
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Death",
+            },
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+		},
+-- 14th Level Life Domain Cleric Divine Strikes Upgrade Removal
         ["b49aec61-75ab-4ae2-9d77-02f237391289"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
             },
 		},
+-- 14th Level Tempest Domain Cleric Divine Strikes Upgrade Removal
         ["9ece65de-501f-4dcf-9681-396a7c8de86a"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
             },
 		},
+-- 14th Level Trickery Domain Cleric Divine Strikes Upgrade Removal
         ["5a6afeef-0c49-4d50-90ae-adeacb45d8c8"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
             },
 		},
+-- 14th Level War Domain Cleric Divine Strikes Upgrade Removal
         ["163a9b1f-9e09-47d9-9099-5cd1b64ae46d"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
+            },
+		},
+-- 14th Level Death Domain Cleric Divine Strikes Upgrade Removal
+        ["64e0903c-7615-4775-a90c-08a53e8be158"] = {
+            ["PassivesAdded"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = "",
+            },
+		},
+    },
+}
+
+EXP_ClericSubclassesOptionalFeatures = {
+    ["Progression"] = {
+-- 8th Level Twilight Domain Cleric Blessed Strikes or Divine Strike
+        ["49c0017a-fd3d-48ad-b5dc-0737544aeaa6"] = {
+            ["SelectPassives"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                {
+                        Amount = "1",
+                        Amount2 = "0",
+                        Arg3 = "DivineMight",
+                        UUID = "e783c601-5cc5-423c-a37d-1aac00467c07"
+                }
+                },
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Twilight_Toggle",
+            },
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+		},
+-- 8th Level Order Domain Cleric Blessed Strikes or Divine Strikes
+        ["c1bf1fbe-eba8-487e-9144-9e5aee631d58"] = {
+            ["SelectPassives"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                {
+                        Amount = "1",
+                        Amount2 = "0",
+                        Arg3 = "DivineMight",
+                        UUID = "b1db7b7b-40cd-4fcb-81dd-3adc3dc7279f"
+                }
+                },
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Order_Toggle",
+            },
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+		},
+-- 8th Level Forge Domain Cleric Blessed Strikes or Divine Strikes
+        ["e6ef54e3-b7b1-4867-9b0b-454feff5c6ab"] = {
+            ["SelectPassives"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                {
+                        Amount = "1",
+                        Amount2 = "0",
+                        Arg3 = "DivineMight",
+                        UUID = "5938fec2-3f2a-46b4-ac2f-f779f6eef74d"
+                }
+                },
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "remove",
+                ["Value"] = "Divine_Strike_Forge_Toggle",
+            },
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
             },
 		},
     },
@@ -1360,7 +1700,7 @@ EXP_Ranger_OptionalFeatures = {
                 {
                         Amount = "1",
                         Amount2 = "0",
-                        Arg3 = "",
+                        Arg3 = "NaturesCover",
                         UUID = "3b5d4e6b-d6f6-4dd9-a523-045b75daed18"
                 },
                 {
@@ -1636,6 +1976,7 @@ function EXP_Sorcerer_14thLevel()
 end
 
 EXP_Sorcerer_14thLevelFeatures = {
+-- 11th Level Draconic Bloodline
     ["Progression"] = {
         ["94ba4bb9-7335-497a-8ac0-1ec535fb85d6"] = {
             ["AddSpells"] = {
@@ -1644,6 +1985,7 @@ EXP_Sorcerer_14thLevelFeatures = {
                 },
             },
 		},
+-- 14th Level Draconic Bloodline
         ["308e4516-902d-4d34-9551-0ee7397d03b0"] = {
             ["AddSpells"] = {
                 ["Type"] = "add",
@@ -1653,35 +1995,64 @@ EXP_Sorcerer_14thLevelFeatures = {
                         ActionResource = "d136c5d9-0ff0-43da-acce-a74a07f8d6bf",
                         ClassUUID = "00000000-0000-0000-0000-000000000000",
                         CooldownType = "Default",
-                        PrepareType = "Unknown",
+                        PrepareType = "AlwaysPrepared",
                         SelectorId = " ",
                         SpellUUID = "12150e11-267a-4ecc-a3cc-292c9e2a198d",
                     },
                 },
             },
 		},
+-- 11th Level Wild Magic
         ["466ce7dc-1eec-44c5-a223-d652c7b1a5f2"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
             },
         },
+-- 14th Level Wild Magic
         ["b828c6cb-24d6-45a2-ad96-4186dd7fc400"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "add",
                 ["Value"] = "ControlledChaos",
             },
         },
+-- 11th Level Storm Sorcery
         ["18a0cd31-027a-41ab-ae20-0131332a0439"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "overwrite",
                 ["Value"] = "",
             },
         },
+-- 14th Level Storm Sorcery
         ["c394198d-9730-4611-86b1-10b742b418f0"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "add",
                 ["Value"] = "StormsFury",
+            },
+        },
+-- 11th Level Shadow Magic
+        ["8942a99c-a3f7-43a9-afc3-c0bbb8655903"] = {
+            ["AddSpells"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+        },
+-- 14th Level Shadow Magic
+        ["a6d06f56-56ec-455e-80ad-f1330643a4bd"] = {
+            ["AddSpells"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                    {
+                        Ability = "None",
+                        ActionResource = "d136c5d9-0ff0-43da-acce-a74a07f8d6bf",
+                        ClassUUID = "00000000-0000-0000-0000-000000000000",
+                        CooldownType = "Default",
+                        PrepareType = "AlwaysPrepared",
+                        SelectorId = " ",
+                        SpellUUID = "e95177b1-f243-4837-868e-8e84563f518e",
+                    },
+                },
             },
         },
     },
@@ -2260,13 +2631,13 @@ end
 
 EXP_Wizard_Bladesinger = {
     ["Progression"] = {
-        ["fb7ce577-10e0-4ee8-b757-2dd8fb8f6810"] = {
+        ["ba41e719-10fb-43f3-8ec9-8eead0df33ee"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "add",
                 ["Value"] = "SongOfVictory",
             },
 		},
-        ["4d0abe20-4e1a-43ec-855c-8af1194d1e4d"] = {
+        ["65dd1c73-066b-4cd8-8911-31912c59cf4b"] = {
             ["PassivesAdded"] = {
                 ["Type"] = "remove",
                 ["Value"] = "SongOfVictory",
@@ -2315,18 +2686,25 @@ local classesProgression = {
   "Wizard"
 }
 
+function EXP_BaseClass(class)
+    for _,baseClass in pairs(classesProgression) do
+        if class == baseClass then
+            return true
+        end
+    end
+    return false
+end
+
 function EXP_NoFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] ~= 1 and progression["Level"] ~= 4 and progression["Level"] ~= 8 and progression["Level"] ~= 12 and progression["Level"] ~= 16 and progression["Level"] ~= 19 and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = false
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] ~= 1 and progression["Level"] ~= 4 and progression["Level"] ~= 8 and progression["Level"] ~= 12 and progression["Level"] ~= 16 and progression["Level"] ~= 19 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = false
+		end
 
-			if ((progression["Level"] == 6 or progression["Level"] == 14) and progression["Name"] == "Fighter") or (progression["Level"] == 10 and progression["Name"] == "Rogue") and progression["ProgressionType"] == 0 then
-				progression["AllowImprovement"] = true
-			end
+		if ((progression["Level"] == 6 or progression["Level"] == 14) and progression["Name"] == "Fighter") or (progression["Level"] == 10 and progression["Name"] == "Rogue") and progression["ProgressionType"] == 0 then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2334,11 +2712,9 @@ end
 function EXP_2ndLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] == 2 and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] == 2 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2346,11 +2722,9 @@ end
 function EXP_2ndAnd3rdLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if (progression["Level"] == 2 or progression["Level"] == 3) and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if (progression["Level"] == 2 or progression["Level"] == 3) and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2358,11 +2732,9 @@ end
 function EXP_EveryLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] ~= 1 and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] ~= 1 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2370,19 +2742,17 @@ end
 function EXP_Every2ndLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] % 2 == 0 and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] % 2 == 0 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = true
+		end
 
-			if progression["Level"] == 19 and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = false
-			end
+		if progression["Level"] == 19 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = false
+		end
 
-			if ((progression["Level"] == 5 or progression["Level"] == 13) and progression["Name"] == "Fighter") or (progression["Level"] == 9 and progression["Name"] == "Rogue") and progression["ProgressionType"] == 0 then
-				progression["AllowImprovement"] = true
-			end
+		if ((progression["Level"] == 5 or progression["Level"] == 13) and progression["Name"] == "Fighter") or (progression["Level"] == 9 and progression["Name"] == "Rogue") and progression["ProgressionType"] == 0 then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2390,19 +2760,17 @@ end
 function EXP_Every3rdLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if (progression["Level"] == 4 or progression["Level"] == 8 or progression["Level"] == 16 or progression["Level"] == 19) and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = false
-			end
-			
-			if (progression["Level"] == 3 or progression["Level"] == 6 or progression["Level"] == 9 or progression["Level"] == 15 or progression["Level"] == 18)  and progression["ProgressionType"] == 0 and progression["Name"] == class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if (progression["Level"] == 4 or progression["Level"] == 8 or progression["Level"] == 16 or progression["Level"] == 19) and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = false
+		end
+		
+		if (progression["Level"] == 3 or progression["Level"] == 6 or progression["Level"] == 9 or progression["Level"] == 15 or progression["Level"] == 18)  and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) then
+			progression["AllowImprovement"] = true
+		end
 
-			if progression["Level"] == 5 and progression["Name"] == "Fighter" and progression["ProgressionType"] == 0 then
-				progression["AllowImprovement"] = true
-			end
+		if progression["Level"] == 5 and progression["Name"] == "Fighter" and progression["ProgressionType"] == 0 then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2410,11 +2778,9 @@ end
 function EXP_CustomNoFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] ~= 1 and progression["Level"] ~= 4 and progression["Level"] ~= 8 and progression["Level"] ~= 12 and progression["Level"] ~= 16 and progression["Level"] ~= 19 and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = false
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] ~= 1 and progression["Level"] ~= 4 and progression["Level"] ~= 8 and progression["Level"] ~= 12 and progression["Level"] ~= 16 and progression["Level"] ~= 19 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = false
 		end
 	end
 end
@@ -2422,11 +2788,9 @@ end
 function EXP_Custom2ndLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] == 2 and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] == 2 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2434,11 +2798,9 @@ end
 function EXP_Custom2ndAnd3rdLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if (progression["Level"] == 2 or progression["Level"] == 3) and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if (progression["Level"] == 2 or progression["Level"] == 3) and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2446,11 +2808,9 @@ end
 function EXP_CustomEveryLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] ~= 1 and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] ~= 1 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2458,11 +2818,9 @@ end
 function EXP_CustomEvery2ndLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
-			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if progression["Level"] % 2 == 0 and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = true
-			end
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if progression["Level"] % 2 == 0 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = true
 		end
 	end
 end
@@ -2470,14 +2828,73 @@ end
 function EXP_CustomEvery3rdLevelFeats()
     local progressions = Ext.StaticData.GetAll("Progression")
     for _,uuid in pairs(progressions) do
-		for _,class in pairs(classesProgression) do
+		local progression = Ext.StaticData.Get(uuid,"Progression")
+		if (progression["Level"] == 4 or progression["Level"] == 8 or progression["Level"] == 16 or progression["Level"] == 19) and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = false
+		end
+		
+		if (progression["Level"] == 3 or progression["Level"] == 6 or progression["Level"] == 9 or progression["Level"] == 15 or progression["Level"] == 18)  and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and not string.find(progression["Name"], "NPC") and not string.find(progression["Name"], "Origin") and not string.find(progression["Name"], "UCL") and not string.find(progression["Name"], "MulticlassSpellSlots") then
+			progression["AllowImprovement"] = true
+		end
+	end
+end
+
+----------------------------------------- EPIC BOONS SECTION -----------------------------------------
+
+local epicBoonsFullCasters = {
+		Amount = "1",
+		Amount2 = "0",
+		Arg3 = "EpicBoons",
+		UUID = "728a7070-8dd0-4ed6-b4bc-6ce83816bc3b"
+}
+
+local epicBoonsOthers = {
+		Amount = "1",
+		Amount2 = "0",
+		Arg3 = "EpicBoons",
+		UUID = "d8e91a22-bd68-48db-a1ed-b28a8e31c44b"
+}
+
+function EXP_BaseClassEpicBoons()
+    local classDescriptions = Ext.StaticData.GetAll("ClassDescription")
+    local progressions = Ext.StaticData.GetAll("Progression")
+    for _,uuid in pairs(progressions) do
+		for _,cuuid in pairs(classDescriptions) do
 			local progression = Ext.StaticData.Get(uuid,"Progression")
-			if (progression["Level"] == 4 or progression["Level"] == 8 or progression["Level"] == 16 or progression["Level"] == 19) and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = false
+			local classDescription = Ext.StaticData.Get(cuuid,"ClassDescription")
+			local passiveSelector
+			if progression["Level"] == 20 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) and classDescription.Name == progression.Name and classDescription.MulticlassSpellcasterModifier == 1 then
+				passiveSelector = Ext.Types.Serialize(progression.SelectPassives)
+				table.insert(passiveSelector,epicBoonsFullCasters)
+                Ext.Types.Unserialize(progression.SelectPassives, passiveSelector)
 			end
-			
-			if (progression["Level"] == 3 or progression["Level"] == 6 or progression["Level"] == 9 or progression["Level"] == 15 or progression["Level"] == 18)  and progression["ProgressionType"] == 0 and progression["Name"] ~= class then
-				progression["AllowImprovement"] = true
+
+			if progression["Level"] == 20 and progression["ProgressionType"] == 0 and EXP_BaseClass(progression["Name"]) and classDescription.Name == progression.Name and classDescription.MulticlassSpellcasterModifier ~= 1 then
+				passiveSelector = Ext.Types.Serialize(progression.SelectPassives)
+				table.insert(passiveSelector,epicBoonsOthers)
+                Ext.Types.Unserialize(progression.SelectPassives, passiveSelector)
+			end
+		end
+	end
+end
+
+function EXP_CustomClassEpicBoons()
+    local classDescriptions = Ext.StaticData.GetAll("ClassDescription")
+    local progressions = Ext.StaticData.GetAll("Progression")
+    for _,uuid in pairs(progressions) do
+		for _,cuuid in pairs(classDescriptions) do
+			local progression = Ext.StaticData.Get(uuid,"Progression")
+			local classDescription = Ext.StaticData.Get(cuuid,"ClassDescription")
+			if progression["Level"] == 20 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and classDescription.Name == progression.Name and classDescription.MulticlassSpellcasterModifier == 1 then
+				passiveSelector = Ext.Types.Serialize(progression.SelectPassives)
+				table.insert(passiveSelector,epicBoonsFullCasters)
+                Ext.Types.Unserialize(progression.SelectPassives, passiveSelector)
+			end
+
+			if progression["Level"] == 20 and progression["ProgressionType"] == 0 and not EXP_BaseClass(progression["Name"]) and classDescription.Name == progression.Name and classDescription.MulticlassSpellcasterModifier ~= 1 then
+				passiveSelector = Ext.Types.Serialize(progression.SelectPassives)
+				table.insert(passiveSelector,epicBoonsOthers)
+                Ext.Types.Unserialize(progression.SelectPassives, passiveSelector)
 			end
 		end
 	end
@@ -2507,7 +2924,7 @@ EXP_Fighter_ActionSurge = {
     },
 }
 
-------------------------------- Blessed Strike Changes--------------------------------
+------------------------------- Blessed Strike Changes --------------------------------
 
 function EXP_BlessedStrikes()
 
@@ -2524,27 +2941,44 @@ function EXP_BlessedStrikes()
 	local dsthunder = Ext.Stats.Get("Interrupt_DivineStrike_Thunder")
 	local dsthundercrit = Ext.Stats.Get("Interrupt_DivineStrike_Thunder_Critical")
 	local dsmelee = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon")
-	local dsmeleecrit = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon")
+	local dsmeleecrit = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon_Critical")
 	local dsranged = Ext.Stats.Get("Interrupt_DivineStrike_RangedWeapon")
 	local dsrangedcrit = Ext.Stats.Get("Interrupt_DivineStrike_RangedWeapon_Critical")
-	dscold.Conditions = dscold.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dscoldcrit.Conditions = dscoldcrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsfire.Conditions = dsfire.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsfirecrit.Conditions = dsfirecrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dslightning.Conditions = dslightning.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dslightningcrit.Conditions = dslightningcrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dspoison.Conditions = dspoison.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dspoisoncrit.Conditions = dspoisoncrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsradiant.Conditions = dsradiant.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsradiantcrit.Conditions = dsradiantcrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsthunder.Conditions = dsthunder.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsthundercrit.Conditions = dsthundercrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsmelee.Conditions = dsmelee.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsmeleecrit.Conditions = dsmeleecrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsranged.Conditions = dsranged.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	dsrangedcrit.Conditions = dsrangedcrit.Conditions .. " and not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes')"
-	local dspoisonexp = Ext.Stats.Get("Divine_Strike_Trickery")		
-	dspoisonexp.Boosts = dspoisonexp.Boosts .. ";UnlockSpell(Target_BoomingBlade_DivineStrike_Poison);UnlockSpell(Target_GreenFlameBlade_DivineStrike_Poison)"
+	local dsdeath = Ext.Stats.Get("Interrupt_DivineStrike_Necrotic")
+	local dsdeathcrit = Ext.Stats.Get("Interrupt_DivineStrike_Necrotic_Critical")
+	dscold.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dscold.Conditions
+	dscoldcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dscoldcrit.Conditions
+	dsfire.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsfire.Conditions
+	dsfirecrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsfirecrit.Conditions
+	dslightning.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dslightning.Conditions
+	dslightningcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dslightningcrit.Conditions
+	dspoison.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dspoison.Conditions
+	dspoisoncrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dspoisoncrit.Conditions
+	dsradiant.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsradiant.Conditions
+	dsradiantcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsradiantcrit.Conditions
+	dsthunder.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsthunder.Conditions
+	dsthundercrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsthundercrit.Conditions
+	dsmelee.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsmelee.Conditions
+	dsmeleecrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsmeleecrit.Conditions
+	dsranged.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsranged.Conditions
+	dsrangedcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsrangedcrit.Conditions
+	dsdeath.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsdeath.Conditions
+	dsdeathcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. dsdeathcrit.Conditions
+
+-- SRD's Cleric Subclasses
+
+	if Ext.Mod.IsModLoaded("a6474f89-8efc-443d-cc95-9cdf142f931e") then
+		local srddsradiant = Ext.Stats.Get("Interrupt_SRD_DivineStrike_Radiant")
+		local srddsradiantcrit = Ext.Stats.Get("Interrupt_SRD_DivineStrike_Radiant_Critical")
+		local srddspsychic = Ext.Stats.Get("Interrupt_SRD_DivineStrike_Psychic")
+		local srddspsychiccrit = Ext.Stats.Get("Interrupt_SRD_DivineStrike_Psychic_Critical")
+		if srddsradiant ~= nil and srddsradiantcrit ~= nil and srddspsychic ~= nil and srddspsychiccrit ~= nil then
+			srddsradiant.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. srddsradiant.Conditions
+			srddsradiantcrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. srddsradiantcrit.Conditions
+			srddspsychic.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. srddspsychic.Conditions
+			srddspsychiccrit.Conditions = "not SpellId('Target_BlessedStrikes') and not SpellId('Projectile_BlessedStrikes') and " .. srddspsychiccrit.Conditions
+		end
+	end
 end
 
 -------------------------- Martial Arts Bonus Unarmed Strike --------------------------
@@ -2834,6 +3268,8 @@ function EXP_SpreadingSpores()
 	sspores.TooltipDamageList = "DealDamage(LevelMapValue(SpreadingSpores),Necrotic)"
 end
 
+---------------------------------------- RAW CHANGES ----------------------------------------
+
 function EXP_RAWChanges()
 	if Ext.Mod.IsModLoaded("f19c68ed-70be-4c3d-b610-e94afc5c5103") then
 		local mw7 = Ext.Stats.Get("Target_MagicWeapon_7")
@@ -2908,6 +3344,66 @@ function EXP_RAWChanges()
 		sgr7.TooltipStatusApply = "ApplyStatus(SPIRIT_GUARDIANS_RADIANT_AURA_7,100,100)"
 		sgr8.TooltipStatusApply = "ApplyStatus(SPIRIT_GUARDIANS_RADIANT_AURA_8,100,100)"
 		sgr9.TooltipStatusApply = "ApplyStatus(SPIRIT_GUARDIANS_RADIANT_AURA_9,100,100)"
+		local sgr4aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_4")
+		local sgr5aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_5")
+		local sgr6aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_6")
+		local sgr7aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_7")
+		local sgr8aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_8")
+		local sgr9aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_AURA_9")
+		local sgr7status = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_7")
+		local sgr8status = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_8")
+		local sgr9status = Ext.Stats.Get("SPIRIT_GUARDIANS_RADIANT_9")
+		local sgn4aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_4")
+		local sgn5aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_5")
+		local sgn6aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_6")
+		local sgn7aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_7")
+		local sgn8aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_8")
+		local sgn9aurastatus = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_AURA_9")
+		local sgn7status = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_7")
+		local sgn8status = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_8")
+		local sgn9status = Ext.Stats.Get("SPIRIT_GUARDIANS_NECROTIC_9")
+		sgr4aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_4,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_4,100,-1)")
+		sgr5aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_5,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_5,100,-1)")
+		sgr6aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_6,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_6,100,-1)")
+		sgr7aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_7,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_7,100,-1)")
+		sgr8aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_8,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_8,100,-1)")
+		sgr9aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_RADIANT_9,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_RADIANT_DAMAGE_9,100,-1)")
+		sgr7status.OnApplyRoll = ""
+		sgr7status:SetRawAttribute("OnApplySuccess", "")
+		sgr7status:SetRawAttribute("OnApplyFail", "")
+		sgr7status:SetRawAttribute("OnTickSuccess", "")
+		sgr7status:SetRawAttribute("OnTickFail", "")
+		sgr8status.OnApplyRoll = ""
+		sgr8status:SetRawAttribute("OnApplySuccess", "")
+		sgr8status:SetRawAttribute("OnApplyFail", "")
+		sgr8status:SetRawAttribute("OnTickSuccess", "")
+		sgr8status:SetRawAttribute("OnTickFail", "")
+		sgr9status.OnApplyRoll = ""
+		sgr9status:SetRawAttribute("OnApplySuccess", "")
+		sgr9status:SetRawAttribute("OnApplyFail", "")
+		sgr9status:SetRawAttribute("OnTickSuccess", "")
+		sgr9status:SetRawAttribute("OnTickFail", "")
+		sgn4aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_4,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_4,100,-1)")
+		sgn5aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_5,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_5,100,-1)")
+		sgn6aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_6,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_6,100,-1)")
+		sgn7aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_7,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_7,100,-1)")
+		sgn8aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_8,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_8,100,-1)")
+		sgn9aurastatus:SetRawAttribute("AuraStatuses", "TARGET:IF(Enemy() and not (Dead() or HasStatus('KNOCKED_OUT'))):ApplyStatus(SPIRIT_GUARDIANS_NECROTIC_9,100,-1);TARGET:IF(Enemy() and HasStatus('RAW_CURRENT_TURN') and not (Dead() or HasStatus('KNOCKED_OUT') or HasStatus('SPIRIT_GUARDIANS_DAMAGE_RECEIVED',context.Target,context.Source))):ApplyStatus(RAW_SPIRIT_GUARDIANS_NECROTIC_DAMAGE_9,100,-1)")
+		sgn7status.OnApplyRoll = ""
+		sgn7status:SetRawAttribute("OnApplySuccess", "")
+		sgn7status:SetRawAttribute("OnApplyFail", "")
+		sgn7status:SetRawAttribute("OnTickSuccess", "")
+		sgn7status:SetRawAttribute("OnTickFail", "")
+		sgn8status.OnApplyRoll = ""
+		sgn8status:SetRawAttribute("OnApplySuccess", "")
+		sgn8status:SetRawAttribute("OnApplyFail", "")
+		sgn8status:SetRawAttribute("OnTickSuccess", "")
+		sgn8status:SetRawAttribute("OnTickFail", "")
+		sgn9status.OnApplyRoll = ""
+		sgn9status:SetRawAttribute("OnApplySuccess", "")
+		sgn9status:SetRawAttribute("OnApplyFail", "")
+		sgn9status:SetRawAttribute("OnTickSuccess", "")
+		sgn9status:SetRawAttribute("OnTickFail", "")
 	else
 		return
 	end
@@ -2939,20 +3435,20 @@ function EXP_5ESpellChanges()
 		local intdsthundercrit = Ext.Stats.Get("Interrupt_DivineStrike_Thunder_EXP_Critical")
 		local intdsmelee = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon_EXP")
 		local intdsmeleecrit = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon_EXP_Critical")
-		intdscold.Conditions = intdscold.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold')"
-		intdscoldcrit.Conditions = intdscoldcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold')"
-		intdsfire.Conditions = intdsfire.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire')"
-		intdsfirecrit.Conditions = intdsfirecrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire')"
-		intdslightning.Conditions = intdslightning.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning')"
-		intdslightningcrit.Conditions = intdslightningcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning')"
-		intdspoison.Conditions = intdspoison.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison')"
-		intdspoisoncrit.Conditions = intdspoisoncrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison')"
-		intdsradiant.Conditions = intdsradiant.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant')"
-		intdsradiantcrit.Conditions = intdsradiantcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant')"
-		intdsthunder.Conditions = intdsthunder.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder')"
-		intdsthundercrit.Conditions = intdsthundercrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder')"
-		intdsmelee.Conditions = intdsmelee.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee')"
-		intdsmeleecrit.Conditions = intdsmeleecrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee')"
+		intdscold.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold') and " .. intdscold.Conditions
+		intdscoldcrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold') and " .. intdscoldcrit.Conditions
+		intdsfire.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire') and " .. intdsfire.Conditions
+		intdsfirecrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire') and " .. intdsfirecrit.Conditions
+		intdslightning.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning') and " .. intdslightning.Conditions
+		intdslightningcrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning') and " .. intdslightningcrit.Conditions
+		intdspoison.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison') and " .. intdspoison.Conditions
+		intdspoisoncrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison') and " .. intdspoisoncrit.Conditions
+		intdsradiant.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant') and " .. intdsradiant.Conditions
+		intdsradiantcrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant') and " .. intdsradiantcrit.Conditions
+		intdsthunder.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder') and " .. intdsthunder.Conditions
+		intdsthundercrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder') and " .. intdsthundercrit.Conditions
+		intdsmelee.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee') and " .. intdsmelee.Conditions
+		intdsmeleecrit.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee') and " .. intdsmeleecrit.Conditions
 
 		local intdscold2 = Ext.Stats.Get("Interrupt_DivineStrike_Cold_2")
 		local intdscoldcrit2 = Ext.Stats.Get("Interrupt_DivineStrike_Cold_2_Critical")
@@ -2968,20 +3464,20 @@ function EXP_5ESpellChanges()
 		local intdsthundercrit2 = Ext.Stats.Get("Interrupt_DivineStrike_Thunder_2_Critical")
 		local intdsmelee2 = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon_2")
 		local intdsmeleecrit2 = Ext.Stats.Get("Interrupt_DivineStrike_MeleeWeapon_2_Critical")
-		intdscold2.Conditions = intdscold.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold')"
-		intdscoldcrit2.Conditions = intdscoldcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold')"
-		intdsfire2.Conditions = intdsfire.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire')"
-		intdsfirecrit2.Conditions = intdsfirecrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire')"
-		intdslightning2.Conditions = intdslightning.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning')"
-		intdslightningcrit2.Conditions = intdslightningcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning')"
-		intdspoison2.Conditions = intdspoison.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison')"
-		intdspoisoncrit2.Conditions = intdspoisoncrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison')"
-		intdsradiant2.Conditions = intdsradiant.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant')"
-		intdsradiantcrit2.Conditions = intdsradiantcrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant')"
-		intdsthunder2.Conditions = intdsthunder.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder')"
-		intdsthundercrit2.Conditions = intdsthundercrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder')"
-		intdsmelee2.Conditions = intdsmelee.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee')"
-		intdsmeleecrit2.Conditions = intdsmeleecrit.Conditions .. " and not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee')"
+		intdscold2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold') and " .. intdscold2.Conditions
+		intdscoldcrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Cold') and not SpellId('Target_GreenFlameBlade_DivineStrike_Cold') and " .. intdscoldcrit2.Conditions
+		intdsfire2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire') and " .. intdsfire2.Conditions
+		intdsfirecrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Fire') and not SpellId('Target_GreenFlameBlade_DivineStrike_Fire') and " .. intdsfirecrit2.Conditions
+		intdslightning2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning') and " .. intdslightning2.Conditions
+		intdslightningcrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Lightning') and not SpellId('Target_GreenFlameBlade_DivineStrike_Lightning') and " .. intdslightningcrit2.Conditions
+		intdspoison2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison') and " .. intdspoison2.Conditions
+		intdspoisoncrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Poison') and not SpellId('Target_GreenFlameBlade_DivineStrike_Poison') and " .. intdspoisoncrit2.Conditions
+		intdsradiant2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant') and " .. intdsradiant2.Conditions
+		intdsradiantcrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Radiant') and not SpellId('Target_GreenFlameBlade_DivineStrike_Radiant') and " .. intdsradiantcrit2.Conditions
+		intdsthunder2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder') and " .. intdsthunder2.Conditions
+		intdsthundercrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Thunder') and not SpellId('Target_GreenFlameBlade_DivineStrike_Thunder') and " .. intdsthundercrit2.Conditions
+		intdsmelee2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee') and " .. intdsmelee2.Conditions
+		intdsmeleecrit2.Conditions = "not SpellId('Target_BoomingBlade_DivineStrike_Melee') and not SpellId('Target_GreenFlameBlade_DivineStrike_Melee') and " .. intdsmeleecrit2.Conditions
 	else
 		return
 	end
@@ -3005,12 +3501,11 @@ function EXP_MiscellaneousChanges()
 	local performepinl = Ext.Stats.Get("EPI_DIVINE_BARD_PERFORM_NEWLIGHT")
 	local performepisf = Ext.Stats.Get("EPI_DIVINE_BARD_PERFORM_STREETSANDFACES")
 	local performepiwl = Ext.Stats.Get("EPI_DIVINE_BARD_PERFORM_WELIVE")
-	local mightyimpel = Ext.Stats.Get("Throw_MightyImpel")
-	local ecacid = Ext.Stats.Get("ELEMENTAL_CLEAVER_ACID")
-	local eccold = Ext.Stats.Get("ELEMENTAL_CLEAVER_COLD")
-	local ecfire = Ext.Stats.Get("ELEMENTAL_CLEAVER_FIRE")
-	local eclightning = Ext.Stats.Get("ELEMENTAL_CLEAVER_LIGHTNING")
-	local ecthunder = Ext.Stats.Get("ELEMENTAL_CLEAVER_THUNDER")
+	local combear = Ext.Stats.Get("RANGERS_COMPANION_BEAR")
+	local comboar = Ext.Stats.Get("RANGERS_COMPANION_BOAR")
+	local comspider = Ext.Stats.Get("RANGERS_COMPANION_GIANTSPIDER")
+	local comraven = Ext.Stats.Get("RANGERS_COMPANION_RAVEN")
+	local comwolf = Ext.Stats.Get("RANGERS_COMPANION_WOLF")
 	performp.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performp.RemoveConditions
 	performtp.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performtp.RemoveConditions
 	performn.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performn.RemoveConditions
@@ -3026,14 +3521,51 @@ function EXP_MiscellaneousChanges()
 	performepinl.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performepinl.RemoveConditions
 	performepisf.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performepisf.RemoveConditions
 	performepiwl.RemoveConditions = "not StatusId('STEADY_AIM_MOVEMENT') and not StatusId('RAGE_STOP_REMOVE') and " .. performepiwl.RemoveConditions
-	ecacid:SetRawAttribute("SpellProperties","IF(not HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID,100,10);IF(HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_2,100,10)")
-	eccold:SetRawAttribute("SpellProperties","IF(not HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD,100,10);IF(HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_2,100,10)")
-	ecfire:SetRawAttribute("SpellProperties","IF(not HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE,100,10);IF(HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE_2,100,10)")
-	eclightning:SetRawAttribute("SpellProperties","IF(not HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING,100,10);IF(HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_2,100,10)")
-	ecthunder:SetRawAttribute("SpellProperties","IF(not HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER,100,10);IF(HasPassive('DemiurgicColossus',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_2,100,10)")
+	combear.Boosts = "ProficiencyBonusOverride(Owner.ProficiencyBonus);" .. combear.Boosts
+	comboar.Boosts = "ProficiencyBonusOverride(Owner.ProficiencyBonus);" .. comboar.Boosts
+	comspider.Boosts = "ProficiencyBonusOverride(Owner.ProficiencyBonus);" .. comspider.Boosts
+	comraven.Boosts = "ProficiencyBonusOverride(Owner.ProficiencyBonus);" .. comraven.Boosts
+	comwolf.Boosts = "ProficiencyBonusOverride(Owner.ProficiencyBonus);" .. comwolf.Boosts
+	local mightyimpel = Ext.Stats.Get("Throw_MightyImpel")
+	local ecacid = Ext.Stats.Get("Shout_ElementalCleaver_Acid")
+	local eccold = Ext.Stats.Get("Shout_ElementalCleaver_Cold")
+	local ecfire = Ext.Stats.Get("Shout_ElementalCleaver_Fire")
+	local eclightning = Ext.Stats.Get("Shout_ElementalCleaver_Lightning")
+	local ecthunder = Ext.Stats.Get("Shout_ElementalCleaver_Thunder")
+	ecacid:SetRawAttribute("SpellProperties","IF(not HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID,100,10);IF(HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_2,100,10)")
+	eccold:SetRawAttribute("SpellProperties","IF(not HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD,100,10);IF(HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_2,100,10)")
+	ecfire:SetRawAttribute("SpellProperties","IF(not HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE,100,10);IF(HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE_2,100,10)")
+	eclightning:SetRawAttribute("SpellProperties","IF(not HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING,100,10);IF(HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_2,100,10)")
+	ecthunder:SetRawAttribute("SpellProperties","IF(not HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER,100,10);IF(HasPassive('RageDemiurgicColossusUnlock',context.Source)):ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_2,100,10)")
 
 	if string.find(mightyimpel.ThrowableTargetConditions, "TargetSizeEqualOrSmaller%(Size.Medium%)") then
 		mightyimpel.ThrowableTargetConditions = string.gsub(mightyimpel.ThrowableTargetConditions, "TargetSizeEqualOrSmaller%(Size.Medium%)", "((not HasPassive('DemiurgicColossus',context.Source) and TargetSizeEqualOrSmaller(Size.Medium)) or (HasPassive('DemiurgicColossus',context.Source) and TargetSizeEqualOrSmaller(Size.Large)))")
+	end
+
+	local cws = Ext.Stats.Get("Interrupt_CuttingWords")
+	if string.find(cws.Conditions, " or %(ClassLevelHigherOrEqualThan%(10,'Bard'%) and IsFlatValueInterruptInteresting%(10, context.Source%)%)") then
+		cws.Conditions = string.gsub(cws.Conditions, " or %(ClassLevelHigherOrEqualThan%(10,'Bard'%) and IsFlatValueInterruptInteresting%(10, context.Source%)%)", " or (ClassLevelHigherOrEqualThan(10,'Bard') and not ClassLevelHigherOrEqualThan(15,'Bard') and IsFlatValueInterruptInteresting(10, context.Source)) or (ClassLevelHigherOrEqualThan(15,'Bard') and IsFlatValueInterruptInteresting(12, context.Source))")
+	end
+
+	if string.find(cws.Conditions, " or %(ClassLevelHigherOrEqualThan%(10,'Bard'%) and IsFlatValueInterruptInteresting%(10%)%)") then
+		cws.Conditions = string.gsub(cws.Conditions, " or %(ClassLevelHigherOrEqualThan%(10,'Bard'%) and IsFlatValueInterruptInteresting%(10%)%)", " or (ClassLevelHigherOrEqualThan(10,'Bard') and not ClassLevelHigherOrEqualThan(15,'Bard') and IsFlatValueInterruptInteresting(10)) or (ClassLevelHigherOrEqualThan(15,'Bard') and IsFlatValueInterruptInteresting(12))")
+	end
+
+	local mabus = Ext.Stats.Get("MartialArts_BonusUnarmedStrike")
+	mabus.Conditions = mabus.Conditions .. " and HasUseCosts('ActionPoint',true)"
+
+	if Ext.Mod.IsModLoaded("f19c68ed-70be-4c3d-b610-e94afc5c5103") then
+		local throw = Ext.Stats.Get("Throw_Throw")
+		local rawthrow = Ext.Stats.Get("RAW_Throw_Weapon")
+		local rawthrowoffhand = Ext.Stats.Get("RAW_Throw_Weapon_OffHand")
+		local rawthrowtransition = Ext.Stats.Get("RAW_Throw_Weapon_OffHand_Transition")
+		throw:SetRawAttribute("SpellSuccess","TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(2d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(1d4,Bludgeoning);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder);;TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Thunder);")
+		rawthrow:SetRawAttribute("SpellSuccess","TARGET:DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder);;TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Thunder);")
+		rawthrowoffhand:SetRawAttribute("SpellSuccess","TARGET:IF(HasPassive('FightingStyle_TwoWeaponFighting',context.Source)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(not HasPassive('FightingStyle_TwoWeaponFighting',context.Source) and not HasWeaponProperty(WeaponProperties.Finesse, context.HitDescription.ThrownObject)):DealDamage(max(1,ThrownWeapon-max(0,StrengthModifier)), ThrownWeaponDamageType);TARGET:IF(not HasPassive('FightingStyle_TwoWeaponFighting',context.Source) and HasWeaponProperty(WeaponProperties.Finesse, context.HitDescription.ThrownObject)):DealDamage(max(1,ThrownWeapon-max(0,max(StrengthModifier,DexterityModifier))), ThrownWeaponDamageType);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder);;TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Thunder);")
+		rawthrowtransition:SetRawAttribute("SpellSuccess","TARGET:IF(HasPassive('FightingStyle_TwoWeaponFighting',context.Source)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(not HasPassive('FightingStyle_TwoWeaponFighting',context.Source) and not HasWeaponProperty(WeaponProperties.Finesse, context.HitDescription.ThrownObject)):DealDamage(max(1,ThrownWeapon-max(0,StrengthModifier)), ThrownWeaponDamageType);TARGET:IF(not HasPassive('FightingStyle_TwoWeaponFighting',context.Source) and HasWeaponProperty(WeaponProperties.Finesse, context.HitDescription.ThrownObject)):DealDamage(max(1,ThrownWeapon-max(0,max(StrengthModifier,DexterityModifier))), ThrownWeaponDamageType);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder);;TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Thunder);")
+	else
+		local throw = Ext.Stats.Get("Throw_Throw")
+		throw:SetRawAttribute("SpellSuccess","TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(1,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(2d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning,Magical,,0,,true);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning,Magical,,0,,true);IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject) and HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6, ThrownWeaponDamageType,Magical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder);;TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Acid);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Cold);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Fire);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Lightning);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_2', context.HitDescription.ThrownObject)):DealDamage(2d6,Thunder);")
 	end
 end
 
@@ -3054,6 +3586,185 @@ function EXP_BeastSpellsWildshape()
 		end
 	end
 end
+
+---------------------------------- EXPANSION'S BLADESINGER ---------------------------------
+
+local EXP_Expansion_Bladesinger
+
+function EXP_ExpansionBladesinger()
+    EXP_ApplyStaticData(EXP_Expansion_Bladesinger)
+
+--	Ext.Loca.UpdateTranslatedString("h19056f3bg05d1g4fe1g8a39g0cc0b302fee1","Pick the weapon you'd like to use as your principal weapon, replacing your quarterstaff. You will be able to channel your magic through it during combat.")
+
+	local bladesongb = Ext.Stats.Get("Bladesong_Boost")
+	local bladesongspell = Ext.Stats.Get("Shout_Bladesong")
+	local bladesongunlock = Ext.Stats.Get("Bladesong_Unlock")
+	local bladesongstatus = Ext.Stats.Get("BLADESONG")
+	local sod1 = Ext.Stats.Get("Interrupt_SongOfDefense_1")
+	local sod2 = Ext.Stats.Get("Interrupt_SongOfDefense_2")
+	local sod3 = Ext.Stats.Get("Interrupt_SongOfDefense_3")
+	local sod4 = Ext.Stats.Get("Interrupt_SongOfDefense_4")
+	local sod5 = Ext.Stats.Get("Interrupt_SongOfDefense_5")
+	local sod6 = Ext.Stats.Get("Interrupt_SongOfDefense_6")
+	local twas = Ext.Stats.Get("TraininginWarandSong")
+	local bladesongsm = Ext.Stats.Get("BLADESONG_SHIELD_MESSAGE")
+	local bladesongam = Ext.Stats.Get("BLADESONG_ARMOR_MESSAGE")
+	local bladesongum = Ext.Stats.Get("BLADESONG_UNARMED_MESSAGE")
+	local bladesongwm = Ext.Stats.Get("BLADESONG_WEAPON_MESSAGE")
+	bladesongb.Boosts = "ActionResource(Movement,3,0);Advantage(Skill,Acrobatics);IF(ConditionResult(context.Source.Intelligence == 12) or ConditionResult(context.Source.Intelligence == 13)):AC(1);IF(ConditionResult(context.Source.Intelligence == 14) or ConditionResult(context.Source.Intelligence == 15)):AC(2);IF(ConditionResult(context.Source.Intelligence == 16) or ConditionResult(context.Source.Intelligence == 17)):AC(3);IF(ConditionResult(context.Source.Intelligence == 18) or ConditionResult(context.Source.Intelligence == 19)):AC(4);IF(ConditionResult(context.Source.Intelligence == 20) or ConditionResult(context.Source.Intelligence == 21)):AC(5);IF(ConditionResult(context.Source.Intelligence == 22) or ConditionResult(context.Source.Intelligence == 23)):AC(6);IF(ConditionResult(context.Source.Intelligence == 24) or ConditionResult(context.Source.Intelligence == 25)):AC(7);IF(ConditionResult(context.Source.Intelligence == 26) or ConditionResult(context.Source.Intelligence == 27)):AC(8);IF(ConditionResult(context.Source.Intelligence == 28) or ConditionResult(context.Source.Intelligence == 29)):AC(9);IF(ConditionResult(context.Source.Intelligence > 29)):AC(10);IF(IsConcentrating()):RollBonus(SavingThrow,IntelligenceModifier,Constitution)"
+	bladesongb.BoostContext = {}
+	bladesongb.BoostConditions = ""
+	bladesongb.StatsFunctorContext = {}
+	bladesongb.Conditions = ""
+	bladesongspell.DescriptionParams = "IntelligenceModifier;Distance(3)"
+	bladesongspell.ExtraDescription = "h4c0c5808g0bb4g4a21g82cbg2b665052f53a;1"
+	bladesongspell.UseCosts = bladesongspell.UseCosts .. ";BonusActionPoint:1"
+	bladesongspell.RequirementConditions = "EXP_BladesongAvaliable()"
+	bladesongspell.TooltipPermanentWarnings = "59d114b9-45bd-4422-b6cb-ed4f9517f6de;218f6a93-f5c5-4c98-a6eb-c3ddf13c84a7"
+	bladesongunlock.Boosts = "UnlockSpell(Shout_Bladesong_Dismiss)"
+	bladesongstatus.DescriptionParams = "IntelligenceModifier;Distance(3)"
+	bladesongstatus.RemoveConditions = "(IsStatusEvent(StatusEvent.OnStatusApplied) and (HasStatus('SG_Incapacitated') and not StatusId('BLINK_VANISH'))) or (IsStatusEvent(StatusEvent.OnEquip) and (HasHeavyArmor() or HasMediumArmor() or HasShieldEquipped(context.Source))) or (IsStatusEvent(StatusEvent.OnAttack) and IsWeaponAttack() and WieldingWeapon('Twohanded', false, false, context.Source))"
+	local flags = bladesongstatus.RemoveEvents
+	table.insert(flags, "OnStatusApplied")
+	table.insert(flags, "OnEquip")
+	table.insert(flags, "OnAttack")
+	bladesongstatus.RemoveEvents = flags
+	sod1.Cost = sod1.Cost .. ";ReactionActionPoint:1"
+	sod2.Cost = sod2.Cost .. ";ReactionActionPoint:1"
+	sod3.Cost = sod3.Cost .. ";ReactionActionPoint:1"
+	sod4.Cost = sod4.Cost .. ";ReactionActionPoint:1"
+	sod5.Cost = sod5.Cost .. ";ReactionActionPoint:1"
+	sod6.Cost = sod6.Cost .. ";ReactionActionPoint:1"
+	twas.Description = "h5369ba87g093ag41a1g98f7g56642be8116d;1"
+	bladesongwm.Description = "hd8b5dde4gac64g4725gb148g8655b2421e88;1"
+	local flagsm = bladesongsm.StatusPropertyFlags
+	local flagam = bladesongam.StatusPropertyFlags
+	local flagum = bladesongum.StatusPropertyFlags
+	table.insert(flagsm, "DisableOverhead")
+	table.insert(flagsm, "DisablePortraitIndicator")
+	table.insert(flagam, "DisableOverhead")
+	table.insert(flagam, "DisablePortraitIndicator")
+	table.insert(flagum, "DisableOverhead")
+	table.insert(flagum, "DisablePortraitIndicator")
+	bladesongsm.StatusPropertyFlags = flagsm
+	bladesongam.StatusPropertyFlags = flagam
+	bladesongum.StatusPropertyFlags = flagum
+end
+
+EXP_Expansion_Bladesinger = {
+    ["Progression"] = {
+        ["fb80a80b-d512-4ff5-89d8-b4fa6c29f96e"] = {
+            ["SelectPassives"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                {
+                        Amount = "1",
+                        Amount2 = "0",
+                        Arg3 = "TrainingInSongAndWar",
+                        UUID = "01d6daa1-c87f-4b3f-9bb2-f75aa7370e15"
+                }
+                },
+            },
+            ["SelectEquipment"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                },
+            },
+            ["Boosts"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = "Proficiency(LightArmor);ProficiencyBonus(Skill,Performance)",
+            },
+            ["PassivesAdded"] = {
+                ["Type"] = "add",
+                ["Value"] = "Bladesong_Resource;Bladesong_WeaponCheck",
+            },
+		},
+        ["ed500d02-ae15-434a-944e-65b845b62d74"] = {
+            ["PassivesAdded"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = "ExtraAttack_Bladesinging",
+            },
+		},
+        ["2765d077-93a1-4ada-9e11-977a878f429a"] = {
+            ["Boosts"] = {
+                ["Type"] = "remove",
+                ["Value"] = "ActionResource(Bladesong,1,0)",
+            },
+		},
+        ["26a8f68a-cdaa-4fe0-93a6-75166992f129"] = {
+            ["Boosts"] = {
+                ["Type"] = "remove",
+                ["Value"] = "ActionResource(Bladesong,1,0)",
+            },
+		},
+    },
+    ["EquipmentList"] = {
+        ["5309613d-e7cb-4176-95b6-0c8b796d47d0"] = {
+            ["Items"] = {
+                ["Type"] = "add",
+                ["Value"] = {
+                    "WPN_Club",
+					"WPN_Flail",
+					"WPN_Handaxe",
+					"WPN_Javelin",
+					"WPN_LightHammer",
+					"WPN_Mace",
+					"WPN_Morningstar",
+					"WPN_Spear",
+					"WPN_Trident",
+					"WPN_WarPick",
+					"WPN_Warhammer",
+                },
+            },
+		},
+	},
+    ["ClassDescription"] = {
+        ["8047cf29-2c79-4f12-a4bf-d965a023be63"] = {
+            ["SomaticEquipmentSet"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = {
+                    "Club",
+                    "Dagger",
+					"Flail",
+					"Handaxe",
+					"Javelin",
+					"LightHammer",
+					"Longsword",
+					"Mace",
+					"Morningstar",
+					"Quarterstaff",
+					"Rapier",
+					"Scimitar",
+					"Shortsword",
+					"Sickle",
+					"Spear",
+					"Trident",
+					"WarPick",
+					"Warhammer",
+                },
+            },
+		},
+	},
+}
+
+---------------------------------- EXPANSION'S BLADESINGER ICON ---------------------------------
+
+local EXP_Expansion_BladesingerIcon
+
+function EXP_ExpansionBladesingerIcon()
+    EXP_ApplyStaticData(EXP_Expansion_BladesingerIcon)
+end
+
+EXP_Expansion_BladesingerIcon = {
+    ["ClassDescription"] = {
+        ["8047cf29-2c79-4f12-a4bf-d965a023be63"] = {
+            ["Name"] = {
+                ["Type"] = "overwrite",
+                ["Value"] = "Wizard_Bladesinging",
+            },
+		},
+    },
+}
 
 --[[function formatting(file)
 	local result = ""
@@ -3240,7 +3951,11 @@ local function EXP_StatsLoaded()
         BaseClassFeats = MCMGet("BaseClassFeats"),
         CustomClassFeats = MCMGet("CustomClassFeats"),
         Sorcerer11thSubclass = MCMGet("Sorcerer11thSubclass"),
-        WizardBladesinger = MCMGet("WizardBladesinger")
+        WizardBladesinger = MCMGet("WizardBladesinger"),
+        ExpansionBladesinger = MCMGet("ExpansionBladesinger"),
+        ExpansionBladesingerIcon = MCMGet("ExpansionBladesingerIcon"),
+        BaseClassEpicBoons = MCMGet("BaseClassEpicBoons"),
+        CustomClassEpicBoons = MCMGet("CustomClassEpicBoons")
     }
 
 	EXP_ActionSurge()
@@ -3356,6 +4071,20 @@ local function EXP_StatsLoaded()
 		print(string.format("Expansion: Keeping the Wizard Bladesinger's Song of Victory feature to 14th level."))
 	end
 
+	if	Vars["ExpansionBladesinger"] == true then
+		print(string.format("Expansion: Switching the base game's Bladesinger features to Expansion's features."))
+		EXP_ExpansionBladesinger()
+	elseif	Vars["ExpansionBladesinger"] ~= true then
+		print(string.format("Expansion: Keeping the base game's Bladesinger as is."))
+	end
+
+	if	Vars["ExpansionBladesingerIcon"] == true then
+		print(string.format("Expansion: Switching the base game's Bladesinger subclass icon to Expansion's Bladesinger."))
+		EXP_ExpansionBladesingerIcon()
+	elseif	Vars["ExpansionBladesingerIcon"] ~= true then
+		print(string.format("Expansion: Keeping the base game's Bladesinger subclass icon as is."))
+	end
+
 	Ext.Stats.GetStatsManager().ExtraData.Level1 = Vars["Level1"]
 	print(string.format("Expansion: EXP needed to reach level 2 is: " .. Vars["Level1"]))
 	Ext.Stats.GetStatsManager().ExtraData.Level2 = Vars["Level2"]
@@ -3399,7 +4128,8 @@ local function EXP_StatsLoaded()
 	Ext.Stats.GetStatsManager().ExtraData.MaximumXPCap = Vars["MaxXP"]
 	print(string.format("Expansion: Maximum experience cap is: " .. Vars["MaxXP"]))
 
-	if	Vars["BaseClassFeatSelection"] == "true" then
+	if	Vars["BaseClassFeatSelection"] == true then
+	print(string.format("Expansion: The Base Class Feat selection is set to true."))
 		if	Vars["BaseClassFeats"] == "None" then
 			print(string.format("Expansion: Additional feat(s) settings for base game classes are disabled."))
 		elseif	Vars["BaseClassFeats"] == "2nd Level" then
@@ -3418,11 +4148,11 @@ local function EXP_StatsLoaded()
 			print(string.format("Expansion: Feat granted at every 3rd level in base game classes."))
 			EXP_Every3rdLevelFeats()
 		end
-	elseif	Vars["BaseClassFeatSelection"] == "false" then
+	elseif	Vars["BaseClassFeatSelection"] == false then
 			print(string.format("Expansion: Additional feat(s) settings for base game classes are disabled."))
 	end
 
-	if	Vars["CustomClassFeatSelection"] == "true" then
+	if	Vars["CustomClassFeatSelection"] == true then
 		if	Vars["CustomClassFeats"] == "None" then
 			print(string.format("Expansion: Additional feat(s) settings for custom classes are disabled."))
 		elseif	Vars["CustomClassFeats"] == "2nd Level" then
@@ -3441,8 +4171,22 @@ local function EXP_StatsLoaded()
 			print(string.format("Expansion: Feat granted at every 3rd level in custom classes."))
 			EXP_CustomEvery3rdLevelFeats()
 		end
-	elseif	Vars["CustomClassFeatSelection"] == "false" then
+	elseif	Vars["CustomClassFeatSelection"] == false then
 			print(string.format("Expansion: Additional feat(s) settings for custom classes are disabled."))
+	end
+
+	if	Vars["BaseClassEpicBoons"] == true then
+		print(string.format("Expansion: Epic Boons selections have been added to base game clases at 20th level."))
+			EXP_BaseClassEpicBoons()
+	elseif	Vars["BaseClassEpicBoons"] == false then
+			print(string.format("Expansion: Epic Boons have been not added to base game classes."))
+	end
+
+	if	Vars["CustomClassEpicBoons"] == true then
+		print(string.format("Expansion: Epic Boons selections have been added to custom clases at 20th level."))
+			EXP_CustomClassEpicBoons()
+	elseif	Vars["CustomClassEpicBoons"] == false then
+			print(string.format("Expansion: Epic Boons have been not added to custom classes."))
 	end
 end
 Ext.Events.StatsLoaded:Subscribe(EXP_StatsLoaded)
@@ -3730,4 +4474,3 @@ Ext.ModEvents.BG3MCM["MCM_Setting_Reset"]:Subscribe(function(payload)
 		print(string.format("Expansion: Additional feat(s) settings are disabled in custom classes."))
     end
 end)
-	

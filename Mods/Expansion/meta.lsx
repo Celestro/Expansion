@@ -26,7 +26,7 @@
                     </children>
                 </node>
                 <node id="ModuleInfo">
-                    <attribute id="Author" type="LSString" value=""/>
+                    <attribute id="Author" type="LSString" value="Celes/DiZ"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="Expands upon the base game classes"/>
                     <attribute id="FileSize" type="uint64" value="0"/>
@@ -40,7 +40,7 @@
                     <attribute id="PublishHandle" type="uint64" value="0"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="a2c4b0fc-e745-41df-81b7-fa53950d86a0"/>
-                    <attribute id="Version64" type="int64" value="36310276290641921"/>
+                    <attribute id="Version64" type="int64" value="36732484460740609"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717110991"/>

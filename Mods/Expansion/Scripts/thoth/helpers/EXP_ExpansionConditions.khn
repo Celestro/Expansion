@@ -301,7 +301,8 @@ function EXP_CanSeeInvisible(source, target, sourceObserver, targetObserver)
 
     return Tagged('BLINDSIGHT', source) 
        |  (HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source))
-       |  (HasStatus('TRUESIGHT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 36.5)) 
+       |  (HasStatus('TRUESIGHT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 36.5))
+       |  (HasStatus('TRUESIGHT_BOON_OF_THE_NIGHT_SPIRIT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 18.5)) 
        | ((HasStatus('SEE_INVISIBILITY', source) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 18.5)) 
        | ((HasPassive('FightingStyle_BlindFighting', source) | (HasPassive('Blindsense', source) & ~(HasPassive('Deafness',source) | HasStatus('SG_Deafened',source)))) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 3))
 end
@@ -313,7 +314,8 @@ function EXP_CanSeeBlinded(source, target, from, to)
 	return HasStatus('SG_Blinded', source) & (Tagged('BLINDSIGHT', source) 
        |  (HasStatus('MIND_SPIKE_OWNER', source) & HasStatus('MIND_SPIKE', target, source))
        |  (HasStatus('TRUESIGHT', source) & ~DistanceToTargetGreaterThan(36.5)) 
-       | ((HasStatus('SEE_INVISIBILITY', source) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToTargetGreaterThan(18.5)) 
+       | ((HasStatus('SEE_INVISIBILITY', source)
+       |  (HasStatus('TRUESIGHT_BOON_OF_THE_NIGHT_SPIRIT', source) & ~DistanceToGreaterThan(sourcePosition, targetPosition, 18.5)) | HasStatus('MAG_SEE_INVISIBILITY_HIDDEN_IGNORE_RESTING', source) | HasPassive('AllSeeingEye', source)) & ~DistanceToTargetGreaterThan(18.5)) 
        | ((HasPassive('FightingStyle_BlindFighting', source) | (HasPassive('Blindsense', source) & ~(HasPassive('Deafness',source) | HasStatus('SG_Deafened',source)))) & ~DistanceToTargetGreaterThan(3)))
 end
 
@@ -326,33 +328,25 @@ function EXP_CanSee(source, target, from, to)
 	return CanSee(source, target) | EXP_CanSeeSneaking(source, target, from, to) | EXP_CanSeeInvisible(source, target, from, to) | EXP_CanSeeBlinded(source, target, from, to)
 end
 
-function IsFrenzyQualified(entity)
+function HasFrenzyQualifier(entity)
 	local entity = entity or context.Source
-	return ~HasStatus('FOB_QUALIFIER1',entity) & ~HasStatus('FOB_QUALIFIER2',entity) & ~HasStatus('FOB_QUALIFIER3',entity) & ~HasStatus('FOB_QUALIFIER4',entity) & ~HasStatus('FOB_QUALIFIER5',entity) 
+	return ~HasStatus('FRENZY_OF_BLOWS_QUALIFIER',entity) & ~HasStatus('FRENZY_OF_BLOWS_QUALIFIER_2',entity) & ~HasStatus('FRENZY_OF_BLOWS_QUALIFIER_3',entity) & ~HasStatus('FRENZY_OF_BLOWS_QUALIFIER_4',entity) & ~HasStatus('FRENZY_OF_BLOWS_QUALIFIER_5',entity) 
 end
 
-function IsFrenzyTarget(entity, source)
+function FrenzyOfBlowsTarget(entity, source)
 	local entity = entity or context.Target
 	local source = source or context.Source
-	return ~HasStatus('FOB_TARGET1',entity,source) & ~HasStatus('FOB_TARGET2',entity,source) & ~HasStatus('FOB_TARGET3',entity,source) & ~HasStatus('FOB_TARGET4',entity,source)
+	return ~HasStatus('FRENZY_OF_BLOWS_TARGET_1',entity,source) & ~HasStatus('FRENZY_OF_BLOWS_TARGET_2',entity,source) & ~HasStatus('FRENZY_OF_BLOWS_TARGET_3',entity,source) & ~HasStatus('FRENZY_OF_BLOWS_TARGET_4',entity,source)
 end	
 
-function IsPriorFrenzyTarget()
-	local result = HasStatus('FOB_TARGET1',context.Target,context.Source) | HasStatus('FOB_TARGET2',context.Target,context.Source) | HasStatus('FOB_TARGET3',context.Target,context.Source) | HasStatus('FOB_TARGET4',context.Target,context.Source) 
+function PreviousFrenzyTarget()
+	local result = HasStatus('FRENZY_OF_BLOWS_TARGET_1',context.Target,context.Source) | HasStatus('FRENZY_OF_BLOWS_TARGET_2',context.Target,context.Source) | HasStatus('FRENZY_OF_BLOWS_TARGET_3',context.Target,context.Source) | HasStatus('FRENZY_OF_BLOWS_TARGET_4',context.Target,context.Source) 
     return ConditionResult(result.Result, {}, {ConditionError("HasAlreadyBeenFlurried")})
 end   	
 
-function IsInvalidFrenzyTarget()
-	local result = HasStatus('FOB_QUALIFIER2',context.Source) & ~Character()
+function CannotFrenzyTarget()
+	local result = HasStatus('FRENZY_OF_BLOWS_QUALIFIER_2',context.Source) & ~Character()
     return ConditionResult(result.Result, {ConditionError("IsNotCreatureFrenzyTarget")})
-end
-
-function GIsECWeaponThrow()
-	return HasStatus('ELEMENTAL_CLEAVER_ACID',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_COLD',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_FIRE',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_LIGHTNING',context.HitDescription.ThrownObject) | HasStatus('ELEMENTAL_CLEAVER_THUNDER',context.HitDescription.ThrownObject) | GIsECWeaponThrowAltDetect()
-end
-
-function GIsECWeaponThrowAltDetect()
-	return HasAttribute('InventoryBound',context.HitDescription.ThrownObject) &  HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)
 end
 
 function EXP_SizeEqualTo(size, entity)
@@ -364,12 +358,56 @@ function EXP_ReachAttackCheck()
     return (HasStringInSpellRoll('MeleeWeaponAttack') | HasStringInSpellRoll('MeleeOffHandWeaponAttack') | HasStringInSpellRoll('MeleeUnarmedAttack') | HasStringInSpellRoll('MeleeSpellAttack') | HasStringInSpellRoll('ShoveCheck') | SpellId('Target_Grapple') | SpellId('Target_ReleaseGrapple') | SpellId('Throw_Carry')) & ~TargetRadiusGreaterThan(1.5) & ~SpellId('Target_BoomingBlade') & ~SpellId('Target_GreenFlameBlade') & ~HasStringInSpellRoll('SCAGtrips')
 end
 
-function EXP_MightyImpelCheck()
-    local result = Ally()
-    if not result.Result then
-        local st = ~SavingThrow(Ability.Strength, SourceSpellDC(10,context.Source,Ability.Strength))
-        return ConditionResult(st.Result, {}, {}, st.Chance)
+function EXP_BladesongAvaliable()
+    local hasbladesong = HasStatus('BLADESONG')
+    if hasbladesong.Result then 
+        return ~hasbladesong
+    end
+    local hasbladesongweapon = IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Scimitars|Longswords|Clubs|Flails|Handaxes|Javelins|LightHammers|Maces|Morningstars|Spears|Tridents|Warpicks|Warhammers', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))
+    local hasarmor = HasHeavyArmor(context.Source) | HasMediumArmor(context.Source) 
+    local hasshield = HasShieldEquipped(context.Source)
+    
+    local count = 0
+    if not hasbladesongweapon.Result then count = count + 1 end
+    if hasarmor.Result then count = count + 1 end
+    if hasshield.Result then count = count + 1 end
+
+    if count >= 2 then
+        return ConditionResult(false, {ConditionError("HasMultipleBladeSongIssues")})
     end
 
-    return result
+    if not hasbladesongweapon.Result then
+        return ConditionResult(false, {ConditionError("HasNotBladesongWeapon")}) 
+    end
+    
+    if hasarmor.Result then 
+        return ConditionResult(false, {ConditionError("HasNotBladesongArmor")})
+    end 
+
+    return ~hasshield
+end
+
+function AlterSelfCheck()
+	return SpellId('Shout_AlterSelf') | SpellId('Shout_AlterSelf_Weapon_Slashing') | SpellId('Shout_AlterSelf_Weapon_Piercing') | SpellId('Shout_AlterSelf_Weapon_Bludgeoning') | SpellId('Shout_AlterSelf_Tiefling_Male') | SpellId('Shout_AlterSelf_Tiefling_Female') | SpellId('Shout_AlterSelf_Drow_Male') | SpellId('Shout_AlterSelf_Drow_Female') | SpellId('Shout_AlterSelf_Human_Male') | SpellId('Shout_AlterSelf_Human_Female') | SpellId('Shout_AlterSelf_Githyanki_Male') | SpellId('Shout_AlterSelf_Githyanki_Female') | SpellId('Shout_AlterSelf_Dwarf_Male') | SpellId('Shout_AlterSelf_Dwarf_Female') | SpellId('Shout_AlterSelf_Elf_Male') | SpellId('Shout_AlterSelf_Elf_Female') | SpellId('Shout_AlterSelf_HalfElf_Male') | SpellId('Shout_AlterSelf_HalfElf_Female') | SpellId('Shout_AlterSelf_Halfling_Male') | SpellId('Shout_AlterSelf_Halfling_Female') | SpellId('Shout_AlterSelf_Dragonborn_Male') | SpellId('Shout_AlterSelf_Dragonborn_Female') | SpellId('Shout_AlterSelf_HalfOrc_Male') | SpellId('Shout_AlterSelf_HalfOrc_Female') | SpellId('Shout_AlterSelf_Gnome_Male') | SpellId('Shout_AlterSelf_Gnome_Female') | SpellId('Shout_AlterSelf_Human_Strong_Male') | SpellId('Shout_AlterSelf_Human_Strong_Female') | SpellId('Shout_AlterSelf_Drow_Strong_Male') | SpellId('Shout_AlterSelf_Drow_Strong_Female') | SpellId('Shout_AlterSelf_Elf_Strong_Male') | SpellId('Shout_AlterSelf_Elf_Strong_Female') | SpellId('Shout_AlterSelf_HalfElf_Strong_Male') | SpellId('Shout_AlterSelf_HalfElf_Strong_Female') | SpellId('Shout_AlterSelf_Tiefling_Strong_Male') | SpellId('Shout_AlterSelf_Tiefling_Strong_Female')
+end
+
+function ImprovedReaperCheck()
+    return ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellSchoolFilter(SpellSchool.Necromancy) & ~HasCantripSpellLevel() & ~HasFunctor(StatsFunctorType.Summon) & ~HasFunctor(StatsFunctorType.Resurrect) & (IsSpellLevel(1) | IsSpellLevel(2) | IsSpellLevel(3) | IsSpellLevel(4) | IsSpellLevel(5))
+end
+
+function CommandUndeadAdvantage(entity)
+    entity = entity or context.Target
+    return ConditionResult(entity.Intelligence > 7)
+end
+
+function EXP_ArcaneShots()
+    return SpellId('Projectile_ArcaneShot_BanishingArrow') | SpellId('Projectile_ArcaneShot_BeguilingArrow') | SpellId('Projectile_ArcaneShot_BurstingArrow') | SpellId('Projectile_ArcaneShot_EnfeeblingArrow') | SpellId('Projectile_ArcaneShot_GraspingArrow') | SpellId('Projectile_ArcaneShot_SeekingArrow') | SpellId('Projectile_ArcaneShot_ShadowArrow') | SpellId('Zone_ArcaneShot_PiercingArrow')
+end
+
+function BoonOfSpellRecall()
+    return (IsSpellLevel(1) or IsSpellLevel(2) or IsSpellLevel(3) or IsSpellLevel(4) or IsSpellLevel(5) or IsSpellLevel(6) or IsSpellLevel(7) or IsSpellLevel(8) or IsSpellLevel(9)) & HasUseCosts('SpellSlot') & HasSpellFlag(SpellFlags.Spell) & ~MetamagicExclusionSpells()
+end
+
+function BoonOfQuickCastingSpells()
+    return SpellId('Shout_BoonOfQuickCasting_BurningHands') | SpellId('Shout_BoonOfQuickCasting_Catapult') | SpellId('Shout_BoonOfQuickCasting_CauseFear') | SpellId('Shout_BoonOfQuickCasting_ChromaticOrb') | SpellId('Shout_BoonOfQuickCasting_DetectMagic') | SpellId('Shout_BoonOfQuickCasting_DisguiseSelf') | SpellId('Shout_BoonOfQuickCasting_EarthTremor') | SpellId('Shout_BoonOfQuickCasting_FalseLife') | SpellId('Shout_BoonOfQuickCasting_FindFamiliar') | SpellId('Shout_BoonOfQuickCasting_FogCloud') | SpellId('Shout_BoonOfQuickCasting_FrostFingers') | SpellId('Shout_BoonOfQuickCasting_Grease') | SpellId('Shout_BoonOfQuickCasting_IceKnife') | SpellId('Shout_BoonOfQuickCasting_Jump') | SpellId('Shout_BoonOfQuickCasting_Longstrider') | SpellId('Shout_BoonOfQuickCasting_MageArmor') | SpellId('Shout_BoonOfQuickCasting_MagicMissile') | SpellId('Shout_BoonOfQuickCasting_ProtectionFromEvilAndGood') | SpellId('Shout_BoonOfQuickCasting_RayOfSickness') | SpellId('Shout_BoonOfQuickCasting_Sleep') | SpellId('Shout_BoonOfQuickCasting_Snare') | SpellId('Shout_BoonOfQuickCasting_TashaCausticBrew') | SpellId('Shout_BoonOfQuickCasting_HideousLaughter') | SpellId('Shout_BoonOfQuickCasting_Thunderwave') | SpellId('Shout_BoonOfQuickCasting_UnseenServant') | SpellId('Shout_BoonOfQuickCasting_WitchBolt') | SpellId('Shout_BoonOfQuickCasting_AganazzarsScorcher') | SpellId('Shout_BoonOfQuickCasting_AlterSelf') | SpellId('Shout_BoonOfQuickCasting_Blindness') | SpellId('Shout_BoonOfQuickCasting_Blur') | SpellId('Shout_BoonOfQuickCasting_BorrowedKnowledge') | SpellId('Shout_BoonOfQuickCasting_CloudOfDaggers') | SpellId('Shout_BoonOfQuickCasting_ContinualFlame') | SpellId('Shout_BoonOfQuickCasting_CrownOfMadness') | SpellId('Shout_BoonOfQuickCasting_Darkness') | SpellId('Shout_BoonOfQuickCasting_Darkvision') | SpellId('Shout_BoonOfQuickCasting_DetectThoughts') | SpellId('Shout_BoonOfQuickCasting_DustDevil') | SpellId('Shout_BoonOfQuickCasting_EnhanceAbility') | SpellId('Shout_BoonOfQuickCasting_EnlargeReduce') | SpellId('Shout_BoonOfQuickCasting_FlamingSphere') | SpellId('Shout_BoonOfQuickCasting_FlockOfFamiliars') | SpellId('Shout_BoonOfQuickCasting_GustOfWind') | SpellId('Shout_BoonOfQuickCasting_HoldPerson') | SpellId('Shout_BoonOfQuickCasting_Invisibility') | SpellId('Shout_BoonOfQuickCasting_Knock') | SpellId('Shout_BoonOfQuickCasting_Levitate') | SpellId('Shout_BoonOfQuickCasting_MagicWeapon') | SpellId('Shout_BoonOfQuickCasting_MaximilliansEarthenGrasp') | SpellId('Shout_BoonOfQuickCasting_AcidArrow') | SpellId('Shout_BoonOfQuickCasting_MindSpike') | SpellId('Shout_BoonOfQuickCasting_MirrorImage') | SpellId('Shout_BoonOfQuickCasting_NathairsMischief') | SpellId('Shout_BoonOfQuickCasting_PhantasmalForce') | SpellId('Shout_BoonOfQuickCasting_RayOfEnfeeblement') | SpellId('Shout_BoonOfQuickCasting_RimesBindingIce') | SpellId('Shout_BoonOfQuickCasting_ScorchingRay') | SpellId('Shout_BoonOfQuickCasting_Shatter') | SpellId('Shout_BoonOfQuickCasting_SnillocsSnowballStorm') | SpellId('Shout_BoonOfQuickCasting_Suggestion') | SpellId('Shout_BoonOfQuickCasting_TashasMindWhip') | SpellId('Shout_BoonOfQuickCasting_VortexWarp') | SpellId('Shout_BoonOfQuickCasting_WardingWind') | SpellId('Shout_BoonOfQuickCasting_Web') | SpellId('Shout_BoonOfQuickCasting_WitherAndBloom') | SpellId('Shout_BoonOfQuickCasting_AnimateDead') | SpellId('Shout_BoonOfQuickCasting_BestowCurse') | SpellId('Shout_BoonOfQuickCasting_Blink') | SpellId('Shout_BoonOfQuickCasting_Catnap') | SpellId('Shout_BoonOfQuickCasting_EnemiesAbound') | SpellId('Shout_BoonOfQuickCasting_EruptingEarth') | SpellId('Shout_BoonOfQuickCasting_Fear') | SpellId('Shout_BoonOfQuickCasting_FeignDeath') | SpellId('Shout_BoonOfQuickCasting_Fireball') | SpellId('Shout_BoonOfQuickCasting_FlameArrows') | SpellId('Shout_BoonOfQuickCasting_Fly') | SpellId('Shout_BoonOfQuickCasting_GaseousForm') | SpellId('Shout_BoonOfQuickCasting_GlyphOfWarding') | SpellId('Shout_BoonOfQuickCasting_Haste') | SpellId('Shout_BoonOfQuickCasting_HypnoticPattern') | SpellId('Shout_BoonOfQuickCasting_IntellectFortress') | SpellId('Shout_BoonOfQuickCasting_LifeTransference') | SpellId('Shout_BoonOfQuickCasting_LightningBolt') | SpellId('Shout_BoonOfQuickCasting_MinuteMeteors') | SpellId('Shout_BoonOfQuickCasting_Nondetection') | SpellId('Shout_BoonOfQuickCasting_ProtectionFromEnergy') | SpellId('Shout_BoonOfQuickCasting_RemoveCurse') | SpellId('Shout_BoonOfQuickCasting_SleetStorm') | SpellId('Shout_BoonOfQuickCasting_Slow') | SpellId('Shout_BoonOfQuickCasting_SpeakWithDead') | SpellId('Shout_BoonOfQuickCasting_StinkingCloud') | SpellId('Shout_BoonOfQuickCasting_SummonShadowspawn') | SpellId('Shout_BoonOfQuickCasting_ThunderStep') | SpellId('Shout_BoonOfQuickCasting_VampiricTouch')
 end

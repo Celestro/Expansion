@@ -41,163 +41,6 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, sta
 	end
 end)--]]
 
--- Divine Strike 14th
-Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
-	if Osi.HasPassive(character,"Divine_Strike_Life_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Nature_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Tempest_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Trickery_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_War_Toggle_2") == 1 or Osi.HasPassive(character,"Divine_Strike_Trickery") == 1 or Osi.HasPassive(character,"Divine_Strike_Life") == 1 or Osi.HasPassive(character,"Divine_Strike_Nature") == 1 or Osi.HasPassive(character,"Divine_Strike_Tempest") == 1 or Osi.HasPassive(character,"Divine_Strike_War") == 1 then
-		local dsmlife = Ext.Stats.Get("Target_DivineStrike_Melee_Life")
-		dsmlife.DescriptionParams = "DealDamage(2d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Radiant)"
-		dsmlife:Sync()
-		local dsrlife = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Life")
-		dsrlife.DescriptionParams = "DealDamage(2d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Radiant)"
-		dsrlife:Sync()
-		local dsclife = Ext.Stats.Get("Target_DivineStrike_Life_Container")
-		dsclife.DescriptionParams = "DealDamage(2d8,Radiant);DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)"
-		dsclife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Radiant)"
-		dsclife:Sync()
-		local dscnature = Ext.Stats.Get("Target_DivineStrike_Nature_Container")
-		dscnature.DescriptionParams = "DealDamage(2d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Fire);DealDamage(2d8,Lightning)"
-		dscnature:Sync()		
-		local dsmncold = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Cold")
-		dsmncold.DescriptionParams = "DealDamage(2d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Cold)"
-		dsmncold:Sync()
-		local dsrncold = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Cold")
-		dsrncold.DescriptionParams = "DealDamage(2d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Cold)"
-		dsrncold:Sync()
-		local dsmnfire = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Fire")
-		dsmnfire.DescriptionParams = "DealDamage(2d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Fire)"
-		dsmnfire:Sync()
-		local dsrnfire = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Fire")
-		dsrnfire.DescriptionParams = "DealDamage(2d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Fire)"
-		dsrnfire:Sync()
-		local dsmnlightning = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Lightning")
-		dsmnlightning.DescriptionParams = "DealDamage(2d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Lightning)"
-		dsmnlightning:Sync()
-		local dsrnlightning = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Lightning")
-		dsrnlightning.DescriptionParams = "DealDamage(2d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Lightning)"
-		dsrnlightning:Sync()
-		local dsctempest = Ext.Stats.Get("Target_DivineStrike_Tempest_Container")
-		dsctempest.DescriptionParams = "DealDamage(2d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsctempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Thunder)"
-		dsctempest:Sync()
-		local dsmtempest = Ext.Stats.Get("Target_DivineStrike_Melee_Tempest")
-		dsmtempest.DescriptionParams = "DealDamage(2d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Thunder)"
-		dsmtempest:Sync()
-		local dsrtempest = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Tempest")
-		dsrtempest.DescriptionParams = "DealDamage(2d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Thunder)"
-		dsrtempest:Sync()
-		local dsctrickery = Ext.Stats.Get("Target_DivineStrike_Trickery_Container")
-		dsctrickery.DescriptionParams = "DealDamage(2d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsctrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Poison)"
-		dsctrickery:Sync()
-		local dsmtrickery = Ext.Stats.Get("Target_DivineStrike_Melee_Trickery")
-		dsmtrickery.DescriptionParams = "DealDamage(2d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Poison)"
-		dsmtrickery:Sync()
-		local dsrtrickery = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Trickery")
-		dsrtrickery.DescriptionParams = "DealDamage(2d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Poison)"
-		dsrtrickery:Sync()
-		local dscwar = Ext.Stats.Get("Target_DivineStrike_War_Container")
-		dscwar.DescriptionParams = "DealDamage(2d8, MainMeleeWeaponDamageType)"
-		dscwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+2d8, MainMeleeWeaponDamageType)"
-		dscwar:Sync()
-		local dsmwar = Ext.Stats.Get("Target_DivineStrike_Melee_War")
-		dsmwar.DescriptionParams = "DealDamage(2d8, MainMeleeWeaponDamageType)"
-		dsmwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+2d8, MainMeleeWeaponDamageType)"
-		dsmwar:Sync()
-		local dsrwar = Ext.Stats.Get("Projectile_DivineStrike_Ranged_War")
-		dsrwar.DescriptionParams = "DealDamage(2d8, MainMeleeWeaponDamageType)"
-		dsrwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+2d8, MainMeleeWeaponDamageType)"
-		dsrwar:Sync()
-	elseif Osi.HasPassive(character,"Divine_Strike_Life_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Nature_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Tempest_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_Trickery_Toggle_2") == 0 and Osi.HasPassive(character,"Divine_Strike_War_Toggle_2") == 0 then
-		local dsmlife = Ext.Stats.Get("Target_DivineStrike_Melee_Life")
-		dsmlife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
-		dsmlife:Sync()
-		local dsrlife = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Life")
-		dsrlife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrlife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
-		dsrlife:Sync()
-		local dsclife = Ext.Stats.Get("Target_DivineStrike_Life_Container")
-		dsclife.DescriptionParams = "DealDamage(1d8,Radiant);DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType)"
-		dsclife.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Radiant)"
-		dsclife:Sync()
-		local dscnature = Ext.Stats.Get("Target_DivineStrike_Nature_Container")
-		dscnature.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire);DealDamage(1d8,Lightning)"
-		dscnature:Sync()		
-		local dsmncold = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Cold")
-		dsmncold.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold)"
-		dsmncold:Sync()
-		local dsrncold = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Cold")
-		dsrncold.DescriptionParams = "DealDamage(1d8,Cold);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrncold.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Cold)"
-		dsrncold:Sync()
-		local dsmnfire = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Fire")
-		dsmnfire.DescriptionParams = "DealDamage(1d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire)"
-		dsmnfire:Sync()
-		local dsrnfire = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Fire")
-		dsrnfire.DescriptionParams = "DealDamage(1d8,Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrnfire.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Fire)"
-		dsrnfire:Sync()
-		local dsmnlightning = Ext.Stats.Get("Target_DivineStrike_Melee_Nature_Lightning")
-		dsmnlightning.DescriptionParams = "DealDamage(1d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Lightning)"
-		dsmnlightning:Sync()
-		local dsrnlightning = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Nature_Lightning")
-		dsrnlightning.DescriptionParams = "DealDamage(1d8,Lightning);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrnlightning.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Lightning)"
-		dsrnlightning:Sync()
-		local dsctempest = Ext.Stats.Get("Target_DivineStrike_Tempest_Container")
-		dsctempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsctempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
-		dsctempest:Sync()
-		local dsmtempest = Ext.Stats.Get("Target_DivineStrike_Melee_Tempest")
-		dsmtempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
-		dsmtempest:Sync()
-		local dsrtempest = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Tempest")
-		dsrtempest.DescriptionParams = "DealDamage(1d8,Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrtempest.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Thunder)"
-		dsrtempest:Sync()
-		local dsctrickery = Ext.Stats.Get("Target_DivineStrike_Trickery_Container")
-		dsctrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsctrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
-		dsctrickery:Sync()
-		local dsmtrickery = Ext.Stats.Get("Target_DivineStrike_Melee_Trickery")
-		dsmtrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsmtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
-		dsmtrickery:Sync()
-		local dsrtrickery = Ext.Stats.Get("Projectile_DivineStrike_Ranged_Trickery")
-		dsrtrickery.DescriptionParams = "DealDamage(1d8,Poison);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)"
-		dsrtrickery.TooltipDamageList = "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(1d8,Poison)"
-		dsrtrickery:Sync()
-		local dscwar = Ext.Stats.Get("Target_DivineStrike_War_Container")
-		dscwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
-		dscwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
-		dscwar:Sync()
-		local dsmwar = Ext.Stats.Get("Target_DivineStrike_Melee_War")
-		dsmwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
-		dsmwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
-		dsmwar:Sync()
-		local dsrwar = Ext.Stats.Get("Projectile_DivineStrike_Ranged_War")
-		dsrwar.DescriptionParams = "DealDamage(1d8, MainMeleeWeaponDamageType)"
-		dsrwar.TooltipDamageList = "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
-		dsrwar:Sync()
-	end
-end)
-
 -- Tireless THP
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, _, _)
 	if status == "DEFT_EXPLORER_TIRELESS_TEMPHP" then
@@ -222,11 +65,24 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, st
 	end
 end)
 
+local cleansingtouchstatus = {}
+
+function EXP_IsSpell(name)
+	local spell = Ext.Stats.Get(name)
+    for _,flag in pairs(spell.SpellFlags) do
+        if flag == "IsSpell" then
+            return true
+        end
+    end
+    return false
+end
+
 -- Cleansing Touch
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, status, causee, _)
 	if status == "CLEANSING_TOUCH" and Osi.IsCharacter(object) == 1 then
 		for _, esvStatus in pairs(Ext.Entity.Get(object).ServerCharacter.StatusManager.Statuses) do
 			if Osi.SpellHasSpellFlag(esvStatus.SourceSpell.Prototype, "IsSpell") == 1 then
+				cleansingtouchstatus = esvStatus.SourceSpell.Prototype
 				Osi.RemoveStatus(object,esvStatus.StatusId)
 			end
 		end
@@ -234,7 +90,7 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (object, statu
 end)
 
 -- Share Spells Setup
-Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
+Ext.Osiris.RegisterListener("StatusAttempt", 4, "after", function (character, status, causee, _)
 	if (status == "RANGERS_COMPANION_BEAR" or status == "RANGERS_COMPANION_BOAR" or status == "RANGERS_COMPANION_GIANTSPIDER" or status == "RANGERS_COMPANION_RAVEN" or status == "RANGERS_COMPANION_WOLF" or status == "RANGERS_COMPANION_PANTHER") and Osi.HasPassive(causee,"ShareSpells") == 1 then
 		Osi.SetVarObject(causee,"ShareSpells",character)
 	end
@@ -266,6 +122,40 @@ local shareSpells = {
   Shout_PrayerOfHealing_5 = "PRAYER_OF_HEALING_5_SHARE_SPELLS"
 }
 
+local shareSpellsStatuses = {
+  "SPIRIT_GUARDIANS_RADIANT_AURA",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_4",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_5",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_6",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_7",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_8",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_9",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_4",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_5",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_6",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_7",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_8",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_9"
+}
+
+local shareSpellsCompanionStatuses = {
+  "SPIRIT_GUARDIANS_RADIANT_AURA_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_4_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_5_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_6_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_7_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_8_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_RADIANT_AURA_9_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_4_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_5_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_6_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_7_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_8_SHARE_SPELLS",
+  "SPIRIT_GUARDIANS_NECROTIC_AURA_9_SHARE_SPELLS"
+}
+
 -- Share Spells Casting
 Ext.Osiris.RegisterListener("UsingSpellOnTarget", 6, "after", function (caster, target, spellname, _, _, _)
 	local summon = Osi.GetVarObject(caster,"ShareSpells")
@@ -280,21 +170,65 @@ end)
 Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
 	if string.sub(character,-36) == causee and Osi.HasPassive(character,"ShareSpells") == 1 then
 		for _, statusChar in pairs(Ext.Entity.Get(character).ServerCharacter.StatusManager.Statuses) do
-			local summon = Osi.GetVarObject(character,"ShareSpells")
-			local turns = Osi.GetStatusTurns(character,status)
-			if statusChar.SourceSpell.Prototype ~= nil and statusChar.SourceSpell.Prototype ~= "" and statusChar.StatusId == status and status ~= "FAERIE_FIRE" and Osi.SpellHasSpellFlag(statusChar.SourceSpell.Prototype, "IsSpell") == 1 and Osi.HasActiveStatus(summon,status) == 0 and Osi.HasActiveStatus(summon,"SHARE_SPELLS") == 1 then
-				Osi.ApplyStatus(summon,status,turns*6,1,causee)
-				Osi.SetVarObject(causee,"ShareSpells_Status",summon)
+			for _, exStatus in pairs(shareSpellsStatuses) do
+				local summon = Osi.GetVarObject(character,"ShareSpells")
+				local turns = Osi.GetStatusTurns(character,status)
+				if status == exStatus then
+					local template = Osi.GetTemplate(summon)
+					local stat = Ext.Template.GetTemplate(string.sub(template,-36))
+					local spellsc = Ext.Stats.Get(stat.Stats)
+					spellsc.SpellCastingAbility="Wisdom"
+					spellsc:Sync()
+					local wis = Osi.GetAbility(character,"Wisdom")
+					local wismod = math.floor((wis - 10) / 2)
+					local sumwismod = math.floor((spellsc.Wisdom - 10) / 2)
+					local result = wismod - sumwismod
+					Osi.ApplyStatus(summon,"SHARE_SPELLS_DC_" .. result,turns*6,1)
+					if Ext.Mod.IsModLoaded("f19c68ed-70be-4c3d-b610-e94afc5c5103") then
+						local sharedstatus = status .. "_SHARE_SPELLS"
+						if statusChar.SourceSpell.Prototype ~= nil and statusChar.SourceSpell.Prototype ~= "" and statusChar.StatusId == status and status ~= "FAERIE_FIRE" and Osi.SpellHasSpellFlag(statusChar.SourceSpell.Prototype, "IsSpell") == 1 and Osi.HasActiveStatus(summon,sharedstatus) == 0 and Osi.HasActiveStatus(summon,"SHARE_SPELLS") == 1 then
+							Osi.ApplyStatus(summon,sharedstatus,turns*6,1,causee)
+							Osi.SetVarObject(causee,"ShareSpells_Status",summon)
+						end
+					else
+						if statusChar.SourceSpell.Prototype ~= nil and statusChar.SourceSpell.Prototype ~= "" and statusChar.StatusId == status and status ~= "FAERIE_FIRE" and Osi.SpellHasSpellFlag(statusChar.SourceSpell.Prototype, "IsSpell") == 1 and Osi.HasActiveStatus(summon,status) == 0 and Osi.HasActiveStatus(summon,"SHARE_SPELLS") == 1 then
+							Osi.ApplyStatus(summon,status,turns*6,1,causee)
+							Osi.SetVarObject(causee,"ShareSpells_Status",summon)
+						end
+					end
+				elseif statusChar.SourceSpell.Prototype ~= nil and statusChar.SourceSpell.Prototype ~= "" and statusChar.StatusId == status and status ~= exStatus and Osi.SpellHasSpellFlag(statusChar.SourceSpell.Prototype, "IsSpell") == 1 and Osi.HasActiveStatus(summon,status) == 0 and Osi.HasActiveStatus(summon,"SHARE_SPELLS") == 1 then
+					Osi.ApplyStatus(summon,status,turns*6,1,causee)
+					Osi.SetVarObject(causee,"ShareSpells_Status",summon)
+				end
+
+				if Osi.SpellHasSpellFlag(statusChar.SourceSpell.Prototype,"IsConcentration") == 1 then
+					Osi.SetVarInteger(causee,"ShareSpells_ConcentrationStatus",1)
+				end
 			end
 		end
 	end
 end)
 
 -- Share Spells Status Remove
-Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function (character, status, _, _)
+Ext.Osiris.RegisterListener("StatusRemoved", 4, "before", function (character, status, _, _)
 	local summon = Osi.GetVarObject(character,"ShareSpells_Status")
-	if Osi.HasPassive(character,"ShareSpells") == 1 and Osi.HasActiveStatus(summon,status) == 1 then
-		Osi.RemoveStatus(summon,status)
+	local boolean = Osi.GetVarInteger(character,"ShareSpells_ConcentrationStatus")
+	local sharedstatus = status .. "_SHARE_SPELLS"
+	for _, shareStatus in pairs(shareSpellsCompanionStatuses) do
+		if Osi.HasPassive(character,"ShareSpells") == 1 and (Osi.HasActiveStatus(summon,status) == 1 or Osi.HasActiveStatus(summon,sharedstatus) == 1) and boolean == 1 then
+			Osi.RemoveStatus(summon,status)
+			Osi.RemoveStatus(summon,sharedstatus)
+			Osi.SetVarInteger(character,"ShareSpells_ConcentrationStatus",0)
+		end
+
+		if status == shareStatus then
+			local template = Osi.GetTemplate(character)
+			local stat = Ext.Template.GetTemplate(string.sub(template,-36))
+			local spellsc = Ext.Stats.Get(stat.Stats)
+			spellsc.SpellCastingAbility="Strength"
+			spellsc:Sync()
+--			_D("Switched companion's SpellCastingAbility modifier to Strength")
+		end
 	end
 end)
 
@@ -599,60 +533,49 @@ Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, st
 end)
 
 local signatureSpells = {
-  Target_AnimateDead = "SignatureSpells_AnimateDead",
-  Shout_AshardalonsStride = "SignatureSpells_AshardalonsStride",
-  Target_BestowCurse = "SignatureSpells_BestowCurse",
-  Shout_Blink = "SignatureSpells_Blink",
-  Target_Catnap = "SignatureSpells_Catnap",
-  Target_Counterspell = "SignatureSpells_Counterspell",
-  Target_EnemiesAbound = "SignatureSpells_EnemiesAbound",
-  Target_EruptingEarth = "SignatureSpells_EruptingEarth",
-  Zone_Fear = "SignatureSpells_Fear",
-  Target_FeignDeath = "SignatureSpells_FeignDeath",
-  Projectile_Fireball = "SignatureSpells_Fireball",
-  Target_FlameArrows = "SignatureSpells_FlameArrows",
-  Target_Fly = "SignatureSpells_Fly",
-  Target_GaseousForm = "SignatureSpells_GaseousForm",
-  Target_GlyphOfWarding = "SignatureSpells_GlyphOfWarding",
-  Target_Haste = "SignatureSpells_Haste",
-  Target_HypnoticPattern = "SignatureSpells_HypnoticPattern",
-  Target_IntellectFortress = "SignatureSpells_IntellectFortress",
-  Target_LifeTransference = "SignatureSpells_LifeTransference",
-  Zone_LightningBolt = "SignatureSpells_LightningBolt",
-  Projectile_MinuteMeteors = "SignatureSpells_MinuteMeteors",
-  Target_Nondetection = "SignatureSpells_Nondetection",
-  Target_ProtectionFromEnergy = "SignatureSpells_ProtectionFromEnergy",
-  Target_RemoveCurse = "SignatureSpells_RemoveCurse",
-  Target_SleetStorm = "SignatureSpells_SleetStorm",
-  Target_Slow = "SignatureSpells_Slow",
-  Target_SpeakWithDead = "SignatureSpells_SpeakWithDead",
-  Shout_SpiritShroud = "SignatureSpells_SpiritShroud",
-  Target_StinkingCloud = "SignatureSpells_StinkingCloud",
-  Target_SummonShadowspawn = "SignatureSpells_SummonShadowspawn",
-  Teleportation_ThunderStep = "SignatureSpells_ThunderStep",
-  Target_VampiricTouch = "SignatureSpells_VampiricTouch"
+  Target_AnimateDead = "SIGNATURESPELLS_ANIMATE_DEAD",
+  Shout_AshardalonsStride = "SIGNATURESPELLS_ASHARDALONS_STRIDE",
+  Target_BestowCurse = "SIGNATURESPELLS_BESTOW_CURSE",
+  Shout_Blink = "SIGNATURESPELLS_BLINK",
+  Target_Catnap = "SIGNATURESPELLS_CATNAP",
+  Target_Counterspell = "SIGNATURESPELLS_COUNTERSPELL",
+  Target_EnemiesAbound = "SIGNATURESPELLS_ENEMIES_ABOUND",
+  Target_EruptingEarth = "SIGNATURESPELLS_ERUPTING_EARTH",
+  Zone_Fear = "SIGNATURESPELLS_FEAR",
+  Target_FeignDeath = "SIGNATURESPELLS_FEIGN_DEATH",
+  Projectile_Fireball = "SIGNATURESPELLS_FIREBALL",
+  Target_FlameArrows = "SIGNATURESPELLS_FLAME_ARROWS",
+  Target_Fly = "SIGNATURESPELLS_FLY",
+  Target_GaseousForm = "SIGNATURESPELLS_GASEOUS_FORM",
+  Target_GlyphOfWarding = "SIGNATURESPELLS_GLYPH_OF_WARDING",
+  Target_Haste = "SIGNATURESPELLS_HASTE",
+  Target_HypnoticPattern = "SIGNATURESPELLS_HYPNOTIC_PATTERN",
+  Target_IntellectFortress = "SIGNATURESPELLS_INTELLECT_FORTRESS",
+  Target_LifeTransference = "SIGNATURESPELLS_LIFE_TRANSFERENCE",
+  Zone_LightningBolt = "SIGNATURESPELLS_LIGHTNING_BOLT",
+  Projectile_MinuteMeteors = "SIGNATURESPELLS_MINUTE_METEORS",
+  Target_Nondetection = "SIGNATURESPELLS_NONDETECTION",
+  Target_ProtectionFromEnergy = "SIGNATURESPELLS_PROTECTION_FROM_ENERGY",
+  Target_RemoveCurse = "SIGNATURESPELLS_REMOVE_CURSE",
+  Target_SleetStorm = "SIGNATURESPELLS_SLEET_STORM",
+  Target_Slow = "SIGNATURESPELLS_SLOW",
+  Target_SpeakWithDead = "SIGNATURESPELLS_SPEAK_WITH_DEAD",
+  Shout_SpiritShroud = "SIGNATURESPELLS_SPIRIT_SHROUD",
+  Target_StinkingCloud = "SIGNATURESPELLS_STINKING_CLOUD",
+  Target_SummonShadowspawn = "SIGNATURESPELLS_SUMMON_SHADOWSPAWN",
+  Teleportation_ThunderStep = "SIGNATURESPELLS_THUNDER_STEP",
+  Target_VampiricTouch = "SIGNATURESPELLS_VAMPIRIC_TOUCH"
 }
 
-local signatureSpellsList = {}
-
 -- Signature Spells Passive
-Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "before", function(level, _)
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(level, _)
 	if level ~= "SYS_CC_I" then
         local party = Osi.DB_Players:Get(nil)
         for _,p in pairs(party) do
-			if Osi.IsTagged(p[1],"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 and Osi.HasPassive(p[1],"SpellMastery") == 1 then
-				local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
-				signatureSpellsList = Ext.Types.Serialize(lists)
-				for v,passives in pairs(signatureSpellsList) do
-					for spell,passive in pairs(signatureSpells) do
-						if Osi.HasSpell(p[1],spell) == 0 then
-							if passives == passive then
-								table.remove(signatureSpellsList,v)
-								Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives[v]=nil
---								_D(Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList"))
-								Osi.SetEntityEvent(p[1],"SignatureSpellsFollowUp",1)
-							end
-						end
+			if Osi.IsTagged(p[1],"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 and Osi.HasPassive(p[1],"SignatureSpells") == 1 then
+				for spell,status in pairs(signatureSpells) do
+					if Osi.HasSpell(p[1],spell) == 1 and Osi.HasActiveStatus(p[1],status) == 0 then
+						Osi.ApplyStatus(p[1],status,-1.0,1,p[1])
 					end
 				end
 			end
@@ -660,64 +583,28 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "before", function(level,
 	end
 end)
 
--- Signature Spells Follow Up
-Ext.Osiris.RegisterListener("EntityEvent", 2, "before", function(character, event)
-	if event == "SignatureSpellsFollowUp" then
-		local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
-		signatureSpellsList = Ext.Types.Serialize(lists)
-		for v,passives in pairs(signatureSpellsList) do
-			for spell,passive in pairs(signatureSpells) do
-				if Osi.HasSpell(character,spell) == 0 then
-					if passives == passive then
-						table.remove(signatureSpellsList,v)
-						Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives[v]=nil
---						_D(Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList"))
-					end
-				end
-			end
-		end
-	end
-end)
-
 -- Signature Spells Leveling Up
-Ext.Osiris.RegisterListener("LeveledUp", 1, "before", function(character)
-	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 and Osi.HasPassive(character,"SpellMastery") == 1 then
-		local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
-		signatureSpellsList = Ext.Types.Serialize(lists)
-		if (#signatureSpellsList == 0) then
-			for spell,passive in pairs(signatureSpells) do
-				if Osi.HasSpell(character,spell) == 1 then
-					table.insert(signatureSpellsList,passive)
-					Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives = signatureSpellsList
---					_D(signatureSpellsList)
-				end
-			end
-		else
-			for v,passives in pairs(signatureSpellsList) do
-				for spell,passive in pairs(signatureSpells) do
-					if Osi.HasSpell(character,spell) == 0 then
-						if passives == passive then
-							table.remove(signatureSpellsList,v)
-							Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives[v]=nil
-							Osi.SetEntityEvent(character,"SignatureSpellsFollowUp",1)
-	--						_D(Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList"))
-						end
-					end
-				end
+Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
+	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 then
+		for spell,status in pairs(signatureSpells) do
+			if Osi.HasSpell(character,spell) == 1 and Osi.HasActiveStatus(character,status) == 0 then
+				Osi.ApplyStatus(character,status,-1.0,1,character)
 			end
 		end
 	end
 end)
 
--- Signature Spells Respeccing
-Ext.Osiris.RegisterListener("RespecCompleted", 1, "before", function(character)
+-- Signature Spells Status Applied
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, causee, _)
 	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 then
-		local lists = Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives
-		signatureSpellsList = Ext.Types.Serialize(lists)
-		for spell,passive in pairs(signatureSpells) do
-			table.insert(signatureSpellsList,passive)
-			Ext.StaticData.Get("ec16c6d2-5316-46e7-9ed6-bedf5d4169b2","PassiveList").Passives = signatureSpellsList
---			_D(signatureSpellsList)
+		for spell,status in pairs(signatureSpells) do
+			if Osi.HasSpell(character,spell) == 1 and Osi.HasActiveStatus(character,status) == 0 then
+				Osi.ApplyStatus(character,status,-1.0,1,character)
+			end
+
+			if Osi.HasSpell(character,spell) == 0 and Osi.HasActiveStatus(character,status) == 1 then
+				Osi.RemoveStatus(character,status)
+			end
 		end
 	end
 end)
@@ -802,7 +689,7 @@ function DedicatedWeapon(weapon, wielder)
     end
 end
 
--- Dedicated Weapon Adjustment
+Dedicated Weapon Adjustment
 Ext.Osiris.RegisterListener("LeveledUp", 1, "after", function(character)
 	if IsTagged(character,"MONK_e1e460bb-d0ae-4452-8529-c9e176558731") == 1 then
 		Osi.IterateInventory(character,"CheckMonkWeapons","CompleteMonkWeaponCheck")
@@ -1161,15 +1048,19 @@ end)
 
 local spellMasteryList = {
   Shout_AbsorbElements = "SPELL_MASTERY_ABSORB_ELEMENTS",
+  Zone_ArcticBreath = "SPELL_MASTERY_ARCTIC_BREATH",
+  Target_BladeMirage = "SPELL_MASTERY_BLADE_MIRAGE",
   Zone_BurningHands = "SPELL_MASTERY_BURNING_HANDS",
   Throw_Catapult = "SPELL_MASTERY_CATAPULT",
   Target_CauseFear = "SPELL_MASTERY_CAUSE_FEAR",
   Target_CharmPerson = "SPELL_MASTERY_CHARM_PERSON",
   Projectile_ChromaticOrb = "SPELL_MASTERY_CHROMATIC_ORB",
   Zone_ColorSpray = "SPELL_MASTERY_COLOR_SPRAY",
+  Zone_CrashingWave = "SPELL_MASTERY_CRASHING_WAVE",
   Shout_DetectMagic = "SPELL_MASTERY_DETECT_MAGIC",
   Shout_DisguiseSelf = "SPELL_MASTERY_DISGUISE_SELF",
   Shout_EarthTremor = "SPELL_MASTERY_EARTH_TREMOR",
+  Target_Entomb = "SPELL_MASTERY_ENTOMB",
   Shout_ExpeditiousRetreat = "SPELL_MASTERY_EXPEDITIOUS_RETREAT",
   Shout_FalseLife = "SPELL_MASTERY_FALSE_LIFE",
   Shout_FeatherFall = "SPELL_MASTERY_FEATHER_FALL",
@@ -1251,7 +1142,18 @@ Ext.Osiris.RegisterListener("ObjectTimerFinished", 2, "after", function(characte
 			if Osi.HasSpell(character,spellname) == 1 and Osi.HasActiveStatus(character,statuses) == 0 then
 				Osi.ApplyStatus(character,statuses,-1.0,1,character)
 			end
+
+			if Osi.HasSpell(character,spellname) == 0 and Osi.HasActiveStatus(character,statuses) == 1 then
+				Osi.RemoveStatus(character,statuses)
+			end
 		end
+	end
+end)
+
+-- Spell Mastery Status Applied
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function(character, status, causee, _)
+	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 then
+		Osi.RealtimeObjectTimerLaunch(character, "SpellMasteryLevelUp", 1000)
 	end
 end)
 
@@ -1324,40 +1226,479 @@ function DMDelayedCall(msDelay, func)
     end) 
 end
 
--- Beast Spells Status
-Ext.Osiris.RegisterListener("StatusAttempt", 4, "before", function(character, status, causee, _)
-	if Osi.IsStatusFromGroup(status, "SG_Polymorph_BeastShape") == 1 and Osi.HasPassive(character,"BeastSpells") == 1 and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 1 then
-		local myrmidon = Ext.StaticData.Get("936d22ac-fa88-4c99-8a6c-12c08ab577a2","ShapeshiftRule")
+-- Beast Spells Preview Spell
+Ext.Osiris.RegisterListener("StartedPreviewingSpell", 4, "before", function(character, spell, _, _)
+	if (spell == "Shout_WildShape_Combat_Raven" or spell == "Shout_WildShape_Combat_DeepRothe" or spell == "Shout_WildShape_Combat_Bear_Polar" or spell == "Shout_WildShape_Combat_Cat" or spell == "Shout_WildShape_Combat_Wolf_Dire" or spell == "Shout_WildShape_Combat_Spider" or spell == "Shout_WildShape_Combat_Badger" or spell == "Shout_WildShape_Raven" or spell == "Shout_WildShape_Badger" or spell == "Shout_WildShape_Spider" or spell == "Shout_WildShape_Wolf_Dire" or spell == "Shout_WildShape_Cat" or spell == "Shout_WildShape_Bear_Polar" or spell == "Shout_WildShape_DeepRothe" or spell == "Shout_WildShape_Combat_Owlbear" or spell == "Shout_WildShape_Combat_Myrmidon_Water" or spell == "Shout_WildShape_Combat_Myrmidon_Fire" or spell == "Shout_WildShape_Combat_Myrmidon_Air" or spell == "Shout_WildShape_Combat_Myrmidon_Earth" or spell == "Shout_WildShape_Combat_Dilophosaurus" or spell == "Shout_Wildshape_Combat_Panther" or spell == "Shout_Wildshape_Combat_SaberTooth_Tiger" or spell == "Shout_Wildshape_Panther" or spell == "Shout_Wildshape_SaberTooth_Tiger") and Osi.HasPassive(character,"BeastSpells") == 1 and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 1 then
+		for _, name in pairs(Ext.Stats.GetStats("StatusData")) do
+		local polystatus = Ext.Stats.Get(name)
+			if polystatus.StatusType == "POLYMORPHED" then
+				local flags = polystatus.StatusGroups
+				for _, sg in pairs(flags) do
+					if sg == "SG_Polymorph_BeastShape" then
+						if polystatus.Rules == "936d22ac-fa88-4c99-8a6c-12c08ab577a2" then
+							polystatus.Rules = "63ccb354-3d6d-4ae3-9925-f20d31b2069d"
+							polystatus:Sync()
+						end
+
+						if polystatus.Rules == "9c580a1d-dab9-4b17-b0da-b16c7d7360e0" then
+							polystatus.Rules = "94144eb3-5cd9-42fb-a67e-c52dceb87a2d"
+							polystatus:Sync()
+						end
+					end
+				end
+			end
+--[[		local myrmidon = Ext.StaticData.Get("936d22ac-fa88-4c99-8a6c-12c08ab577a2","ShapeshiftRule")
 		local beast = Ext.StaticData.Get("9c580a1d-dab9-4b17-b0da-b16c7d7360e0","ShapeshiftRule")
 		if myrmidon.RemovePrevSpells == true then
 			myrmidon.RemovePrevSpells=false
 			myrmidon.WildShapeHotBar=false
+			myrmidon.SpeakingCapabilities=0
 		end
 
 		if beast.RemovePrevSpells == true then
 			beast.RemovePrevSpells=false
 			beast.WildShapeHotBar=false
+			beast.SpeakingCapabilities=0--]]
 		end
 	end
 end)
 
 -- Beast Spells Control
 Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
-	local myrmidon = Ext.StaticData.Get("936d22ac-fa88-4c99-8a6c-12c08ab577a2","ShapeshiftRule")
-	local beast = Ext.StaticData.Get("9c580a1d-dab9-4b17-b0da-b16c7d7360e0","ShapeshiftRule")
-	if Osi.HasPassive(character,"BeastSpells") == 0 and myrmidon.RemovePrevSpells == false and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 0 then
-		myrmidon.RemovePrevSpells=true
-		myrmidon.WildShapeHotBar=true
-	elseif Osi.HasPassive(character,"BeastSpells") == 1 and myrmidon.RemovePrevSpells == true and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 1 then
-		myrmidon.RemovePrevSpells=false
-		myrmidon.WildShapeHotBar=false
-	end
+	if Osi.HasPassive(character,"BeastSpells") == 0 then
+		for _, name in pairs(Ext.Stats.GetStats("StatusData")) do
+		local polystatus = Ext.Stats.Get(name)
+			if polystatus.StatusType == "POLYMORPHED" then
+				if polystatus.Rules == "63ccb354-3d6d-4ae3-9925-f20d31b2069d" then
+					polystatus.Rules = "936d22ac-fa88-4c99-8a6c-12c08ab577a2"
+					polystatus:Sync()
+				end
 
-	if Osi.HasPassive(character,"BeastSpells") == 0 and beast.RemovePrevSpells == false and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 0 then
-		beast.RemovePrevSpells=true
-		beast.WildShapeHotBar=true
-	elseif Osi.HasPassive(character,"BeastSpells") == 1 and beast.RemovePrevSpells == true and HasActiveStatus(character,"BEAST_SPELLS_TOGGLE") == 1 then
-		beast.RemovePrevSpells=false
-		beast.WildShapeHotBar=false
+				if polystatus.Rules == "94144eb3-5cd9-42fb-a67e-c52dceb87a2d" then
+					polystatus.Rules = "9c580a1d-dab9-4b17-b0da-b16c7d7360e0"
+					polystatus:Sync()
+				end
+			end
+		end
 	end
+end)
+
+-- Bladesinger
+Ext.Osiris.RegisterListener("LeveledUp", 1, "before", function(character)
+	if Osi.IsTagged(character,"WIZARD_6fe3ae27-dc6c-4fc9-9245-710c790c396c") == 1 then
+		Osi.ObjectTimerLaunch(character, "BladesingerWeapon", 1000, 0)
+	end
+end)
+
+local bladesongWeaponTags = {
+  Quarterstaffs = "WPN_STAVE_00a09d42-c23c-48b0-90cc-c67f6cbd9e3d",
+  Handaxes = "WPN_HANDAXE_09dd1e1e-6d9f-4cc6-b514-68e981c80543",
+  Warhammers = "WPN_WARHAMMER_1dff197e-b74c-4173-94d3-e1323239556c",
+  Flails = "WPN_FLAIL_5d7b1304-6d20-4d60-ba1b-0fbb491bfc18",
+  Clubs = "WPN_CLUB_9b333d67-365f-41fa-80b2-08e86588e9ac",
+  Morningstars = "WPN_MORNINGSTAR_aa4cfcea-aee8-44b9-a460-e7231df796b1",
+  Javelins = "WPN_JAVELIN_b6e3bfa1-2c63-404f-becb-21d047aacce1",
+  Maces = "WPN_MACE_c29fc6ce-0482-420d-a839-41a0bab95c2d",
+  Tridents = "WPN_TRIDENT_c808f076-4a0f-422a-97db-e985ce35f3f9",
+  LightHammers = "WPN_LIGHT_HAMMER_edc46cc0-25d0-4da9-bfcb-edba239edcce",
+  WarPicks = "WPN_WAR_PICK_eed87cdb-c5ee-45c2-9a5a-6949dce87a1e",
+  Daggers = "WPN_DAGGER_7490e5d0-d346-4b0e-80c6-04e977160863",
+  Sickles = "WPN_SICKLE_bfdc63bd-b8f6-4eac-9363-0c71882ff46f",
+  Shortswords = "WPN_SHORTSWORD_c826fd1e-4780-43d4-b49b-87f30c060fe6",
+  Longswords = "WPN_LONGSWORD_96a99a42-ec5d-4081-9d62-c9e3f0057136",
+  Rapiers = "WPN_RAPIER_aeaf4e95-38d7-45ec-8900-40bc9e6106b0",
+  Scimitars = "WPN_SCIMITAR_206f9701-7b24-4eaf-9ac4-a47746c251e2",
+  Battleaxes = "WPN_BATTLEAXE_7609654e-b213-410d-b08f-6d2930da6411"
+}
+
+-- Bladesinger Timer
+Ext.Osiris.RegisterListener("ObjectTimerFinished", 2, "before", function(character, timer)
+	local level = Osi.GetLevel(character)
+	if timer == "BladesingerWeapon" and level == 2 and Osi.HasPassive(character,"Bladesong_WeaponCheck") == 1 then
+		Osi.ApplyStatus(character,"BLADESINGER_WEAPON",-1.0,1)
+		if Osi.HasPassive(character,"Proficiency_Warhammers") == 1 then
+			Osi.TemplateAddTo("6b17998d-2e79-405d-8b1f-beb53658312f",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Clubs") == 1 then
+			Osi.TemplateAddTo("d9c87013-1f41-4c17-b71d-f353ec0d64e8",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Daggers") == 1 then
+			Osi.TemplateAddTo("569b0f3d-abcd-4b01-aaf0-979091288163",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Flails") == 1 then
+			Osi.TemplateAddTo("9eadef92-5dd0-408e-9b55-1cf791cafe9d",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Handaxes") == 1 then
+			Osi.TemplateAddTo("46b64a36-8446-45bd-98e8-ee81e3136baa",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Javelins") == 1 then
+			Osi.TemplateAddTo("0a7adc8d-b561-4f81-a8f2-ec07b5d54955",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_LightHammers") == 1 then
+			Osi.TemplateAddTo("494f21ac-5a1b-4e91-bd30-551b79532516",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Longswords") == 1 then
+			Osi.TemplateAddTo("1865323f-b428-4791-a0a9-578841e57463",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Maces") == 1 then
+			Osi.TemplateAddTo("3186796d-3ab3-4d49-bfc2-cba1aff0cf5a",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Morningstars") == 1 then
+			Osi.TemplateAddTo("26a9fba6-1a60-4691-84ea-da7ffcb304e0",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Rapiers") == 1 then
+			Osi.TemplateAddTo("7061f489-4b13-4982-aa09-cf0ad961e75f",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Scimitars") == 1 then
+			Osi.TemplateAddTo("868217db-9dcb-414c-bb88-e321ab3e0349",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Shortswords") == 1 then
+			Osi.TemplateAddTo("467ddb4f-6791-41fa-99f7-ee8620d63bbe",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Sickles") == 1 then
+			Osi.TemplateAddTo("50d677ed-3a0e-40e9-8291-ee6823af5672",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Spears") == 1 then
+			Osi.TemplateAddTo("9f0f1c0e-012d-44e1-9b29-86c64d2bf675",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Tridents") == 1 then
+			Osi.TemplateAddTo("d3807461-7c32-44ae-9aba-49ef4d3bf35e",character,1,0)
+		elseif Osi.HasPassive(character,"Proficiency_Warpicks") == 1 then
+			Osi.TemplateAddTo("6b17998d-2e79-405d-8b1f-beb53658312f",character,1,0)
+		end
+
+		local party = Osi.DB_Players:Get(nil)
+		for _,p in pairs(party) do
+			for _,tags in pairs(bladesongWeaponTags) do
+			Osi.DB_GLO_Spells_BladesongWeaponBlockers(tags)
+			local tag = Osi.DB_GLO_Spells_BladesongWeaponBlockers:Get(nil)
+			end
+		end
+	end
+end)
+
+-- Bladesinger Inventory Equip
+Ext.Osiris.RegisterListener("AddedTo", 3, "after", function(item, character, _)
+	if	Osi.HasActiveStatus(character,"BLADESINGER_WEAPON") == 1 then
+		Osi.Equip(character,item)
+		Osi.RemoveStatus(character,"BLADESINGER_WEAPON")
+	end
+end)
+
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "before", function(level, _)
+    if level ~= "SYS_CC_I" then
+		local party = Osi.DB_Players:Get(nil)
+		for _,p in pairs(party) do
+			if Osi.HasPassive(p[1],"Bladesong_WeaponCheck") == 1 then
+				for _,tags in pairs(bladesongWeaponTags) do
+				Osi.DB_GLO_Spells_BladesongWeaponBlockers(tags)
+				local tag = Osi.DB_GLO_Spells_BladesongWeaponBlockers:Get(nil)
+				end
+			end
+		end
+	end
+end)
+
+-- Bladesinger Equipped Weapon Check
+Ext.Osiris.RegisterListener("Equipped", 2, "after", function(item, character)
+	if IsTagged(character,"WIZARD_BLADESINGING_bc52a699-cf55-4dad-9710-927e655910fd") == 1 and Osi.IsWeapon(item) == 1 and Osi.HasPassive(character,"Bladesong_WeaponCheck") == 1 then
+		if Osi.IsTagged(item,"WPN_GREATAXE_02da79f5-6f13-4f90-9819-102e37693f48") == 1 or Osi.IsTagged(item,"WPN_LIGHT_CROSSBOW_a302a8e2-a3f9-41e1-a68c-70a453e65399") == 1 or Osi.IsTagged(item,"WPN_MAUL_2503012b-9cc4-491c-a068-282f8cea8707") == 1 or Osi.IsTagged(item,"WPN_HALBERD_2c74855f-769a-43f5-b6db-48c4c47721ff") == 1 or Osi.IsTagged(item,"WPN_HEAVY_CROSSBOW_2cc23bb9-d777-4265-a34c-333528628b90") == 1 or Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 1 or Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 1 or Osi.IsTagged(item,"WPN_GLAIVE_7a15ea4f-cb00-4201-8e7f-024627e3d014") == 1 or Osi.IsTagged(item,"WPN_SHORTBOW_81197304-7116-4d7b-8ef4-207bbf636682") == 1 or Osi.IsTagged(item,"WPN_GREATCLUB_81197304-7116-4d7b-8ef4-207bbf636682") == 1 or Osi.IsTagged(item,"WPN_GREATSWORD_aec4ed1a-993b-491f-a2db-640bf11869c1") == 1 or Osi.IsTagged(item,"WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787") == 1 or Osi.IsTagged(item,"WPN_PIKE_ca1a548b-f409-4cad-af5a-dfdd5834c709") == 1 then
+		Osi.ApplyStatus(character,"BLADESONG_WEAPON_MESSAGE",-1.0,1)
+		elseif Osi.IsTagged(item,"WPN_GREATAXE_02da79f5-6f13-4f90-9819-102e37693f48") == 0 and Osi.IsTagged(item,"WPN_LIGHT_CROSSBOW_a302a8e2-a3f9-41e1-a68c-70a453e65399") == 0 and Osi.IsTagged(item,"WPN_MAUL_2503012b-9cc4-491c-a068-282f8cea8707") == 0 and Osi.IsTagged(item,"WPN_HALBERD_2c74855f-769a-43f5-b6db-48c4c47721ff") == 0 and Osi.IsTagged(item,"WPN_HEAVY_CROSSBOW_2cc23bb9-d777-4265-a34c-333528628b90") == 0 and Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 0 and Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 0 and Osi.IsTagged(item,"WPN_GLAIVE_7a15ea4f-cb00-4201-8e7f-024627e3d014") == 0 and Osi.IsTagged(item,"WPN_SHORTBOW_81197304-7116-4d7b-8ef4-207bbf636682") == 0 and Osi.IsTagged(item,"WPN_GREATCLUB_81197304-7116-4d7b-8ef4-207bbf636682") == 0 and Osi.IsTagged(item,"WPN_GREATSWORD_aec4ed1a-993b-491f-a2db-640bf11869c1") == 0 and Osi.IsTagged(item,"WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787") == 0 and Osi.IsTagged(item,"WPN_PIKE_ca1a548b-f409-4cad-af5a-dfdd5834c709") == 0 then
+			Osi.RemoveStatus(character,"BLADESONG_WEAPON_MESSAGE")
+		end
+	end
+end)
+
+-- Bladesinger Unequipped Weapon Check
+Ext.Osiris.RegisterListener("Unequipped", 2, "after", function(item, character)
+	if IsTagged(character,"WIZARD_BLADESINGING_bc52a699-cf55-4dad-9710-927e655910fd") == 1 and Osi.IsWeapon(item) == 1 and Osi.HasPassive(character,"Bladesong_WeaponCheck") == 1 then
+		if Osi.IsTagged(item,"WPN_GREATAXE_02da79f5-6f13-4f90-9819-102e37693f48") == 1 or Osi.IsTagged(item,"WPN_MAUL_2503012b-9cc4-491c-a068-282f8cea8707") == 1 or Osi.IsTagged(item,"WPN_HALBERD_2c74855f-769a-43f5-b6db-48c4c47721ff") == 1 or Osi.IsTagged(item,"WPN_LIGHT_CROSSBOW_a302a8e2-a3f9-41e1-a68c-70a453e65399") == 1 or Osi.IsTagged(item,"WPN_HEAVY_CROSSBOW_2cc23bb9-d777-4265-a34c-333528628b90") == 1 or Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 1 or Osi.IsTagged(item,"WPN_LONGBOW_557d335c-0780-4665-9802-709a7d202dba") == 1 or Osi.IsTagged(item,"WPN_GLAIVE_7a15ea4f-cb00-4201-8e7f-024627e3d014") == 1 or Osi.IsTagged(item,"WPN_SHORTBOW_81197304-7116-4d7b-8ef4-207bbf636682") == 1 or Osi.IsTagged(item,"WPN_GREATCLUB_81197304-7116-4d7b-8ef4-207bbf636682") == 1 or Osi.IsTagged(item,"WPN_GREATSWORD_aec4ed1a-993b-491f-a2db-640bf11869c1") == 1 or Osi.IsTagged(item,"WPN_DART_c23ac9ef-5b47-4c2d-8ce5-7b60a8b34787") == 1 or Osi.IsTagged(item,"WPN_PIKE_ca1a548b-f409-4cad-af5a-dfdd5834c709") == 1 then
+			Osi.RemoveStatus(character,"BLADESONG_WEAPON_MESSAGE")
+		end
+	end
+end)
+
+-- Command Undead
+-- Handling rolls manually due to the need to check specific intelligence scores in multiple contexts.
+-- Statuses: _TRIGGER is applied by spell solely to notify StatusApplied, _FAILED blocks further attempts on a failed CU,
+-- _TIMER is an hourly save for creatures with Int 12 or higher, _DROP will clear CU.
+EXP_tCommandUndead      = {};
+EXP_tLimboUndead        = {};
+
+-- ////////////////////////////////////////////////////
+-- Modvars stuff.
+Ext.Vars.RegisterModVariable(ModuleUUID, "EXP_commandedundead", {});
+Ext.Vars.RegisterModVariable(ModuleUUID, "EXP_limboundead", {});
+function EXP_ObtainCommandedUndead()
+    local modvars = Ext.Vars.GetModVariables(ModuleUUID);
+    if modvars.EXP_commandedundead == nil then modvars.EXP_commandedundead = {}; end
+    if modvars.EXP_limboundead == nil then modvars.EXP_limboundead = {}; end
+    return modvars;
+end
+
+Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(levelName, isEditorMode)
+    local modvars   = EXP_ObtainCommandedUndead();
+    EXP_tCommandUndead  = modvars.EXP_commandedundead;
+    EXP_tLimboUndead    = modvars.EXP_limboundead;
+end)
+
+-- ////////////////////////////////////////////////////
+-- Utils
+local function PruneDB(charID)
+    if Osi.DB_PartyFollowers:Get(charID) then
+        Osi.DB_PartyFollowers:Delete(charID);
+    end
+    if Osi.DB_PartyMembers:Get(charID) then
+        Osi.DB_PartyMembers:Delete(charID);
+    end
+    if Osi.DB_IsOrWasInParty:Get(charID) then
+        Osi.DB_IsOrWasInParty:Delete(charID);
+            end
+        end
+
+local function SourceConcat(sourceID)
+    local source;
+    local e = Ext.Entity.Get(sourceID);
+    if e and e.ServerCharacter then
+        source = e.ServerCharacter.Template.Name .. "_" .. sourceID;
+    end
+    return e and false or source;
+end
+
+-- Main
+function EXP_UncommandUndead(casterID)
+    -- Strips the base status upon application.
+    local ud = EXP_tCommandUndead[casterID].Undead;
+    ApplyStatus(ud, "COMMAND_UNDEAD_DROP", 6, 1, casterID);
+    RemovePartyFollower(ud, casterID);
+    PruneDB(ud);
+    -- Attempt to restore original leader if applicable.
+    if EXP_tCommandUndead[casterID].Origin and IsDead(ud) == 0 then
+        AddPartyFollower(ud, EXP_tCommandUndead[casterID].Origin);
+    end
+    local modvars = EXP_ObtainCommandedUndead();
+    EXP_tCommandUndead[casterID] = nil;
+        modvars.EXP_commandedundead = EXP_tCommandUndead;
+    if EXP_tLimboUndead[ud] then
+        EXP_tLimboUndead[ud] = nil;
+            modvars.EXP_limboundead = EXP_tLimboUndead;
+        end
+    end
+
+function EXP_CommandUndead(targetID, sourceID, is_int)
+        if HasActiveStatus(targetID, "COMMAND_UNDEAD") == 0 then
+            -- Need to grab leader because may need to restore follower status after Command Undead.
+            local leaderID;
+        local entity = Ext.Entity.Get(targetID);
+        if entity and entity.PartyFollower and entity.PartyFollower.Following then
+            local leader = entity.PartyFollower.Following;
+                leaderID = leader.Uuid.EntityUuid;
+                if leaderID then
+                    RemovePartyFollower(targetID, leaderID);
+                end
+            end
+            ApplyStatus(targetID, "COMMAND_UNDEAD", -1, 1, sourceID);
+            AddPartyFollower(targetID, sourceID);
+        EXP_tCommandUndead[sourceID] = { 
+            Undead = targetID,
+                Origin = leaderID,
+            };
+            local modvars = EXP_ObtainCommandedUndead();
+            modvars.EXP_commandedundead = EXP_tCommandUndead;
+        end
+    -- Applying initial re-roll timer for intelligent undead.
+    if is_int then
+            ApplyStatus(targetID, "COMMAND_UNDEAD_TIMER", 3600, 1, sourceID)
+        end
+end
+
+-- Listen for statuses that designate CU changes. No longer handle saves on the Lua end.
+Ext.Osiris.RegisterListener("StatusApplied",4,"after", function(targetID, status, sourceID, _)
+    if status ~= "COMMAND_UNDEAD_FAILED" then return; end
+    -- StatusApplied yields UUID without Name attribute for sourceID, which would call for truncated sourceIDs elsewhere.
+    local source = SourceConcat(sourceID) or sourceID;
+    if EXP_tCommandUndead[source]
+    and (EXP_tCommandUndead[source].Undead ~= targetID
+    or (EXP_tCommandUndead[source].Undead == targetID and status == "COMMAND_UNDEAD_FAILED")) then
+        EXP_UncommandUndead(source);
+    end
+end)
+
+-- Remove on death.
+Ext.Osiris.RegisterListener("Died", 1, "after", function(charID)
+    if next(EXP_tCommandUndead) == nil then return; end
+    for src, ud in pairs(EXP_tCommandUndead) do
+        if ud.Undead == charID then
+            EXP_UncommandUndead(src);
+            break;
+        end
+    end
+end)
+
+-- Remove on respec.
+Ext.Osiris.RegisterListener("RespecCompleted",1,"after",function(charID)
+    if next(EXP_tCommandUndead) == nil then return; end
+    if EXP_tCommandUndead[charID] and HasActiveStatus(EXP_tCommandUndead[charID].Undead, "COMMAND_UNDEAD") == 1 then
+        EXP_UncommandUndead(charID);
+        local modvars = EXP_ObtainCommandedUndead();
+        modvars.EXP_commandedundead = EXP_tCommandUndead;
+    end
+end)
+
+-- ////////////////////////////////////////////////////
+-- ////////////////////////////////////////////////////
+-- ////////////////////////////////////////////////////
+-- This is all to handle Larian's DB_GLO_Follower_Reassigning.
+-- Need to account here for NPCs leaving party with an active CU follower, because that follower will be xfer'd to leader.
+-- On NPC left party, record any CU creatures in limbo state.
+function CU_OnSessionLoaded()
+    Ext.Osiris.RegisterListener("DB_GLO_Follower_Reassigning",3,"after",function(charID,oldOwnerID,newOwnerID)
+        if next(EXP_tCommandUndead) == nil then return; end
+        --_P("GLO_Follower_Swap",charID,oldOwnerID,newOwnerID);
+        for src, ud in pairs(EXP_tCommandUndead) do
+            if ud.Undead == charID and src ~= newOwnerID then
+                EXP_tLimboUndead[charID] = src;
+                local modvars = EXP_ObtainCommandedUndead();
+                modvars.EXP_limboundead = EXP_tLimboUndead;
+                break;
+            end
+        end
+    end)
+end
+Ext.Events.SessionLoaded:Subscribe(CU_OnSessionLoaded);
+
+-- On follower joins party, remove if owner isn't the CU source.
+Ext.Osiris.RegisterListener("DB_PartyFollowers",1,"after",function(charID)
+    if next(EXP_tLimboUndead) == nil then return; end
+    if EXP_tLimboUndead[charID] and EXP_tLimboUndead[charID] ~= CharacterGetOwner(charID) then
+        RemovePartyFollower(charID, CharacterGetOwner(charID));
+    end
+end)
+
+-- On NPC joins party, re-apply any active CU followers.
+Ext.Osiris.RegisterListener("CharacterJoinedParty",1,"after",function(charID)
+    if next(EXP_tLimboUndead) == nil then return; end
+    if EXP_tCommandUndead[charID] then
+        for ud, src in pairs(EXP_tLimboUndead) do
+            if EXP_tCommandUndead[charID].Undead == ud and (HasActiveStatus(ud, "COMMAND_UNDEAD") == 1 or HasActiveStatus(ud, "COMMAND_UNDEAD_TIMER") == 1) then
+                AddPartyFollower(ud, src);
+                EXP_tLimboUndead[ud] = nil;
+                local modvars = EXP_ObtainCommandedUndead();
+                modvars.EXP_limboundead = EXP_tLimboUndead;
+            elseif EXP_tCommandUndead[charID].Undead == ud then
+                EXP_tLimboUndead[ud] = nil;
+                local modvars = EXP_ObtainCommandedUndead();
+                modvars.EXP_limboundead = EXP_tLimboUndead;
+            end
+        end
+    end
+end)
+
+-- ////////////////////////////////////////////////////
+-- Cleaner command.
+function CommandUndead_Cleaner()
+    if next(EXP_tCommandUndead) == nil then return; end
+    for src, ud in pairs(EXP_tCommandUndead) do
+        RemovePartyFollower(ud.Undead, CharacterGetOwner(ud.Undead));
+        EXP_UncommandUndead(src);
+    end
+end
+Ext.RegisterConsoleCommand("EXP_clearcommandundead", CommandUndead_Cleaner);
+
+--[[ Command Undead Osiris WIP
+Ext.Osiris.RegisterListener("StatusApplied",4,"after", function(character, status, source, _)
+    if status == "COMMAND_UNDEAD_TECHNICAL" then
+		Osi.SetDualEntityEvent(character,source,"CommandUndeadFollower",0)
+    end
+end)
+
+-- Command Undead Followup
+Ext.Osiris.RegisterListener("DualEntityEvent",3,"after", function(character, source, event)
+	if event == "CommandUndeadFollower" then
+		local owner = Osi.CharacterGetOwner(character)
+		Osi.RemovePartyLeader(character,owner)
+		Osi.ApplyStatus(character,"COMMAND_UNDEAD",-1,1,source)
+		Osi.AddPartyFollower(character,source)
+		Osi.SetVarObject(character,"UndeadCommandOriginalOwner",owner)
+		Osi.SetVarObject(character,"UndeadCommandCaster",source)
+		Osi.SetVarObject(source,"UndeadCommandTarget",character)
+    end
+end)
+
+-- Command Undead On Death
+Ext.Osiris.RegisterListener("Died", 1, "after", function(character)
+	if Osi.HasActiveStatus(character,"COMMAND_UNDEAD_DEATH_STATUS") == 1 then
+		local caster = Osi.GetVarObject(character,"UndeadCommandCaster")
+		Osi.SetEntityEvent(caster,"CommandUndeadDeathRemoveFollower")
+    end
+end)
+
+-- Command Undead On Death Followup
+Ext.Osiris.RegisterListener("EntityEvent", 1, "after", function(character, event)
+	if event == "CommandUndeadDeathRemoveFollower" then
+		local target = Osi.GetVarObject(character,"UndeadCommandTarget")
+		Osi.ApplyStatus(target,"COMMAND_UNDEAD_DROP",6.0,1,character)
+		Osi.RemovePartyLeader(target,character)
+		if Osi.DB_PartyFollowers:Get(target) then
+			Osi.DB_PartyFollowers:Delete(target)
+		end
+		if Osi.DB_PartyMembers:Get(target) then
+			Osi.DB_PartyMembers:Delete(target)
+		end
+		if Osi.DB_IsOrWasInParty:Get(target) then
+			Osi.DB_IsOrWasInParty:Delete(target)
+		end
+    end
+end)
+
+-- Command Undead on Respec
+Ext.Osiris.RegisterListener("RespecCompleted",1,"after",function(character)
+	if Osi.HasActiveStatus(character,"COMMAND_UNDEAD_OWNER") == 1 then
+		local target = Osi.GetVarObject(character,"UndeadCommandTarget")
+		if Osi.HasActiveStatus(target, "COMMAND_UNDEAD") == 1 then
+			Osi.SetEntityEvent(caster,"CommandUndeadRespecRemoveFollower")
+		end
+    end
+end)
+
+-- Command Undead On Respec Followup
+Ext.Osiris.RegisterListener("EntityEvent", 1, "after", function(character, event)
+	if event == "CommandUndeadRespecRemoveFollower" then
+		local target = Osi.GetVarObject(character,"UndeadCommandTarget")
+		Osi.ApplyStatus(target,"COMMAND_UNDEAD_DROP",6.0,1,character)
+		Osi.RemovePartyLeader(target,character)
+		if Osi.DB_PartyFollowers:Get(target) then
+			Osi.DB_PartyFollowers:Delete(target)
+		end
+		if Osi.DB_PartyMembers:Get(target) then
+			Osi.DB_PartyMembers:Delete(target)
+		end
+		if Osi.DB_IsOrWasInParty:Get(target) then
+			Osi.DB_IsOrWasInParty:Delete(target)
+		end
+
+		local owner = Osi.GetVarObject(target,"UndeadCommandOriginalOwner")
+		if owner ~= nil then
+			Osi.AddPartyFollower(target,owner)
+		end
+    end
+end)--]]
+
+-- Overchannel
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, source, cause)
+	if status == "OVERCHANNEL" then
+		Osi.RealtimeObjectTimerLaunch(character, "OverchannelTimer", 2000.0)
+	end
+end)
+
+-- Overchannel Timer
+Ext.Osiris.RegisterListener("ObjectTimerFinished", 2, "after", function (character, timer)
+	if timer == "OverchannelTimer" then
+		Osi.RemoveStatus(character,"OVERCHANNEL")
+	end
+end)
+
+-- Umbral Form Part 1
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
+	if Osi.HasActiveStatus(character,"UMBRAL_FORM") == 1 then
+		Osi.ApplyStatus(character,"UMBRAL_FORM_WALKTHROUGH_AURA",6.0,0,character)
+	end
+end)
+
+-- Umbral Form Part 2
+Ext.Osiris.RegisterListener("GainedControl", 1, "after", function (character)
+	if Osi.HasActiveStatus(character,"UMBRAL_FORM_WALKTHROUGH") == 1 then
+		Osi.RemoveStatus(character,"UMBRAL_FORM_WALKTHROUGH")
+	end
+end)
+
+-- ???
+Ext.Osiris.RegisterListener("StatusApplied", 4, "after", function (character, status, causee, _)
+	_D(status)
 end)
